@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -19,11 +20,76 @@
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-  <h1>welcome to salmon interactive web design</h1>
+  
+  <div class="main-header">
+    <figure class="logo">
+      <a href="#"><img src="img/salmon-logo.svg" alt="salmon logo"></a>
+    </figure>
+    <!-- hambuger menu -->
+    <div class="navbar-toggle">
+      <div class="bar-1"></div>
+      <div class="bar-2"></div>
+      <div class="bar-3"></div>
+    </div>
+    <!-- main navigation menu -->
+    <nav class="main-nav-hide">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">interactive designer</a></li>
+        <li><a href="#">UX/UI</a></li>
+        <li><a href="#">prototype</a></li>
+        <li><a href="#">graphic design</a></li>
+        <li><a href="#">photography</a></li>
+      </ul>
+    </nav>
+  </div> <!-- end of main-header class -->
 
+  <main role="main" id="fullpage">
+
+    <div class="section main-landing-page" id="hello">
+      <div class="container" >
+        <h1>Salmon design </h1>
+        <p>We combine creativity with fresh and modern content to engage your audience.</p>
+        <img src="img/salmon-red-logo.svg">
+      </div>
+    </div> <!-- end of landing page -->
+
+    <div class="section interaction">
+      <div class="container">
+        <h1>interactive design content</h1>
+      </div>
+    </div> <!-- end of abouts page -->    
+
+    <div class="section ux-ui">
+      <div class="container">
+        <h1>UX/UI content</h1>
+      </div>
+    </div> <!-- end of ux ui -->  
+
+    <div class="section prototype">
+      <div class="container">
+        <h1>prototype content</h1>
+      </div>
+    </div> <!-- end of ux ui --> 
+
+    <div class="section graphic-design">
+      <div class="container">
+        <h1>graphic designer content</h1>
+      </div>
+    </div> <!-- end of ux ui -->   
+   
+    <div class="section photography">
+      <div class="container">
+        <h1>photography content</h1>
+      </div>
+    </div> <!-- end of ux ui -->   
+
+  </main> <!-- end of main section -->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="js/vendor/scrolloverflow.js"></script>
+  <script src="js/vendor/jquery.fullPage.js"></script>
 
   <script src="js/main.js"></script>
 

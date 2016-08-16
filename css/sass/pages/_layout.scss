@@ -2,11 +2,6 @@
 // Main Layout Styles
 //**
 
-html {
-	background: teal;
-}
-
-
 // Responsive styles if needed
 // @include responsive($big-break) {
 // }
@@ -18,3 +13,91 @@ html {
 // }
 // @include mobilefirst($small-break) {
 // }
+
+
+
+/* HOME */
+
+.main-landing-page {
+	background: $dark-blue;
+
+	.container {
+		img {
+		width: 25%;
+		}
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+	}
+
+	h1, p {
+		color: $salmon;
+	}
+
+
+
+}
+
+	#fp-nav ul li a span, .fp-slidesNav ul li a span {
+		background: $salmon;
+	}
+
+
+
+
+
+
+/* INTERACTIVE DESIGN */
+
+.interaction {
+	background: $pink;
+}
+
+
+
+
+
+
+/* UX/UI */
+.ux-ui {
+	background: $salmon;
+
+}
+
+
+
+
+
+
+
+/* PROTOTYPE */
+
+
+
+
+
+
+
+
+/* GRAPHIC DESIGN */
+
+
+
+
+
+
+
+
+/* PHOTOGRAPHY */
+
+
+
+
+
+
+
+
+/* CONTACT */

@@ -8,10 +8,13 @@
 
 .logo {
 	position: fixed;
-	width: 170px;
 	top: 20px;
-	left: 15px;
+	left: 5px;
 	z-index: 25;
+		img {
+			width: 50%;
+		}
+
 }
 
 nav {
@@ -49,8 +52,8 @@ nav {
 	position: fixed;
 	top: 20px;
 	right: 20px;
-	width: 45px;
-	height: 45px;
+	width: 35px;
+	height: 35px;
 	z-index: 20;
 	cursor: pointer;
 }
@@ -59,16 +62,16 @@ nav {
 .bar-2,
 .bar-3 {
 	width: 100%;
-	height: 5px;
+	height: 2px;
 	margin-bottom: 8px;
-	background-color: #fff;
+	background-color: $salmon;
 	transition: all 0.3s ease-in-out;
 } 
 
 .navbar-on .bar-1,
 .navbar-on .bar-2, 
 .navbar-on .bar-3 {
-	background: #fff;
+	background: $salmon;
 }
 
 .navbar-on .bar-1 {

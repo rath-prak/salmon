@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* Consistent settings */
+/* Colors */
+/* project colors */
+/* util colors */
 .clearfix,
 .group {
   zoom: 1; }
@@ -101,50 +105,6 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
-/*
-// Responsive styles if needed
-// @include responsive($big-break) {
-// }
-@include responsive($small-break) {
-  body {
-    font-size: 14px;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  h4,
-  h5,
-  p,
-  ul,
-  ol {
-    font-size: 14px;
-  }
-}
-
-// Mobile first styles if needed
-// @include mobilefirst($big-break) {
-// }
-// @include mobilefirst($small-break) {
-// }
-*/
 .btn {
   border-radius: 5px;
   background: transparent;
@@ -214,10 +174,11 @@ a {
 }*/
 .logo {
   position: fixed;
-  width: 170px;
   top: 20px;
-  left: 15px;
+  left: 5px;
   z-index: 25; }
+  .logo img {
+    width: 50%; }
 
 nav {
   position: fixed;
@@ -247,8 +208,8 @@ nav {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   z-index: 20;
   cursor: pointer; }
 
@@ -256,15 +217,15 @@ nav {
 .bar-2,
 .bar-3 {
   width: 100%;
-  height: 5px;
+  height: 2px;
   margin-bottom: 8px;
-  background-color: #fff;
+  background-color: #E94444;
   transition: all 0.3s ease-in-out; }
 
 .navbar-on .bar-1,
 .navbar-on .bar-2,
 .navbar-on .bar-3 {
-  background: #fff; }
+  background: #E94444; }
 
 .navbar-on .bar-1 {
   transform-origin: 10% 40%;
@@ -317,55 +278,51 @@ hr {
 .relative {
   position: relative; }
 
-html {
-  background: teal; }
-
-/*Homepage - Main Laning page*/
+/* HOME */
 .main-landing-page {
-  background: url(../img/test-bg.jpg) no-repeat center center fixed;
-  background-size: cover; }
-  .main-landing-page h1 {
-    font-family: Gotham_black, sans-serif;
-    color: #fff;
-    font-size: 60px;
-    line-height: 98%;
-    margin-left: 65px;
-    margin-bottom: 10px;
-    text-transform: uppercase; }
-  .main-landing-page p {
-    color: #fff;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-left: 65px;
-    font-family: Gotham_medium, sans-serif; }
+  background: #2b2769; }
+  .main-landing-page .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .main-landing-page .container img {
+      width: 25%; }
+  .main-landing-page h1, .main-landing-page p {
+    color: #E94444; }
 
-/* About Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.about {
-  background: #c7ad88; }
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #E94444; }
 
-/* Portfolio Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.work .our-work-banner {
-  height: 400px;
-  width: 100%;
-  background: #3fb0ac; }
+/* INTERACTIVE DESIGN */
+.interaction {
+  background: #F15FA8; }
 
-.work .our-work {
-  margin-top: -300px;
-  text-align: center; }
-  .work .our-work h1 {
-    text-transform: uppercase;
-    font-size: 55px;
-    margin-bottom: 0; }
+/* UX/UI */
+.ux-ui {
+  background: #E94444; }
 
-.portfolio-item {
-  border: 1px solid blue;
-  height: 320px; }
+/* PROTOTYPE */
+/* GRAPHIC DESIGN */
+/* PHOTOGRAPHY */
+/* CONTACT */
+/* Homepage - Main Laning page */
+h1 {
+  font-family: Gotham_black, sans-serif;
+  color: #fff;
+  font-size: 60px;
+  line-height: 98%;
+  margin-left: 65px;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
 
-.footer {
-  background: #252839;
-  color: #fff; }
+p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-left: 65px;
+  font-family: Gotham_medium, sans-serif; }
 
 /*// Responsive styles if needed
 // @include responsive($big-break) {

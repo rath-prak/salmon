@@ -2,25 +2,17 @@
 // Project Settings
 //**
 
-// Consistent settings
+/* Consistent settings */
 $br: 5px; // Border-radius
 $btn-br: 5px; // Button border-radius
 $padding: 40px; // Padding and margins
 $line-height: 44px; // Consistent height for buttons, inputs etc.
 
-
-
-
-
 // Responsive breakpoints
 $small-break: 480px;
 $big-break: 780px;
 
-
-
-
-
-// Better default colors
+/* Colors */
 // Cool
 $aqua:  #7fdbff;
 $blue:  #0074d9;
@@ -42,19 +34,18 @@ $silver: #ddd;
 $grey:   #aaa;
 $black:  #111;
 
-
-
-
-
-// Project color variables
+/* project colors */
 $primary-color: #1271db;
 $secondary-color: #233e5b;
 $tertiary-color: #aaa;
 
+$salmon: #E94444;
+$dark-blue: #2b2769;
+$light-blue: #33b2ff;
+$pink: #F15FA8;
+$reverse: #fff;
 
-
-
-
+/* util colors */
 $danger-color: $red; // Bad color for errors, validation etc.
 $success-color: $green; // Good color for success etc.
 $info-color: $blue; // Good color for success etc.

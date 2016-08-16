@@ -1,14 +1,9 @@
- /*Homepage - Main Laning page*/
-
-
-.main-landing-page {
-	background: url(../img/test-bg.jpg)no-repeat center center fixed;
-	background-size: cover;
+ /* Homepage - Main Laning page */
 
 
 	h1 {
 		font-family: $bold;
-		color: #fff;
+		color: $reverse;
 		font-size: 60px;
 		line-height: 98%;
 		margin-left: 65px;
@@ -16,53 +11,12 @@
 		text-transform: uppercase;
 	}
 	p {
-		color: #fff;
+		color: $reverse;
 		font-size: 18px;
 		margin-top: 0px;
 		margin-left: 65px;
 		font-family: $medium;
 	}
-}
-
-/* About Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.about {
-	background: #c7ad88;
-}
-
-/* Portfolio Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.work {
-	.our-work-banner {
-		height: 400px;
-		width: 100%;
-		background: #3fb0ac;
-	}
-
-.our-work {
-	margin-top: -300px;
-	text-align: center;
-		h1 {
-			text-transform: uppercase;
-			font-size: 55px;
-			margin-bottom: 0;
-		}
-	}
-}
-
-.portfolio-item {
-	border: 1px solid blue;
-	height: 320px;
-}
-
-
-.footer {
-	background: #252839;
-	color: #fff;
-}
-
 
 
 

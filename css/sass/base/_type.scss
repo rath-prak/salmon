@@ -3,9 +3,9 @@
 @font-face { font-family: Gotham_medium; src: url(../fonts/GOTHAM-MEDIUM.TTF);}
 @font-face { font-family: Gotham_thin; src: url(../fonts/GOTHAM-LIGHT.TTF);}
 
-$bold: Gotham_black, sans-serif;
-$medium: Gotham_medium, sans-serif;
 $body: Gotham_thin, sans-serif;
+$medium: Gotham_medium, sans-serif;
+$bold: Gotham_black, sans-serif;
 
 body {
   font-family: $body, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -15,7 +15,6 @@ body {
   line-height: 1.6;
 }
 
-
 h1,
 h2,
 h3,
@@ -23,7 +22,6 @@ h4,
 h5 {
   font-family: $medium, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
 
 
 a {
@@ -35,50 +33,3 @@ a {
   }
 }
 
-
-
-
-/*
-// Responsive styles if needed
-// @include responsive($big-break) {
-// }
-@include responsive($small-break) {
-  body {
-    font-size: 14px;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  h4,
-  h5,
-  p,
-  ul,
-  ol {
-    font-size: 14px;
-  }
-}
-
-// Mobile first styles if needed
-// @include mobilefirst($big-break) {
-// }
-// @include mobilefirst($small-break) {
-// }
-*/
