@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/rath-prak/salmon/issues"
   },
-  "homepage": "https://github.com/rath-prak/salmon#readme"
+  "homepage": "https://github.com/rath-prak/salmon#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
 }
