@@ -37,6 +37,7 @@ $(document).ready(function(){
     scrollOverflowOptions: null,
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
+    verticalCentered: false,
     anchors: ['home', 'design', 'ux-ui', 'prototype', 'photography'],
 
     afterLoad: function(anchorLink, index) {

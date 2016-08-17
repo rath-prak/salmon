@@ -15,11 +15,11 @@
 // }
 
 .container {
+	max-width: 960px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	text-align: center;
 }
 
 
@@ -77,7 +77,16 @@
 .ux-ui {
 	background: $salmon;
 
+	.three {
+		display: inline-block;
+		text-align: center;
+			img {
+				width:  70%;
+			}
+	}
+
 }
+
 
 
 

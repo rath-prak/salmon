@@ -1,23 +1,6 @@
  /* Homepage - Main Laning page */
 
 
-	h1 {
-		font-family: $bold;
-		color: $reverse;
-		font-size: 60px;
-		line-height: 98%;
-		margin-left: 65px;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-	}
-	p {
-		color: $reverse;
-		font-size: 18px;
-		margin-top: 0px;
-		margin-left: 65px;
-		font-family: $medium;
-	}
-
 
 
 /*// Responsive styles if needed
@@ -32,3 +15,8 @@
 // @include mobilefirst($small-break) {
 // }*/
 
+
+
+	// #fp-nav ul li a span, .fp-slidesNav ul li a span {
+	// 	background: $salmon;
+	// }

@@ -44,7 +44,7 @@
   width: 16.66666666%; }
 
 .three {
-  width: 25%; }
+  width: 24.6%; }
 
 .five {
   width: 41.66666666%; }
@@ -91,19 +91,50 @@ body {
   font-size: 100%;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #fff; }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: Gotham_medium, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: Gotham_medium, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #fff;
+  margin: 0px; }
 
 a {
   color: #1271db; }
   a:hover, a:focus {
     text-decoration: none; }
+
+/* HOME */
+.main-landing-page {
+  background: #2b2769; }
+  .main-landing-page h1 {
+    font-family: Gotham_black, sans-serif;
+    font-size: 60px;
+    line-height: 98%;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .main-landing-page h1, .main-landing-page p {
+    color: #E94444; }
+  .main-landing-page p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0px;
+    font-family: Gotham_medium, sans-serif; }
+
+/* INTERACTIVE DESIGN */
+/* UX/UI */
+.ux-ui p {
+  font-size: 0.7em;
+  margin-top: 0; }
+
+.ux-ui h5 {
+  margin-bottom: 5px;
+  font-family: Gotham_medium, sans-serif;
+  text-transform: uppercase; }
 
 .btn {
   border-radius: 5px;
@@ -278,11 +309,11 @@ hr {
   position: relative; }
 
 .container {
+  max-width: 960px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  transform: translate(-50%, -50%); }
 
 /* HOME */
 .main-landing-page {
@@ -313,28 +344,17 @@ hr {
 /* UX/UI */
 .ux-ui {
   background: #E94444; }
+  .ux-ui .three {
+    display: inline-block;
+    text-align: center; }
+    .ux-ui .three img {
+      width: 70%; }
 
 /* PROTOTYPE */
 /* GRAPHIC DESIGN */
 /* PHOTOGRAPHY */
 /* CONTACT */
 /* Homepage - Main Laning page */
-h1 {
-  font-family: Gotham_black, sans-serif;
-  color: #fff;
-  font-size: 60px;
-  line-height: 98%;
-  margin-left: 65px;
-  margin-bottom: 10px;
-  text-transform: uppercase; }
-
-p {
-  color: #fff;
-  font-size: 18px;
-  margin-top: 0px;
-  margin-left: 65px;
-  font-family: Gotham_medium, sans-serif; }
-
 /*// Responsive styles if needed
 // @include responsive($big-break) {
 // }
