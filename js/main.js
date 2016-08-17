@@ -36,7 +36,17 @@ $(document).ready(function(){
     scrollOverflowOptions: null,
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
+    anchors: ['home', 'design', 'ux-ui', 'prototype', 'photography'],
+
+    afterLoad: function(anchorLink, index) {
+        if (index == 2) {
+            // $('.red-logo').removeClass('active-logo');
+            $('.white-logo').addClass('active-logo');
+        }
+    }
   });
+
+
 
 
 

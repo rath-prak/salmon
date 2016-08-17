@@ -14,7 +14,11 @@
 		img {
 			width: 50%;
 		}
+	display: none;	
+}
 
+.logo.active-logo {
+	display: inherit;
 }
 
 nav {

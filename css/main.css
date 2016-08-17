@@ -176,9 +176,13 @@ a {
   position: fixed;
   top: 20px;
   left: 5px;
-  z-index: 25; }
+  z-index: 25;
+  display: none; }
   .logo img {
     width: 50%; }
+
+.logo.active-logo {
+  display: inherit; }
 
 nav {
   position: fixed;
@@ -278,6 +282,13 @@ hr {
 .relative {
   position: relative; }
 
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
 /* HOME */
 .main-landing-page {
   background: #2b2769; }
@@ -296,7 +307,7 @@ hr {
   background: #E94444; }
 
 /* INTERACTIVE DESIGN */
-.interaction {
+.design {
   background: #F15FA8; }
 
 /* UX/UI */
