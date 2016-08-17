@@ -61,11 +61,16 @@
 
 .design {
 	background: $pink;
+
+	#bison-logo {
+	  width: 70%;
+	  fill: transparent;
+	  stroke: #fff;
+	  transform: translateY(15px);
+	}
+
+
 }
-
-
-
-
 
 
 /* UX/UI */
