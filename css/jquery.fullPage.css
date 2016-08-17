@@ -159,10 +159,8 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-/*    height: 4px;
-    width: 4px;*/
-    height: 1px;
-    width: 6px;
+    height: 4px;
+    width: 4px;
     border: 0;
 /*    background: #333;*/
     left: 50%;

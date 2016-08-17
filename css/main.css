@@ -205,12 +205,11 @@ a {
 }*/
 .logo {
   position: fixed;
-  top: 20px;
-  left: 5px;
+  top: 10px;
   z-index: 25;
   display: none; }
   .logo img {
-    width: 50%; }
+    width: 35%; }
 
 .logo.active-logo {
   display: inherit; }
@@ -309,7 +308,6 @@ hr {
   position: relative; }
 
 .container {
-  max-width: 960px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,7 +332,7 @@ hr {
 
 /* INTERACTIVE DESIGN */
 .design {
-  background: #F15FA8; }
+  background: #312c32; }
   .design #bison-logo {
     width: 70%;
     fill: transparent;
@@ -345,7 +343,6 @@ hr {
 .ux-ui {
   background: #E94444; }
   .ux-ui .three {
-    display: inline-block;
     text-align: center; }
     .ux-ui .three img {
       width: 70%; }

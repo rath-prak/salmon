@@ -15,7 +15,7 @@
 // }
 
 .container {
-	max-width: 960px;
+	// max-width: 960px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -60,7 +60,7 @@
 /* INTERACTIVE DESIGN */
 
 .design {
-	background: $pink;
+	background: #312c32;
 
 	#bison-logo {
 	  width: 70%;
@@ -78,7 +78,6 @@
 	background: $salmon;
 
 	.three {
-		display: inline-block;
 		text-align: center;
 			img {
 				width:  70%;
