@@ -1,13 +1,21 @@
 $(document).ready(function(){
 
-
-
 // navigation
   $('.navbar-toggle, nav').click(function(){
     $('.navbar-toggle').toggleClass('navbar-on');
     $('nav').fadeToggle();
     $('nav').removeClass('main-nav-hide');
   });
+
+ // hamburger menu
+    var bar = $('.menu-bar')
+    var tl = new TimelineMax();
+        tl.staggerTo(bar, 2, {
+        scaleX: '1.3',
+        repeat: -1,
+        yoyo: true,
+        ease: Linear.easeNone
+    }, .5) 
 
 // initialize fullpage
 
@@ -44,12 +52,12 @@ $(document).ready(function(){
       if (index == 2 || index == 3) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
-        $('.bar-1, .bar-2, .bar-3').css('background', '#fff');
+        $('.menu-bar').css('fill', '#fff');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#fff');
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo'); 
-        $('.bar-1, .bar-2, .bar-3').css('background', '#E94444');
+        $('.menu-bar').css('fill', '#E94444');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
       }
 
@@ -57,9 +65,7 @@ $(document).ready(function(){
 
     },
 
-    // afterLoad function
-
-
+    // end afterLoad function
 
   });
 

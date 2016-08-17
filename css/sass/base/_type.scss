@@ -67,15 +67,17 @@ a {
 
 /* UX/UI */
 .ux-ui {
-  p {
-    font-size: 0.7em;
-    margin-top: 0;
-  }
+  text-align: center;
   h5 {
-    margin-bottom: 5px;
     font-family: $medium;
     text-transform: uppercase;
+    margin-bottom: 0;
   }
+  p {
+    font-size: 0.8em;
+    margin-bottom: 30px;
+  }
+
 
 
 

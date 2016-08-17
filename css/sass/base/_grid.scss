@@ -1,11 +1,19 @@
 /* Responsive grid
    ========================================================================== */
 
+// .container {
+//   margin: 0 auto;
+//   width: 100%;
+//   max-width: 1200px;
+// }
+
 .container {
-  margin: 0 auto;
+  position: relative;
   width: 100%;
-  max-width: 1200px;
-}
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
 
 .row:after {
   content: "";
@@ -18,27 +26,43 @@
 }
 
 .column {
+  width: 100%;
   float: left;
-  padding: 20px;
+  box-sizing: border-box;
+  // margin-left: 3%;
+}
+.column:first-child {
+  margin-left: 1000px;
 }
 
-/*for gutter set margin left to 4% and first:child to 0px then recalculate percentages*/
+.one { width: 4.66666666667%; }
+.two { width: 13.3333333333%; }
+.three { width: 22%; }
+.four { width: 30.6666666667%; }
+.five { width: 39.3333333333%; }
+.six { width: 48%; }
+.seven { width: 56.6666666667%; }
+.eight { width: 65.3333333333%; }
+.nine { width: 74.0%; }
+.ten { width: 82.6666666667%; }
+.eleven { width: 91.3333333333%; }
+.twelve { width: 100%; margin-left: 0; }  
 
-.one { width: 8.33333333%; }
-.two { width: 16.66666666%; }
-.three { width: 24.6%; }
 
-.five { width: 41.66666666%; }
-.six { width: 50%; }
-.seven { width: 58.33333333%; }
-.eight { width: 66.66666666%; }
-.nine { width: 75%; }
-.ten { width: 83.33333333%; }
-.eleven { width: 91.66666666%; }
-.twelve { width: 100%; }  
-
+// .one.columns                    { width: 4.66666666667%; }
+// .two.columns                    { width: 13.3333333333%; }
+// .three.columns                  { width: 22%;            }
+// .four.columns                   { width: 30.6666666667%; }
+// .five.columns                   { width: 39.3333333333%; }
+// .six.columns                    { width: 48%;            }
+// .seven.columns                  { width: 56.6666666667%; }
+// .eight.columns                  { width: 65.3333333333%; }
+// .nine.columns                   { width: 74.0%;          }
+// .ten.columns                    { width: 82.6666666667%; }
+// .eleven.columns                 { width: 91.3333333333%; }
+// .twelve.columns                 { width: 100%; margin-left: 0; }
 
 @media all and (min-width: 600px){
-  .four { width: 33.33333333%; }
+  
 }
 

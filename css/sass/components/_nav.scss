@@ -1,11 +1,6 @@
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*nav, .navbar-toggle {
-	user-select: none;
-}*/
-
 .logo {
 	position: fixed;
 	top: 10px;
@@ -53,51 +48,27 @@ nav {
 
 .navbar-toggle {
 	position: fixed;
-	top: 30px;
-	right: 30px;
-	width: 30px;
-	height: 30px;
+	top: 20px;
+	right: 20px;
+	// width: 30px;
+	// height: 30px;
 	z-index: 20;
 	cursor: pointer;
+
+	#menu {
+  width:50px;
+  transform: rotate(180deg)
+	}
+
+	.menu-bar {
+	  fill: $salmon;
+	}
+
 }
 
-.bar-1, 
-.bar-2,
-.bar-3 {
-	width: 100%;
-	height: 1px;
-	margin-bottom: 6px;
-	background-color: $salmon;
-	transition: all 0.3s ease-in-out;
-} 
+/*sidebar navigation*/
 
-.bar-1 {
-	width: 80%;
-}
-
-.bar-3 {
-	width: 60%;
-}
-
-.navbar-on .bar-1,
-.navbar-on .bar-2, 
-.navbar-on .bar-3 {
-	background: $salmon;
-}
-
-// .navbar-on .bar-1 {
-// 	transform-origin: 10% 40%;
-// 	transform: rotate(45deg);
-// }
-
-// .navbar-on .bar-3 {
-// 	transform-origin: 10% 40%;
-// 	transform: rotate(-45deg);
-// }
-
-// .navbar-on .bar-2 {
-// 	background: transparent;
-// }
-
-
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+		background: $salmon;
+	}
 

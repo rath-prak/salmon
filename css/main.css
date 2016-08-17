@@ -20,9 +20,12 @@
 /* Responsive grid
    ========================================================================== */
 .container {
-  margin: 0 auto;
+  position: relative;
   width: 100%;
-  max-width: 1200px; }
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
 
 .row:after {
   content: "";
@@ -33,46 +36,49 @@
   /*overflow: hidden;*/ }
 
 .column {
+  width: 100%;
   float: left;
-  padding: 20px; }
+  box-sizing: border-box; }
 
-/*for gutter set margin left to 4% and first:child to 0px then recalculate percentages*/
+.column:first-child {
+  margin-left: 1000px; }
+
 .one {
-  width: 8.33333333%; }
+  width: 4.66666666667%; }
 
 .two {
-  width: 16.66666666%; }
+  width: 13.3333333333%; }
 
 .three {
-  width: 24.6%; }
+  width: 22%; }
+
+.four {
+  width: 30.6666666667%; }
 
 .five {
-  width: 41.66666666%; }
+  width: 39.3333333333%; }
 
 .six {
-  width: 50%; }
+  width: 48%; }
 
 .seven {
-  width: 58.33333333%; }
+  width: 56.6666666667%; }
 
 .eight {
-  width: 66.66666666%; }
+  width: 65.3333333333%; }
 
 .nine {
-  width: 75%; }
+  width: 74.0%; }
 
 .ten {
-  width: 83.33333333%; }
+  width: 82.6666666667%; }
 
 .eleven {
-  width: 91.66666666%; }
+  width: 91.3333333333%; }
 
 .twelve {
-  width: 100%; }
-
-@media all and (min-width: 600px) {
-  .four {
-    width: 33.33333333%; } }
+  width: 100%;
+  margin-left: 0; }
 
 @font-face {
   font-family: Gotham_black;
@@ -127,14 +133,15 @@ a {
 
 /* INTERACTIVE DESIGN */
 /* UX/UI */
-.ux-ui p {
-  font-size: 0.7em;
-  margin-top: 0; }
-
-.ux-ui h5 {
-  margin-bottom: 5px;
-  font-family: Gotham_medium, sans-serif;
-  text-transform: uppercase; }
+.ux-ui {
+  text-align: center; }
+  .ux-ui h5 {
+    font-family: Gotham_medium, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .ux-ui p {
+    font-size: 0.8em;
+    margin-bottom: 30px; }
 
 .btn {
   border-radius: 5px;
@@ -200,9 +207,6 @@ a {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*nav, .navbar-toggle {
-	user-select: none;
-}*/
 .logo {
   position: fixed;
   top: 10px;
@@ -240,31 +244,18 @@ nav {
 /*Hamburger Toggle*/
 .navbar-toggle {
   position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 30px;
-  height: 30px;
+  top: 20px;
+  right: 20px;
   z-index: 20;
   cursor: pointer; }
+  .navbar-toggle #menu {
+    width: 50px;
+    transform: rotate(180deg); }
+  .navbar-toggle .menu-bar {
+    fill: #E94444; }
 
-.bar-1,
-.bar-2,
-.bar-3 {
-  width: 100%;
-  height: 1px;
-  margin-bottom: 6px;
-  background-color: #E94444;
-  transition: all 0.3s ease-in-out; }
-
-.bar-1 {
-  width: 80%; }
-
-.bar-3 {
-  width: 60%; }
-
-.navbar-on .bar-1,
-.navbar-on .bar-2,
-.navbar-on .bar-3 {
+/*sidebar navigation*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: #E94444; }
 
 * {
@@ -307,12 +298,6 @@ hr {
 .relative {
   position: relative; }
 
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
 /* HOME */
 .main-landing-page {
   background: #2b2769; }
@@ -327,9 +312,6 @@ hr {
   .main-landing-page h1, .main-landing-page p {
     color: #E94444; }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background: #E94444; }
-
 /* INTERACTIVE DESIGN */
 .design {
   background: #312c32; }
@@ -342,10 +324,20 @@ hr {
 /* UX/UI */
 .ux-ui {
   background: #E94444; }
-  .ux-ui .three {
-    text-align: center; }
-    .ux-ui .three img {
-      width: 70%; }
+  .ux-ui .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .ux-ui .container .screen {
+      text-align: center;
+      float: left;
+      width: 21.25%;
+      margin-left: 3%; }
+      .ux-ui .container .screen img {
+        width: 95%; }
+    .ux-ui .container .screen:first-child {
+      margin-left: 0; }
 
 /* PROTOTYPE */
 /* GRAPHIC DESIGN */
