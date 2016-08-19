@@ -57,12 +57,28 @@ nav {
 
 	#menu {
   width:50px;
-  transform: rotate(180deg)
+  // -webkit-transform: rotate(180deg);
+  // -moz-transform: rotate(180deg);
+  // -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(180deg); /* IE 9 */
+          transform: rotate(180deg); /* IE 10, Fx 16+, Op 12.1+ */
 	}
 
-	.menu-bar {
-	  fill: $salmon;
+	.menu-container {
+		width: 40px;
+		height: 15px;
+		overflow: hidden;
+
+		.menu-bar {
+		  background: $salmon;
+		  width: 40px;
+		  height: 1px;
+	 	 	margin-bottom: 6px;
+	 	 	transform: translateX(10px)
+		}
 	}
+
 
 }
 

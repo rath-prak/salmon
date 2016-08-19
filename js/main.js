@@ -52,12 +52,12 @@ $(document).ready(function(){
       if (index == 2 || index == 3) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
-        $('.menu-bar').css('fill', '#fff');
+        $('.menu-bar').css('background', '#fff');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#fff');
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo'); 
-        $('.menu-bar').css('fill', '#E94444');
+        $('.menu-bar').css('background', '#E94444');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
       }
 
