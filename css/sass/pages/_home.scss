@@ -1,22 +1,84 @@
  /* Homepage - Main Laning page */
 
 
+/* Mobile first queries */
 
+.main-landing-page {
+		background: $dark-blue;
 
-/*// Responsive styles if needed
-// @include responsive($big-break) {
-// }
-// @include responsive($small-break) {
-// }
+		.container {
+			img {
+			width: 50%;
+			}
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
 
-// Mobile first styles if needed
-// @include mobilefirst($big-break) {
-// }
-// @include mobilefirst($small-break) {
-// }*/
+		h1, p {
+			color: $salmon;
+		}
+		h1 {
+			font-size: 1.5em;
+			margin: 10px;
+		}
+		p {
+			font-size: 0.9em;
+			margin: 0 20px 20px;
+		}
+	}
 
+/* Larger than mobile */
+@media (min-width: 400px) {
+	.main-landing-page {
+		h1 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 1em;
+		}
+		.container img {
+			width: 40%;
+		}
+	}
+}
 
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.main-landing-page {
+		h1 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 1.2em;
+		}
+		.container img {
+			width: 30%;
+		}
+	}
+}
 
-	// #fp-nav ul li a span, .fp-slidesNav ul li a span {
-	// 	background: $salmon;
-	// }
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.main-landing-page {
+		h1 {
+		font-size: 4em;
+		}
+		p {
+			font-size: 1.3em;
+		}
+		.container img {
+			width: 25%;
+		}
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

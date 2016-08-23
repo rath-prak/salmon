@@ -8,14 +8,14 @@ $(document).ready(function(){
   });
 
  // hamburger menu
-    var bar = $('.menu-bar')
+    var bar = $('.menu-bar');
     var tl = new TimelineMax();
         tl.staggerTo(bar, 2, {
         scaleX: '1.3',
         repeat: -1,
         yoyo: true,
         ease: Linear.easeNone
-    }, .5) 
+    }, 0.5); 
 
 // initialize fullpage
 
@@ -46,7 +46,9 @@ $(document).ready(function(){
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'design', 'ux-ui', 'prototype', 'photography'],
+    anchors: ['home', 'design', 'ux', 'prototype', 'photography'],
+    setResponsive: true,
+    // responsiveHeight: 737,
 
     afterLoad: function(anchorLink, index) {
       if (index == 2 || index == 3) {

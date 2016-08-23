@@ -25,24 +25,7 @@
 
 /* HOME */
 
-.main-landing-page {
-	background: $dark-blue;
 
-	.container {
-		img {
-		width: 25%;
-		}
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
-
-	h1, p {
-		color: $salmon;
-	}
-}
 
 /* INTERACTIVE DESIGN */
 
@@ -58,37 +41,6 @@
 
 
 }
-
-
-/* UX/UI */
-.ux-ui {
-	background: $salmon;
-
-	.container {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-		.screen {
-			text-align: center;
-			float: left;
-			width: 21.25%;
-			margin-left: 3%;
-			img {
-				width: 95%;
-			}
-		}
-		.screen:first-child{
-			margin-left: 0;
-		}
-
-	}
-
-}
-
-
-
 
 
 

@@ -263,7 +263,8 @@ nav {
 
 /*sidebar navigation*/
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background: #E94444; }
+  background: #E94444;
+  display: none; }
 
 * {
   box-sizing: border-box !important; }
@@ -306,19 +307,6 @@ hr {
   position: relative; }
 
 /* HOME */
-.main-landing-page {
-  background: #2b2769; }
-  .main-landing-page .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .main-landing-page .container img {
-      width: 25%; }
-  .main-landing-page h1, .main-landing-page p {
-    color: #E94444; }
-
 /* INTERACTIVE DESIGN */
 .design {
   background: #312c32; }
@@ -328,40 +316,82 @@ hr {
     stroke: #fff;
     transform: translateY(15px); }
 
-/* UX/UI */
-.ux-ui {
-  background: #E94444; }
-  .ux-ui .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .ux-ui .container .screen {
-      text-align: center;
-      float: left;
-      width: 21.25%;
-      margin-left: 3%; }
-      .ux-ui .container .screen img {
-        width: 95%; }
-    .ux-ui .container .screen:first-child {
-      margin-left: 0; }
-
 /* PROTOTYPE */
 /* GRAPHIC DESIGN */
 /* PHOTOGRAPHY */
 /* CONTACT */
 /* Homepage - Main Laning page */
-/*// Responsive styles if needed
-// @include responsive($big-break) {
-// }
-// @include responsive($small-break) {
-// }
+/* Mobile first queries */
+.main-landing-page {
+  background: #2b2769; }
+  .main-landing-page .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .main-landing-page .container img {
+      width: 50%; }
+  .main-landing-page h1, .main-landing-page p {
+    color: #E94444; }
+  .main-landing-page h1 {
+    font-size: 1.5em;
+    margin: 10px; }
+  .main-landing-page p {
+    font-size: 0.9em;
+    margin: 0 20px 20px; }
 
-// Mobile first styles if needed
-// @include mobilefirst($big-break) {
-// }
-// @include mobilefirst($small-break) {
-// }*/
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .main-landing-page h1 {
+    font-size: 2em; }
+  .main-landing-page p {
+    font-size: 1em; }
+  .main-landing-page .container img {
+    width: 40%; } }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .main-landing-page h1 {
+    font-size: 3em; }
+  .main-landing-page p {
+    font-size: 1.2em; }
+  .main-landing-page .container img {
+    width: 30%; } }
+
+/* Larger than tablet */
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .main-landing-page h1 {
+    font-size: 4em; }
+  .main-landing-page p {
+    font-size: 1.3em; }
+  .main-landing-page .container img {
+    width: 25%; } }
+
+/* Larger than Desktop HD */
+/* UX - User Experience */
+/* Mobile first queries */
+.ux {
+  background: #E94444; }
+  .ux .placeholder-height {
+    height: 100px; }
+  .ux .container {
+    text-align: center; }
+    .ux .container p {
+      font-size: 0.8em;
+      margin-bottom: 20px; }
+    .ux .container .screen h5 {
+      margin-bottom: 10px; }
+    .ux .container .screen img {
+      width: 70%;
+      margin-bottom: 15px; }
+
+/* Larger than mobile */
+/* Larger than phablet */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
 @media screen and (max-width: 480px) {
   body {
     overflow-x: hidden; } }
