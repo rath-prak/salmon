@@ -384,7 +384,7 @@ hr {
     .ux .container .screen h5 {
       margin-bottom: 10px; }
     .ux .container .screen img {
-      width: 70%;
+      width: 90%;
       margin-bottom: 15px; }
 
 /* Larger than mobile */
@@ -397,7 +397,7 @@ hr {
     .ux .container .screen {
       display: inline-block; }
       .ux .container .screen img {
-        width: 70%; } }
+        width: 90%; } }
 
 /* Larger than phablet */
 /* Larger than tablet */
@@ -408,7 +408,9 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%); }
     .ux .container .screen {
-      width: 21.25%; } }
+      width: 21.25%; }
+    .ux .container .screen:first-child {
+      margin-left: 0; } }
 
 /* Larger than desktop */
 /* Larger than Desktop HD */
