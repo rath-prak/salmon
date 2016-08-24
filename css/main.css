@@ -114,35 +114,6 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
-/* HOME */
-.main-landing-page {
-  background: #2b2769; }
-  .main-landing-page h1 {
-    font-family: Gotham_black, sans-serif;
-    font-size: 60px;
-    line-height: 98%;
-    margin-bottom: 10px;
-    text-transform: uppercase; }
-  .main-landing-page h1, .main-landing-page p {
-    color: #E94444; }
-  .main-landing-page p {
-    color: #fff;
-    font-size: 18px;
-    margin-top: 0px;
-    font-family: Gotham_medium, sans-serif; }
-
-/* INTERACTIVE DESIGN */
-/* UX/UI */
-.ux-ui {
-  text-align: center; }
-  .ux-ui h5 {
-    font-family: Gotham_medium, sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 0; }
-  .ux-ui p {
-    font-size: 0.8em;
-    margin-bottom: 30px; }
-
 .btn {
   border-radius: 5px;
   background: transparent;
@@ -306,16 +277,15 @@ hr {
 .relative {
   position: relative; }
 
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
 /* HOME */
 /* INTERACTIVE DESIGN */
-.design {
-  background: #312c32; }
-  .design #bison-logo {
-    width: 70%;
-    fill: transparent;
-    stroke: #fff;
-    transform: translateY(15px); }
-
 /* PROTOTYPE */
 /* GRAPHIC DESIGN */
 /* PHOTOGRAPHY */
@@ -324,22 +294,19 @@ hr {
 /* Mobile first queries */
 .main-landing-page {
   background: #2b2769; }
-  .main-landing-page .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .main-landing-page .container img {
-      width: 50%; }
+  .main-landing-page .container img {
+    width: 50%; }
   .main-landing-page h1, .main-landing-page p {
     color: #E94444; }
   .main-landing-page h1 {
     font-size: 1.5em;
-    margin: 10px; }
+    margin: 10px;
+    font-family: Gotham_black, sans-serif;
+    text-transform: uppercase; }
   .main-landing-page p {
     font-size: 0.9em;
-    margin: 0 20px 20px; }
+    margin: 0 20px 20px;
+    font-family: Gotham_medium, sans-serif; }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -382,7 +349,9 @@ hr {
       font-size: 0.8em;
       margin-bottom: 20px; }
     .ux .container .screen h5 {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-family: Gotham_medium, sans-serif; }
     .ux .container .screen img {
       width: 90%;
       margin-bottom: 15px; }
@@ -402,16 +371,26 @@ hr {
 /* Larger than phablet */
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .ux .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .ux .container .screen {
-      width: 21.25%; }
-    .ux .container .screen:first-child {
-      margin-left: 0; } }
+  .ux .container .screen {
+    width: 21.25%; }
+  .ux .container .screen:first-child {
+    margin-left: 0; } }
 
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/* Interactiive */
+/* Mobile first queries */
+.interactive {
+  background: #1D2831; }
+  .interactive #bison-logo {
+    width: 70%;
+    fill: transparent;
+    stroke: #0176EA;
+    transform: translateY(15px); }
+
+/* Larger than mobile */
+/* Larger than phablet */
+/* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
 @media screen and (max-width: 480px) {

@@ -46,7 +46,7 @@ $(document).ready(function(){
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'design', 'ux', 'prototype', 'photography'],
+    anchors: ['home', 'interactive', 'ux', 'prototype', 'photography'],
     setResponsive: true,
     // responsiveHeight: 737,
 
