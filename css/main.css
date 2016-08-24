@@ -284,6 +284,17 @@ hr {
   transform: translate(-50%, -50%);
   text-align: center; }
 
+/* Homepage - pulsing button */
+.pulse {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px; }
+  .pulse .pulse-button {
+    stroke: #E94444; }
+
 /* HOME */
 /* INTERACTIVE DESIGN */
 /* PROTOTYPE */

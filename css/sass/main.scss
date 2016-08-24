@@ -10,6 +10,7 @@
 @import "components/buttons";
 @import "components/nav";
 @import "components/other";
+@import "components/animation";
 
 // Specific project styles, add any section specific sass modules here
 @import "pages/layout";
@@ -17,6 +18,7 @@
 @import "pages/ux";
 @import "pages/interactive";
 @import "pages/prototype";
+
 
 // Additional styles to think about
 @import "base/responsive";
