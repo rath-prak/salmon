@@ -93,11 +93,7 @@ $(document).ready(function(){
   * PULSE ANIMATION
   */
 
-  $(document).on('click', '.pulse', function(){
-    $.fn.fullpage.moveSectionDown();
-  });
-
-  TweenMax.to('.pulse-button circle:nth-child(1)', 2, {
+  TweenMax.to('.pulse-button circle:nth-child(1)', 4, {
     attr: {
       r: 25,
       "stroke-width": 1,
@@ -108,7 +104,7 @@ $(document).ready(function(){
     delay: 1
     });
 
-  TweenMax.to('.pulse-button circle:nth-child(2)', 2, {
+  TweenMax.to('.pulse-button circle:nth-child(2)', 4, {
     attr: {
       r: 25,
       "stroke-width": 1,
@@ -118,7 +114,7 @@ $(document).ready(function(){
     repeat: -1
     });
 
-  TweenMax.to('.pulse-button circle:nth-child(3)', 1.5, {
+  TweenMax.to('.pulse-button circle:nth-child(3)', 2, {
     attr: {
       r: 2
     },
