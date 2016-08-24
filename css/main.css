@@ -318,6 +318,8 @@ hr {
     font-size: 0.9em;
     margin: 0 20px 20px;
     font-family: Gotham_medium, sans-serif; }
+  .main-landing-page .social-main {
+    visibility: hidden; }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -345,7 +347,23 @@ hr {
   .main-landing-page p {
     font-size: 1.3em; }
   .main-landing-page .container img {
-    width: 25%; } }
+    width: 25%; }
+  .main-landing-page .social-main {
+    visibility: visible;
+    position: absolute;
+    right: 2%;
+    bottom: 2%; }
+    .main-landing-page .social-main .contact,
+    .main-landing-page .social-main .contact-item {
+      text-transform: uppercase;
+      font-family: Gotham_thin, sans-serif;
+      font-size: 14px;
+      color: #E94444;
+      margin-left: 5px; }
+    .main-landing-page .social-main .contact {
+      margin-right: 5px; }
+    .main-landing-page .social-main .contact-item:hover {
+      color: #fff; } }
 
 /* Larger than Desktop HD */
 /* UX - User Experience */
