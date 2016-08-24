@@ -53,7 +53,7 @@ $(document).ready(function(){
     // responsiveHeight: 737,
 
     afterLoad: function(anchorLink, index) {
-      if (index == 2 || index == 3) {
+      if (index == 3 || index == 4) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#fff');
@@ -64,8 +64,24 @@ $(document).ready(function(){
         $('.menu-bar').css('background', '#E94444');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
       }
+      if (index == 2) {
+        var interactiveHeading = $('#interactive-heading');
+        var interactivePara = $('#interactive-para');
 
-      bison2();
+        TweenMax.from(interactiveHeading, 2, {
+          opacity: 0,
+          y: '-30px',
+          ease: Power2.easeOut
+        });
+        TweenMax.from(interactivePara, 2, {
+          opacity: 0,
+          y: '30px',
+          ease: Power2.easeOut
+        });
+
+        // bison2();
+      }
+      
 
     },
 

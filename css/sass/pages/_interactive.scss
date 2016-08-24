@@ -3,12 +3,13 @@
 
 /* Mobile first queries */
 .interactive {
-	background: $warm-grey;
+	background: $dark-blue;
 	#bison-logo {
 	  width: 70%;
 	  fill: transparent;
-	  stroke: $cobolt-blue;
+	  stroke: $salmon;
 	  transform: translateY(15px);
+	  display: none;
 	}
 }
 
@@ -30,7 +31,22 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-
+		.container {
+		h1, p {
+			color: $salmon;
+		}
+		h1 {
+			font-size: 4.2em;
+			font-family: $bold_avant;
+			line-height: 90%;
+		}
+		p {
+			font-size: 1.1em;
+			font-family: $medium_avant;
+			text-transform: uppercase;
+			line-height: 105%;
+		}
+	}
 }
 
 /* Larger than Desktop HD */
