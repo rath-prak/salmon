@@ -22,6 +22,8 @@ $(document).ready(function(){
   $('#fullpage').fullpage({
   //Navigation
     menu: '#myMenu',
+    slideSelector: '.horizontal',
+    scrollHorizontally: true,
     lockAnchors: false,
     navigation: true,
     navigationPosition: 'right',

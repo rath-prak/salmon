@@ -398,6 +398,16 @@ hr {
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+/* UX - Prototype */
+/* Mobile first queries */
+.prototype {
+  background: #0176EA; }
+
+/* Larger than mobile */
+/* Larger than phablet */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
 @media screen and (max-width: 480px) {
   body {
     overflow-x: hidden; } }
