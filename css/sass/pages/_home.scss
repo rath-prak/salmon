@@ -76,9 +76,21 @@
 		p {
 			font-size: 1.3em;
 		}
-		.container img {
-			width: 25%;
+		// .container img {
+		// 	width: 25%;
+		// }
+
+		#salmon-fish {
+			// background: green;
+			position: relative;
+			#salmon-fin {
+				position: absolute;
+				width: 20px;
+				left: 450px;
+				top: 83px;
 		}
+	}
+
 		.social-main {
 			visibility: visible;
 			position: absolute;

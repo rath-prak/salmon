@@ -353,8 +353,13 @@ hr {
     font-size: 4em; }
   .main-landing-page p {
     font-size: 1.3em; }
-  .main-landing-page .container img {
-    width: 25%; }
+  .main-landing-page #salmon-fish {
+    position: relative; }
+    .main-landing-page #salmon-fish #salmon-fin {
+      position: absolute;
+      width: 20px;
+      left: 450px;
+      top: 83px; }
   .main-landing-page .social-main {
     visibility: visible;
     position: absolute;
@@ -445,7 +450,11 @@ hr {
     font-size: 1.1em;
     font-family: avant_medium, sans-serif;
     text-transform: uppercase;
-    line-height: 105%; } }
+    line-height: 105%; }
+  .container #interactive-heading {
+    opacity: 0; }
+  .container #interactive-para {
+    opacity: 0; } }
 
 /* Larger than Desktop HD */
 /* UX - Prototype */

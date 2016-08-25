@@ -50,9 +50,8 @@ $(document).ready(function(){
     verticalCentered: false,
     anchors: ['home', 'interactive', 'ux', 'prototype', 'photography'],
     setResponsive: true,
-    // responsiveHeight: 737,
-
     afterLoad: function(anchorLink, index) {
+      var loadedSection = $(this);
       if (index == 3 || index == 4) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
@@ -65,29 +64,43 @@ $(document).ready(function(){
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
       }
       if (index == 2) {
-        var interactiveHeading = $('#interactive-heading');
-        var interactivePara = $('#interactive-para');
-
-        TweenMax.from(interactiveHeading, 2, {
-          opacity: 0,
-          y: '-30px',
-          ease: Power2.easeOut
-        });
-        TweenMax.from(interactivePara, 2, {
-          opacity: 0,
-          y: '30px',
-          ease: Power2.easeOut
-        });
-
+        fadeInteractive();
         // bison2();
+        // alert("this is calling")
       }
-      
-
-    },
+    }
 
     // end afterLoad function
 
   });
+  /**
+  * FADE IN TEXT FOR INTERACTIVE PAGE
+  */
+
+    var interactiveHeading = $('#interactive-heading');
+    var interactivePara = $('#interactive-para');
+
+    var fadeInteractive = function() {
+      var interTl = new TimelineMax();
+
+      interTl.to(interactiveHeading, 2, {
+        opacity: 1,
+        y: '-30px',
+        delay: 0.5,
+        ease: Power4.easeOut
+      })
+      .to(interactivePara, 2, {
+        opacity: 1,
+        y: '-30px',
+        delay: 1,
+        ease: Power4.easeOut
+      });
+    }
+
+
+
+
+
 
     var bison2 = function (){
       var bison = new Vivus('bison-logo',{
@@ -108,13 +121,20 @@ $(document).ready(function(){
   /**
   * RED SALMON ANIMATION
   */
-  var salmonLogo = $('#salmon-logo');
+  var salmonLogo = $('#salmon-fish');
+  var finn = $('#salmon-fin');
 
   salmonTl = new TimelineMax({repeat:-1});
   salmonTl.to(salmonLogo, 5, {
     bezier:[{x:10, y:11}, {x:0, y:20}, {x:-10, y:10}, {x:0, y:0}], 
     ease:Linear.easeNone
   });
+
+    TweenMax.staggerTo(finn, 1, {
+        rotationY: -30, 
+        repeat: -1, 
+        yoyo: true
+    });
 
   /**
   * PULSE ANIMATION
