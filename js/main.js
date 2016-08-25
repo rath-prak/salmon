@@ -63,19 +63,22 @@ $(document).ready(function(){
         $('.menu-bar').css('background', '#E94444');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
       }
-      if (index == 2) {
-        fadeInteractive();
-        // bison2();
-        // alert("this is calling")
-      }
+        if (index == 2) {
+          bison2();
+        }
     }
 
-    // end afterLoad function
 
-  });
+  }); //end of fullpage.js
+
   /**
   * FADE IN TEXT FOR INTERACTIVE PAGE
   */
+
+  var hello = function(){
+    console.log('hello')
+  }
+
 
     var interactiveHeading = $('#interactive-heading');
     var interactivePara = $('#interactive-para');
@@ -97,10 +100,9 @@ $(document).ready(function(){
       });
     }
 
-
-
-
-
+  /**
+  * VIVIUS
+  */
 
     var bison2 = function (){
       var bison = new Vivus('bison-logo',{

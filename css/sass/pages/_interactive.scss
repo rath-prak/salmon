@@ -9,7 +9,7 @@
 	  fill: transparent;
 	  stroke: $salmon;
 	  transform: translateY(15px);
-	  display: none;
+	  // display: none;
 	}
 }
 
@@ -46,12 +46,12 @@
 			text-transform: uppercase;
 			line-height: 105%;
 		}
-		#interactive-heading {
-			opacity: 0;
-		}
-		#interactive-para {
-			opacity: 0;
-		}
+		// #interactive-heading {
+		// 	opacity: 0;
+		// }
+		// #interactive-para {
+		// 	opacity: 0;
+		// }
 	}
 }
 
