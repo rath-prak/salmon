@@ -63,7 +63,7 @@ $(document).ready(function(){
         $('.menu-bar').css('background', '#E94444');
         $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
       }
-        if (index == 2) {
+      if (index == 2) {
           bison2();
         }
     }
@@ -83,8 +83,8 @@ $(document).ready(function(){
     var interactiveHeading = $('#interactive-heading');
     var interactivePara = $('#interactive-para');
 
-    var fadeInteractive = function() {
-      var interTl = new TimelineMax();
+  
+      var interTl = new TimelineMax({paused:true});
 
       interTl.to(interactiveHeading, 2, {
         opacity: 1,
@@ -95,10 +95,9 @@ $(document).ready(function(){
       .to(interactivePara, 2, {
         opacity: 1,
         y: '-30px',
-        delay: 1,
         ease: Power4.easeOut
       });
-    }
+
 
   /**
   * VIVIUS
