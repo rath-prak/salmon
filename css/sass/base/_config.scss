@@ -55,3 +55,6 @@ $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
 
 /* global background color */
+html {
+	background: $dark-blue;
+}

@@ -65,8 +65,17 @@ $(document).ready(function(){
       }
       if (index == 2) {
           bison2();
+          fadeInText();
         }
-    }
+    }, 
+    // onLeave: function(index, nextIndex, direction){
+    //         var leavingSection = $(this);
+
+    //         //after leaving section 2
+    //         if(index == 2 && direction =='down' || direction == 'up'){
+    //             // fadeInTextReset();
+    //         }
+    //       }
 
 
   }); //end of fullpage.js
@@ -83,20 +92,33 @@ $(document).ready(function(){
     var interactiveHeading = $('#interactive-heading');
     var interactivePara = $('#interactive-para');
 
-  
-      var interTl = new TimelineMax({paused:true});
+  function fadeInText (){
+      var interTl = new TimelineMax();
 
-      interTl.to(interactiveHeading, 2, {
+      interTl.from(interactiveHeading, 2, {
         opacity: 1,
         y: '-30px',
-        delay: 0.5,
         ease: Power4.easeOut
       })
-      .to(interactivePara, 2, {
+      .from(interactivePara, 1, {
         opacity: 1,
         y: '-30px',
         ease: Power4.easeOut
       });
+  }
+
+  // function fadeInTextReset (){
+  //   var interTlReset = new TimelineMax();
+
+  //     interTlReset.to(interactiveHeading, 1, {
+  //       opacity: 0,
+  //       y: '0',
+  //     })
+  //     .to(interactivePara, 1, {
+  //       opacity: 1,
+  //       y: '0',
+  //     });
+  // }
 
 
   /**

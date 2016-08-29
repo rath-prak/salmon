@@ -4,6 +4,9 @@
 /* project colors */
 /* util colors */
 /* global background color */
+html {
+  background: #2b2769; }
+
 .clearfix,
 .group {
   zoom: 1; }
@@ -381,7 +384,7 @@ hr {
 /* UX - User Experience */
 /* Mobile first queries */
 .ux {
-  background: #E94444; }
+  background: #2b2769; }
   .ux .placeholder-height {
     height: 100px; }
   .ux .container {
@@ -454,9 +457,6 @@ hr {
 /* Larger than Desktop HD */
 /* UX - Prototype */
 /* Mobile first queries */
-.prototype {
-  background: #0176EA; }
-
 /* Larger than mobile */
 /* Larger than phablet */
 /* Larger than tablet */
