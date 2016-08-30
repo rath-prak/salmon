@@ -12,6 +12,10 @@
 
 	.container {
 		text-align: center;
+	  h1,
+	  p {
+	  	color: $reverse;
+	  }
 		p {
 			font-size: 0.8em;
 			margin-bottom: 20px;
@@ -61,18 +65,44 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
 	.ux {
-		.container {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-			.screen {
-				width: 21.25%;
-			}
-			.screen:first-child{
-				margin-left: 0;
+		.ux-slide-01 {
+			position: relative;
+			.container {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+				img {
+					width: 25%;
+					float: left;
+					margin-right: 30px;
+				}
+				.ux-slide01-text {
+					margin-top: 100px;
+					text-align: left;
+					p {
+					text-transform: none;
+					font-family: $body_avant;
+					line-height: 150%;
+					}
+				}
 			}
 		}
+		.ux-slide-02 {
+			position: relative;
+			.container {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+				.screen {
+					width: 21.25%;
+				}
+				.screen:first-child{
+					margin-left: 0;
+				}
+			}
+		}	//end of slide 2
 	}
 }
 

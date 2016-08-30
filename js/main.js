@@ -40,7 +40,7 @@ $(document).ready(function(){
     easingcss3: 'ease',
     loopBottom: false,
     loopTop: false,
-    loopHorizontal: true,
+    loopHorizontal: false,
     continuousVertical: false,
     normalScrollElements: '#element1, .element2',
     scrollOverflow: true,
@@ -56,16 +56,15 @@ $(document).ready(function(){
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#fff');
-        $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#fff');
+        $('.watermark-text, .contact-item').css('color', '#fff');
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo'); 
         $('.menu-bar').css('background', '#E94444');
-        $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#E94444');  
+        $('.watermark-text, .contact-item').css('color', '#E94444');
       }
       if (index == 2) {
-          bison2();
-          fadeInText();
+            fadeInText();
         }
     }, 
     // onLeave: function(index, nextIndex, direction){
@@ -95,14 +94,14 @@ $(document).ready(function(){
   function fadeInText (){
       var interTl = new TimelineMax();
 
-      interTl.from(interactiveHeading, 2, {
-        opacity: 1,
-        y: '-30px',
+      interTl.from(interactiveHeading, 1, {
+        opacity: 0,
+        y: '90px',
         ease: Power4.easeOut
       })
-      .from(interactivePara, 1, {
-        opacity: 1,
-        y: '-30px',
+      .from(interactivePara, 0.5, {
+        opacity: 0,
+        y: '90px',
         ease: Power4.easeOut
       });
   }

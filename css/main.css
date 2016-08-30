@@ -406,6 +406,9 @@ hr {
     height: 100px; }
   .ux .container {
     text-align: center; }
+    .ux .container h1,
+    .ux .container p {
+      color: #fff; }
     .ux .container p {
       font-size: 0.8em;
       margin-bottom: 20px; }
@@ -432,15 +435,35 @@ hr {
 /* Larger than phablet */
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .ux .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .ux .container .screen {
-      width: 21.25%; }
-    .ux .container .screen:first-child {
-      margin-left: 0; } }
+  .ux .ux-slide-01 {
+    position: relative; }
+    .ux .ux-slide-01 .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .ux .ux-slide-01 .container img {
+        width: 25%;
+        float: left;
+        margin-right: 30px; }
+      .ux .ux-slide-01 .container .ux-slide01-text {
+        margin-top: 100px;
+        text-align: left; }
+        .ux .ux-slide-01 .container .ux-slide01-text p {
+          text-transform: none;
+          font-family: avant_book, sans-serif;
+          line-height: 150%; }
+  .ux .ux-slide-02 {
+    position: relative; }
+    .ux .ux-slide-02 .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .ux .ux-slide-02 .container .screen {
+        width: 21.25%; }
+      .ux .ux-slide-02 .container .screen:first-child {
+        margin-left: 0; } }
 
 /* Larger than desktop */
 /* Larger than Desktop HD */
@@ -452,7 +475,8 @@ hr {
     width: 70%;
     fill: transparent;
     stroke: #E94444;
-    transform: translateY(15px); }
+    transform: translateY(15px);
+    display: none; }
 
 /* Larger than mobile */
 /* Larger than phablet */
@@ -473,10 +497,6 @@ hr {
 
 /* Larger than Desktop HD */
 /* UX - Prototype */
-.fp-controlArrow.fp-next,
-.fp-controlArrow.fp-prev {
-  display: none; }
-
 /* Mobile first queries */
 /* Larger than mobile */
 /* Larger than phablet */
