@@ -248,6 +248,39 @@ nav {
       margin-bottom: 6px;
       transform: translateX(10px); }
 
+/* personal text for all pages */
+.watermark-text {
+  font-size: .4em;
+  color: #E94444;
+  font-family: avant_book, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  z-index: 100; }
+  .watermark-text .rath {
+    font-family: avant_bold, sans-serif; }
+
+/* social media bar */
+.social-main {
+  z-index: 101;
+  visibility: visible;
+  position: absolute;
+  right: 2%;
+  bottom: 2%; }
+  .social-main .contact,
+  .social-main .contact-item {
+    text-transform: uppercase;
+    font-family: Gotham_thin, sans-serif;
+    font-size: 14px;
+    color: #E94444;
+    margin-left: 5px; }
+  .social-main .contact {
+    margin-right: 5px; }
+  .social-main .contact-item:hover {
+    color: #fff; }
+
 /*sidebar navigation*/
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: #E94444;
@@ -362,29 +395,13 @@ hr {
       position: absolute;
       width: 20px;
       left: 450px;
-      top: 83px; }
-  .main-landing-page .social-main {
-    visibility: visible;
-    position: absolute;
-    right: 2%;
-    bottom: 2%; }
-    .main-landing-page .social-main .contact,
-    .main-landing-page .social-main .contact-item {
-      text-transform: uppercase;
-      font-family: Gotham_thin, sans-serif;
-      font-size: 14px;
-      color: #E94444;
-      margin-left: 5px; }
-    .main-landing-page .social-main .contact {
-      margin-right: 5px; }
-    .main-landing-page .social-main .contact-item:hover {
-      color: #fff; } }
+      top: 83px; } }
 
 /* Larger than Desktop HD */
 /* UX - User Experience */
 /* Mobile first queries */
 .ux {
-  background: #2b2769; }
+  background: #E94444; }
   .ux .placeholder-height {
     height: 100px; }
   .ux .container {
@@ -456,6 +473,10 @@ hr {
 
 /* Larger than Desktop HD */
 /* UX - Prototype */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+  display: none; }
+
 /* Mobile first queries */
 /* Larger than mobile */
 /* Larger than phablet */

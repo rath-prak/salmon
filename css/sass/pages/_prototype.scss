@@ -1,6 +1,11 @@
  /* UX - Prototype */
 
 
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+	display: none;
+}
+
 /* Mobile first queries */
 
 .prototype {

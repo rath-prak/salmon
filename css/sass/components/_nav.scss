@@ -75,6 +75,48 @@ nav {
 
 }
 
+/* personal text for all pages */
+.watermark-text {
+	font-size: .4em;
+	color: $salmon;
+	font-family: $body_avant;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+
+	position: absolute;
+	left: 2%;
+	bottom: 2%;
+	z-index: 100; 
+	.rath {
+		font-family: $bold_avant;
+
+	}
+}
+
+/* social media bar */
+.social-main {
+	z-index: 101;
+	visibility: visible;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	.contact,
+	.contact-item {
+		text-transform: uppercase;
+		font-family: $body;
+		font-size: 14px;
+		color: $salmon;
+		margin-left: 5px;
+	}
+	.contact {
+		margin-right: 5px;
+	}
+	.contact-item:hover {
+		color: $reverse;
+	}
+}
+
+
 /*sidebar navigation*/
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
