@@ -66,28 +66,32 @@
 @media (min-width: 750px) {
 	.ux {
 		.ux-slide-01 {
-			position: relative;
-			.container {
-			  position: absolute;
-			  top: 50%;
-			  left: 50%;
-			  transform: translate(-50%, -50%);
-				img {
-					width: 25%;
-					float: left;
-					margin-right: 30px;
+			.wrapper-container {
+			  display: flex;
+			  background: blue;
+			} // end of wrapper
+				.flex {
+					height: 500px;
+					min-width: 100px;
+				}
+				.ux-image {
+					background: yellow;
+					flex-grow: 1;
 				}
 				.ux-slide01-text {
-					margin-top: 100px;
+					flex-grow: 2;
+					background: green;
 					text-align: left;
-					p {
-					text-transform: none;
-					font-family: $body_avant;
-					line-height: 150%;
+						p {
+						text-transform: none;
+						font-family: $body_avant;
+						line-height: 150%;
+						}
 					}
-				}
-			}
-		}
+		} // end of slide 01
+	}  // end of section
+
+
 		.ux-slide-02 {
 			position: relative;
 			.container {
@@ -103,8 +107,7 @@
 				}
 			}
 		}	//end of slide 2
-	}
-}
+	} // enf of media query
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
