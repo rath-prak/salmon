@@ -286,6 +286,7 @@ nav {
   background: #E94444;
   display: none; }
 
+/*slide navigation*/
 * {
   box-sizing: border-box !important; }
 
@@ -435,33 +436,41 @@ hr {
 /* Larger than phablet */
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .ux .ux-slide-01 .wrapper-container {
+  .ux-slide-01 {
+    display: flex; }
+  .wrapper-container {
     display: flex;
-    background: blue; }
-  .ux .ux-slide-01 .flex {
-    height: 500px;
-    min-width: 100px; }
-  .ux .ux-slide-01 .ux-image {
-    background: yellow;
-    flex-grow: 1; }
-  .ux .ux-slide-01 .ux-slide01-text {
-    flex-grow: 2;
-    background: green;
-    text-align: left; }
-    .ux .ux-slide-01 .ux-slide01-text p {
-      text-transform: none;
-      font-family: avant_book, sans-serif;
-      line-height: 150%; }
-  .ux-slide-02 {
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center; }
+    .wrapper-container .ux-image {
+      flex: 1 1 5%; }
+      .wrapper-container .ux-image img {
+        width: 100%; }
+    .wrapper-container .ux-slide01-text {
+      margin-left: 20px;
+      flex: 1 1 50%; }
+      .wrapper-container .ux-slide01-text h1 {
+        font-size: 3em; }
+      .wrapper-container .ux-slide01-text p {
+        font-size: 0.8em; }
+      .wrapper-container .ux-slide01-text button {
+        width: 120px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 20px; }
+  .ux .ux-slide-02 {
     position: relative; }
-    .ux-slide-02 .container {
+    .ux .ux-slide-02 .container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      .ux-slide-02 .container .screen {
+      .ux .ux-slide-02 .container .screen {
         width: 21.25%; }
-      .ux-slide-02 .container .screen:first-child {
+      .ux .ux-slide-02 .container .screen:first-child {
         margin-left: 0; } }
 
 /* Larger than desktop */
@@ -496,6 +505,10 @@ hr {
 
 /* Larger than Desktop HD */
 /* UX - Prototype */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+  display: none; }
+
 /* Mobile first queries */
 /* Larger than mobile */
 /* Larger than phablet */

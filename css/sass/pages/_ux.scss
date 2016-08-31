@@ -64,33 +64,45 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-	.ux {
-		.ux-slide-01 {
-			.wrapper-container {
-			  display: flex;
-			  background: blue;
-			} // end of wrapper
-				.flex {
-					height: 500px;
-					min-width: 100px;
-				}
-				.ux-image {
-					background: yellow;
-					flex-grow: 1;
-				}
-				.ux-slide01-text {
-					flex-grow: 2;
-					background: green;
-					text-align: left;
-						p {
-						text-transform: none;
-						font-family: $body_avant;
-						line-height: 150%;
-						}
-					}
-		} // end of slide 01
-	}  // end of section
 
+// ###########################
+		.ux-slide-01 {
+			display: flex;
+		}
+		.wrapper-container {
+			display: flex;
+			width: 960px;
+			margin: 0 auto;
+			justify-content: space-between;
+			align-items: center;
+			.ux-image{
+        flex: 1 1 5%;
+        img {
+         width: 100%;
+        }
+    	}
+	  	.ux-slide01-text {
+	  		margin-left: 20px;
+	  		flex: 1 1 50%;
+	  		h1 {
+	  			font-size: 3em;
+	  		}
+	  		p {
+	  			font-size: 0.8em;
+	  		}
+	  		button {
+	  		width: 120px;
+	  		height: 40px;
+	  		background: rgba(255,255,255, 0.1);
+	  		border: none;
+	  		border-radius: 20px;
+	  		} // remove this ugly button after
+	  	}
+
+		} 
+// ###########################		
+
+	.ux {
 
 		.ux-slide-02 {
 			position: relative;
@@ -108,7 +120,7 @@
 			}
 		}	//end of slide 2
 	} // enf of media query
-
+}
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
@@ -116,4 +128,34 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+
+
+// @media screen and (min-width: 40em) {
+    
+//     .outer-wrap {
+//         display: flex;
+//         flex-direction: column;
+//     }
+    
+//     .content {
+//         display: flex;
+//     }
+    
+//     .main-area {
+//         flex: 1 1 auto;
+//     }
+    
+//     .post-content {
+//         max-width: 40em;
+//         margin: 0 auto;
+//     }
+    
+//     .sidebar {
+//         flex: 0 0 12em;
+//     }
+    
+// }
 

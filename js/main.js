@@ -83,10 +83,6 @@ $(document).ready(function(){
   * FADE IN TEXT FOR INTERACTIVE PAGE
   */
 
-  var hello = function(){
-    console.log('hello')
-  }
-
 
     var interactiveHeading = $('#interactive-heading');
     var interactivePara = $('#interactive-para');
@@ -190,6 +186,14 @@ $(document).ready(function(){
     repeat: -1,
     yoyo: true,
     ease: Power2.easeOut
+  });
+
+  /**
+  * UX NEXT SLIDE BUTTON
+  */
+
+  $('.ux-next-slide01-button').click(function() {
+    $.fn.fullpage.moveSlideRight();
   });
 
 
