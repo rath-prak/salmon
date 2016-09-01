@@ -401,6 +401,20 @@ hr {
 /* Larger than Desktop HD */
 /* UX - User Experience */
 /* Mobile first queries */
+.ux-slide-01 .wrapper-container {
+  text-align: center; }
+  .ux-slide-01 .wrapper-container .ux-image {
+    width: 45%;
+    margin: 100px auto 0; }
+    .ux-slide-01 .wrapper-container .ux-image img {
+      width: 100%; }
+  .ux-slide-01 .wrapper-container .ux-slide01-text button {
+    width: 120px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px; }
+
 .ux {
   background: #E94444; }
   .ux .placeholder-height {
@@ -435,7 +449,7 @@ hr {
 
 /* Larger than phablet */
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .ux-slide-01 {
     display: flex; }
   .wrapper-container {
@@ -445,16 +459,17 @@ hr {
     justify-content: space-between;
     align-items: center; }
     .wrapper-container .ux-image {
-      flex: 1 1 5%; }
+      flex: 1 1 1%; }
       .wrapper-container .ux-image img {
         width: 100%; }
     .wrapper-container .ux-slide01-text {
+      text-align: left;
       margin-left: 20px;
       flex: 1 1 50%; }
       .wrapper-container .ux-slide01-text h1 {
         font-size: 3em; }
       .wrapper-container .ux-slide01-text p {
-        font-size: 0.8em; }
+        font-size: 1em; }
       .wrapper-container .ux-slide01-text button {
         width: 120px;
         height: 40px;

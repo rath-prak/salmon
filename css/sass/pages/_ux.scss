@@ -3,6 +3,31 @@
 
 /* Mobile first queries */
 
+.ux-slide-01 {
+		.wrapper-container {
+			text-align: center;
+			.ux-image{
+        width: 45%;
+        margin: 100px auto 0;
+        img {
+         width: 100%;
+        }
+    	}
+	  	.ux-slide01-text {
+	  		button {
+	  		width: 120px;
+	  		height: 40px;
+	  		background: rgba(255,255,255, 0.1);
+	  		border: none;
+	  		border-radius: 20px;
+	  		} // remove this ugly button after
+	  	}
+
+		}
+
+}
+
+
 .ux {
 	background: $salmon;
 
@@ -20,7 +45,6 @@
 			font-size: 0.8em;
 			margin-bottom: 20px;
 		}
-
 		.screen {
 			h5 {
 				margin-bottom: 10px;
@@ -33,8 +57,7 @@
 			}
 		}
 	}
-
-}
+} 
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -63,7 +86,7 @@
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media screen and (min-width: 750px) {
 
 // ###########################
 		.ux-slide-01 {
@@ -76,19 +99,20 @@
 			justify-content: space-between;
 			align-items: center;
 			.ux-image{
-        flex: 1 1 5%;
+        flex: 1 1 1%;
         img {
          width: 100%;
         }
     	}
 	  	.ux-slide01-text {
+	  		text-align: left;
 	  		margin-left: 20px;
 	  		flex: 1 1 50%;
 	  		h1 {
 	  			font-size: 3em;
 	  		}
 	  		p {
-	  			font-size: 0.8em;
+	  			font-size: 1em;
 	  		}
 	  		button {
 	  		width: 120px;
