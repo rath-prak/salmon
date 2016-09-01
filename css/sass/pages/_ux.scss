@@ -1,69 +1,67 @@
- /* UX - User Experience */
+/* USER EXPERIENCE SECTION
+   ========================================================================== */
 
-
-/* Mobile first queries */
-
-.ux-slide-01 {
-		.wrapper-container {
-			text-align: center;
-			.ux-image{
-        width: 45%;
-        margin: 100px auto 0;
-        img {
-         width: 100%;
-        }
-    	}
-	  	.ux-slide01-text {
-	  		button {
-	  		width: 120px;
-	  		height: 40px;
-	  		background: rgba(255,255,255, 0.1);
-	  		border: none;
-	  		border-radius: 20px;
-	  		} // remove this ugly button after
-	  	}
-
-		}
-
-}
-
+/**
+ * MOBILE FIRST QUERIES
+ */
 
 .ux {
+	text-align: center;
 	background: $salmon;
+	h1 {
+		font-size: 1.5em;
+		font-family: $medium;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 0.7em;
+		margin: 0 1em 2em;
+	}
+}
 
-	.placeholder-height {
-			height: 100px;
-		}
+.ux-slide-01 {
+	.wrapper-container {
+		display: flex;
+		flex-direction: column;
+		.ux-image{
+      width: 35%;
+      margin: 100px auto 0;
+      img {
+       width: 100%;
+      }
+  	}
+	}
+}
 
+.placeholder-height {
+	height: 100px;
+}
+
+.ux-slide-02 {
 	.container {
-		text-align: center;
-	  h1,
-	  p {
-	  	color: $reverse;
-	  }
-		p {
-			font-size: 0.8em;
-			margin-bottom: 20px;
-		}
 		.screen {
 			h5 {
-				margin-bottom: 10px;
-				text-transform: uppercase;
-				font-family: $medium;
+			margin-bottom: 10px;		
 			}
 			img {
-				width: 70%;
-				margin-bottom: 15px;
+			width: 60%;
+			margin-bottom: 15px;
 			}
 		}
 	}
-} 
+}
+
+
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-	.ux {
+	
+	.ux-slide-01 {
+		// add styles
+	}
+
+	.ux-slide-02 {
 		.container {
-			text-align: center;
 			p {
 				font-size: 0.8em;
 				margin-bottom: 20px;
@@ -89,41 +87,56 @@
 @media screen and (min-width: 750px) {
 
 // ###########################
-		.ux-slide-01 {
-			display: flex;
-		}
-		.wrapper-container {
-			display: flex;
-			width: 960px;
-			margin: 0 auto;
-			justify-content: space-between;
-			align-items: center;
-			.ux-image{
-        flex: 1 1 1%;
-        img {
-         width: 100%;
-        }
-    	}
-	  	.ux-slide01-text {
-	  		text-align: left;
-	  		margin-left: 20px;
-	  		flex: 1 1 50%;
-	  		h1 {
-	  			font-size: 3em;
-	  		}
-	  		p {
-	  			font-size: 1em;
-	  		}
-	  		button {
-	  		width: 120px;
-	  		height: 40px;
-	  		background: rgba(255,255,255, 0.1);
-	  		border: none;
-	  		border-radius: 20px;
-	  		} // remove this ugly button after
-	  	}
+.ux-slide-01 {
+	display: flex;
+	.wrapper-container {
+		flex-direction: row;
+		max-width: 960px;
+		margin:  0 auto;
+		align-items: center;
+		.ux-image{
+			flex: 1;
+  	}
+  	.ux-slide01-text {
+  		flex: 3; 
+  	}
+	}
+}
 
-		} 
+	// .ux-slide-01 {
+	// 	display: flex;
+	// 	.wrapper-container {
+	// 		flex-direction: row;
+	// 		margin: 0 auto;
+	// 		justify-content: space-between;
+	// 		align-items: center;
+	// 			.ux-image{
+
+	// 				img {
+	// 				 width: 100%;
+	// 				}
+	// 			}
+	// 			.ux-slide01-text {
+	// 			text-align: left;
+	// 			margin-left: 20px;
+	// 			flex: 1 1 50%;
+	// 			h1 {
+	// 				font-size: 3em;
+	// 			}
+	// 			p {
+	// 				font-size: 1em;
+	// 			}
+	// 			button {
+	// 			width: 120px;
+	// 			height: 40px;
+	// 			background: rgba(255,255,255, 0.1);
+	// 			border: none;
+	// 			border-radius: 20px;
+	// 			} 
+	// 		}
+	// 	}
+	// }
+ 
 // ###########################		
 
 	.ux {

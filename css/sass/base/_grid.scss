@@ -15,15 +15,11 @@
   clear: both;
 }
 
-.row {
-  /*overflow: hidden;*/
-}
-
 .column {
   width: 100%;
   float: left;
   box-sizing: border-box;
-  // margin-left: 3%;
+
 }
 .column:first-child {
   margin-left: 1000px;
