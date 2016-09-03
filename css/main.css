@@ -438,28 +438,18 @@ hr {
     .ux-slide-01 .wrapper-container .ux-image img {
       width: 100%; }
 
-.placeholder-height {
+.placeholder {
   height: 100px; }
 
-.ux-slide-02 .container .screen h5 {
-  margin-bottom: 10px; }
-
-.ux-slide-02 .container .screen img {
-  width: 60%;
-  margin-bottom: 15px; }
-
-/* Larger than mobile */
-@media (min-width: 400px) {
-  .ux-slide-02 .container p {
-    font-size: 0.8em;
-    margin-bottom: 20px; }
-  .ux-slide-02 .container .screen {
-    display: inline-block; }
-    .ux-slide-02 .container .screen img {
-      width: 90%; } }
-
-/* Larger than phablet */
-/* Larger than tablet */
+/**
+ * LARGER THAN MOBILE
+ */
+/**
+ * LARGER THAN PHAMBLET
+ */
+/**
+ * LARGER THAN TABLET
+ */
 @media screen and (min-width: 750px) {
   .ux-slide-01 {
     display: flex; }
@@ -472,17 +462,25 @@ hr {
         flex: 1; }
       .ux-slide-01 .wrapper-container .ux-slide01-text {
         flex: 3; }
-  .ux .ux-slide-02 {
-    position: relative; }
-    .ux .ux-slide-02 .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      .ux .ux-slide-02 .container .screen {
-        width: 21.25%; }
-      .ux .ux-slide-02 .container .screen:first-child {
-        margin-left: 0; } }
+  .ux-slide-02 {
+    display: flex; }
+    .ux-slide-02 .wrapper-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 960px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .ux-slide-02 .wrapper-container .screens-container {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between; }
+      .ux-slide-02 .wrapper-container .screen {
+        flex: 0 1 20%; }
+        .ux-slide-02 .wrapper-container .screen img {
+          width: 100%; } }
 
 /* Larger than desktop */
 /* Larger than Desktop HD */
