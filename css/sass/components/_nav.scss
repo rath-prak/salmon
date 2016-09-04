@@ -4,8 +4,10 @@
 
 .logo {
 	position: fixed;
-	top: 10px;
+	top: 4%;
+	left: 2%;
 	z-index: 25;
+	margin: 0;
 		img {
 			width: 35%;
 		}
@@ -42,7 +44,8 @@ nav {
 	}
 }
 
-.main-nav-hide {
+.main-nav-hide, 
+.resume-page-hide {
 	display: none;
 }
 
@@ -52,8 +55,8 @@ nav {
 
 .navbar-toggle {
 	position: fixed;
-	top: 20px;
-	right: 20px;
+	top: 2%;
+	right: 2%;
 	z-index: 20;
 	cursor: pointer;
 
@@ -101,7 +104,7 @@ nav {
 }
 
 // **********
-@media (max-width: 400px) {
+@media (max-width: 550px) {
 	.watermark-text {
 		visibility: hidden;
 	}
@@ -117,7 +120,8 @@ nav {
 	right: 2%;
 	bottom: 2%;
 	.contact,
-	.contact-item {
+	.contact-item,
+	.resume-btn {
 		text-transform: uppercase;
 		font-family: $body;
 		font-size: 14px;
@@ -127,16 +131,25 @@ nav {
 	.contact {
 		margin-right: 5px;
 	}
-	.contact-item:hover {
-		color: $reverse;
+	.resume-btn {
+	font-family: $medium_avant;
+	cursor: pointer;
+	}
+	.resume-tube-separator {
+		font-family: $body_avant;
+		cursor: default;
 	}
 }
 // **********
-@media (max-width: 400px) {
+@media (max-width: 550px) {
 	.social-main {
 		visibility: hidden;
 	}
 }
+
+	
+
+
 
 /**
  * RIGHT VERTICAL NAV BAR

@@ -1,13 +1,19 @@
 $(document).ready(function(){
 
 // navigation
-  $('.navbar-toggle, nav').click(function(){
-    $('.navbar-toggle').toggleClass('navbar-on');
+  $('.navbar-toggle, nav').click(function() {
+    // $('.navbar-toggle').toggleClass('navbar-on');
     $('nav').fadeToggle();
     $('nav').removeClass('main-nav-hide');
   });
 
- // hamburger menu
+// resume-page  
+  $('.resume-btn').click(function() {
+    $('.resume-page').fadeToggle();
+    $('.resume-page').removeClass('resume-page-hide');
+  })
+
+// hamburger menu
     var bar = $('.menu-bar');
     var tl = new TimelineMax();
         tl.staggerTo(bar, 2, {
@@ -16,6 +22,8 @@ $(document).ready(function(){
         yoyo: true,
         ease: Linear.easeNone
     }, 0.5); 
+
+
 
 // initialize fullpage
 
