@@ -225,7 +225,7 @@ nav {
         color: inherit; }
 
 .main-nav-hide,
-.resume-page-hide {
+.about-page-hide {
   display: none; }
 
 /**
@@ -282,7 +282,7 @@ nav {
   bottom: 2%; }
   .social-main .contact,
   .social-main .contact-item,
-  .social-main .resume-btn {
+  .social-main .about-btn {
     text-transform: uppercase;
     font-family: Gotham_thin, sans-serif;
     font-size: 14px;
@@ -290,10 +290,10 @@ nav {
     margin-left: 5px; }
   .social-main .contact {
     margin-right: 5px; }
-  .social-main .resume-btn {
+  .social-main .about-btn {
     font-family: avant_medium, sans-serif;
     cursor: pointer; }
-  .social-main .resume-tube-separator {
+  .social-main .about-tube-separator {
     font-family: avant_book, sans-serif;
     cursor: default; }
 
@@ -547,19 +547,19 @@ hr {
 /* Larger than Desktop HD */
 /* RESUME
    ========================================================================== */
-.resume-page {
+.about-page {
   position: fixed;
   z-index: 12;
   background: #F5F5F5;
   width: 100%;
   height: 100%; }
-  .resume-page .resume-content {
+  .about-page .about-content {
     text-align: center;
     max-height: 960px;
     margin: 0 auto; }
-    .resume-page .resume-content h1, .resume-page .resume-content p {
+    .about-page .about-content h1, .about-page .about-content p {
       color: #E94444; }
-  .resume-page img {
+  .about-page img {
     width: 200px; }
 
 @media screen and (max-width: 480px) {

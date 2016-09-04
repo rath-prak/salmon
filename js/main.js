@@ -8,9 +8,9 @@ $(document).ready(function(){
   });
 
 // resume-page  
-  $('.resume-btn').click(function() {
-    $('.resume-page').fadeToggle();
-    $('.resume-page').removeClass('resume-page-hide');
+  $('.about-btn').click(function() {
+    $('.about-page').fadeToggle();
+    $('.about-page').removeClass('about-page-hide');
   })
 
 // hamburger menu

@@ -45,7 +45,7 @@ nav {
 }
 
 .main-nav-hide, 
-.resume-page-hide {
+.about-page-hide {
 	display: none;
 }
 
@@ -121,7 +121,7 @@ nav {
 	bottom: 2%;
 	.contact,
 	.contact-item,
-	.resume-btn {
+	.about-btn {
 		text-transform: uppercase;
 		font-family: $body;
 		font-size: 14px;
@@ -131,11 +131,11 @@ nav {
 	.contact {
 		margin-right: 5px;
 	}
-	.resume-btn {
+	.about-btn {
 	font-family: $medium_avant;
 	cursor: pointer;
 	}
-	.resume-tube-separator {
+	.about-tube-separator {
 		font-family: $body_avant;
 		cursor: default;
 	}
