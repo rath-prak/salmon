@@ -545,7 +545,7 @@ hr {
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* RESUME
+/* ABOUT
    ========================================================================== */
 .about-page {
   position: fixed;
@@ -553,14 +553,28 @@ hr {
   background: #F5F5F5;
   width: 100%;
   height: 100%; }
+  .about-page h1, .about-page h4, .about-page p, .about-page li {
+    color: #E94444; }
   .about-page .about-content {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    max-height: 960px;
-    margin: 0 auto; }
-    .about-page .about-content h1, .about-page .about-content p {
-      color: #E94444; }
-  .about-page img {
-    width: 200px; }
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; }
+  .about-page li {
+    list-style-type: none; }
+  .about-page .about-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; }
+    .about-page .about-wrapper .web-deveopment {
+      flex: 1; }
+    .about-page .about-wrapper .design {
+      flex: 1; }
+    .about-page .about-wrapper .tools {
+      flex: 1; }
 
 @media screen and (max-width: 480px) {
   body {
