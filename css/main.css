@@ -427,7 +427,7 @@ hr {
     text-transform: uppercase; }
   .ux p {
     font-size: 0.7em;
-    margin: 0 1em 2em; }
+    margin: 0 2em 2em; }
 
 .ux-slide-01 .wrapper-container {
   display: flex;
@@ -438,6 +438,14 @@ hr {
     .ux-slide-01 .wrapper-container .ux-image img {
       width: 100%; }
 
+.ux-slide-02 .screens-container {
+  margin: 0 auto;
+  width: 55%; }
+
+.ux-slide-02 .screen img {
+  width: 100%;
+  margin-bottom: 20px; }
+
 .placeholder {
   height: 100px; }
 
@@ -447,6 +455,26 @@ hr {
 /**
  * LARGER THAN PHAMBLET
  */
+@media (min-width: 550px) {
+  .ux-slide-02 {
+    display: flex; }
+    .ux-slide-02 .wrapper-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 960px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .ux-slide-02 .wrapper-container .screens-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 60%; }
+      .ux-slide-02 .wrapper-container .screen {
+        flex: 0 1 40%; } }
+
 /**
  * LARGER THAN TABLET
  */
@@ -462,25 +490,10 @@ hr {
         flex: 1; }
       .ux-slide-01 .wrapper-container .ux-slide01-text {
         flex: 3; }
-  .ux-slide-02 {
-    display: flex; }
-    .ux-slide-02 .wrapper-container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 960px;
-      margin: 0 auto;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column; }
-      .ux-slide-02 .wrapper-container .screens-container {
-        margin: 0 auto;
-        width: 80%;
-        display: flex;
-        justify-content: space-between; }
-      .ux-slide-02 .wrapper-container .screen {
-        flex: 0 1 20%; }
-        .ux-slide-02 .wrapper-container .screen img {
-          width: 100%; } }
+  .ux-slide-02 .wrapper-container .screens-container {
+    width: 80%; }
+  .ux-slide-02 .wrapper-container .screen {
+    flex: 0 1 20%; } }
 
 /* Larger than desktop */
 /* Larger than Desktop HD */
