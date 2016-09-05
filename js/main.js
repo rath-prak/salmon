@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
 // navigation
@@ -23,7 +24,18 @@ $(document).ready(function(){
         ease: Linear.easeNone
     }, 0.5); 
 
-
+//bodymovin
+  // var animationContainer = $('.section')
+  var animData = {
+    container: document.getElementById('container'),
+    animType: 'svg',
+    renderer: 'html',
+    loop: false,
+    autoplay: false,
+    // path: 'https://github.com/rath-prak/transition-test/blob/master/data/data.js'
+    animationData: animationData
+   };
+  var anim = bodymovin.loadAnimation(animData);
 
 // initialize fullpage
 
@@ -75,14 +87,14 @@ $(document).ready(function(){
             fadeInText();
         }
     }, 
-    // onLeave: function(index, nextIndex, direction){
-    //         var leavingSection = $(this);
+    onLeave: function(index, nextIndex, direction){
+            var leavingSection = $(this);
 
-    //         //after leaving section 2
-    //         if(index == 2 && direction =='down' || direction == 'up'){
-    //             // fadeInTextReset();
-    //         }
-    //       }
+            //after leaving section 2
+            if(nextIndex == 2 && direction =='down' || direction == 'up'){
+              anim.play(); 
+            }
+          }
 
 
   }); //end of fullpage.js
