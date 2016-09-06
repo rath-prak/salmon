@@ -39,6 +39,7 @@ $(document).ready(function(){
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
     css3: true,
+    fadingEffect: 'slides',
     scrollingSpeed: 700,
     autoScrolling: true,
     fitToSection: true,

@@ -7,7 +7,6 @@
 
 .ux {
 	text-align: center;
-	background: $salmon;
 	h1 {
 		font-size: 1.5em;
 		font-family: $medium;
@@ -20,6 +19,7 @@
 }
 
 .ux-slide-01 {
+	background: #ff6969;
 	.wrapper-container {
 		display: flex;
 		flex-direction: column;
@@ -34,6 +34,7 @@
 }
 
 .ux-slide-02 {
+	background: #ffb5bf;
 	.screens-container {
 		margin: 0 auto;
 		width: 55%;

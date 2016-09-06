@@ -427,8 +427,7 @@ hr {
  * MOBILE FIRST QUERIES
  */
 .ux {
-  text-align: center;
-  background: #E94444; }
+  text-align: center; }
   .ux h1 {
     font-size: 1.5em;
     font-family: Gotham_medium, sans-serif;
@@ -437,22 +436,25 @@ hr {
     font-size: 0.7em;
     margin: 0 2em 2em; }
 
-.ux-slide-01 .wrapper-container {
-  display: flex;
-  flex-direction: column; }
-  .ux-slide-01 .wrapper-container .ux-image {
-    width: 35%;
-    margin: 100px auto 0; }
-    .ux-slide-01 .wrapper-container .ux-image img {
-      width: 100%; }
+.ux-slide-01 {
+  background: #ff6969; }
+  .ux-slide-01 .wrapper-container {
+    display: flex;
+    flex-direction: column; }
+    .ux-slide-01 .wrapper-container .ux-image {
+      width: 35%;
+      margin: 100px auto 0; }
+      .ux-slide-01 .wrapper-container .ux-image img {
+        width: 100%; }
 
-.ux-slide-02 .screens-container {
-  margin: 0 auto;
-  width: 55%; }
-
-.ux-slide-02 .screen img {
-  width: 100%;
-  margin-bottom: 20px; }
+.ux-slide-02 {
+  background: #ffb5bf; }
+  .ux-slide-02 .screens-container {
+    margin: 0 auto;
+    width: 55%; }
+  .ux-slide-02 .screen img {
+    width: 100%;
+    margin-bottom: 20px; }
 
 .placeholder {
   height: 100px; }
