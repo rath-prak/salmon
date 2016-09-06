@@ -1,17 +1,30 @@
 $(document).ready(function(){
 
+
+
 // navigation
   $('.navbar-toggle, nav').click(function() {
-    // $('.navbar-toggle').toggleClass('navbar-on');
+
+  //##########################################################################
+    var animData = {
+    container: document.getElementById('container'),
+    animType: 'svg',
+    renderer: 'html',
+    loop: false,
+    autoplay: true,
+    // path: 'https://raw.githubusercontent.com/rath-prak/Sproutmedia-test/master/js/data.json'
+    path: 'https://raw.githubusercontent.com/rath-prak/transition-test/master/data/data.json'
+    // animationData: animationData
+    // path" JSON.parse(animationData)
+   };
+  var anim = bodymovin.loadAnimation(animData);
+
+  //##########################################################################
+  // try something like a toggle functon twich activates the animation everytime menu us clicked.
+
     $('nav').fadeToggle();
     $('nav').removeClass('main-nav-hide');
   });
-
-// resume-page  
-  $('.about-btn').click(function() {
-    $('.about-page').fadeToggle();
-    $('.about-page').removeClass('about-page-hide');
-  })
 
 // hamburger menu
     var bar = $('.menu-bar');
