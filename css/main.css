@@ -207,7 +207,6 @@ a {
 nav {
   position: fixed;
   z-index: 12;
-  background: #000;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -233,7 +232,7 @@ nav {
  */
 .navbar-toggle {
   position: fixed;
-  top: 2%;
+  top: 4%;
   right: 2%;
   z-index: 20;
   cursor: pointer; }

@@ -2,29 +2,42 @@ $(document).ready(function(){
 
 
 
-// navigation
-  $('.navbar-toggle, nav').click(function() {
-
-  //##########################################################################
+  var goMan = function (){
     var animData = {
-    container: document.getElementById('container'),
+    container: document.getElementById('transition-container'),
     animType: 'svg',
     renderer: 'html',
     loop: false,
     autoplay: true,
-    // path: 'https://raw.githubusercontent.com/rath-prak/Sproutmedia-test/master/js/data.json'
-    path: 'https://raw.githubusercontent.com/rath-prak/transition-test/master/data/data.json'
-    // animationData: animationData
-    // path" JSON.parse(animationData)
-   };
-  var anim = bodymovin.loadAnimation(animData);
+    path: '../data/spinbar-data.json'
+    };
+    var anim = bodymovin.loadAnimation(animData);
+    anim.play();
 
-  //##########################################################################
-  // try something like a toggle functon twich activates the animation everytime menu us clicked.
+  }
 
-    $('nav').fadeToggle();
-    $('nav').removeClass('main-nav-hide');
+  var goMan2 = function (){
+      $('nav').delay(100).fadeToggle(); 
+  }
+
+  // goMan(goMan2);
+
+  $('.navbar-toggle, nav').click(function() {
+      goMan();
+      goMan2();
   });
+
+
+// function1 = function(callback){
+//   something.on('transitionend', function(){
+//       callback();
+//   });
+// }
+// function2 = function(){
+//   alert('ok');
+// }
+// function1(function2);
+
 
 // hamburger menu
     var bar = $('.menu-bar');
