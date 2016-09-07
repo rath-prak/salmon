@@ -77,6 +77,7 @@ $(document).ready(function(){
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#fff');
         $('.watermark-text, .contact-item').css('color', '#fff');
+        uxFadeIn();
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo'); 
@@ -86,15 +87,16 @@ $(document).ready(function(){
       if (index == 2) {
             fadeInText();
         }
-    }, 
-    // onLeave: function(index, nextIndex, direction){
-    //         var leavingSection = $(this);
+    },
+    onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
+    var leavingSlide = $(this);
 
-    //         //after leaving section 2
-    //         if(index == 2 && direction =='down' || direction == 'up'){
-    //             // fadeInTextReset();
-    //         }
-    //       }
+      //leaving the first slide of the 2nd Section to the right
+      if(index == 3 && slideIndex == 0 && direction == 'right'){
+          uxFadeOutSlide();
+      }
+    } 
+
 
 
   }); //end of fullpage.js
@@ -102,6 +104,26 @@ $(document).ready(function(){
   /**
   * FADE IN TEXT FOR INTERACTIVE PAGE
   */
+
+  function uxFadeIn (){
+      var uxProto = $('.ux-prototype');
+      TweenMax.staggerFrom(uxProto, .5, {
+      y: '200',
+      autoAlpha: '0',
+      delay: 1,
+      ease: Power4.easeOut
+      }, .5)
+  }
+
+  function uxFadeOutSlide (){
+      var uxProto = $('.ux-prototype');
+      TweenMax.staggerFrom(uxProto, .5, {
+      y: '300',
+      autoAlpha: '0',
+      delay: 1,
+      ease: Power4.easeOut
+      }, .5)
+  }
 
 
     var interactiveHeading = $('#interactive-heading');
