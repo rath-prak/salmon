@@ -47,12 +47,12 @@ html.fp-enabled,
     table-layout:fixed;
     width: 100%;
 }
-/*.fp-tableCell {
+.fp-tableCell {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-}*/
+}
 .fp-slidesContainer {
     float: left;
     position: relative;
@@ -72,7 +72,7 @@ html.fp-enabled,
     margin-top: -38px;
     transform: translate3d(0,0,0);
 }
-/*.fp-controlArrow.fp-prev {
+.fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
@@ -82,7 +82,7 @@ html.fp-enabled,
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
-}*/
+}
 .fp-scrollable {
     overflow: hidden;
     position: relative;
@@ -162,7 +162,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-/*    background: #333;*/
+    background: #333;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;

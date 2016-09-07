@@ -10,38 +10,17 @@ $(document).ready(function(){
       loop: false,
       path: '../data/spinbar-data.json'
       });
-      bodymovin.setDirection(-1);
+      // bodymovin.setDirection(-1);
     };
-
-
-
- 
-
-
-
 
   var goMan2 = function (){
       $('nav').delay(100).fadeToggle(); 
-  }
-
-  // goMan(goMan2);
+  };
 
   $('.navbar-toggle, nav').click(function() {
       goMan();
       goMan2();
   });
-
-
-// function1 = function(callback){
-//   something.on('transitionend', function(){
-//       callback();
-//   });
-// }
-// function2 = function(){
-//   alert('ok');
-// }
-// function1(function2);
-
 
 // hamburger menu
     var bar = $('.menu-bar');
@@ -80,6 +59,7 @@ $(document).ready(function(){
     loopBottom: false,
     loopTop: false,
     loopHorizontal: false,
+    scrollHorizontally: true,
     continuousVertical: false,
     normalScrollElements: '#element1, .element2',
     scrollOverflow: true,

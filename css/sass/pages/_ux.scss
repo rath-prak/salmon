@@ -7,10 +7,12 @@
 
 .ux {
 	text-align: center;
-	h1 {
-		font-size: 1.5em;
+	h1, h2, h3 {
 		font-family: $medium;
 		text-transform: uppercase;
+	}
+	h1 {
+		font-size: 1.5em;
 	}
 	p {
 		font-size: 0.7em;
@@ -19,7 +21,27 @@
 }
 
 .ux-slide-01 {
-	background: #ff6969;
+	background: #1f2a52;
+	display: flex;
+	text-align: left;
+	.p-symbol-container {
+		width: 65%;
+		fill: #24305e;
+		opacity: 0.7;
+	}
+	article {
+		z-index: 1000;
+	}
+	.wrapper-container {
+		flex-direction: column;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
+
+.ux-slide-02 {
+	background: #ffb5bf;
 	.wrapper-container {
 		display: flex;
 		flex-direction: column;
@@ -33,7 +55,7 @@
 	}
 }
 
-.ux-slide-02 {
+.ux-slide-03 {
 	background: #ffb5bf;
 	.screens-container {
 		margin: 0 auto;
@@ -64,7 +86,7 @@
  * LARGER THAN PHAMBLET
  */
 @media (min-width: 550px) {
-		.ux-slide-02 {
+		.ux-slide-03 {
 		display: flex;
 		.wrapper-container {
 		display: flex;	
@@ -93,7 +115,7 @@
  */
 @media screen and (min-width: 750px) {
 
-	.ux-slide-01 {
+	.ux-slide-02 {
 		display: flex;
 		.wrapper-container {
 			flex-direction: row;
@@ -110,7 +132,7 @@
 		}
 	}
 
-	.ux-slide-02 {
+	.ux-slide-03 {
 		.wrapper-container {
 			.screens-container {
 				width: 80%;
