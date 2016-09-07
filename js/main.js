@@ -3,18 +3,22 @@ $(document).ready(function(){
 
 
   var goMan = function (){
-    var animData = {
-    container: document.getElementById('transition-container'),
-    animType: 'svg',
-    renderer: 'html',
-    loop: false,
-    autoplay: true,
-    path: '../data/spinbar-data.json'
+      var svgContainer = document.getElementById('transition-container');
+      var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: false,
+      path: '../data/spinbar-data.json'
+      });
+      bodymovin.setDirection(-1);
     };
-    var anim = bodymovin.loadAnimation(animData);
-    anim.play();
 
-  }
+
+
+ 
+
+
+
 
   var goMan2 = function (){
       $('nav').delay(100).fadeToggle(); 
