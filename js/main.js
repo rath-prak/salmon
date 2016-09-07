@@ -61,6 +61,7 @@ $(document).ready(function(){
     loopHorizontal: false,
     scrollHorizontally: true,
     continuousVertical: false,
+    verticalCentered: false,
     normalScrollElements: '#element1, .element2',
     scrollOverflow: true,
     scrollOverflowOptions: null,

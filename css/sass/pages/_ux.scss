@@ -15,46 +15,46 @@
 		font-size: 1.5em;
 	}
 	p {
+
 		font-size: 0.7em;
 		margin: 0 2em 2em;
 	}
 }
 
 .ux-slide-01 {
-	background: #1f2a52;
-	display: flex;
-	z-index: -10;
-	.p-symbol-container {
-		width: 65%;
-		fill: #24305e;
-		opacity: 0.7;
-		z-index: -1;
-	}
-	article {
-		h3 {
-			margin-bottom: 20px;
-			color: #dd5d5f;
+		background: #1f2a52;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.p-symbol-container {
+			position: absolute;
+			fill: #24305e;
+			width: 80%;
+			top: 50%;
+			left: 50%;
+			opacity: 0.5;
+			transform: translate(-50%, -50%);
 		}
-		margin-left: 60px;
-		text-align: left;
-		p {
-			margin-left: 0;
-			font-size: 1.3em;
-			color: #5870cf;
-		}
-		.quote-text {
-			font-family: $bold_avant;
-			font-size: 3em;
-			line-height: 1em;
-			margin-bottom: 5px;
+		section {
+			margin: 0 10px;
+			position: relative;
+			h3 {
+				margin-bottom: 5px;
+				color: #dd5d5f;
+			}
+			.quote-text {
+				font-family: $bold_avant;
+				font-size: 2.5em;
+				line-height: 1em;
+				margin-bottom: 5px;
+			}
+			p {
+				margin-left: 0;
+				font-size: 1.1em;
+				color: #5870cf;
+			}
 		}
 	}
-	.wrapper-container {
-		flex-direction: column;
-		max-width: 960px;
-		margin: 0 auto;
-	}
-}
 
 
 .ux-slide-02 {
@@ -103,6 +103,42 @@
  * LARGER THAN PHAMBLET
  */
 @media (min-width: 550px) {
+ 	
+ 		.ux-slide-01 {
+		background: #1f2a52;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.p-symbol-container {
+			position: absolute;
+			fill: #24305e;
+			width: 65%;
+			top: 50%;
+			left: 50%;
+			opacity: 0.5;
+			transform: translate(-50%, -50%);
+		}
+		section {
+			position: relative;
+			margin-left: 90px;
+			h3 {
+				margin-bottom: 5px;
+				color: #dd5d5f;
+			}
+			.quote-text {
+				font-family: $bold_avant;
+				font-size: 2.5em;
+				line-height: 1em;
+				margin-bottom: 5px;
+			}
+			p {
+				margin-left: 0;
+				font-size: 1.1em;
+				color: #5870cf;
+			}
+		}
+	}
+
 		.ux-slide-03 {
 		display: flex;
 		.wrapper-container {
@@ -131,6 +167,23 @@
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
+
+	.ux-slide-01 {
+		.p-symbol-container {
+			width: 50%;
+		}
+		section {
+			text-align: left;
+			margin-left: 90px;
+			.quote-text {
+				font-size: 2.5em;
+			}
+			p {
+				margin-left: 0;
+			}
+		}
+	}
+
 
 	.ux-slide-02 {
 		display: flex;
@@ -166,10 +219,55 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
+	.ux-slide-01 {
+		.p-symbol-container {
+			width: 50%;
+		}
+		section {
+			margin-left: 60px;
+			h3 {
+				margin-bottom: 10px;
+				color: #dd5d5f;
+			}
+			.quote-text {
+				font-size: 3em;
+			}
+			p {
+				font-size: 1.3em;
+			}
+		}
+	}
+
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+	
+	.ux-slide-01 {
+		.wrapper-container {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		.p-symbol-container {
+			width: 40%;
+		}
+		section {
+			margin-left: 120px;
+			h3 {
+				margin-bottom: 20px;
+				font-size: 2em;
+			}
+			.quote-text {
+				font-family: $bold_avant;
+				font-size: 3.5em;
+				line-height: 1em;
+			}
+			p {
+				font-size: 1.5em;
+			}
+		}
+	}
+
 
 }
 
