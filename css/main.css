@@ -657,13 +657,27 @@ hr {
 .ux-slide-01 {
   background: #1f2a52;
   display: flex;
-  text-align: left; }
+  z-index: -10; }
   .ux-slide-01 .p-symbol-container {
     width: 65%;
     fill: #24305e;
-    opacity: 0.7; }
+    opacity: 0.7;
+    z-index: -1; }
   .ux-slide-01 article {
-    z-index: 1000; }
+    margin-left: 60px;
+    text-align: left; }
+    .ux-slide-01 article h3 {
+      margin-bottom: 20px;
+      color: #dd5d5f; }
+    .ux-slide-01 article p {
+      margin-left: 0;
+      font-size: 1.3em;
+      color: #5870cf; }
+    .ux-slide-01 article .quote-text {
+      font-family: avant_bold, sans-serif;
+      font-size: 3em;
+      line-height: 1em;
+      margin-bottom: 5px; }
   .ux-slide-01 .wrapper-container {
     flex-direction: column;
     max-width: 960px;

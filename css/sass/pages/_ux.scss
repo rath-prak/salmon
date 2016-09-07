@@ -23,14 +23,31 @@
 .ux-slide-01 {
 	background: #1f2a52;
 	display: flex;
-	text-align: left;
+	z-index: -10;
 	.p-symbol-container {
 		width: 65%;
 		fill: #24305e;
 		opacity: 0.7;
+		z-index: -1;
 	}
 	article {
-		z-index: 1000;
+		h3 {
+			margin-bottom: 20px;
+			color: #dd5d5f;
+		}
+		margin-left: 60px;
+		text-align: left;
+		p {
+			margin-left: 0;
+			font-size: 1.3em;
+			color: #5870cf;
+		}
+		.quote-text {
+			font-family: $bold_avant;
+			font-size: 3em;
+			line-height: 1em;
+			margin-bottom: 5px;
+		}
 	}
 	.wrapper-container {
 		flex-direction: column;
