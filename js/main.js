@@ -78,6 +78,7 @@ $(document).ready(function(){
         $('.menu-bar').css('background', '#fff');
         $('.watermark-text, .contact-item').css('color', '#fff');
         uxFadeIn();
+
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo'); 
@@ -114,7 +115,6 @@ $(document).ready(function(){
   */
   var prototypeTitle = $('.ux-prototype');
 
-  
   TweenMax.set(prototypeTitle, {
     alpha: 0,
     y: 30
@@ -125,8 +125,7 @@ $(document).ready(function(){
       TweenMax.staggerTo(uxProto, 1 , {
       y: 0,
       autoAlpha: 1,
-      delay: 0.3,
-      ease: Back.easeOut
+      ease: Back.easeInOut
       }, 0.2);
   }
 
@@ -137,6 +136,8 @@ function uxFadeOutSlide (){
       delay: 1
     });
   }
+
+
 
  /**
   * FADE IN TEXT FOR INTERACTIVE PAGE
