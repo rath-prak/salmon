@@ -88,12 +88,20 @@ $(document).ready(function(){
             fadeInText();
         }
     },
+    onLeave: function(index, nextIndex, direction){
+      var leavingSection = $(this);
+
+      //after leaving section 2
+      if(index == 3 && direction =='up'){
+           uxFadeOutSlide();
+      }
+  },
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
     var leavingSlide = $(this);
 
       //leaving the first slide of the 2nd Section to the right
       if(index == 3 && slideIndex == 0 && direction == 'right'){
-          uxFadeOutSlide();
+         
       }
     } 
 
@@ -102,29 +110,37 @@ $(document).ready(function(){
   }); //end of fullpage.js
 
   /**
-  * FADE IN TEXT FOR INTERACTIVE PAGE
+  * FADE IN TEXT FOR UX/PROTOTYPE PAGE
   */
+  var prototypeTitle = $('.ux-prototype');
+
+  
+  TweenMax.set(prototypeTitle, {
+    alpha: 0,
+    y: 30
+  });
 
   function uxFadeIn (){
       var uxProto = $('.ux-prototype');
-      TweenMax.staggerFrom(uxProto, .5, {
-      y: '200',
-      autoAlpha: '0',
-      delay: 1,
-      ease: Power4.easeOut
-      }, .5)
+      TweenMax.staggerTo(uxProto, 1 , {
+      y: 0,
+      autoAlpha: 1,
+      delay: 0.3,
+      ease: Back.easeOut
+      }, 0.2);
   }
 
-  function uxFadeOutSlide (){
-      var uxProto = $('.ux-prototype');
-      TweenMax.staggerFrom(uxProto, .5, {
-      y: '300',
-      autoAlpha: '0',
-      delay: 1,
-      ease: Power4.easeOut
-      }, .5)
+function uxFadeOutSlide (){
+    TweenMax.set(prototypeTitle, {
+      alpha: 0,
+      y: 20,
+      delay: 1
+    });
   }
 
+ /**
+  * FADE IN TEXT FOR INTERACTIVE PAGE
+  */
 
     var interactiveHeading = $('#interactive-heading');
     var interactivePara = $('#interactive-para');
@@ -144,18 +160,6 @@ $(document).ready(function(){
       });
   }
 
-  // function fadeInTextReset (){
-  //   var interTlReset = new TimelineMax();
-
-  //     interTlReset.to(interactiveHeading, 1, {
-  //       opacity: 0,
-  //       y: '0',
-  //     })
-  //     .to(interactivePara, 1, {
-  //       opacity: 1,
-  //       y: '0',
-  //     });
-  // }
 
 
   /**
