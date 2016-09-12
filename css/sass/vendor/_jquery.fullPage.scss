@@ -101,7 +101,6 @@ html.fp-enabled,
 }
 .fp-slidesNav{
 
-    display: none; // delete when ready
     position: absolute;
     z-index: 4;
     left: 50%;
@@ -118,7 +117,6 @@ html.fp-enabled,
 
 #fp-nav ul,
 .fp-slidesNav ul {
-    display: none; // delete when ready
     
     margin: 0;
     padding: 0;
@@ -187,7 +185,7 @@ html.fp-enabled,
 }
 #fp-nav {
 
-    display: none; // delete when ready
+    // display: none; // delete when ready
 
     position: fixed;
     z-index: 100;

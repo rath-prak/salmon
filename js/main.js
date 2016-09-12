@@ -94,7 +94,7 @@ $(document).ready(function(){
 
       //after leaving section 2
       if(index == 3 && direction =='up'){
-           uxFadeOutSlide();
+           uxFadeOutSlide (0, 20, 1);
       }
   },
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
@@ -129,14 +129,21 @@ $(document).ready(function(){
       }, 0.2);
   }
 
-function uxFadeOutSlide (){
+// function uxFadeOutSlide (){
+//     TweenMax.set(prototypeTitle, {
+//       alpha: 0,
+//       y: 20,
+//       delay: 1
+//     });
+//   }
+
+function uxFadeOutSlide (opacity, yPos, time){
     TweenMax.set(prototypeTitle, {
-      alpha: 0,
-      y: 20,
-      delay: 1
+      alpha: opacity,
+      y: yPos,
+      delay: time
     });
   }
-
 
 
  /**

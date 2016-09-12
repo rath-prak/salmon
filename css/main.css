@@ -69,7 +69,6 @@ html.fp-enabled,
   transition: none !important; }
 
 .fp-slidesNav {
-  display: none;
   position: absolute;
   z-index: 4;
   left: 50%;
@@ -81,7 +80,6 @@ html.fp-enabled,
 
 #fp-nav ul,
 .fp-slidesNav ul {
-  display: none;
   margin: 0;
   padding: 0; }
   #fp-nav ul li,
@@ -138,7 +136,6 @@ html.fp-enabled,
       margin: -5px 0px 0px -5px; }
 
 #fp-nav {
-  display: none;
   position: fixed;
   z-index: 100;
   margin-top: -32px;
