@@ -21,7 +21,9 @@
 }
 
 .ux-slide-01 {
-	background: #1f2a52;
+	background: url(../img/test-background.jpeg) no-repeat center center; 
+  background-size: cover;
+	// background: green;
 	text-align: center;
 
 	.p-symbol-container svg {

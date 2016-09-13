@@ -187,7 +187,8 @@ html.fp-enabled,
 /* util colors */
 /* global background color */
 html {
-  background: #2b2769; }
+  background: #2b2769;
+  z-index: -10; }
 
 .clearfix,
 .group {
@@ -927,7 +928,8 @@ hr {
   height: 100vh; }
 
 .ux-slide-01 {
-  background: #1f2a52;
+  background: url(../img/test-background.jpeg) no-repeat center center;
+  background-size: cover;
   text-align: center; }
   .ux-slide-01 .p-symbol-container svg {
     position: absolute;
