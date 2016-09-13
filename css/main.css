@@ -186,10 +186,6 @@ html.fp-enabled,
 /* project colors */
 /* util colors */
 /* global background color */
-html {
-  background: #2b2769;
-  z-index: -10; }
-
 .clearfix,
 .group {
   zoom: 1; }
@@ -944,30 +940,27 @@ hr {
   .ux-slide-01 .quote-text {
     font-size: 1.5em; }
 
-.ux-slide-02 {
-  background: #1f2a52; }
-  .ux-slide-02 .wrapper-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .ux-slide-02 .wrapper-container .ux-image {
-      width: 35%;
-      margin: 100px auto 0; }
-      .ux-slide-02 .wrapper-container .ux-image img {
-        width: 100%; }
+.ux-slide-02 .wrapper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .ux-slide-02 .wrapper-container .ux-image {
+    width: 35%;
+    margin: 100px auto 0; }
+    .ux-slide-02 .wrapper-container .ux-image img {
+      width: 100%; }
 
-.ux-slide-03 {
-  background: #1f2a52; }
-  .ux-slide-03 .screens-container {
-    margin: 0 auto;
-    width: 55%; }
-  .ux-slide-03 .screen img {
-    width: 100%;
-    margin-bottom: 20px; }
+.ux-slide-03 .screens-container {
+  margin: 0 auto;
+  width: 55%; }
+
+.ux-slide-03 .screen img {
+  width: 100%;
+  margin-bottom: 20px; }
 
 .placeholder {
   height: 100px; }
