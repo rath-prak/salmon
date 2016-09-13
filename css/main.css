@@ -267,6 +267,195 @@ html {
   width: 100%;
   margin-left: 0; }
 
+/* Flex Stuff
+   ========================================================================== */
+.flex {
+  display: flex;
+  flex-direction: column; }
+
+.isInline {
+  display: -inline-flex; }
+
+.is-row {
+  flex-direction: row; }
+
+.isRowReverse {
+  flex-direction: row-reverse; }
+
+.isColumn {
+  flex-direction: column; }
+
+.isColumnReverse {
+  flex-direction: column-reverse; }
+
+.isSingle {
+  flex-wrap: nowrap; }
+
+.flexWrap {
+  flex-wrap: wrap; }
+
+.isMultiple.isReverse {
+  flex-wrap: wrap-reverse; }
+
+.spaceBetween {
+  justify-content: space-between; }
+
+.spaceAround {
+  justify-content: space-around; }
+
+.justify-center {
+  justify-content: center; }
+
+.justifyEnd {
+  justify-content: flex-end; }
+
+.justifyStart {
+  justify-content: flex-start; }
+
+.contentCenter {
+  align-content: center; }
+
+.align-center {
+  align-items: center; }
+
+.alignEnd {
+  align-items: flex-end; }
+
+.alignStart {
+  align-items: flex-start; }
+
+.alignBaseline {
+  align-items: baseline; }
+
+.selfCenter {
+  align-self: center; }
+
+.selfStart {
+  align-self: flex-start; }
+
+.selfEnd {
+  align-self: flex-end; }
+
+.selfAuto {
+  align-self: auto; }
+
+.selfBaseline {
+  align-self: baseline; }
+
+.contentCenter {
+  align-content: center; }
+
+.contentStretch {
+  align-content: stretch; }
+
+.flexNone {
+  flex: 0 0 auto; }
+
+.flexInitial {
+  flex: 0 1 auto; }
+
+.flexAuto {
+  flex: 1 1 auto; }
+
+.flex0050 {
+  flex: 0 0 50%; }
+
+.flexOne0auto {
+  flex: 1 0 auto; }
+
+.flexOne {
+  flex: 1; }
+
+.flexRowStart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.flexRowSpaceBetween {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flexColumnStart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.flexRowNoWrap {
+  flex-flow: row nowrap; }
+
+.dontFlex {
+  flex: none; }
+
+.isFull {
+  flex-basis: 100%;
+  max-width: 100%; }
+
+.isHalf {
+  flex-basis: 50%;
+  margin: 0 1px;
+  max-width: 49%; }
+
+.isThirds {
+  flex-basis: 33%;
+  max-width: 33%; }
+
+.isTwoThirds {
+  flex-basis: 67%;
+  max-width: 67%; }
+
+.isQuarters {
+  flex-basis: 24%;
+  margin: 0 2px;
+  max-width: 24%; }
+
+.isThreeFifths {
+  flex-basis: 59%;
+  margin: 0 2px;
+  max-width: 59%; }
+
+.isTwoFifths {
+  flex-basis: 39%;
+  margin: 0 2px;
+  max-width: 39%; }
+
+.isOneFifth {
+  flex-basis: 19%;
+  margin: 0 2px;
+  max-width: 19%; }
+
+.isFourFifths {
+  flex-basis: 79%;
+  margin: 0 2px;
+  max-width: 79%; }
+
+.isOneTenth {
+  flex-basis: 9%;
+  margin: 0 2px;
+  max-width: 9%; }
+
+.isThreeTenths {
+  flex-basis: 29%;
+  margin: 0 2px;
+  max-width: 29%; }
+
+.isSevenTenths {
+  flex-basis: 69%;
+  margin: 0 2px;
+  max-width: 69%; }
+
+.isNineTenths {
+  flex-basis: 89%;
+  margin: 0 2px;
+  max-width: 89%; }
+
+.flexGrow {
+  flex-grow: 2; }
+
+.flexChild > div {
+  display: flex; }
+
 @font-face {
   font-family: Gotham_black;
   src: url(../fonts/GOTHAM-BLACK.TTF); }
@@ -280,6 +469,10 @@ html {
   src: url(../fonts/GOTHAM-LIGHT.TTF); }
 
 @font-face {
+  font-family: avant_light;
+  src: url(../fonts/ITCAvantGardePro-XLt.otf); }
+
+@font-face {
   font-family: avant_book;
   src: url(../fonts/ITCAvantGardePro-Bk.otf); }
 
@@ -291,12 +484,13 @@ html {
   font-family: avant_bold;
   src: url(../fonts/ITCAvantGardePro-Bold.otf); }
 
+p {
+  margin: 0; }
+
 body,
 p {
-  font-family: Gotham_thin, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 100%;
-  font-style: normal;
-  font-weight: 400;
+  font-family: avant_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
   line-height: 1.6;
   color: #fff; }
 
@@ -304,7 +498,12 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
   font-family: Gotham_medium, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #fff;
   margin: 0px; }
@@ -317,7 +516,8 @@ a {
 /* GLOBAL TYPOGRAPHY
    ========================================================================== */
 .quote-text {
-  font-size: 40px; }
+  font-size: 2.5em;
+  font-family: avant_bold, sans-serif; }
 
 .btn {
   border-radius: 5px;
@@ -613,45 +813,31 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
-.ux {
-  text-align: center; }
-  .ux h1, .ux h2, .ux h3 {
-    font-family: Gotham_medium, sans-serif;
-    text-transform: uppercase; }
-  .ux h1 {
-    font-size: 1.5em; }
-  .ux p {
-    font-size: 0.7em;
-    margin: 0 2em 2em; }
+.ux h1, .ux h2, .ux h3 {
+  font-family: Gotham_medium, sans-serif;
+  text-transform: uppercase; }
+
+.ux h1 {
+  font-size: 1.5em; }
+
+.wrapper-container {
+  max-width: 960px;
+  height: 100vh; }
 
 .ux-slide-01 {
   background: #1f2a52;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .ux-slide-01 .p-symbol-container {
+  text-align: center; }
+  .ux-slide-01 .ux-slide-01 svg {
     position: absolute;
     fill: #24305e;
-    width: 80%;
+    width: 50%;
     top: 50%;
     left: 50%;
-    opacity: 0.5;
     transform: translate(-50%, -50%); }
   .ux-slide-01 section {
-    margin: 0 10px;
-    position: relative; }
-    .ux-slide-01 section h3 {
-      margin-bottom: 5px;
-      color: #dd5d5f; }
-    .ux-slide-01 section .quote-text {
-      font-family: avant_bold, sans-serif;
-      font-size: 2.5em;
-      line-height: 1em;
-      margin-bottom: 5px; }
-    .ux-slide-01 section p {
-      margin-left: 0;
-      font-size: 1.1em;
-      color: #5870cf; }
+    margin: 25px; }
+  .ux-slide-01 .quote-text {
+    font-size: 1.5em; }
 
 .ux-slide-02 {
   background: #1f2a52; }
@@ -679,38 +865,14 @@ hr {
 /**
  * LARGER THAN MOBILE
  */
+@media (min-width: 400px) {
+  .ux-slide-01 .quote-text {
+    font-size: 1.7em; } }
+
 /**
  * LARGER THAN PHAMBLET
  */
 @media (min-width: 550px) {
-  .ux-slide-01 {
-    background: #1f2a52;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .ux-slide-01 .p-symbol-container {
-      position: absolute;
-      fill: #24305e;
-      width: 65%;
-      top: 50%;
-      left: 50%;
-      opacity: 0.5;
-      transform: translate(-50%, -50%); }
-    .ux-slide-01 section {
-      position: relative;
-      margin-left: 90px; }
-      .ux-slide-01 section h3 {
-        margin-bottom: 5px;
-        color: #dd5d5f; }
-      .ux-slide-01 section .quote-text {
-        font-family: avant_bold, sans-serif;
-        font-size: 2.5em;
-        line-height: 1em;
-        margin-bottom: 5px; }
-      .ux-slide-01 section p {
-        margin-left: 0;
-        font-size: 1.1em;
-        color: #5870cf; }
   .ux-slide-03 {
     display: flex; }
     .ux-slide-03 .wrapper-container {
@@ -734,15 +896,6 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  .ux-slide-01 .p-symbol-container {
-    width: 50%; }
-  .ux-slide-01 section {
-    text-align: left;
-    margin-left: 90px; }
-    .ux-slide-01 section .quote-text {
-      font-size: 2.5em; }
-    .ux-slide-01 section p {
-      margin-left: 0; }
   .ux-slide-02 {
     display: flex; }
     .ux-slide-02 .wrapper-container {
@@ -760,38 +913,7 @@ hr {
     flex: 0 1 20%; } }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
-  .ux-slide-01 .p-symbol-container {
-    width: 50%; }
-  .ux-slide-01 section {
-    margin-left: 60px; }
-    .ux-slide-01 section h3 {
-      margin-bottom: 10px;
-      color: #dd5d5f; }
-    .ux-slide-01 section .quote-text {
-      font-size: 3em; }
-    .ux-slide-01 section p {
-      font-size: 1.3em; } }
-
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
-  .ux-slide-01 .wrapper-container {
-    max-width: 960px;
-    margin: 0 auto; }
-  .ux-slide-01 .p-symbol-container {
-    width: 40%; }
-  .ux-slide-01 section {
-    margin-left: 120px; }
-    .ux-slide-01 section h3 {
-      margin-bottom: 20px;
-      font-size: 2em; }
-    .ux-slide-01 section .quote-text {
-      font-family: avant_bold, sans-serif;
-      font-size: 3.5em;
-      line-height: 1em; }
-    .ux-slide-01 section p {
-      font-size: 1.5em; } }
-
 /* Interactiive */
 /* Mobile first queries */
 .interactive {
@@ -863,10 +985,6 @@ hr {
     .about-page .about-wrapper .tools {
       flex: 1; }
 
-@media screen and (max-width: 480px) {
-  body {
-    overflow-x: hidden; } }
-
 @media print {
   header,
   nav,
@@ -877,3 +995,6 @@ hr {
   body {
     font: 14pt Georgia, "Times New Roman", Times, serif;
     line-height: 1.3; } }
+
+img {
+  max-width: 100%; }

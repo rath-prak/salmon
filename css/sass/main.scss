@@ -5,6 +5,7 @@
 
 // Import typical layout styles
 @import "base/grid";
+@import "base/flex";
 @import "base/type";
 
 // Import reusable modules
@@ -23,7 +24,6 @@
 
 
 // Additional styles to think about
-@import "base/responsive";
 @import "base/print";
 
 // If IE support is needed

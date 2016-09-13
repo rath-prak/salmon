@@ -1,0 +1,190 @@
+/* Flex Stuff
+   ========================================================================== */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.isInline {
+    display: -inline-flex;
+}
+.is-row {
+    flex-direction: row;
+}
+.isRowReverse {
+    flex-direction: row-reverse;
+}
+.isColumn {
+    flex-direction: column;
+}
+.isColumnReverse {
+    flex-direction: column-reverse;
+}
+.isSingle {
+    flex-wrap: nowrap;
+}
+.flexWrap {
+    flex-wrap: wrap;
+}
+.isMultiple.isReverse {
+    flex-wrap: wrap-reverse;
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+.spaceAround {
+    justify-content: space-around;
+}
+.justify-center {
+    justify-content: center;
+}
+.justifyEnd {
+    justify-content: flex-end;
+}
+.justifyStart {
+    justify-content: flex-start;
+}
+.contentCenter {
+    align-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.alignEnd {
+    align-items: flex-end;
+}
+.alignStart {
+    align-items: flex-start;
+}
+.alignBaseline {
+    align-items: baseline;
+}
+.selfCenter {
+    align-self: center;
+}
+.selfStart {
+    align-self: flex-start;
+}
+.selfEnd {
+    align-self: flex-end;
+}
+.selfAuto {
+    align-self: auto;
+}
+.selfBaseline {
+    align-self: baseline;
+}
+.contentCenter {
+    align-content: center;
+}
+.contentStretch {
+    align-content: stretch; 
+}
+.flexNone {
+    flex: 0 0 auto;
+}
+.flexInitial {
+    flex: 0 1 auto;
+}
+.flexAuto {
+    flex: 1 1 auto;
+}
+.flex0050 {
+    flex: 0 0 50%;
+}
+.flexOne0auto {
+    flex: 1 0 auto;
+}
+.flexOne {
+    flex: 1;
+}
+.flexRowStart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flexRowSpaceBetween {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexColumnStart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.flexRowNoWrap {
+    flex-flow: row nowrap;
+}
+.dontFlex {
+    flex: none;
+}
+.isFull {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.isHalf {
+    flex-basis: 50%;
+    margin: 0 1px;
+    max-width: 49%;
+}
+.isThirds {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+.isTwoThirds {
+    flex-basis: 67%;
+    max-width: 67%;
+}
+.isQuarters {
+    flex-basis: 24%;
+    margin: 0 2px;
+    max-width: 24%;
+}
+.isThreeFifths {
+    flex-basis: 59%;
+    margin: 0 2px;
+    max-width: 59%;
+}
+.isTwoFifths {
+    flex-basis: 39%;
+    margin: 0 2px;
+    max-width: 39%;
+}
+.isOneFifth {
+    flex-basis: 19%;
+    margin: 0 2px;
+    max-width: 19%;
+}
+.isFourFifths {
+    flex-basis: 79%;
+    margin: 0 2px;
+    max-width: 79%;
+}
+.isOneTenth {
+    flex-basis: 9%;
+    margin: 0 2px;
+    max-width: 9%;
+}
+.isThreeTenths {
+    flex-basis: 29%;
+    margin: 0 2px;
+    max-width: 29%;
+}
+.isSevenTenths {
+    flex-basis: 69%;
+    margin: 0 2px;
+    max-width: 69%;
+}
+.isNineTenths {
+    flex-basis: 89%;
+    margin: 0 2px;
+    max-width: 89%;
+}
+.flexGrow {
+    flex-grow: 2;
+}
+.flexChild > div {
+    display: flex;
+}
