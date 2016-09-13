@@ -1,10 +1,12 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
 	return gulp.src('css/sass/**/*.scss')
 		.pipe(sass())
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('css/'))
 		.pipe(browserSync.reload({
 			stream: true

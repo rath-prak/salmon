@@ -18,7 +18,7 @@ $(document).ready(function(){
   };
 
   $('.navbar-toggle, nav').click(function() {
-      goMan();
+      // goMan();
       goMan2();
   });
 
@@ -59,7 +59,6 @@ $(document).ready(function(){
     loopBottom: false,
     loopTop: false,
     loopHorizontal: false,
-    scrollHorizontally: true,
     continuousVertical: false,
     verticalCentered: false,
     normalScrollElements: '#element1, .element2',
