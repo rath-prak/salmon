@@ -1064,7 +1064,6 @@ hr {
   padding: 30px; }
 
 .about-me h1 {
-  text-transform: uppercase;
   font-size: 1.5em;
   font-family: avant_bold, sans-serif;
   line-height: 1em; }
@@ -1116,7 +1115,7 @@ hr {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .about-me h1 {
-    font-size: 4em; }
+    font-size: 5em; }
   .about-me .skills {
     width: 60%; }
     .about-me .skills li {
