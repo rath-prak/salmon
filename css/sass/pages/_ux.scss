@@ -17,6 +17,8 @@
 	}
 }
 
+	/* Slide 01 */
+
 .ux-slide-01 {
 	background: url(../img/test-background.jpeg) no-repeat center center; 
   background-size: cover;
@@ -40,24 +42,23 @@
 	}
 }
 
+/* Slide 02 */
 
 .ux-slide-02 {
 	background: #1f2a52;
-
+	h1 {
+		font-size: $bold_avant;
+	}
 	.ux-image{
     width: 55%;
     margin: 60px 0 20px;
 	}
-
-
-
-
 }
 
-
+/* Slide 03 */
 
 .ux-slide-03 {
-	// background: #1f2a52;
+	background: #1f2a52;
 	.screens-container {
 		margin: 0 auto;
 		width: 55%;
@@ -93,6 +94,19 @@
  */
 @media (min-width: 550px) {
  	
+		
+
+	/* Slide 02 */
+
+
+	.ux-slide-02 {
+		.ux-image{
+	    width: 35%;
+		}
+	}
+
+	/* Slide 03 */
+
 		.ux-slide-03 {
 		display: flex;
 		.wrapper-container {
@@ -122,21 +136,10 @@
  */
 @media screen and (min-width: 750px) {
 
-
+	/* Slide 02 */
 	.ux-slide-02 {
-		display: flex;
-		.wrapper-container {
-			flex-direction: row;
-			max-width: 960px;
-			margin: 0 auto;
-			align-items: center;
-			.ux-image{
-				flex: 1;
-	  	}
-	  	.ux-slide01-text {
-	  		flex: 3; 
-	  		// text-align: left;
-	  	}
+		.ux-image{
+	    width: 40%;
 		}
 	}
 

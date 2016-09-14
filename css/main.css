@@ -270,7 +270,8 @@ html.fp-enabled,
  */
 .wrapper-container {
   max-width: 960px;
-  padding: 30px; }
+  padding: 30px;
+  height: 100%; }
 
 /**
  * Flex stuff
@@ -932,6 +933,7 @@ hr {
   .ux h1 {
     font-size: 1.5em; }
 
+/* Slide 01 */
 .ux-slide-01 {
   background: url(../img/test-background.jpeg) no-repeat center center;
   background-size: cover; }
@@ -942,19 +944,24 @@ hr {
   .ux-slide-01 .quote-text {
     font-size: 1.5em; }
 
+/* Slide 02 */
 .ux-slide-02 {
   background: #1f2a52; }
+  .ux-slide-02 h1 {
+    font-size: avant_bold, sans-serif; }
   .ux-slide-02 .ux-image {
     width: 55%;
     margin: 60px 0 20px; }
 
-.ux-slide-03 .screens-container {
-  margin: 0 auto;
-  width: 55%; }
-
-.ux-slide-03 .screen img {
-  width: 100%;
-  margin-bottom: 20px; }
+/* Slide 03 */
+.ux-slide-03 {
+  background: #1f2a52; }
+  .ux-slide-03 .screens-container {
+    margin: 0 auto;
+    width: 55%; }
+  .ux-slide-03 .screen img {
+    width: 100%;
+    margin-bottom: 20px; }
 
 .placeholder {
   height: 100px; }
@@ -970,6 +977,10 @@ hr {
  * LARGER THAN PHAMBLET
  */
 @media (min-width: 550px) {
+  /* Slide 02 */
+  .ux-slide-02 .ux-image {
+    width: 35%; }
+  /* Slide 03 */
   .ux-slide-03 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1012,29 +1023,9 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  .ux-slide-02 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .ux-slide-02 .wrapper-container {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      max-width: 960px;
-      margin: 0 auto;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center; }
-      .ux-slide-02 .wrapper-container .ux-image {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1; }
-      .ux-slide-02 .wrapper-container .ux-slide01-text {
-        -webkit-box-flex: 3;
-            -ms-flex: 3;
-                flex: 3; }
+  /* Slide 02 */
+  .ux-slide-02 .ux-image {
+    width: 40%; }
   .ux-slide-03 .wrapper-container .screens-container {
     width: 80%; }
   .ux-slide-03 .wrapper-container .screen {
