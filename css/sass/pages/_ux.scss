@@ -15,29 +15,22 @@
 	}
 }
 
-.wrapper-container {
-	max-width: 960px;
-	height: 100vh;
-}
-
 .ux-slide-01 {
 	background: url(../img/test-background.jpeg) no-repeat center center; 
   background-size: cover;
-	// background: green;
 	text-align: center;
 
-	.p-symbol-container svg {
-		position: absolute;
-		fill: #24305e;
-		width: 50%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+	// .p-symbol-container svg {
+	// 	position: absolute;
+	// 	fill: #24305e;
+	// 	width: 50%;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// }
 
 	section {
 		margin: 25px;
-		// background: green;
 	}
 	.quote-text {
 		font-size: 1.5em;
@@ -46,7 +39,7 @@
 
 
 .ux-slide-02 {
-	// background: #1f2a52;
+	background: #1f2a52;
 	.wrapper-container {
 		display: flex;
 		flex-direction: column;

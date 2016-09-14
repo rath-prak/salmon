@@ -132,6 +132,7 @@ html.fp-enabled,
       margin: -5px 0px 0px -5px; }
 
 #fp-nav {
+  display: none;
   position: fixed;
   z-index: 100;
   margin-top: -32px;
@@ -184,6 +185,7 @@ html.fp-enabled,
 /* Consistent settings */
 /* Colors */
 /* project colors */
+/* project two colors */
 /* util colors */
 /* global background color */
 .clearfix,
@@ -262,6 +264,13 @@ html.fp-enabled,
 
 /* Flex Stuff
    ========================================================================== */
+/**
+ * main flex-container
+ */
+.wrapper-container {
+  max-width: 960px;
+  height: 100vh; }
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,7 +319,7 @@ html.fp-enabled,
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse; }
 
-.spaceBetween {
+.space-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -728,12 +737,12 @@ nav {
     width: 50px; }
   .navbar-toggle .menu-container {
     width: 40px;
-    height: 15px;
+    height: 20px;
     overflow: hidden; }
     .navbar-toggle .menu-container .menu-bar {
       background: #E94444;
       width: 40px;
-      height: 1px;
+      height: 2px;
       margin-bottom: 6px;
       -webkit-transform: translateX(10px);
               transform: translateX(10px); }
@@ -919,40 +928,30 @@ hr {
 .ux h1 {
   font-size: 1.5em; }
 
-.wrapper-container {
-  max-width: 960px;
-  height: 100vh; }
-
 .ux-slide-01 {
   background: url(../img/test-background.jpeg) no-repeat center center;
   background-size: cover;
   text-align: center; }
-  .ux-slide-01 .p-symbol-container svg {
-    position: absolute;
-    fill: #24305e;
-    width: 50%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
   .ux-slide-01 section {
     margin: 25px; }
   .ux-slide-01 .quote-text {
     font-size: 1.5em; }
 
-.ux-slide-02 .wrapper-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .ux-slide-02 .wrapper-container .ux-image {
-    width: 35%;
-    margin: 100px auto 0; }
-    .ux-slide-02 .wrapper-container .ux-image img {
-      width: 100%; }
+.ux-slide-02 {
+  background: #1f2a52; }
+  .ux-slide-02 .wrapper-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .ux-slide-02 .wrapper-container .ux-image {
+      width: 35%;
+      margin: 100px auto 0; }
+      .ux-slide-02 .wrapper-container .ux-image img {
+        width: 100%; }
 
 .ux-slide-03 .screens-container {
   margin: 0 auto;
@@ -1052,34 +1051,81 @@ hr {
 /* Larger than Desktop HD */
 /* Interactiive */
 /* Mobile first queries */
-.interactive {
-  background: #2b2769; }
-  .interactive #bison-logo {
+.about-me h1,
+.about-me h2,
+.about-me h3,
+.about-me h4,
+.about-me h5,
+.about-me p {
+  color: #2100A4;
+  text-align: center; }
+
+.about-me .wrapper-container {
+  padding: 30px; }
+
+.about-me h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: avant_bold, sans-serif;
+  line-height: 1em; }
+
+.about-me .skills {
+  color: #2100A4;
+  font-family: avant_medium, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  padding-left: 0; }
+  .about-me .skills li {
+    list-style-type: none;
+    font-size: 1em; }
+
+.about-me .rayfinn-logo-wrapper {
+  text-align: center;
+  margin-bottom: 10px; }
+  .about-me .rayfinn-logo-wrapper #rayfinn-logo {
     width: 70%;
     fill: transparent;
-    stroke: #E94444;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-    display: none; }
+    stroke: #2100A4; }
 
 /* Larger than mobile */
 /* Larger than phablet */
-/* Larger than tablet */
-/* Larger than desktop */
-@media (min-width: 1000px) {
-  .interactive h1, .interactive p {
-    color: #E94444; }
-  .interactive h1 {
-    font-size: 4.2em;
-    font-family: avant_bold, sans-serif;
-    line-height: 90%; }
-  .interactive p {
-    font-size: 1.1em;
-    font-family: avant_medium, sans-serif;
-    text-transform: uppercase;
-    line-height: 105%; } }
+@media (min-width: 550px) {
+  .about-me h1 {
+    font-size: 2.5em; }
+  .about-me .skills li {
+    font-size: 1.5em; }
+  .about-me .rayfinn-logo-wrapper #rayfinn-logo {
+    width: 100%; }
+  .about-me h4 {
+    font-size: 1.5em; } }
 
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .about-me h1 {
+    font-size: 3em; }
+  .about-me .skills {
+    width: 70%; }
+    .about-me .skills li {
+      font-size: 1.5em; }
+  .about-me .rayfinn-logo-wrapper #rayfinn-logo {
+    width: 120%; } }
+
+/* Larger than desktop */
 /* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .about-me h1 {
+    font-size: 4em; }
+  .about-me .skills {
+    width: 60%; }
+    .about-me .skills li {
+      font-size: 1.5em; }
+  .about-me .rayfinn-logo-wrapper #rayfinn-logo {
+    width: 150%;
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%); } }
+
 /* UX - Prototype */
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
@@ -1091,57 +1137,6 @@ hr {
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* ABOUT
-   ========================================================================== */
-.about-page {
-  position: fixed;
-  z-index: 12;
-  background: #F5F5F5;
-  width: 100%;
-  height: 100%; }
-  .about-page h1, .about-page h4, .about-page p, .about-page li {
-    color: #E94444; }
-  .about-page .about-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    max-width: 960px;
-    margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .about-page li {
-    list-style-type: none; }
-  .about-page .about-wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .about-page .about-wrapper .web-deveopment {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
-    .about-page .about-wrapper .design {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
-    .about-page .about-wrapper .tools {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
-
 @media print {
   header,
   nav,

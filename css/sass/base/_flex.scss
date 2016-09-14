@@ -1,6 +1,17 @@
 /* Flex Stuff
    ========================================================================== */
 
+/**
+ * main flex-container
+ */
+
+.wrapper-container {
+	max-width: 960px;
+	height: 100vh;
+
+}
+
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -29,7 +40,7 @@
 .isMultiple.isReverse {
     flex-wrap: wrap-reverse;
 }
-.spaceBetween {
+.space-between {
     justify-content: space-between;
 }
 .spaceAround {

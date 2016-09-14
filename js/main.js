@@ -67,7 +67,7 @@ $(document).ready(function(){
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'interactive', 'ux', 'prototype', 'photography'],
+    anchors: ['home', 'about-me', 'ux', 'prototype', 'photography'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
@@ -85,7 +85,7 @@ $(document).ready(function(){
         $('.watermark-text, .contact-item').css('color', '#E94444');
       }
       if (index == 2) {
-            fadeInText();
+            rayfinnAnimate();
         }
     },
     onLeave: function(index, nextIndex, direction){
@@ -100,7 +100,7 @@ $(document).ready(function(){
     var leavingSlide = $(this);
 
       //leaving the first slide of the 2nd Section to the right
-      if(index == 3 && slideIndex == 0 && direction == 'right'){
+      if(index === 3 && slideIndex === 0 && direction === 'right'){
          
       }
     } 
@@ -108,6 +108,21 @@ $(document).ready(function(){
 
 
   }); //end of fullpage.js
+
+
+  /**
+  * VIVIUS/Rayfinn logo
+  */
+    function rayfinnAnimate (){
+      var rayfinn = new Vivus('rayfinn-logo',{
+        type: 'delayed',
+        duration: 200,
+        animTimingFunction: Vivus.EASE,
+        });
+    }
+
+
+
 
   /**
   * FADE IN TEXT FOR UX/PROTOTYPE PAGE
@@ -144,50 +159,6 @@ function uxFadeOutSlide (opacity, yPos, time){
     });
   }
 
-
- /**
-  * FADE IN TEXT FOR INTERACTIVE PAGE
-  */
-
-    var interactiveHeading = $('#interactive-heading');
-    var interactivePara = $('#interactive-para');
-
-  function fadeInText (){
-      var interTl = new TimelineMax();
-
-      interTl.from(interactiveHeading, 1, {
-        opacity: 0,
-        y: '90px',
-        ease: Power4.easeOut
-      })
-      .from(interactivePara, 0.5, {
-        opacity: 0,
-        y: '90px',
-        ease: Power4.easeOut
-      });
-  }
-
-
-
-  /**
-  * VIVIUS
-  */
-
-    var bison2 = function (){
-      var bison = new Vivus('bison-logo',{
-            type: 'delayed',
-            duration: 200,
-            animTimingFunction: Vivus.EASE,
-          },scaleLogo);
-
-          var bisonLogo = $('#bison-logo');
-
-          function scaleLogo(){
-            TweenMax.to(bisonLogo, 2, {
-              scale: 0.5
-            });
-          }
-    };
 
   /**
   * RED SALMON ANIMATION
