@@ -6,11 +6,14 @@
  */
 
 .wrapper-container {
-	max-width: 960px;
-	height: 100vh;
-
+    max-width: 960px;
+    padding: 30px;
+    // height: 100%;
 }
 
+/**
+ * Flex stuff
+ */
 
 .flex {
     display: flex;

@@ -170,7 +170,8 @@ html.fp-enabled,
     opacity: 1; }
 
 .fp-slidesNav ul li {
-  display: inline-block; }
+  display: inline-block;
+  display: none; }
 
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide,
@@ -184,7 +185,7 @@ html.fp-enabled,
 
 /* Consistent settings */
 /* Colors */
-/* project colors */
+/* project colors - this project colors need assigned to these variables once you comfirm color scheme */
 /* project two colors */
 /* util colors */
 /* global background color */
@@ -269,8 +270,11 @@ html.fp-enabled,
  */
 .wrapper-container {
   max-width: 960px;
-  height: 100vh; }
+  padding: 30px; }
 
+/**
+ * Flex stuff
+ */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,17 +925,18 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
-.ux h1, .ux h2, .ux h3 {
-  font-family: Gotham_medium, sans-serif;
-  text-transform: uppercase; }
-
-.ux h1 {
-  font-size: 1.5em; }
+.ux {
+  text-align: center; }
+  .ux h1, .ux h2, .ux h3 {
+    font-family: Gotham_medium, sans-serif; }
+  .ux h1 {
+    font-size: 1.5em; }
 
 .ux-slide-01 {
   background: url(../img/test-background.jpeg) no-repeat center center;
-  background-size: cover;
-  text-align: center; }
+  background-size: cover; }
+  .ux-slide-01 h1 {
+    text-transform: uppercase; }
   .ux-slide-01 section {
     margin: 25px; }
   .ux-slide-01 .quote-text {
@@ -939,19 +944,9 @@ hr {
 
 .ux-slide-02 {
   background: #1f2a52; }
-  .ux-slide-02 .wrapper-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .ux-slide-02 .wrapper-container .ux-image {
-      width: 35%;
-      margin: 100px auto 0; }
-      .ux-slide-02 .wrapper-container .ux-image img {
-        width: 100%; }
+  .ux-slide-02 .ux-image {
+    width: 55%;
+    margin: 60px 0 20px; }
 
 .ux-slide-03 .screens-container {
   margin: 0 auto;
@@ -1051,6 +1046,11 @@ hr {
 /* Larger than Desktop HD */
 /* Interactiive */
 /* Mobile first queries */
+.about-me .wrapper-container {
+  max-width: 960px;
+  height: 100vh;
+  padding: 30px; }
+
 .about-me h1,
 .about-me h2,
 .about-me h3,
@@ -1059,9 +1059,6 @@ hr {
 .about-me p {
   color: #2100A4;
   text-align: center; }
-
-.about-me .wrapper-container {
-  padding: 30px; }
 
 .about-me h1 {
   font-size: 1.5em;
@@ -1115,7 +1112,7 @@ hr {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .about-me h1 {
-    font-size: 5em; }
+    font-size: 3.5em; }
   .about-me .skills {
     width: 60%; }
     .about-me .skills li {
