@@ -170,8 +170,7 @@ html.fp-enabled,
     opacity: 1; }
 
 .fp-slidesNav ul li {
-  display: inline-block;
-  display: none; }
+  display: inline-block; }
 
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide,
