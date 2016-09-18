@@ -53,7 +53,7 @@ $(document).ready(function(){
     css3: true,
     fadingEffect: 'slides',
     scrollingSpeed: 700,
-    autoScrolling: true,
+    autoScrolling: false,
     fitToSection: true,
     fitToSectionDelay: 1000,
     scrollBar: false,
