@@ -70,16 +70,21 @@ $(document).ready(function(){
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'user-interface', 'prototype', 'photography'],
+    anchors: ['home', 'about-me', 'user-interface', 'interaction', 'photography'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
-      if (index == 3 || index == 4) {
+
+      if (index == 2) {
+        rayfinnAnimate();
+      }
+
+      if (index === 3) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#fff');
         $('.watermark-text, .contact-item').css('color', '#fff');
-        uxFadeIn();
+        fadeInText(fadeTextUi);
 
       } else {
         $('.white-logo').removeClass('active-logo');
@@ -87,31 +92,25 @@ $(document).ready(function(){
         $('.menu-bar').css('background', '#E94444');
         $('.watermark-text, .contact-item').css('color', '#E94444');
       }
-      if (index == 2) {
-            rayfinnAnimate();
-        }
+
+      if (index === 4 ) {
+        fadeInText(fadeTextInteraction);
+      }
+
     },
     onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
 
-      // if (nextIndex === 4) {
-      //   $.fn.fullpage.setAutoScrolling(false);
-      // }
-
-      //after leaving section 2
-      if(index === 3 && direction === 'up'){
-           resetfadeText(0, 20, 1);
+        if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
+        resetfadeText(fadeTextUi, 0, 20, 1);
       }
-  },
-    onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
-    var leavingSlide = $(this);
 
-      //leaving the first slide of the 2nd Section to the right
-      if(index === 3 && slideIndex === 0 && direction === 'right'){
-         
+       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
+        resetfadeText(fadeTextInteraction, 0, 20, 1);
       }
+
+
     } 
-
 
 
   }); //end of fullpage.js
@@ -129,28 +128,29 @@ $(document).ready(function(){
     }
 
 
-
   /**
   * FADE IN TEXT FOR UX/PROTOTYPE PAGE
   */
-  var fadeTextItem = $('.fadetext-item');
+  var fadeTextUi = $('.fadetext-ui');
+  var fadeTextInteraction = $('.fadetext-interaction');
 
-  TweenMax.set(fadeTextItem, {
-    alpha: 0,
-    y: 30
+  //set initial state of text
+  TweenMax.set([fadeTextUi, fadeTextInteraction], {
+      alpha: 0,
+      y: 30
   });
 
-  function uxFadeIn (){
-      TweenMax.staggerTo(fadeTextItem, 1 , {
-      y: 0,
-      autoAlpha: 1,
-      ease: Back.easeInOut
+  function fadeInText (section){
+      TweenMax.staggerTo(section, 1 , {
+        y: 0,
+        autoAlpha: 1,
+        ease: Back.easeInOut
       }, 0.2);
   }
 
   //reset fading text fucntion to original postion when leave section.
-  function resetfadeText (opacity, yPos, time){
-      TweenMax.set(fadeTextItem, {
+  function resetfadeText (fadeSection, opacity, yPos, time){
+      TweenMax.set(fadeSection, {
         alpha: opacity,
         y: yPos,
         delay: time

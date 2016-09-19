@@ -923,63 +923,6 @@ hr {
       top: 83px; } }
 
 /* Larger than Desktop HD */
-/* USER EXPERIENCE SECTION
-   ========================================================================== */
-/**
- * MOBILE FIRST QUERIES
- */
-.p-background-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-  .p-background-icon img {
-    opacity: 0.08;
-    width: 500px; }
-
-.user-interface {
-  text-align: center; }
-  .user-interface h1, .user-interface h2, .user-interface h3 {
-    font-family: Gotham_medium, sans-serif; }
-  .user-interface h1 {
-    font-size: 1.5em; }
-
-.ux-slide-01 {
-  background: #E94444; }
-  .ux-slide-01 h1 {
-    text-transform: uppercase; }
-  .ux-slide-01 .quote-text {
-    font-size: 1.5em; }
-
-/**
- * LARGER THAN MOBILE
- */
-@media (min-width: 400px) {
-  .ux-slide-01 .quote-text {
-    font-size: 1.7em; } }
-
-/**
- * LARGER THAN PHAMBLET
- */
-/**
- * LARGER THAN TABLET
- */
-@media screen and (min-width: 750px) {
-  .ux-slide-01 article {
-    width: 70%;
-    text-align: left; }
-  .ux-slide-01 h3 {
-    font-size: 2em;
-    margin-bottom: 10px; }
-  .ux-slide-01 .quote-text {
-    font-size: 3em;
-    line-height: 1em; }
-  .ux-slide-01 p {
-    margin-bottom: 15px; } }
-
-/* Larger than desktop */
-/* Larger than Desktop HD */
 /* Interactiive */
 /* Mobile first queries */
 .about-me .wrapper-container {
@@ -1058,6 +1001,110 @@ hr {
     -webkit-transform: translateX(-15%);
             transform: translateX(-15%); } }
 
+/* USER INTERFACE AND DESIGN
+   ========================================================================== */
+/**
+ * MOBILE FIRST QUERIES
+ */
+.p-background-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .p-background-icon img {
+    opacity: 0.08;
+    width: 500px; }
+
+.user-interface {
+  text-align: center; }
+  .user-interface h1, .user-interface h2, .user-interface h3 {
+    font-family: Gotham_medium, sans-serif; }
+  .user-interface h1 {
+    font-size: 1.5em; }
+
+.ui-container {
+  background: #E94444; }
+  .ui-container h1 {
+    text-transform: uppercase; }
+  .ui-container .quote-text {
+    font-size: 1.5em; }
+
+/**
+ * LARGER THAN MOBILE
+ */
+@media (min-width: 400px) {
+  .ui-container .quote-text {
+    font-size: 1.7em; } }
+
+/**
+ * LARGER THAN PHAMBLET
+ */
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  .ui-container article {
+    width: 70%;
+    text-align: left; }
+  .ui-container h3 {
+    font-size: 2em;
+    margin-bottom: 10px; }
+  .ui-container .quote-text {
+    font-size: 3em;
+    line-height: 1em; }
+  .ui-container p {
+    margin-bottom: 15px; } }
+
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/* INTERACTION
+   ========================================================================== */
+/**
+ * MOBILE FIRST QUERIES
+ */
+.interaction {
+  text-align: center; }
+  .interaction h1, .interaction h2, .interaction h3 {
+    font-family: Gotham_medium, sans-serif; }
+  .interaction h1 {
+    font-size: 1.5em; }
+
+.interaction-container {
+  background: #2b2769; }
+  .interaction-container h1 {
+    text-transform: uppercase; }
+  .interaction-container .quote-text {
+    font-size: 1.5em; }
+
+/**
+ * LARGER THAN MOBILE
+ */
+@media (min-width: 400px) {
+  .interaction-container .quote-text {
+    font-size: 1.7em; } }
+
+/**
+ * LARGER THAN PHAMBLET
+ */
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  .interaction-container article {
+    width: 70%;
+    text-align: left; }
+  .interaction-container h3 {
+    font-size: 2em;
+    margin-bottom: 10px; }
+  .interaction-container .quote-text {
+    font-size: 3em;
+    line-height: 1em; }
+  .interaction-container p {
+    margin-bottom: 15px; } }
+
+/* Larger than desktop */
+/* Larger than Desktop HD */
 /* UX - Prototype */
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
