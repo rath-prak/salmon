@@ -41,8 +41,6 @@ $(document).ready(function(){
     menu: '#myMenu',
     slideSelector: '.horizontal',
     scrollHorizontally: true,
-    // responsiveSlides: true,
-    // slidesToSections: true,
     responsiveWidth: 900,
     lockAnchors: false,
     navigation: false,
@@ -101,17 +99,16 @@ $(document).ready(function(){
     onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
 
-        if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
+      if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
         resetfadeText(fadeTextUi, 0, 20, 1);
       }
 
-       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
+      if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
         resetfadeText(fadeTextInteraction, 0, 20, 1);
       }
 
 
     } 
-
 
   }); //end of fullpage.js
 
