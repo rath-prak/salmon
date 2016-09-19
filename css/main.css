@@ -188,6 +188,9 @@ html.fp-enabled,
 /* project two colors */
 /* util colors */
 /* global background color */
+html {
+  background: #2b2769; }
+
 .clearfix,
 .group {
   zoom: 1; }
@@ -270,7 +273,7 @@ html.fp-enabled,
 .wrapper-container {
   max-width: 960px;
   padding: 30px;
-  height: 100%; }
+  height: 100vh; }
 
 /**
  * Flex stuff
@@ -629,8 +632,8 @@ a {
 .btn {
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #1271db;
-  color: #1271db;
+  border: 1px solid #fff;
+  color: #fff;
   display: inline-block;
   height: 44px;
   outline: none;
@@ -925,45 +928,29 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
-.ux {
+.p-background-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .p-background-icon img {
+    opacity: 0.08;
+    width: 500px; }
+
+.user-interface {
   text-align: center; }
-  .ux h1, .ux h2, .ux h3 {
+  .user-interface h1, .user-interface h2, .user-interface h3 {
     font-family: Gotham_medium, sans-serif; }
-  .ux h1 {
+  .user-interface h1 {
     font-size: 1.5em; }
 
-/* Slide 01 */
 .ux-slide-01 {
-  background: url(../img/test-background.jpeg) no-repeat center center;
-  background-size: cover; }
+  background: #E94444; }
   .ux-slide-01 h1 {
     text-transform: uppercase; }
-  .ux-slide-01 section {
-    margin: 25px; }
   .ux-slide-01 .quote-text {
     font-size: 1.5em; }
-
-/* Slide 02 */
-.ux-slide-02 {
-  background: #1f2a52; }
-  .ux-slide-02 h1 {
-    font-size: avant_bold, sans-serif; }
-  .ux-slide-02 .ux-image {
-    width: 55%;
-    margin: 60px 0 20px; }
-
-/* Slide 03 */
-.ux-slide-03 {
-  background: #1f2a52; }
-  .ux-slide-03 .screens-container {
-    margin: 0 auto;
-    width: 55%; }
-  .ux-slide-03 .screen img {
-    width: 100%;
-    margin-bottom: 20px; }
-
-.placeholder {
-  height: 100px; }
 
 /**
  * LARGER THAN MOBILE
@@ -975,62 +962,21 @@ hr {
 /**
  * LARGER THAN PHAMBLET
  */
-@media (min-width: 550px) {
-  /* Slide 02 */
-  .ux-slide-02 .ux-image {
-    width: 35%; }
-  /* Slide 03 */
-  .ux-slide-03 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .ux-slide-03 .wrapper-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      max-width: 960px;
-      margin: 0 auto;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .ux-slide-03 .wrapper-container .screens-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin: 0 auto;
-        width: 60%; }
-      .ux-slide-03 .wrapper-container .screen {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 40%;
-                flex: 0 1 40%; } }
-
 /**
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  /* Slide 02 */
-  .ux-slide-02 .ux-image {
-    width: 40%; }
-  .ux-slide-03 .wrapper-container .screens-container {
-    width: 80%; }
-  .ux-slide-03 .wrapper-container .screen {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 20%;
-            flex: 0 1 20%; } }
+  .ux-slide-01 article {
+    width: 70%;
+    text-align: left; }
+  .ux-slide-01 h3 {
+    font-size: 2em;
+    margin-bottom: 10px; }
+  .ux-slide-01 .quote-text {
+    font-size: 3em;
+    line-height: 1em; }
+  .ux-slide-01 p {
+    margin-bottom: 15px; } }
 
 /* Larger than desktop */
 /* Larger than Desktop HD */
@@ -1047,7 +993,7 @@ hr {
 .about-me h4,
 .about-me h5,
 .about-me p {
-  color: #2100A4;
+  color: #E94444;
   text-align: center; }
 
 .about-me h1 {
@@ -1056,7 +1002,7 @@ hr {
   line-height: 1em; }
 
 .about-me .skills {
-  color: #2100A4;
+  color: #E94444;
   font-family: avant_medium, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,7 +1019,7 @@ hr {
   .about-me .rayfinn-logo-wrapper #rayfinn-logo {
     width: 70%;
     fill: transparent;
-    stroke: #2100A4; }
+    stroke: #E94444; }
 
 /* Larger than mobile */
 /* Larger than phablet */

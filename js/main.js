@@ -45,7 +45,7 @@ $(document).ready(function(){
     // slidesToSections: true,
     responsiveWidth: 900,
     lockAnchors: false,
-    navigation: true,
+    navigation: false,
     navigationPosition: 'right',
     showActiveTooltip: false,
     slidesNavigation: false,
@@ -53,7 +53,7 @@ $(document).ready(function(){
     css3: true,
     fadingEffect: 'slides',
     scrollingSpeed: 700,
-    autoScrolling: false,
+    autoScrolling: true,
     fitToSection: true,
     fitToSectionDelay: 1000,
     scrollBar: false,
@@ -70,7 +70,7 @@ $(document).ready(function(){
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'ux', 'prototype', 'photography'],
+    anchors: ['home', 'about-me', 'user-interface', 'prototype', 'photography'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
@@ -94,9 +94,13 @@ $(document).ready(function(){
     onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
 
+      // if (nextIndex === 4) {
+      //   $.fn.fullpage.setAutoScrolling(false);
+      // }
+
       //after leaving section 2
-      if(index == 3 && direction =='up'){
-           uxFadeOutSlide (0, 20, 1);
+      if(index === 3 && direction === 'up'){
+           resetfadeText(0, 20, 1);
       }
   },
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
@@ -126,41 +130,32 @@ $(document).ready(function(){
 
 
 
-
   /**
   * FADE IN TEXT FOR UX/PROTOTYPE PAGE
   */
-  var prototypeTitle = $('.ux-prototype');
+  var fadeTextItem = $('.fadetext-item');
 
-  TweenMax.set(prototypeTitle, {
+  TweenMax.set(fadeTextItem, {
     alpha: 0,
     y: 30
   });
 
   function uxFadeIn (){
-      var uxProto = $('.ux-prototype');
-      TweenMax.staggerTo(uxProto, 1 , {
+      TweenMax.staggerTo(fadeTextItem, 1 , {
       y: 0,
       autoAlpha: 1,
       ease: Back.easeInOut
       }, 0.2);
   }
 
-// function uxFadeOutSlide (){
-//     TweenMax.set(prototypeTitle, {
-//       alpha: 0,
-//       y: 20,
-//       delay: 1
-//     });
-//   }
-
-function uxFadeOutSlide (opacity, yPos, time){
-    TweenMax.set(prototypeTitle, {
-      alpha: opacity,
-      y: yPos,
-      delay: time
-    });
-  }
+  //reset fading text fucntion to original postion when leave section.
+  function resetfadeText (opacity, yPos, time){
+      TweenMax.set(fadeTextItem, {
+        alpha: opacity,
+        y: yPos,
+        delay: time
+      });
+    }
 
 
   /**
