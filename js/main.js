@@ -5,7 +5,7 @@ $(document).ready(function(){
   $(window).load(function(){
     function hidePreloader() {
       var preloader = $('.spinner-wrapper');
-      TweenMax.to(preloader, 1, {
+      TweenMax.to(preloader, 0.5, {
         y: '100%',
       });
     }
