@@ -6,12 +6,18 @@ $(document).ready(function(){
     function hidePreloader() {
       var preloader = $('.spinner-wrapper');
       TweenMax.to(preloader, 1, {
-        x: '-100%',
+        y: '100%',
       });
     }
-    setTimeout(function () {
-      hidePreloader();
-    }, 1200);
+    setTimeout(hidePreloader, 1300);
+    // setTimeout(goMan, 2000);
+    // setTimeout(hideAnimation, 2500);
+
+    // function hideAnimation () {
+    //   var transitionContainer = $('#transition-container');
+    //   transitionContainer.fadeOut(2000);
+    // }
+
   });
 
   var goMan = function (){
@@ -25,13 +31,9 @@ $(document).ready(function(){
       // bodymovin.setDirection(-1);
     };
 
-  var goMan2 = function (){
-      $('nav').delay(100).fadeToggle(); 
-  };
 
   $('.navbar-toggle, nav').click(function() {
-      // goMan();
-      goMan2();
+      $('nav').delay(100).fadeToggle(); 
   });
 
 // hamburger menu
