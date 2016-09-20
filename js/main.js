@@ -1,6 +1,18 @@
 $(document).ready(function(){
 
+  //Preloader
 
+  $(window).load(function(){
+    function hidePreloader() {
+      var preloader = $('.spinner-wrapper');
+      TweenMax.to(preloader, 1, {
+        x: '-100%',
+      });
+    }
+    setTimeout(function () {
+      hidePreloader();
+    }, 1200);
+  });
 
   var goMan = function (){
       var svgContainer = document.getElementById('transition-container');
