@@ -602,7 +602,7 @@ p {
   font-family: avant_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #fff; }
+  color: #FEFEE6; }
 
 h1,
 h2,
@@ -615,7 +615,7 @@ h6 {
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
   font-family: Gotham_medium, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #fff;
+  color: #FEFEE6;
   margin: 0px; }
 
 a {
@@ -655,7 +655,7 @@ a {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #333;
+  background-color: #fff;
   border-radius: 100%;
   -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
   animation: sk-bounce 2.0s infinite ease-in-out; }
@@ -692,8 +692,8 @@ a {
 .btn {
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #FEFEE6;
+  color: #FEFEE6;
   display: inline-block;
   height: 44px;
   outline: none;
