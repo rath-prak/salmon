@@ -43,14 +43,14 @@ TweenMax.set(slideDown, {
   });
 
 menuToggle  
-  .to(menuBar, 0.5, {
-  x:'-30',
-  ease: Back.easeOut
+  // .to(menuBar, 0.5, {
+  // x:'-30',
+  // ease: Back.easeOut
   // ease: Back.easeIn.config(2.2)
-  })
+  // })
   .to(slideDown, 1, {
   y: '0%',
-  ease: Back.easeOut
+  ease: Power4.easeInOut
   });
 
 $('.navbar-toggle, .menu-list-items').click(function () {

@@ -20,47 +20,6 @@
 
 
 /**
- * FULL PAGE NAVIGATION
- */
-
-.fp-nav-wrapper {
-	position: fixed;
-	z-index: 12;
-	background: #000;
-	width: 100%;
-	height: 100%;
-}
-.menu-container {
-	max-width: 1200px;
-}
-
-.nav-content {
-	// background: green;
-	text-align: right;
-	font-size: 4em;
-	font-family: $bold_avant;
-	margin-right: 75px;
-	li {
-		list-style-type: none;
-		& a{
-			color: $reverse;
-			text-decoration: none;
-		}
-	}
-
-
-}
-.nav-content-text{
-	margin-left: 75px;
-	h2 {
-		font-size: 2.5em;
-		font-family: $light_avant;
-	}
-	// background: blue;
-}
-
-
-/**
  * HAMBURGER TOGGLE MENU
  */
 
@@ -70,7 +29,6 @@
 	right: 4%;
 	z-index: 20;
 	cursor: pointer;
-	// transform: translateX(-50%);
 
 	#menu {
   width:50px;
@@ -91,46 +49,120 @@
 	}
 }
 
-/* FOOTER ELEMENTS
-   ========================================================================== */
-
 /**
- * PERSONAL PORTFOLIO WATERMARK
+ * FULL PAGE NAVIGATION
  */
 
-.watermark-text {
-	font-size: .4em;
-	color: $salmon;
-	font-family: $body_avant;
-	text-transform: uppercase;
-	letter-spacing: 5px;
+.fp-nav-wrapper {
+	position: fixed;
+	z-index: 12;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+	
+.menu-container {
+	flex-direction: column;
+	padding: 30px;
+	margin-top: 50px;
+}
 
-	position: absolute;
-	left: 2%;
-	bottom: 2%;
-	z-index: 100; 
-	.rath {
-		font-family: $bold_avant;
-
+.nav-content {
+	font-family: $bold_avant;
+	margin-left: 20px;
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+		font-size: 2.5em;
+		& a{
+			color: $reverse;
+			text-decoration: none;
+			cursor: pointer;
+		}
 	}
 }
 
-// **********
-@media (max-width: 550px) {
-	.watermark-text {
-		visibility: hidden;
-	}
+.nav-content-text{
+	display: none;
 }
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+	.fp-nav-wrapper {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	
+	.menu-container {
+		flex-direction: row;
+		padding: 30px;
+		margin-top: 50px;
+		max-width: 1200px;
+
+	}
+
+	.nav-content {
+		margin-left: 0;
+		li {
+			font-size: 4em;
+			text-align: right;
+			& a{
+				color: $reverse;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.nav-content-text{
+		display: inherit;
+		margin-left: 75px;
+		p {
+			font-size: 2.5em;
+			font-family: $light_avant;
+		}
+	}
+	
+}
+
+
 
 /**
- * SOCIAL/CONTACT BAR AT RIGHTHAND CORNER OF PAGE
+ * FOOTER ELEMENTS - SOCIAL/CONTACT BAR AT RIGHTHAND CORNER OF PAGE
  */
 
 .social-main {
 	z-index: 101;
 	position: absolute;
-	right: 2%;
-	bottom: 2%;
+	right: 4%;
+	bottom: 4%;
 	.contact,
 	.contact-item,
 	.about-btn {
