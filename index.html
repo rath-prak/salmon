@@ -41,24 +41,36 @@
       <a href="#home"><img src="img/salmon-logo-white.svg" alt="salmon white logo"></a>
     </figure>
 
+
+
     <div class="navbar-toggle">
-      <div class="menu-container">
+      <div class="hamburger-container">
         <div class="menu-bar"></div>
         <div class="menu-bar"></div>
         <div class="menu-bar"></div>
       </div>
     </div> <!-- .navbar-toggle / hamburger menu -->
 
-    <nav class="main-nav-hide">
-      <div id="transition-container"></div>
-      <ul id="myMenu">
-        <li data-menuanchor="home" class="active"><a href="#home">home</a></li>
-        <li data-menuanchor="about-me"><a href="#about-me">about me</a></li>
-        <li data-menuanchor="user-interface"><a href="#user-interface">UX/UI</a></li>
-        <li data-menuanchor="interaction"><a href="#interaction">interaction</a></li>
-        <li data-menuanchor="photography"><a href="#photography">photography</a></li>
-      </ul>
-    </nav> <!-- .main-nav-hide / hidden menu -->
+  <nav class="fp-nav-wrapper flex is-row align-center justify-center">
+
+    <div class="menu-container flex is-row">
+
+      <div class="nav-content is-half">
+        <ul class="menu-list-items">
+          <li data-menuanchor="home" class="active"><a href="#home">rayfinn</a></li>
+          <li data-menuanchor="about-me"><a href="#about-me">about me</a></li>
+          <li data-menuanchor="user-interface"><a href="#user-interface">UX/UI</a></li>
+          <li data-menuanchor="interaction"><a href="#interaction">interaction</a></li>
+          <li data-menuanchor="photography"><a href="#photography">design</a></li>
+        </ul>
+      </div>
+
+      <aside class="nav-content-text flex is-half justify-center">
+        <h2>Hello and welcome to my website. Im an interactive designer and front end developer based in Wellington.</h2>
+      </aside>
+
+    </div>
+  </nav> <!-- .fp-nav-wrapper -->
 
     <div class="social-main">
       <a target="_blank" class="contact-item" href="mailto:rathanap@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>

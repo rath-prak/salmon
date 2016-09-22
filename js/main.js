@@ -20,21 +20,18 @@ $(document).ready(function(){
 
   });
 
-  var goMan = function (){
-      var svgContainer = document.getElementById('transition-container');
-      var animItem = bodymovin.loadAnimation({
-      wrapper: svgContainer,
-      animType: 'svg',
-      loop: false,
-      path: '../data/spinbar-data.json'
-      });
-      // bodymovin.setDirection(-1);
-    };
+  // var goMan = function (){
+  //     var svgContainer = document.getElementById('transition-container');
+  //     var animItem = bodymovin.loadAnimation({
+  //     wrapper: svgContainer,
+  //     animType: 'svg',
+  //     loop: false,
+  //     path: '../data/spinbar-data.json'
+  //     });
+  //     bodymovin.setDirection(-1);
+  //   };
 
 
-  $('.navbar-toggle, nav').click(function() {
-      $('nav').delay(100).fadeToggle(); 
-  });
 
 // hamburger menu
     var bar = $('.menu-bar');

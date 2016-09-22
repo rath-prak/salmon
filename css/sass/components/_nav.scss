@@ -18,36 +18,47 @@
 	display: inherit;
 }
 
-nav {
+
+/**
+ * FULL PAGE NAVIGATION
+ */
+
+.fp-nav-wrapper {
 	position: fixed;
 	z-index: 12;
 	background: #000;
 	width: 100%;
 	height: 100%;
-	text-align: center;
-	color: #fff;
+}
+.menu-container {
+	max-width: 1200px;
+}
 
-	ul {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-		li {
-			list-style: none;
-			a {
-				font-size: 35px;
-				text-decoration: none;
-				color: inherit;
-			}
+.nav-content {
+	// background: green;
+	text-align: right;
+	font-size: 4em;
+	font-family: $bold_avant;
+	margin-right: 75px;
+	li {
+		list-style-type: none;
+		& a{
+			color: $reverse;
+			text-decoration: none;
 		}
 	}
+
+
+}
+.nav-content-text{
+	margin-left: 75px;
+	h2 {
+		font-size: 2.5em;
+		font-family: $light_avant;
+	}
+	// background: blue;
 }
 
-.main-nav-hide, 
-.about-page-hide, {
-	display: none;
-}
 
 /**
  * HAMBURGER TOGGLE MENU
@@ -65,7 +76,7 @@ nav {
   width:50px;
 	}
 
-	.menu-container {
+.hamburger-container {
 		width: 40px;
 		height: 20px;
 		overflow: hidden;
@@ -149,18 +160,5 @@ nav {
 }
 
 	
-
-
-
-/**
- * RIGHT VERTICAL NAV BAR
- * Have turned off for now
- */
-
-// #fp-nav ul li a span, .fp-slidesNav ul li a span {
-// 		background: $salmon;
-// 		display: none;
-// 	}
-
 
 

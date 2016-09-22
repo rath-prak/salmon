@@ -112,7 +112,7 @@
 .flexOne {
     flex: 1;
 }
-.flexRowStart {
+.flex-row-start {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -138,7 +138,7 @@
     flex-basis: 100%;
     max-width: 100%;
 }
-.isHalf {
+.is-half {
     flex-basis: 50%;
     margin: 0 1px;
     max-width: 49%;
