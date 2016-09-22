@@ -32,6 +32,31 @@ $(document).ready(function(){
   //   };
 
 
+  //NAVIGATION
+
+var menuBar = $(".navbar-toggle"); 
+var menuToggle = new TimelineMax({paused:true, reversed:true});
+var slideDown = $(".fp-nav-wrapper");
+
+TweenMax.set(slideDown, {
+      y: '-100%'
+  });
+
+menuToggle  
+  .to(menuBar, 0.5, {
+  x:'-30',
+  ease: Back.easeOut
+  // ease: Back.easeIn.config(2.2)
+  })
+  .to(slideDown, 1, {
+  y: '0%',
+  ease: Back.easeOut
+  });
+
+$('.navbar-toggle, .menu-list-items').click(function () {
+  menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
+});
+
 
 // hamburger menu
     var bar = $('.menu-bar');
