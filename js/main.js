@@ -105,7 +105,7 @@ $('.navbar-toggle, .menu-list-items').click(function () {
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
     anchors: ['home', 'about-me', 'user-interface', 'interaction', 'photography'],
-    setResponsive: true,
+    // setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
 
