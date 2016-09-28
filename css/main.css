@@ -967,7 +967,7 @@ hr {
 /* Homepage - Main Laning page */
 /* Mobile first queries */
 .main-landing-page {
-  background: #2b2769; }
+  background: #1D2A46; }
   .main-landing-page .container img {
     width: 50%; }
   .main-landing-page h1, .main-landing-page p {
@@ -1166,7 +1166,7 @@ hr {
     font-size: 1.5em; }
 
 .interaction-container {
-  background: #2b2769; }
+  background: #1D2A46; }
   .interaction-container h1 {
     text-transform: uppercase; }
   .interaction-container .quote-text {
