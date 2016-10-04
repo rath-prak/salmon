@@ -271,7 +271,7 @@ html {
  * main flex-container
  */
 .wrapper-container {
-  max-width: 960px;
+  max-width: 1200px;
   padding: 30px;
   height: 100vh; }
 
@@ -492,12 +492,12 @@ html {
   margin: 0 1px;
   max-width: 49%; }
 
-.isThirds {
+.is-third {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
   max-width: 33%; }
 
-.isTwoThirds {
+.is-two-thirds {
   -ms-flex-preferred-size: 67%;
       flex-basis: 67%;
   max-width: 67%; }
@@ -1096,7 +1096,7 @@ hr {
     -webkit-transform: translateX(-15%);
             transform: translateX(-15%); } }
 
-/* USER INTERFACE AND DESIGN
+/* PROTOTYPE LANDING
    ========================================================================== */
 /**
  * MOBILE FIRST QUERIES
@@ -1152,7 +1152,41 @@ hr {
     margin-bottom: 15px; } }
 
 /* Larger than desktop */
-/* Larger than Desktop HD */
+/* PROTOTYPE CASE STUDY / BIRD NERD
+   ========================================================================== */
+/**
+ * MOBILE FIRST QUERIES
+ */
+/**
+ * LARGER THAN MOBILE
+ */
+/**
+ * LARGER THAN PHAMBLET
+ */
+/**
+ * LARGER THAN TABLET
+ */
+/* Larger than desktop */
+.prototype-intro-wrapper {
+  width: 100%;
+  height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .prototype-intro-wrapper .section-container {
+    max-width: 1200px;
+    padding: 30px; }
+  .prototype-intro-wrapper .intro-text h1 {
+    font-size: 5em;
+    color: #E94444; }
+  .prototype-intro-wrapper .intro-text p {
+    margin-bottom: 5px; }
+  .prototype-intro-wrapper .intro-text p:nth-child(4) {
+    margin-bottom: 20px; }
+  .prototype-intro-wrapper .intro-text p span {
+    font-family: Gotham_black, sans-serif; }
+  .prototype-intro-wrapper .welcome-iphone {
+    text-align: center; }
+
 /* INTERACTION
    ========================================================================== */
 /**

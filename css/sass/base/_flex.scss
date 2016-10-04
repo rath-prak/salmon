@@ -6,7 +6,7 @@
  */
 
 .wrapper-container {
-    max-width: 960px;
+    max-width: 1200px;
     padding: 30px;
     height: 100vh;
 }
@@ -143,11 +143,11 @@
     margin: 0 1px;
     max-width: 49%;
 }
-.isThirds {
+.is-third {
     flex-basis: 33%;
     max-width: 33%;
 }
-.isTwoThirds {
+.is-two-thirds {
     flex-basis: 67%;
     max-width: 67%;
 }

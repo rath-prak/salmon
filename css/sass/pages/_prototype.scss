@@ -1,4 +1,4 @@
-/* USER INTERFACE AND DESIGN
+/* PROTOTYPE LANDING
    ========================================================================== */
 
 /**
@@ -94,11 +94,82 @@
 
 }
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
+
+
+
+/* PROTOTYPE CASE STUDY / BIRD NERD
+   ========================================================================== */
+
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+
+
+/**
+ * LARGER THAN MOBILE
+ */
+@media (min-width: 400px) {
+	
+
+}	
+
+/**
+ * LARGER THAN PHAMBLET
+ */
+@media (min-width: 550px) {
+
+}
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
 	
 
 
 }
+
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+
+
+}
+
+	.prototype-intro-wrapper {
+		width: 100%;
+		height: 100vh;
+		flex-wrap: wrap;
+		.section-container {
+			max-width: 1200px;
+			padding: 30px;
+		}
+		.intro-text {
+			h1 {
+				font-size: 5em;
+				color: $salmon;
+			}
+			p {
+				margin-bottom: 5px;
+			}
+			p:nth-child(4) {
+				margin-bottom: 20px;
+			}
+			p span {
+				font-family: $bold;
+			}
+		}
+		.welcome-iphone {
+			text-align: center;
+			}
+
+
+
+	}
+
 
 
