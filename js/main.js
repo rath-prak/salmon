@@ -111,7 +111,7 @@ $('.navbar-toggle, .menu-list-items').click(function () {
       var loadedSection = $(this);
 
       if (index == 2) {
-        rayfinnAnimate();
+        // rayfinnAnimate();
       }
 
       if (index === 3) {
@@ -153,13 +153,13 @@ $('.navbar-toggle, .menu-list-items').click(function () {
   /**
   * VIVIUS/Rayfinn logo
   */
-    function rayfinnAnimate (){
-      var rayfinn = new Vivus('rayfinn-logo',{
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE,
-        });
-    }
+    // function rayfinnAnimate (){
+    //   var rayfinn = new Vivus('rayfinn-logo',{
+    //     type: 'delayed',
+    //     duration: 200,
+    //     animTimingFunction: Vivus.EASE,
+    //     });
+    // }
 
 
   /**
