@@ -275,6 +275,16 @@ html {
   padding: 30px;
   height: 100vh; }
 
+.fullpage-section {
+  width: 100%;
+  height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.section-container {
+  max-width: 1200px;
+  padding: 30px; }
+
 /**
  * Flex stuff
  */
@@ -296,7 +306,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row; }
 
-.isRowReverse {
+.is-row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -1167,25 +1177,30 @@ hr {
  * LARGER THAN TABLET
  */
 /* Larger than desktop */
-.prototype-intro-wrapper {
-  width: 100%;
-  height: 100vh;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .prototype-intro-wrapper .section-container {
-    max-width: 1200px;
-    padding: 30px; }
-  .prototype-intro-wrapper .intro-text h1 {
-    font-size: 5em;
+/*   Intro section   */
+.prototype-intro-wrapper .intro-text h1 {
+  font-size: 5em;
+  color: #E94444; }
+
+.prototype-intro-wrapper .intro-text p {
+  margin-bottom: 5px; }
+
+.prototype-intro-wrapper .intro-text p:nth-child(4) {
+  margin-bottom: 20px; }
+
+.prototype-intro-wrapper .intro-text p span {
+  font-family: Gotham_black, sans-serif; }
+
+.prototype-intro-wrapper .welcome-iphone {
+  text-align: center; }
+
+/*   Process section   */
+.prototype-process {
+  background: #fff; }
+  .prototype-process .process-text h1, .prototype-process .process-text h4 {
     color: #E94444; }
-  .prototype-intro-wrapper .intro-text p {
-    margin-bottom: 5px; }
-  .prototype-intro-wrapper .intro-text p:nth-child(4) {
-    margin-bottom: 20px; }
-  .prototype-intro-wrapper .intro-text p span {
-    font-family: Gotham_black, sans-serif; }
-  .prototype-intro-wrapper .welcome-iphone {
-    text-align: center; }
+  .prototype-process .process-text p {
+    color: #595959; }
 
 /* INTERACTION
    ========================================================================== */
