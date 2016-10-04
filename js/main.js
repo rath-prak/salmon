@@ -105,7 +105,7 @@ $('.navbar-toggle, .menu-list-items').click(function () {
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'user-interface', 'interaction', 'photography'],
+    anchors: ['home', 'about-me', 'prototype', 'interaction', 'photography'],
     // setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
@@ -119,7 +119,7 @@ $('.navbar-toggle, .menu-list-items').click(function () {
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#fff');
         $('.watermark-text, .contact-item').css('color', '#fff');
-        fadeInText(fadeTextUi);
+        fadeInText(fadeTextPrototype);
 
       } else {
         $('.white-logo').removeClass('active-logo');
@@ -137,7 +137,7 @@ $('.navbar-toggle, .menu-list-items').click(function () {
       var leavingSection = $(this);
 
       if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
-        resetfadeText(fadeTextUi, 0, 20, 1);
+        resetfadeText(fadeTextPrototype, 0, 20, 1);
       }
 
       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
@@ -165,11 +165,11 @@ $('.navbar-toggle, .menu-list-items').click(function () {
   /**
   * FADE IN TEXT FOR UX/PROTOTYPE PAGE
   */
-  var fadeTextUi = $('.fadetext-ui');
+  var fadeTextPrototype = $('.fadetext-prototype');
   var fadeTextInteraction = $('.fadetext-interaction');
 
   //set initial state of text
-  TweenMax.set([fadeTextUi, fadeTextInteraction], {
+  TweenMax.set([fadeTextPrototype, fadeTextInteraction], {
       alpha: 0,
       y: 30
   });

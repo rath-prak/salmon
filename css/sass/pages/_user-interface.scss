@@ -16,7 +16,7 @@
 	}
 }
 
-.user-interface {
+.prototype {
 	text-align: center;
 
 	h1, h2, h3 {
@@ -28,7 +28,7 @@
 	}
 }
 
-.ui-container {
+.prototype-container {
 	background: $salmon;
 
 	h1 {
@@ -40,12 +40,11 @@
 }
 
 
-
 /**
  * LARGER THAN MOBILE
  */
 @media (min-width: 400px) {
-	.ui-container {
+	.prototype-container {
 		.quote-text {
 			font-size: 1.7em;
 		}
@@ -65,7 +64,7 @@
  */
 @media screen and (min-width: 750px) {
 	
-	.ui-container {
+	.prototype-container {
 		article {
 			width: 70%;
 			text-align: left;

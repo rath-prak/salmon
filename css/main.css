@@ -1111,25 +1111,25 @@ hr {
     opacity: 0.08;
     width: 500px; }
 
-.user-interface {
+.prototype {
   text-align: center; }
-  .user-interface h1, .user-interface h2, .user-interface h3 {
+  .prototype h1, .prototype h2, .prototype h3 {
     font-family: Gotham_medium, sans-serif; }
-  .user-interface h1 {
+  .prototype h1 {
     font-size: 1.5em; }
 
-.ui-container {
+.prototype-container {
   background: #E94444; }
-  .ui-container h1 {
+  .prototype-container h1 {
     text-transform: uppercase; }
-  .ui-container .quote-text {
+  .prototype-container .quote-text {
     font-size: 1.5em; }
 
 /**
  * LARGER THAN MOBILE
  */
 @media (min-width: 400px) {
-  .ui-container .quote-text {
+  .prototype-container .quote-text {
     font-size: 1.7em; } }
 
 /**
@@ -1139,16 +1139,16 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  .ui-container article {
+  .prototype-container article {
     width: 70%;
     text-align: left; }
-  .ui-container h3 {
+  .prototype-container h3 {
     font-size: 2em;
     margin-bottom: 10px; }
-  .ui-container .quote-text {
+  .prototype-container .quote-text {
     font-size: 3em;
     line-height: 1em; }
-  .ui-container p {
+  .prototype-container p {
     margin-bottom: 15px; } }
 
 /* Larger than desktop */
@@ -1198,17 +1198,6 @@ hr {
   .interaction-container p {
     margin-bottom: 15px; } }
 
-/* Larger than desktop */
-/* Larger than Desktop HD */
-/* UX - Prototype */
-.fp-controlArrow.fp-next,
-.fp-controlArrow.fp-prev {
-  display: none; }
-
-/* Mobile first queries */
-/* Larger than mobile */
-/* Larger than phablet */
-/* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
 @media print {
