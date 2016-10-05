@@ -167,16 +167,26 @@
 
 	/*   Process section   */
 	.prototype-process {
-
 		background: #fff;
-		.process-text {
-			h1, h4 {
-				color: $salmon;
-			}
-			p {
-				color: #595959;
-			}
 
+		h1, h3, h5, h2{
+			color: $salmon;
+		}
+		p {
+				color: #595959;
+		}
+
+		.my-sketches, .sketch-wireframes {
+			margin-top: 50px;
+		}
+
+		.sketch-wireframes {
+			img {
+				width: 190px;
+			}
+			article {
+				margin-bottom: 50px;
+			}
 		}
 		
 	}

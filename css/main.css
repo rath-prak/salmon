@@ -1197,10 +1197,16 @@ hr {
 /*   Process section   */
 .prototype-process {
   background: #fff; }
-  .prototype-process .process-text h1, .prototype-process .process-text h4 {
+  .prototype-process h1, .prototype-process h3, .prototype-process h5, .prototype-process h2 {
     color: #E94444; }
-  .prototype-process .process-text p {
+  .prototype-process p {
     color: #595959; }
+  .prototype-process .my-sketches, .prototype-process .sketch-wireframes {
+    margin-top: 50px; }
+  .prototype-process .sketch-wireframes img {
+    width: 190px; }
+  .prototype-process .sketch-wireframes article {
+    margin-bottom: 50px; }
 
 /* INTERACTION
    ========================================================================== */
