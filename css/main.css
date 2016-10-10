@@ -1229,6 +1229,11 @@ hr {
   .prototype-process .mockups {
     background: #F2F2F2;
     width: 100%; }
+  .prototype-process .final-prototype-screens {
+    margin-top: 50px;
+    margin-bottom: 150px; }
+    .prototype-process .final-prototype-screens img {
+      width: 190px; }
 
 /* INTERACTION
    ========================================================================== */
