@@ -1196,7 +1196,8 @@ hr {
 
 /*   Process section   */
 .prototype-process {
-  background: #fff; }
+  background: #fff;
+  /*   mockup section   */ }
   .prototype-process h1, .prototype-process h3, .prototype-process h5, .prototype-process h2 {
     color: #E94444; }
   .prototype-process p {
@@ -1207,6 +1208,9 @@ hr {
     width: 190px; }
   .prototype-process .sketch-wireframes article {
     margin-bottom: 50px; }
+  .prototype-process .mockups {
+    background: #F2F2F2;
+    width: 100%; }
 
 /* INTERACTION
    ========================================================================== */
