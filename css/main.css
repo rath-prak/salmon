@@ -574,6 +574,9 @@ html {
   display: -ms-flexbox;
   display: flex; }
 
+/*---------------
+    GOTHAM
+---------------*/
 @font-face {
   font-family: Gotham_black;
   src: url(../fonts/GOTHAM-BLACK.TTF); }
@@ -586,6 +589,9 @@ html {
   font-family: Gotham_thin;
   src: url(../fonts/GOTHAM-LIGHT.TTF); }
 
+/*---------------
+    AVANTGARDE
+---------------*/
 @font-face {
   font-family: avant_light;
   src: url(../fonts/ITCAvantGardePro-XLt.otf); }
@@ -601,6 +607,17 @@ html {
 @font-face {
   font-family: avant_bold;
   src: url(../fonts/ITCAvantGardePro-Bold.otf); }
+
+/*---------------
+    SERIF
+---------------*/
+@font-face {
+  font-family: galaxie_book;
+  src: url(../fonts/GalaxieCopernicus-Book.otf); }
+
+@font-face {
+  font-family: galaxie_italic;
+  src: url(../fonts/GalaxieCopernicus-BookItalic.otf); }
 
 p {
   margin: 0; }
@@ -1181,7 +1198,8 @@ hr {
   color: #E94444; }
 
 .prototype-intro-wrapper .intro-text p {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-family: galaxie_italic; }
 
 .prototype-intro-wrapper .intro-text p:nth-child(4) {
   margin-bottom: 20px; }

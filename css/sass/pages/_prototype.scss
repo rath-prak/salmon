@@ -149,6 +149,7 @@
 			}
 			p {
 				margin-bottom: 5px;
+				font-family: $serif-italic;
 			}
 			p:nth-child(4) {
 				margin-bottom: 20px;
@@ -174,6 +175,7 @@
 		}
 		p {
 				color: #595959;
+				$serif: galaxie_book;
 		}
 
 		.my-sketches, .sketch-wireframes {
