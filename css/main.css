@@ -608,17 +608,6 @@ html {
   font-family: avant_bold;
   src: url(../fonts/ITCAvantGardePro-Bold.otf); }
 
-/*---------------
-    SERIF
----------------*/
-@font-face {
-  font-family: galaxie_book;
-  src: url(../fonts/GalaxieCopernicus-Book.otf); }
-
-@font-face {
-  font-family: galaxie_italic;
-  src: url(../fonts/GalaxieCopernicus-BookItalic.otf); }
-
 body,
 p {
   font-family: Gotham_thin, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -1195,7 +1184,8 @@ hr {
   font-size: 5em;
   color: #E94444;
   text-transform: uppercase;
-  margin-left: -5px; }
+  margin-left: -5px;
+  font-family: avant_bold, sans-serif; }
 
 .prototype-intro-wrapper .intro-text p {
   margin-bottom: 5px; }
@@ -1211,16 +1201,31 @@ hr {
   .prototype-intro-wrapper .welcome-iphone img {
     width: 200px; }
 
+.prototype-intro-wrapper .rect-line {
+  width: 75px;
+  height: 3px;
+  background: #FEFEE6;
+  margin-bottom: 20px; }
+
 /*   Process section   */
 .prototype-process {
   background: #fff;
+  /*   scope section   */
   /*   mockup section   */ }
-  .prototype-process h1, .prototype-process h2, .prototype-process h3 {
+  .prototype-process h1, .prototype-process h2, .prototype-process h3, .prototype-process h5 {
     color: #E94444; }
-  .prototype-process p, .prototype-process h5 {
-    color: #595959; }
-  .prototype-process .my-sketches, .prototype-process .sketch-wireframes {
-    margin-top: 50px; }
+  .prototype-process p {
+    color: #595959;
+    margin-bottom: 35px; }
+  .prototype-process h1 {
+    font-size: 2.5em;
+    font-size: avant_bold, sans-serif;
+    text-transform: uppercase; }
+  .prototype-process .scope h5 {
+    color: #595959;
+    font-style: italic; }
+  .prototype-process .wireframes, .prototype-process .sketch-wireframes {
+    margin-top: 35px; }
   .prototype-process .wireframe-sketches img {
     box-shadow: 2px 2px 1px #e5e5e5; }
   .prototype-process .sketch-wireframes img {

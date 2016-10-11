@@ -148,6 +148,7 @@
 				color: $salmon;
 				text-transform: uppercase;
 				margin-left: -5px;
+				font-family: $bold_avant;
 			}
 			p {
 				margin-bottom: 5px;
@@ -159,27 +160,49 @@
 				font-family: $bold;
 			}
 		}
+
 		.welcome-iphone {
 			text-align: center;
-				img {
-					width: 200px;
-				}
+			img {
+				width: 200px;
 			}
+		}
+
+		.rect-line {
+			width: 75px;
+			height: 3px;
+			background: $reverse;
+			margin-bottom: 20px;
+		}
 	}
 
 	/*   Process section   */
 	.prototype-process {
 		background: #fff;
 
-		h1, h2, h3 {
+		h1, h2, h3, h5{
 			color: $salmon;
 		}
-		p, h5 {
+		p {
 				color: #595959;
+				margin-bottom: $margin-bottom;
 		}
 
-		.my-sketches, .sketch-wireframes {
-			margin-top: 50px;
+		h1 {
+			font-size: 2.5em;
+			font-size: $bold_avant;
+			text-transform: uppercase;
+		}
+	/*   scope section   */
+		.scope {
+			h5 {
+				color: #595959;
+				font-style: italic;
+			}
+		}
+
+		.wireframes, .sketch-wireframes {
+			margin-top: $margin-top;
 		}
 
 		.wireframe-sketches {
