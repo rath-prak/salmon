@@ -146,10 +146,11 @@
 			h1 {
 				font-size: 5em;
 				color: $salmon;
+				text-transform: uppercase;
+				margin-left: -5px;
 			}
 			p {
 				margin-bottom: 5px;
-				font-family: $serif-italic;
 			}
 			p:nth-child(4) {
 				margin-bottom: 20px;
@@ -170,16 +171,21 @@
 	.prototype-process {
 		background: #fff;
 
-		h1, h3, h5, h2{
+		h1, h2, h3 {
 			color: $salmon;
 		}
-		p {
+		p, h5 {
 				color: #595959;
-				$serif: galaxie_book;
 		}
 
 		.my-sketches, .sketch-wireframes {
 			margin-top: 50px;
+		}
+
+		.wireframe-sketches {
+			img {
+				box-shadow: 2px 2px 1px #e5e5e5;
+			}
 		}
 
 		.sketch-wireframes {

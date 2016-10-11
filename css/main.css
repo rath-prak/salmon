@@ -619,13 +619,11 @@ html {
   font-family: galaxie_italic;
   src: url(../fonts/GalaxieCopernicus-BookItalic.otf); }
 
-p {
-  margin: 0; }
-
 body,
 p {
-  font-family: avant_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-family: Gotham_thin, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  font-size: 15px;
   line-height: 1.6;
   color: #FEFEE6; }
 
@@ -1195,11 +1193,12 @@ hr {
 /*   Intro section   */
 .prototype-intro-wrapper .intro-text h1 {
   font-size: 5em;
-  color: #E94444; }
+  color: #E94444;
+  text-transform: uppercase;
+  margin-left: -5px; }
 
 .prototype-intro-wrapper .intro-text p {
-  margin-bottom: 5px;
-  font-family: galaxie_italic; }
+  margin-bottom: 5px; }
 
 .prototype-intro-wrapper .intro-text p:nth-child(4) {
   margin-bottom: 20px; }
@@ -1216,12 +1215,14 @@ hr {
 .prototype-process {
   background: #fff;
   /*   mockup section   */ }
-  .prototype-process h1, .prototype-process h3, .prototype-process h5, .prototype-process h2 {
+  .prototype-process h1, .prototype-process h2, .prototype-process h3 {
     color: #E94444; }
-  .prototype-process p {
+  .prototype-process p, .prototype-process h5 {
     color: #595959; }
   .prototype-process .my-sketches, .prototype-process .sketch-wireframes {
     margin-top: 50px; }
+  .prototype-process .wireframe-sketches img {
+    box-shadow: 2px 2px 1px #e5e5e5; }
   .prototype-process .sketch-wireframes img {
     width: 190px; }
   .prototype-process .sketch-wireframes article {
