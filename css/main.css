@@ -1227,7 +1227,7 @@ hr {
   .prototype-process .wireframes, .prototype-process .sketch-wireframes {
     margin-top: 35px; }
   .prototype-process .wireframe-sketches img {
-    box-shadow: 2px 2px 1px #e5e5e5; }
+    border: solid 1px #e5e5e5; }
   .prototype-process .sketch-wireframes img {
     width: 190px; }
   .prototype-process .sketch-wireframes article {
