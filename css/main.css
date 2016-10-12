@@ -205,6 +205,9 @@ html {
   .group:after {
     clear: both; }
 
+/**
+ * TYPOGRAPHY
+ */
 /* Responsive grid
    ========================================================================== */
 .container {
@@ -1216,22 +1219,24 @@ hr {
     color: #E94444; }
   .prototype-process p {
     color: #595959;
-    margin-bottom: 35px; }
+    margin-bottom: 30px; }
   .prototype-process h1 {
     font-size: 2.5em;
     font-size: avant_bold, sans-serif;
     text-transform: uppercase; }
-  .prototype-process .scope h5 {
+  .prototype-process .scope h6 {
     color: #595959;
-    font-style: italic; }
-  .prototype-process .wireframes, .prototype-process .sketch-wireframes {
-    margin-top: 35px; }
-  .prototype-process .wireframe-sketches img {
-    border: solid 1px #e5e5e5; }
+    font-style: italic;
+    margin-bottom: 70px; }
+  .prototype-process .pen-paper-sketches {
+    margin-bottom: 20px; }
   .prototype-process .sketch-wireframes img {
-    width: 190px; }
-  .prototype-process .sketch-wireframes article {
-    margin-bottom: 50px; }
+    width: 190px;
+    border: solid 1px #e5e5e5; }
+  .prototype-process .sketch-wireframes h6 {
+    color: #595959;
+    font-style: italic;
+    margin-bottom: 70px; }
   .prototype-process .mockups {
     background: #F2F2F2;
     width: 100%; }

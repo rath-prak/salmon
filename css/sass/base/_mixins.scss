@@ -40,3 +40,15 @@
     @content;
   }
 }
+
+/**
+ * TYPOGRAPHY
+ */
+
+// small text in italic.
+@mixin captionitalic(){
+  color: #595959;
+  font-style: italic;
+  margin-bottom: $margin-bottom;
+}
+

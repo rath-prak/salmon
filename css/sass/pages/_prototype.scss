@@ -185,7 +185,7 @@
 		}
 		p {
 				color: #595959;
-				margin-bottom: $margin-bottom;
+				margin-bottom: 30px;
 		}
 
 		h1 {
@@ -195,29 +195,22 @@
 		}
 	/*   scope section   */
 		.scope {
-			h5 {
-				color: #595959;
-				font-style: italic;
+			h6 {
+				@include captionitalic;
 			}
 		}
 
-		.wireframes, .sketch-wireframes {
-			margin-top: $margin-top;
-		}
-
-		.wireframe-sketches {
-			img {
-				// box-shadow: 2px 2px 1px #e5e5e5;
-				border: solid 1px #e5e5e5;
-			}
+		.pen-paper-sketches {
+			margin-bottom: 20px;;
 		}
 
 		.sketch-wireframes {
 			img {
 				width: 190px;
+				border: solid 1px #e5e5e5;
 			}
-			article {
-				margin-bottom: 50px;
+			h6 {
+				@include captionitalic;
 			}
 		}
 		
