@@ -1227,12 +1227,9 @@ hr {
     margin-bottom: 30px; }
 
 /*   scope section   */
-.scope {
-  background: #fff; }
-  .scope h6 {
-    color: #595959;
-    font-style: italic;
-    margin-bottom: 70px; }
+.scope h6 {
+  color: #595959;
+  font-style: italic; }
 
 /*   Process section   */
 .prototype-process {
@@ -1244,8 +1241,7 @@ hr {
     border: solid 1px #e5e5e5; }
   .prototype-process .sketch-wireframes h6 {
     color: #595959;
-    font-style: italic;
-    margin-bottom: 70px; }
+    font-style: italic; }
   .prototype-process .mockups {
     background: #F2F2F2;
     width: 100%; }
