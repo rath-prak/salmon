@@ -136,22 +136,37 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
-
-
 }
+
+.prototype-main-wrapper {
+	h1, h2, h3, h5{
+			color: $salmon;
+		}
+		p {
+			color: #595959;
+			margin-bottom: 30px;
+		}
+
+		h1 {
+			font-size: 2.5em;
+			font-size: $bold_avant;
+			text-transform: uppercase;
+	}
+}
+
 	/*   Intro section   */
 	.prototype-intro-wrapper {
 		
 		.intro-text {
 			h1 {
-				font-size: 5em;
+				font-size: 4em;
 				color: $salmon;
 				text-transform: uppercase;
-				margin-left: -5px;
 				font-family: $bold_avant;
 			}
 			p {
 				margin-bottom: 5px;
+				color: $reverse;
 			}
 			p:nth-child(4) {
 				margin-bottom: 20px;
@@ -159,46 +174,46 @@
 			p span {
 				font-family: $bold;
 			}
-		}
-
-		.welcome-iphone {
-			text-align: center;
-			img {
-				width: 200px;
-			}
-		}
-
-		.rect-line {
-			width: 75px;
-			height: 3px;
-			background: $reverse;
-			margin-bottom: 20px;
-		}
+		}	
 	}
 
 	/*   Process section   */
-	.prototype-process {
-		background: #fff;
+	.process {
+		min-height: 400px;
+		background: #F2F2F2;
+	}
 
-		h1, h2, h3, h5{
-			color: $salmon;
-		}
-		p {
+	.process-container {
+		padding-bottom: 5px;
+
+		.process-text {
+			h1 {
+				font-size: 3em;
+				text-transform: uppercase;
+				color: $salmon;
+			}
+			p {
 				color: #595959;
 				margin-bottom: 30px;
-		}
-
-		h1 {
-			font-size: 2.5em;
-			font-size: $bold_avant;
-			text-transform: uppercase;
-		}
-	/*   scope section   */
-		.scope {
-			h6 {
-				@include captionitalic;
 			}
 		}
+	}
+
+/*   scope section   */
+
+	.scope {
+		background: #fff;
+		h6 {
+			@include captionitalic;
+		}
+	}
+
+
+
+	/*   Process section   */
+	.prototype-process {
+
+
 
 		.pen-paper-sketches {
 			margin-bottom: 20px;;

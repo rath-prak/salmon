@@ -1182,16 +1182,28 @@ hr {
  * LARGER THAN TABLET
  */
 /* Larger than desktop */
+.prototype-main-wrapper h1, .prototype-main-wrapper h2, .prototype-main-wrapper h3, .prototype-main-wrapper h5 {
+  color: #E94444; }
+
+.prototype-main-wrapper p {
+  color: #595959;
+  margin-bottom: 30px; }
+
+.prototype-main-wrapper h1 {
+  font-size: 2.5em;
+  font-size: avant_bold, sans-serif;
+  text-transform: uppercase; }
+
 /*   Intro section   */
 .prototype-intro-wrapper .intro-text h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: #E94444;
   text-transform: uppercase;
-  margin-left: -5px;
   font-family: avant_bold, sans-serif; }
 
 .prototype-intro-wrapper .intro-text p {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  color: #FEFEE6; }
 
 .prototype-intro-wrapper .intro-text p:nth-child(4) {
   margin-bottom: 20px; }
@@ -1199,35 +1211,32 @@ hr {
 .prototype-intro-wrapper .intro-text p span {
   font-family: Gotham_black, sans-serif; }
 
-.prototype-intro-wrapper .welcome-iphone {
-  text-align: center; }
-  .prototype-intro-wrapper .welcome-iphone img {
-    width: 200px; }
-
-.prototype-intro-wrapper .rect-line {
-  width: 75px;
-  height: 3px;
-  background: #FEFEE6;
-  margin-bottom: 20px; }
-
 /*   Process section   */
-.prototype-process {
-  background: #fff;
-  /*   scope section   */
-  /*   mockup section   */ }
-  .prototype-process h1, .prototype-process h2, .prototype-process h3, .prototype-process h5 {
+.process {
+  min-height: 400px;
+  background: #F2F2F2; }
+
+.process-container {
+  padding-bottom: 5px; }
+  .process-container .process-text h1 {
+    font-size: 3em;
+    text-transform: uppercase;
     color: #E94444; }
-  .prototype-process p {
+  .process-container .process-text p {
     color: #595959;
     margin-bottom: 30px; }
-  .prototype-process h1 {
-    font-size: 2.5em;
-    font-size: avant_bold, sans-serif;
-    text-transform: uppercase; }
-  .prototype-process .scope h6 {
+
+/*   scope section   */
+.scope {
+  background: #fff; }
+  .scope h6 {
     color: #595959;
     font-style: italic;
     margin-bottom: 70px; }
+
+/*   Process section   */
+.prototype-process {
+  /*   mockup section   */ }
   .prototype-process .pen-paper-sketches {
     margin-bottom: 20px; }
   .prototype-process .sketch-wireframes img {
