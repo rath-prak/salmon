@@ -101,19 +101,25 @@
    ========================================================================== */
 
 .prototype-main-wrapper {
-	h1, h2, h3, h5{
-			color: $salmon;
-		}
-		p {
-			color: #595959;
-			margin-bottom: 30px;
-		}
-
-		h1 {
-			font-size: 2.5em;
-			font-size: $bold_avant;
-			text-transform: uppercase;
+	h1, h2, h3, h4, h5 {
+		color: $salmon;
+		// text-transform: uppercase;
+		font-family: $bold_avant;
 	}
+	h2 {
+		font-size: 2.5em;
+	}
+	p {
+		color: #595959;
+		margin-bottom: 30px;
+	}
+	.scope,
+	.wireframes,
+	.mockup,
+	.final-prototype {
+		background: #fff;
+	}
+
 }
 
 
@@ -176,6 +182,13 @@
 
 	/*   Intro section   */
 	.prototype-intro-wrapper {
+
+		.prototype-watermark {
+			width: 100%;
+			position: absolute;
+			z-index: -1;
+			opacity: 0.02;
+		}
 		.prototype-case-study {
 			flex-direction: row;
 			.intro-text {
