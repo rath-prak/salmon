@@ -1169,19 +1169,6 @@ hr {
 /* Larger than desktop */
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
-/**
- * MOBILE FIRST QUERIES
- */
-/**
- * LARGER THAN MOBILE
- */
-/**
- * LARGER THAN PHAMBLET
- */
-/**
- * LARGER THAN TABLET
- */
-/* Larger than desktop */
 .prototype-main-wrapper h1, .prototype-main-wrapper h2, .prototype-main-wrapper h3, .prototype-main-wrapper h5 {
   color: #E94444; }
 
@@ -1194,23 +1181,59 @@ hr {
   font-size: avant_bold, sans-serif;
   text-transform: uppercase; }
 
+/**
+ * MOBILE FIRST QUERIES
+ */
 /*   Intro section   */
-.prototype-intro-wrapper .intro-text h1 {
-  font-size: 4em;
-  color: #E94444;
-  text-transform: uppercase;
-  font-family: avant_bold, sans-serif; }
+.prototype-intro-wrapper .intro-text {
+  margin-top: 80px;
+  margin-bottom: 35px; }
+  .prototype-intro-wrapper .intro-text h1 {
+    font-size: 3em;
+    color: #E94444;
+    text-transform: uppercase;
+    font-family: avant_bold, sans-serif; }
+  .prototype-intro-wrapper .intro-text p {
+    margin-bottom: 5px;
+    color: #FEFEE6; }
+  .prototype-intro-wrapper .intro-text p:nth-child(4) {
+    margin-bottom: 20px; }
+  .prototype-intro-wrapper .intro-text p span {
+    font-family: Gotham_black, sans-serif; }
 
-.prototype-intro-wrapper .intro-text p {
-  margin-bottom: 5px;
-  color: #FEFEE6; }
+.prototype-intro-wrapper .welcome-iphone {
+  display: none; }
 
-.prototype-intro-wrapper .intro-text p:nth-child(4) {
-  margin-bottom: 20px; }
+/**
+ * LARGER THAN MOBILE
+ */
+/**
+ * LARGER THAN PHAMBLET
+ */
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  /*   Intro section   */
+  .prototype-intro-wrapper .prototype-case-study {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .prototype-intro-wrapper .prototype-case-study .intro-text {
+      margin: 0px;
+      -ms-flex-preferred-size: 67%;
+          flex-basis: 67%;
+      max-width: 67%; }
+      .prototype-intro-wrapper .prototype-case-study .intro-text h1 {
+        font-size: 4em; }
+  .prototype-intro-wrapper .welcome-iphone {
+    display: inline;
+    text-align: center; }
+    .prototype-intro-wrapper .welcome-iphone img {
+      width: 80%; } }
 
-.prototype-intro-wrapper .intro-text p span {
-  font-family: Gotham_black, sans-serif; }
-
+/* Larger than desktop */
 /*   Process section   */
 .process {
   min-height: 400px;
