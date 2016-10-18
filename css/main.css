@@ -329,7 +329,7 @@ html {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
-.flexWrap {
+.flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
@@ -1182,9 +1182,12 @@ hr {
 
 .prototype-main-wrapper .scope,
 .prototype-main-wrapper .wireframes,
-.prototype-main-wrapper .mockup,
 .prototype-main-wrapper .final-prototype {
   background: #fff; }
+
+.prototype-main-wrapper .mockup {
+  background: #F2F2F2;
+  width: 100%; }
 
 /**
  * MOBILE FIRST QUERIES
@@ -1208,6 +1211,28 @@ hr {
 
 .prototype-intro-wrapper .welcome-iphone {
   display: none; }
+
+/*   Process section   */
+.process {
+  min-height: 400px;
+  background: #F2F2F2; }
+
+/*   wireframes section   */
+.wireframes .sketch-wireframes .wireframe-item {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
+  .wireframes .sketch-wireframes .wireframe-item img {
+    border: solid 1px #e5e5e5; }
+
+.wireframes .sketch-wireframes h6 {
+  color: #595959;
+  font-style: italic; }
+
+/*   scope section   */
+.scope h5 {
+  color: #595959;
+  font-style: italic; }
 
 /**
  * LARGER THAN MOBILE
@@ -1244,11 +1269,6 @@ hr {
       width: 80%; } }
 
 /* Larger than desktop */
-/*   Process section   */
-.process {
-  min-height: 400px;
-  background: #F2F2F2; }
-
 .process-container {
   padding-bottom: 5px; }
   .process-container .process-text h1 {
@@ -1259,30 +1279,23 @@ hr {
     color: #595959;
     margin-bottom: 30px; }
 
-/*   scope section   */
-.scope h6 {
+/*   Process section   */
+.prototype-process .pen-paper-sketches {
+  margin-bottom: 20px; }
+
+.prototype-process .sketch-wireframes img {
+  width: 190px;
+  border: solid 1px #e5e5e5; }
+
+.prototype-process .sketch-wireframes h6 {
   color: #595959;
   font-style: italic; }
 
-/*   Process section   */
-.prototype-process {
-  /*   mockup section   */ }
-  .prototype-process .pen-paper-sketches {
-    margin-bottom: 20px; }
-  .prototype-process .sketch-wireframes img {
-    width: 190px;
-    border: solid 1px #e5e5e5; }
-  .prototype-process .sketch-wireframes h6 {
-    color: #595959;
-    font-style: italic; }
-  .prototype-process .mockups {
-    background: #F2F2F2;
-    width: 100%; }
-  .prototype-process .final-prototype-screens {
-    margin-top: 50px;
-    margin-bottom: 150px; }
-    .prototype-process .final-prototype-screens img {
-      width: 190px; }
+.prototype-process .final-prototype-screens {
+  margin-top: 50px;
+  margin-bottom: 150px; }
+  .prototype-process .final-prototype-screens img {
+    width: 190px; }
 
 /* INTERACTION
    ========================================================================== */

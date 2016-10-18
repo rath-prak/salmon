@@ -115,9 +115,12 @@
 	}
 	.scope,
 	.wireframes,
-	.mockup,
 	.final-prototype {
 		background: #fff;
+	}
+	.mockup {
+		background: #F2F2F2;
+		width: 100%;
 	}
 
 }
@@ -158,7 +161,35 @@
 
 }
 
+/*   Process section   */
+.process {
+	min-height: 400px;
+	background: #F2F2F2;
+}
 
+/*   wireframes section   */
+.wireframes {
+	.sketch-wireframes {
+		.wireframe-item {
+		img {
+			border: solid 1px #e5e5e5;
+		}
+	    flex-basis: 22%;
+	    max-width: 24%;
+		}
+		h6 {
+			@include captionitalic;
+		}
+	}
+}
+
+/*   scope section   */
+
+.scope {
+	h5 {
+		@include captionitalic;
+	}
+}
 
 /**
  * LARGER THAN MOBILE
@@ -220,11 +251,7 @@
 }
 
 
-	/*   Process section   */
-	.process {
-		min-height: 400px;
-		background: #F2F2F2;
-	}
+
 
 	.process-container {
 		padding-bottom: 5px;
@@ -242,13 +269,7 @@
 		}
 	}
 
-/*   scope section   */
 
-	.scope {
-		h6 {
-			@include captionitalic;
-		}
-	}
 
 
 
@@ -271,11 +292,6 @@
 			}
 		}
 		
-		 /*   mockup section   */
-		.mockups {
-			background: #F2F2F2;
-			width: 100%;
-		}
 
 
 		.final-prototype-screens {
