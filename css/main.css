@@ -1193,6 +1193,13 @@ hr {
  * MOBILE FIRST QUERIES
  */
 /* Intro section */
+.prototype-intro-wrapper .prototype-watermark {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.02;
+  visibility: hidden; }
+
 .prototype-intro-wrapper .intro-text {
   margin-top: 80px;
   margin-bottom: 35px; }
@@ -1214,7 +1221,7 @@ hr {
 
 /* Process section */
 .process {
-  min-height: 400px;
+  min-height: 50vh;
   background: #F2F2F2; }
 
 /* scope section */
@@ -1229,7 +1236,7 @@ hr {
 
 /* wireframes section */
 .wireframes .pen-paper-wireframes {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
 
 .wireframes .sketch-wireframes .wireframe-item {
   -ms-flex-preferred-size: 22%;
@@ -1246,19 +1253,36 @@ hr {
 .mockup .mockup-text {
   max-width: 100%; }
 
-/**
- * LARGER THAN PHAMBLET
- */
+/* Final Prototype */
+.final-prototype .final-prototype-screens > div {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
+
+/* Framer */
+.framer {
+  min-height: 50vh; }
+  .framer .framer-text p {
+    color: #FEFEE6; }
+  .framer img {
+    width: 50%; }
+
+/* Footer */
+.footer {
+  height: 200px;
+  background: #000; }
+  .footer .social-footer {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em; }
+
 /**
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
   /*   Intro section   */
   .prototype-intro-wrapper .prototype-watermark {
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.02; }
+    visibility: visible; }
   .prototype-intro-wrapper .prototype-case-study {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1288,13 +1312,19 @@ hr {
         flex-basis: 50%;
     max-width: 49%; }
   .mockup .mockup-text {
-    margin-right: 50px; } }
-
-.final-prototype-screens {
-  margin-top: 50px;
-  margin-bottom: 150px; }
-  .final-prototype-screens img {
-    width: 190px; }
+    margin-right: 50px; }
+  /* Framer */
+  .framer {
+    min-height: 50vh; }
+    .framer .framer-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .framer .framer-text {
+      margin-right: 50px; }
+    .framer img {
+      width: 100%; } }
 
 /* INTERACTION
    ========================================================================== */

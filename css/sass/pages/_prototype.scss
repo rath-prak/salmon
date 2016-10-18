@@ -132,6 +132,13 @@
 
 /* Intro section */
 .prototype-intro-wrapper {
+	.prototype-watermark {
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		opacity: 0.02;
+		visibility: hidden;
+	}
 
 	.intro-text {
 		margin-top: 80px;
@@ -162,7 +169,7 @@
 
 /* Process section */
 .process {
-	min-height: 400px;
+	min-height: 50vh;
 	background: #F2F2F2;
 }
 
@@ -171,8 +178,8 @@
 
 .scope {
 	.client-sketches > div {
-		  flex-basis: 22%;
-	    max-width: 24%;
+	  flex-basis: 22%;
+    max-width: 24%;
 	}
 
 	h5 {
@@ -184,7 +191,7 @@
 /* wireframes section */
 .wireframes {
 	.pen-paper-wireframes {
-		margin-bottom: $margin-bottom;
+		margin-bottom: 30px;
 	}
 
 	.sketch-wireframes {
@@ -204,19 +211,45 @@
 /* Mockup section */
 .mockup {
 	.mockup-text {
-		// margin-right: 50px;
 		max-width: 100%;
 	}
 }
 
-
-/**
- * LARGER THAN PHAMBLET
- */
-@media (min-width: 550px) {
-
-
+/* Final Prototype */
+.final-prototype {
+	.final-prototype-screens > div {
+		flex-basis: 22%;
+    max-width: 24%;
+	}
 }
+
+
+/* Framer */
+.framer {
+	min-height: 50vh;
+	.framer-text {
+		p {
+			color: $reverse;
+		}
+	}
+	img {
+		width: 50%;
+	}
+}
+
+/* Footer */
+
+.footer {
+	height: 200px;
+	background: #000;
+		.social-footer {
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+}
+
+
 
 /**
  * LARGER THAN TABLET
@@ -227,11 +260,9 @@
 	.prototype-intro-wrapper {
 
 		.prototype-watermark {
-			width: 100%;
-			position: absolute;
-			z-index: -1;
-			opacity: 0.02;
+			visibility: visible;
 		}
+
 		.prototype-case-study {
 			flex-direction: row;
 			.intro-text {
@@ -267,20 +298,24 @@
 		}
 	}
 
+	/* Framer */
+	.framer {
+		min-height: 50vh;
+		.framer-container {
+			flex-direction: row;
+		}
+		.framer-text {
+			margin-right: 50px;
+		}
+		img {
+		width: 100%;
+		}
+	}
+
 }
 
 
 
-		
-
-
-		.final-prototype-screens {
-			margin-top: 50px;
-			margin-bottom: 150px;
-			img {
-				width: 190px;
-			}
-		}
 
 
 
