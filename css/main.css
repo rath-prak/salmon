@@ -1217,6 +1217,19 @@ hr {
   min-height: 400px;
   background: #F2F2F2; }
 
+/*   scope section   */
+.scope .client-sketches {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .scope .client-sketches .client-sketch-item {
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
+    max-width: 24%; }
+
+.scope h5 {
+  color: #595959;
+  font-style: italic; }
+
 /*   wireframes section   */
 .wireframes .sketch-wireframes .wireframe-item {
   -ms-flex-preferred-size: 22%;
@@ -1229,17 +1242,12 @@ hr {
   color: #595959;
   font-style: italic; }
 
-/*   scope section   */
-.scope h5 {
-  color: #595959;
-  font-style: italic; }
-
-/**
- * LARGER THAN MOBILE
- */
 /**
  * LARGER THAN PHAMBLET
  */
+@media (min-width: 550px) {
+  /*   scope section   */ }
+
 /**
  * LARGER THAN TABLET
  */
@@ -1268,7 +1276,6 @@ hr {
     .prototype-intro-wrapper .welcome-iphone img {
       width: 80%; } }
 
-/* Larger than desktop */
 .process-container {
   padding-bottom: 5px; }
   .process-container .process-text h1 {
