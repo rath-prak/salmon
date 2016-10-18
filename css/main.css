@@ -805,6 +805,20 @@ a {
               transform: translateX(10px); }
 
 /**
+ * SECONDARY NAVIGATION
+ */
+.secondary-nav-hidden {
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.sticky-nav-bar {
+  background: #1D2A46;
+  width: 100%;
+  height: 80px;
+  position: fixed; }
+
+/**
  * FULL PAGE NAVIGATION
  */
 .fp-nav-wrapper {
@@ -1315,7 +1329,7 @@ hr {
     margin-right: 50px; }
   /* Framer */
   .framer {
-    min-height: 50vh; }
+    min-height: 75vh; }
     .framer .framer-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;

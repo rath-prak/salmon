@@ -50,6 +50,24 @@
 }
 
 /**
+ * SECONDARY NAVIGATION
+ */
+
+.secondary-nav-hidden { //has something to do with the postitioning try chaning to relative
+	// bottom: -80;
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+
+.sticky-nav-bar {
+	background: $dark-blue;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+}
+
+/**
  * FULL PAGE NAVIGATION
  */
 

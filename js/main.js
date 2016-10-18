@@ -69,7 +69,25 @@ $('.navbar-toggle, .menu-list-items').click(function () {
         ease: Linear.easeNone
     }, 0.5); 
 
+// Secondary nav menu / sticky menu
 
+    var previousScroll = 0;
+    
+    $(window).scroll(function () {
+       var currentScroll = $(this).scrollTop();
+       if (currentScroll > previousScroll){
+           $('.secondary-nav').addClass("secondary-nav-hidden");
+       }
+       else {
+          $('.secondary-nav').removeClass("secondary-nav-hidden");
+       }
+       previousScroll = currentScroll;
+    });
+
+
+/**
+* FULL PAGE PLUGIN
+*/
 
 // initialize fullpage
 
