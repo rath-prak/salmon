@@ -1174,7 +1174,7 @@ hr {
   font-family: avant_bold, sans-serif; }
 
 .prototype-main-wrapper h2 {
-  font-size: 2.5em; }
+  font-size: 2em; }
 
 .prototype-main-wrapper p {
   color: #595959;
@@ -1192,7 +1192,7 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
-/*   Intro section   */
+/* Intro section */
 .prototype-intro-wrapper .intro-text {
   margin-top: 80px;
   margin-bottom: 35px; }
@@ -1212,25 +1212,25 @@ hr {
 .prototype-intro-wrapper .welcome-iphone {
   display: none; }
 
-/*   Process section   */
+/* Process section */
 .process {
   min-height: 400px;
   background: #F2F2F2; }
 
-/*   scope section   */
-.scope .client-sketches {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .scope .client-sketches .client-sketch-item {
-    -ms-flex-preferred-size: 24%;
-        flex-basis: 24%;
-    max-width: 24%; }
+/* scope section */
+.scope .client-sketches > div {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
 
 .scope h5 {
   color: #595959;
   font-style: italic; }
 
-/*   wireframes section   */
+/* wireframes section */
+.wireframes .pen-paper-wireframes {
+  margin-bottom: 60px; }
+
 .wireframes .sketch-wireframes .wireframe-item {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
@@ -1242,12 +1242,13 @@ hr {
   color: #595959;
   font-style: italic; }
 
+/* Mockup section */
+.mockup .mockup-text {
+  max-width: 100%; }
+
 /**
  * LARGER THAN PHAMBLET
  */
-@media (min-width: 550px) {
-  /*   scope section   */ }
-
 /**
  * LARGER THAN TABLET
  */
@@ -1274,34 +1275,25 @@ hr {
     display: inline;
     text-align: center; }
     .prototype-intro-wrapper .welcome-iphone img {
-      width: 80%; } }
+      width: 80%; }
+  /* Mockup section */
+  .mockup .mockup-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .mockup .mockup-text,
+  .mockup .mockup-screens {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 49%; }
+  .mockup .mockup-text {
+    margin-right: 50px; } }
 
-.process-container {
-  padding-bottom: 5px; }
-  .process-container .process-text h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-    color: #E94444; }
-  .process-container .process-text p {
-    color: #595959;
-    margin-bottom: 30px; }
-
-/*   Process section   */
-.prototype-process .pen-paper-sketches {
-  margin-bottom: 20px; }
-
-.prototype-process .sketch-wireframes img {
-  width: 190px;
-  border: solid 1px #e5e5e5; }
-
-.prototype-process .sketch-wireframes h6 {
-  color: #595959;
-  font-style: italic; }
-
-.prototype-process .final-prototype-screens {
+.final-prototype-screens {
   margin-top: 50px;
   margin-bottom: 150px; }
-  .prototype-process .final-prototype-screens img {
+  .final-prototype-screens img {
     width: 190px; }
 
 /* INTERACTION

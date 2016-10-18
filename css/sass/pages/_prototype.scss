@@ -107,7 +107,7 @@
 		font-family: $bold_avant;
 	}
 	h2 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 	p {
 		color: #595959;
@@ -122,7 +122,6 @@
 		background: #F2F2F2;
 		width: 100%;
 	}
-
 }
 
 
@@ -131,7 +130,7 @@
  */
 
 
-/*   Intro section   */
+/* Intro section */
 .prototype-intro-wrapper {
 
 	.intro-text {
@@ -161,24 +160,19 @@
 
 }
 
-/*   Process section   */
+/* Process section */
 .process {
 	min-height: 400px;
 	background: #F2F2F2;
 }
 
 
-
-/*   scope section   */
+/* scope section */
 
 .scope {
-	.client-sketches {
-			flex-wrap: wrap;
-		.client-sketch-item {
-		  flex-basis: 24%;
+	.client-sketches > div {
+		  flex-basis: 22%;
 	    max-width: 24%;
-		}
-
 	}
 
 	h5 {
@@ -187,9 +181,12 @@
 }
 
 
-
-/*   wireframes section   */
+/* wireframes section */
 .wireframes {
+	.pen-paper-wireframes {
+		margin-bottom: $margin-bottom;
+	}
+
 	.sketch-wireframes {
 		.wireframe-item {
 		img {
@@ -204,7 +201,13 @@
 	}
 }
 
-
+/* Mockup section */
+.mockup {
+	.mockup-text {
+		// margin-right: 50px;
+		max-width: 100%;
+	}
+}
 
 
 /**
@@ -212,17 +215,6 @@
  */
 @media (min-width: 550px) {
 
-	/*   scope section   */
-	// .scope {
-	// 	.client-sketches > div {
-	// 		flex-basis: 16%;
-	// 		max-width: 16%;
-	// 	}
-
-	// 	h5 {
-	// 		@include captionitalic;
-	// 	}
-	// }	
 
 }
 
@@ -260,49 +252,25 @@
 		}	
 	}
 
+	/* Mockup section */
+	.mockup {
+		.mockup-container {
+			flex-direction: row;
+		}
+		.mockup-text,
+		.mockup-screens {
+			flex-basis: 50%;
+	    max-width: 49%;
+		}
+		.mockup-text {
+			margin-right: 50px;
+		}
+	}
 
 }
 
 
 
-	.process-container {
-		padding-bottom: 5px;
-
-		.process-text {
-			h1 {
-				font-size: 3em;
-				text-transform: uppercase;
-				color: $salmon;
-			}
-			p {
-				color: #595959;
-				margin-bottom: 30px;
-			}
-		}
-	}
-
-
-
-
-
-	/*   Process section   */
-	.prototype-process {
-
-
-
-		.pen-paper-sketches {
-			margin-bottom: 20px;;
-		}
-
-		.sketch-wireframes {
-			img {
-				width: 190px;
-				border: solid 1px #e5e5e5;
-			}
-			h6 {
-				@include captionitalic;
-			}
-		}
 		
 
 
@@ -314,7 +282,6 @@
 			}
 		}
 
-	}
 
 
 	
