@@ -124,6 +124,7 @@
 
 /* Intro section */
 .ui-intro-wrapper {
+	// background: #043464;
 	.ui-watermark {
 		width: 100%;
 		top: 50%;
@@ -259,21 +260,22 @@
 		}
 
 		.ui-case-study {
-			flex-direction: row;
+			// flex-direction: row;
 			.intro-text {
-				margin: 0px;
+				// margin: 0px;
 				h1 {
 					font-size: 4em;
 				}
-				flex-basis: 67%;
-    		max-width: 67%;
+				// flex-basis: 67%;
+    // 		max-width: 67%;
 			}
 		}
 		.welcome-iphone {
 			display: inline;
 			text-align: center;
 			img {
-				width: 80%;
+				width: 100%;
+				// box-shadow: 1px 1px 10px #888888;
 			}
 		}	
 	}

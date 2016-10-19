@@ -1511,23 +1511,13 @@ hr {
   /*   Intro section   */
   .ui-intro-wrapper .ui-watermark {
     visibility: visible; }
-  .ui-intro-wrapper .ui-case-study {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .ui-intro-wrapper .ui-case-study .intro-text {
-      margin: 0px;
-      -ms-flex-preferred-size: 67%;
-          flex-basis: 67%;
-      max-width: 67%; }
-      .ui-intro-wrapper .ui-case-study .intro-text h1 {
-        font-size: 4em; }
+  .ui-intro-wrapper .ui-case-study .intro-text h1 {
+    font-size: 4em; }
   .ui-intro-wrapper .welcome-iphone {
     display: inline;
     text-align: center; }
     .ui-intro-wrapper .welcome-iphone img {
-      width: 80%; }
+      width: 100%; }
   /* Mockup section */
   .mockup .mockup-container {
     -webkit-box-orient: horizontal;

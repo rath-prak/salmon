@@ -10,7 +10,7 @@ $(document).ready(function(){
         y: '100%',
       });
     }
-    setTimeout(hidePreloader, 1300);
+    setTimeout(hidePreloader, 500);
     // setTimeout(goMan, 2000);
     // setTimeout(hideAnimation, 2500);
 
