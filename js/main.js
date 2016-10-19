@@ -54,7 +54,7 @@ menuToggle
   ease: Power4.easeInOut
   });
 
-$('.navbar-toggle, .menu-list-items, .back-button').click(function () {
+$('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
   menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
 });
 
@@ -71,39 +71,36 @@ $('.navbar-toggle, .menu-list-items, .back-button').click(function () {
 
 // Secondary nav-menu hides when scroll
 
-    var previousScroll = 0;
-    
-    $(window).scroll(function () {
-       var currentScroll = $(this).scrollTop();
-       var logoAndHamburger = $('.logo, .navbar-toggle');
-       var secondaryNav = $('.secondary-nav');
+  var previousScroll = 0;
 
-       if (currentScroll > previousScroll){
-           // $('.secondary-nav').addClass("secondary-nav-up");
-           TweenMax.to(secondaryNav, 0.2, {
-            y: '-80',
-            ease: Linear.easeNone
-           })
+  $(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    var logoAndHamburger = $('.logo, .navbar-toggle');
+    var secondaryNav = $('.secondary-nav');
 
-           TweenMax.to(secondaryNav, 0.2, {
-            css: {background: "#212e49"},
-            ease: Linear.easeNone
-           })
-       }
-       else {
-          // $('.secondary-nav').removeClass("secondary-nav-up");
+    if (currentScroll > previousScroll){
+      TweenMax.to(secondaryNav, 0.2, {
+      y: '-80',
+      ease: Linear.easeNone
+    })
 
-          function slideBack (divElement, yPos) {
-            TweenMax.to(divElement, 0.2, {
-            y: yPos,
-            ease: Linear.easeNone
-            });
-          }
-          slideBack(logoAndHamburger, 30);
-          slideBack(secondaryNav, 0);
-       }
-       previousScroll = currentScroll;
-    });
+    TweenMax.to(secondaryNav, 0.2, {
+      css: {background: "#212e49"},
+      ease: Linear.easeNone
+      })
+    }
+    else {
+      function slideBack (divElement, yPos) {
+          TweenMax.to(divElement, 0.2, {
+          y: yPos,
+          ease: Linear.easeNone
+          });
+        }
+      slideBack(logoAndHamburger, 30);
+      slideBack(secondaryNav, 0);
+      }
+      previousScroll = currentScroll;
+  });
 
 
 /**
@@ -144,7 +141,7 @@ $('.navbar-toggle, .menu-list-items, .back-button').click(function () {
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'interaction', 'photography'],
+    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography'],
     // setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
@@ -168,7 +165,7 @@ $('.navbar-toggle, .menu-list-items, .back-button').click(function () {
       }
 
       if (index === 4 ) {
-        fadeInText(fadeTextInteraction);
+        fadeInText(fadeTextUi);
       }
 
     },
@@ -180,7 +177,7 @@ $('.navbar-toggle, .menu-list-items, .back-button').click(function () {
       }
 
       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
-        resetfadeText(fadeTextInteraction, 0, 20, 1);
+        resetfadeText(fadeTextUi, 0, 20, 1);
       }
 
 
@@ -205,7 +202,7 @@ $('.navbar-toggle, .menu-list-items, .back-button').click(function () {
   * FADE IN TEXT FOR UX/PROTOTYPE PAGE
   */
   var fadeTextPrototype = $('.fadetext-prototype');
-  var fadeTextInteraction = $('.fadetext-interaction');
+  var fadeTextUi = $('.fadetext-ui');
 
   //set initial state of text
   TweenMax.set([fadeTextPrototype, fadeTextInteraction], {
@@ -282,15 +279,6 @@ $('.navbar-toggle, .menu-list-items, .back-button').click(function () {
     yoyo: true,
     ease: Power2.easeOut
   });
-
-  /**
-  * UX NEXT SLIDE BUTTON
-  */
-
-  $('.ux-next-slide01-button').click(function() {
-    $.fn.fullpage.moveSlideRight();
-  });
-
 
 
 

@@ -818,7 +818,7 @@ a {
  */
 .fp-nav-wrapper {
   position: fixed;
-  z-index: 12;
+  z-index: 200;
   background: #000;
   width: 100%;
   height: 100%;
@@ -848,8 +848,14 @@ a {
       text-decoration: none;
       cursor: pointer; }
 
-.nav-content-text {
-  display: none; }
+.nav-back-button {
+  cursor: pointer;
+  position: absolute;
+  top: 4%;
+  right: 4%; }
+  .nav-back-button i {
+    font-size: 2.5em;
+    color: #E94444; }
 
 /* Larger than mobile */
 /* Larger than phablet */
@@ -897,7 +903,7 @@ a {
  * FOOTER ELEMENTS - SOCIAL/CONTACT BAR AT RIGHTHAND CORNER OF PAGE
  */
 .social-main {
-  z-index: 101;
+  z-index: 100;
   position: absolute;
   right: 4%;
   bottom: 4%; }
@@ -1204,6 +1210,10 @@ hr {
 /* Intro section */
 .prototype-intro-wrapper .prototype-watermark {
   width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: absolute;
   z-index: -1;
   opacity: 0.02;
@@ -1335,29 +1345,29 @@ hr {
     .framer img {
       width: 100%; } }
 
-/* INTERACTION
+/* USER INTERFACE
    ========================================================================== */
 /**
  * MOBILE FIRST QUERIES
  */
-.interaction {
+.ui {
   text-align: center; }
-  .interaction h1, .interaction h2, .interaction h3 {
+  .ui h1, .ui h2, .ui h3 {
     font-family: Gotham_medium, sans-serif; }
-  .interaction h1 {
+  .ui h1 {
     font-size: 1.5em; }
 
-.interaction-container h1 {
+.ui-container h1 {
   text-transform: uppercase; }
 
-.interaction-container .quote-text {
+.ui-container .quote-text {
   font-size: 1.5em; }
 
 /**
  * LARGER THAN MOBILE
  */
 @media (min-width: 400px) {
-  .interaction-container .quote-text {
+  .ui-container .quote-text {
     font-size: 1.7em; } }
 
 /**
@@ -1367,20 +1377,183 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  .interaction-container article {
+  .ui-container article {
     width: 70%;
     text-align: left; }
-  .interaction-container h3 {
+  .ui-container h3 {
     font-size: 2em;
     margin-bottom: 10px; }
-  .interaction-container .quote-text {
+  .ui-container .quote-text {
     font-size: 3em;
     line-height: 1em; }
-  .interaction-container p {
+  .ui-container p {
     margin-bottom: 15px; } }
 
 /* Larger than desktop */
 /* Larger than Desktop HD */
+/* USER INTERFACE CASE STUDY / TANDEM
+   ========================================================================== */
+.ui-main-wrapper h1, .ui-main-wrapper h2, .ui-main-wrapper h3, .ui-main-wrapper h4, .ui-main-wrapper h5 {
+  color: #E94444;
+  font-family: avant_bold, sans-serif; }
+
+.ui-main-wrapper h2 {
+  font-size: 2em; }
+
+.ui-main-wrapper p {
+  color: #595959;
+  margin-bottom: 30px; }
+
+.ui-main-wrapper .scope,
+.ui-main-wrapper .wireframes,
+.ui-main-wrapper .final-prototype {
+  background: #fff; }
+
+.ui-main-wrapper .mockup {
+  background: #F2F2F2;
+  width: 100%; }
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+/* Intro section */
+.ui-intro-wrapper .ui-watermark {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.02;
+  visibility: hidden; }
+
+.ui-intro-wrapper .intro-text {
+  margin-top: 80px;
+  margin-bottom: 35px; }
+  .ui-intro-wrapper .intro-text h1 {
+    font-size: 3em;
+    color: #E94444;
+    text-transform: uppercase;
+    font-family: avant_bold, sans-serif; }
+  .ui-intro-wrapper .intro-text p {
+    margin-bottom: 5px;
+    color: #FEFEE6; }
+  .ui-intro-wrapper .intro-text p:nth-child(4) {
+    margin-bottom: 20px; }
+  .ui-intro-wrapper .intro-text p span {
+    font-family: Gotham_black, sans-serif; }
+
+.ui-intro-wrapper .welcome-iphone {
+  display: none; }
+
+/* Process section */
+.process {
+  min-height: 50vh;
+  background: #F2F2F2; }
+
+/* scope section */
+.scope .client-sketches > div {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
+
+.scope h5 {
+  color: #595959;
+  font-style: italic; }
+
+/* wireframes section */
+.wireframes .pen-paper-wireframes {
+  margin-bottom: 30px; }
+
+.wireframes .sketch-wireframes .wireframe-item {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
+  .wireframes .sketch-wireframes .wireframe-item img {
+    border: solid 1px #e5e5e5; }
+
+.wireframes .sketch-wireframes h6 {
+  color: #595959;
+  font-style: italic; }
+
+/* Mockup section */
+.mockup .mockup-text {
+  max-width: 100%; }
+
+/* Final Prototype */
+.final-prototype .final-prototype-screens > div {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
+
+/* Framer */
+.framer {
+  min-height: 50vh; }
+  .framer .framer-text p {
+    color: #FEFEE6; }
+  .framer img {
+    width: 50%; }
+
+/* Footer */
+.footer {
+  height: 200px;
+  background: #000; }
+  .footer .social-footer {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em; }
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  /*   Intro section   */
+  .ui-intro-wrapper .ui-watermark {
+    visibility: visible; }
+  .ui-intro-wrapper .ui-case-study {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .ui-intro-wrapper .ui-case-study .intro-text {
+      margin: 0px;
+      -ms-flex-preferred-size: 67%;
+          flex-basis: 67%;
+      max-width: 67%; }
+      .ui-intro-wrapper .ui-case-study .intro-text h1 {
+        font-size: 4em; }
+  .ui-intro-wrapper .welcome-iphone {
+    display: inline;
+    text-align: center; }
+    .ui-intro-wrapper .welcome-iphone img {
+      width: 80%; }
+  /* Mockup section */
+  .mockup .mockup-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .mockup .mockup-text,
+  .mockup .mockup-screens {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 49%; }
+  .mockup .mockup-text {
+    margin-right: 50px; }
+  /* Framer */
+  .framer {
+    min-height: 75vh; }
+    .framer .framer-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .framer .framer-text {
+      margin-right: 50px; }
+    .framer img {
+      width: 100%; } }
+
 @media print {
   header,
   nav,

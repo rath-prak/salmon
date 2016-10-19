@@ -1,24 +1,12 @@
-/* PROTOTYPE LANDING
+/* USER INTERFACE
    ========================================================================== */
 
 /**
  * MOBILE FIRST QUERIES
  */
 
-.p-background-icon {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	img {
-		opacity: 0.08;
-		width: 500px;
-	}
-}
-
-.prototype {
+.ui {
 	text-align: center;
-
 	h1, h2, h3 {
 		font-family: $medium;
 		
@@ -28,8 +16,9 @@
 	}
 }
 
-.prototype-container {
-	background: $salmon;
+.ui-container {
+	// background: $dark-blue;
+	// background: #1D2A46;
 
 	h1 {
 		text-transform: uppercase;
@@ -44,7 +33,7 @@
  * LARGER THAN MOBILE
  */
 @media (min-width: 400px) {
-	.prototype-container {
+	.ui-container {
 		.quote-text {
 			font-size: 1.7em;
 		}
@@ -64,7 +53,7 @@
  */
 @media screen and (min-width: 750px) {
 	
-	.prototype-container {
+	.ui-container {
 		article {
 			width: 70%;
 			text-align: left;
@@ -87,20 +76,23 @@
 }
 
 
-
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
 
 }
 
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	
+
+}
 
 
-
-/* PROTOTYPE CASE STUDY / BIRD NERD
+/* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
 
-.prototype-main-wrapper {
+.ui-main-wrapper {
 	h1, h2, h3, h4, h5 {
 		color: $salmon;
 		// text-transform: uppercase;
@@ -131,8 +123,8 @@
 
 
 /* Intro section */
-.prototype-intro-wrapper {
-	.prototype-watermark {
+.ui-intro-wrapper {
+	.ui-watermark {
 		width: 100%;
 		top: 50%;
 		left: 50%;
@@ -260,13 +252,13 @@
 @media screen and (min-width: 750px) {
 
 	/*   Intro section   */
-	.prototype-intro-wrapper {
+	.ui-intro-wrapper {
 
-		.prototype-watermark {
+		.ui-watermark {
 			visibility: visible;
 		}
 
-		.prototype-case-study {
+		.ui-case-study {
 			flex-direction: row;
 			.intro-text {
 				margin: 0px;
@@ -316,16 +308,5 @@
 	}
 
 }
-
-
-
-
-
-
-	
-		
-
-
-
 
 
