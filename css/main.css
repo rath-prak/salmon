@@ -1417,35 +1417,35 @@ hr {
  * MOBILE FIRST QUERIES
  */
 /* Intro section */
-.ui-intro-wrapper .ui-watermark {
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  z-index: -1;
-  opacity: 0.02;
-  visibility: hidden; }
-
-.ui-intro-wrapper .intro-text {
-  margin-top: 80px;
-  margin-bottom: 35px; }
-  .ui-intro-wrapper .intro-text h1 {
-    font-size: 3em;
-    color: #E94444;
-    text-transform: uppercase;
-    font-family: avant_bold, sans-serif; }
-  .ui-intro-wrapper .intro-text p {
-    margin-bottom: 5px;
-    color: #FEFEE6; }
-  .ui-intro-wrapper .intro-text p:nth-child(4) {
-    margin-bottom: 20px; }
-  .ui-intro-wrapper .intro-text p span {
-    font-family: Gotham_black, sans-serif; }
-
-.ui-intro-wrapper .welcome-iphone {
-  display: none; }
+.ui-intro-wrapper {
+  min-height: 100vh; }
+  .ui-intro-wrapper .ui-watermark {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.02;
+    visibility: hidden; }
+  .ui-intro-wrapper .intro-text {
+    margin-top: 80px;
+    margin-bottom: 35px; }
+    .ui-intro-wrapper .intro-text h1 {
+      font-size: 3em;
+      color: #E94444;
+      text-transform: uppercase;
+      font-family: avant_bold, sans-serif; }
+    .ui-intro-wrapper .intro-text p {
+      margin-bottom: 5px;
+      color: #FEFEE6; }
+    .ui-intro-wrapper .intro-text p:nth-child(4) {
+      margin-bottom: 20px; }
+    .ui-intro-wrapper .intro-text p span {
+      font-family: Gotham_black, sans-serif; }
+  .ui-intro-wrapper .welcome-iphone {
+    display: none; }
 
 /* Process section */
 .process {

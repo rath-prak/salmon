@@ -205,7 +205,7 @@ $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
   var fadeTextUi = $('.fadetext-ui');
 
   //set initial state of text
-  TweenMax.set([fadeTextPrototype, fadeTextInteraction], {
+  TweenMax.set([fadeTextPrototype, fadeTextUi], {
       alpha: 0,
       y: 30
   });
