@@ -807,12 +807,7 @@ a {
 /**
  * SECONDARY NAVIGATION
  */
-.secondary-nav-hidden {
-  opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease; }
-
-.sticky-nav-bar {
+.secondary-nav {
   background: #1D2A46;
   width: 100%;
   height: 80px;
@@ -1352,12 +1347,11 @@ hr {
   .interaction h1 {
     font-size: 1.5em; }
 
-.interaction-container {
-  background: #1D2A46; }
-  .interaction-container h1 {
-    text-transform: uppercase; }
-  .interaction-container .quote-text {
-    font-size: 1.5em; }
+.interaction-container h1 {
+  text-transform: uppercase; }
+
+.interaction-container .quote-text {
+  font-size: 1.5em; }
 
 /**
  * LARGER THAN MOBILE

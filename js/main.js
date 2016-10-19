@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   //NAVIGATION
 
-var menuBar = $(".navbar-toggle"); 
+var menuBar = $(".navbar-toggle");
 var menuToggle = new TimelineMax({paused:true, reversed:true});
 var slideDown = $(".fp-nav-wrapper");
 
@@ -54,7 +54,7 @@ menuToggle
   ease: Power4.easeInOut
   });
 
-$('.navbar-toggle, .menu-list-items').click(function () {
+$('.navbar-toggle, .menu-list-items, .back-button').click(function () {
   menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
 });
 
@@ -69,17 +69,38 @@ $('.navbar-toggle, .menu-list-items').click(function () {
         ease: Linear.easeNone
     }, 0.5); 
 
-// Secondary nav menu / sticky menu
+// Secondary nav-menu hides when scroll
 
     var previousScroll = 0;
     
     $(window).scroll(function () {
        var currentScroll = $(this).scrollTop();
+       var logoAndHamburger = $('.logo, .navbar-toggle');
+       var secondaryNav = $('.secondary-nav');
+
        if (currentScroll > previousScroll){
-           $('.secondary-nav').addClass("secondary-nav-hidden");
+           // $('.secondary-nav').addClass("secondary-nav-up");
+           TweenMax.to(secondaryNav, 0.2, {
+            y: '-80',
+            ease: Linear.easeNone
+           })
+
+           TweenMax.to(secondaryNav, 0.2, {
+            css: {background: "#212e49"},
+            ease: Linear.easeNone
+           })
        }
        else {
-          $('.secondary-nav').removeClass("secondary-nav-hidden");
+          // $('.secondary-nav').removeClass("secondary-nav-up");
+
+          function slideBack (divElement, yPos) {
+            TweenMax.to(divElement, 0.2, {
+            y: yPos,
+            ease: Linear.easeNone
+            });
+          }
+          slideBack(logoAndHamburger, 30);
+          slideBack(secondaryNav, 0);
        }
        previousScroll = currentScroll;
     });
