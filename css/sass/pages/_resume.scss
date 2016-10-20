@@ -1,0 +1,87 @@
+/* RESUME
+   ========================================================================== */
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+
+.resume {
+	background: black;
+	.resume-wrapper {
+
+
+	}
+}
+
+.resume-body {
+	.experience {
+		max-height: 550px;
+		overflow: scroll;
+	}
+	.experience,
+	.education {
+		flex-basis: 45%;
+		flex-grow: 1;
+    min-width: 400px;
+	}
+	p, 
+	li {
+		font-size: 0.9em;
+	}
+	h2 {
+		text-transform: uppercase;
+	}
+	.experience > h2 {
+		margin-bottom: 1em;
+		text-decoration: underline
+
+	}
+	.work-placement {
+			font-family: $body_avant; 
+		span {
+			font-family: $bold_avant;
+		}
+	}
+	.work-position {
+		margin-bottom: 1em;
+		font-style: italic;
+	}
+	.work-description {
+		margin-bottom: 1em;
+	}
+	.work-duites {
+		li:first-child {
+			list-style: none;
+			padding-left: 0;
+		}
+	}
+
+}
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+}

@@ -141,7 +141,7 @@ $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography'],
+    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography', 'resume'],
     // setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
