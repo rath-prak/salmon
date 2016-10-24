@@ -34,6 +34,8 @@ $(document).ready(function(){
 
 
   //NAVIGATION
+var $menuBar = $(".navbar-toggle"); // rewrite code //refactor code
+
 
 var menuBar = $(".navbar-toggle");
 var menuToggle = new TimelineMax({paused:true, reversed:true});
@@ -82,7 +84,7 @@ $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
       TweenMax.to(secondaryNav, 0.2, {
       y: '-80',
       ease: Linear.easeNone
-    })
+      })
 
     TweenMax.to(secondaryNav, 0.2, {
       css: {background: "#212e49"},
@@ -184,7 +186,6 @@ $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
     } 
 
   }); //end of fullpage.js
-
 
   /**
   * VIVIUS/Rayfinn logo

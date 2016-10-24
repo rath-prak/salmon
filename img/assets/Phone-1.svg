@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="862px" height="1776px" viewBox="0 0 862 1776" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Phone 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,1627 L0,149 C0,61.4667969 45.0078125,0 150,0 C255.320313,6.20727465e-15 670.771441,1.08235239e-14 714,0 C782.796875,-1.08235242e-14 862,29.7890625 862,149 L862,1627 C862,1676.57682 847.845703,1776 711,1776 L150,1776 C14.7480469,1776 0,1677.12891 0,1627 Z M431.5,1734 C468.779221,1734 499,1703.77922 499,1666.5 C499,1629.22078 468.779221,1599 431.5,1599 C394.220779,1599 364,1629.22078 364,1666.5 C364,1703.77922 394.220779,1734 431.5,1734 Z M431,1726 C464.137085,1726 491,1699.13708 491,1666 C491,1632.86292 464.137085,1606 431,1606 C397.862915,1606 371,1632.86292 371,1666 C371,1699.13708 397.862915,1726 431,1726 Z M364,122 C364,117.029437 368.028588,113 373.00019,113 L488.99981,113 C493.970478,113 498,117.028344 498,122 C498,126.970563 493.971412,131 488.99981,131 L373.00019,131 C368.029522,131 364,126.971656 364,122 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="862" height="1776" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="56" y="228" width="750" height="1334"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-10" y="-10" width="770" height="1354">
+            <rect x="46" y="218" width="770" height="1354" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flowchart-kit" transform="translate(-279.000000, -845.000000)">
+            <g id="Phone-1" transform="translate(279.000000, 845.000000)">
+                <g id="Phone">
+                    <g id="Body" stroke="#4A535D" stroke-width="10">
+                        <use mask="url(#mask-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Screen">
+                        <use fill-opacity="0.05" fill="#4A535D" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use stroke="#4A535D" mask="url(#mask-4)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
