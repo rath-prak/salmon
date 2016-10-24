@@ -5,6 +5,19 @@
  * MOBILE FIRST QUERIES
  */
 
+.resume-intro-wrapper {
+	// background: #043464;
+	.resume-watermark {
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		z-index: -1;
+		opacity: 0.02;
+		visibility: hidden;
+	}
+}
 
 .resume {
 	background: black;
@@ -15,24 +28,21 @@
 }
 
 .resume-body {
-	.experience {
-		max-height: 550px;
-		overflow: scroll;
-	}
-	.experience,
-	.education {
-		flex-basis: 45%;
-		flex-grow: 1;
-    min-width: 400px;
-	}
+
+	// .experience,
+	// .technical-skills {
+	// 	flex-basis: 45%;
+	// 	flex-grow: 1;
+ //    min-width: 400px;
+	// }
 	p, 
 	li {
-		font-size: 0.9em;
+		// font-size: 0.9em;
 	}
-	h2 {
+	h1 {
 		text-transform: uppercase;
 	}
-	.experience > h2 {
+	.experience > h1 {
 		margin-bottom: 1em;
 		text-decoration: underline
 
@@ -50,38 +60,31 @@
 	.work-description {
 		margin-bottom: 1em;
 	}
-	.work-duites {
-		li:first-child {
-			list-style: none;
-			padding-left: 0;
+	.work-responsibilities {
+		font-family: $medium_avant;
+		letter-spacing: inherit;
+	}
+	ul {
+		margin: 0 0 45px;
+	}
+
+
+}
+
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+
+	/*   Intro section   */
+	.resume-intro-wrapper {
+
+		.resume-watermark {
+			visibility: visible;
 		}
 	}
 
 }
 
 
-
-/* Larger than mobile */
-@media (min-width: 400px) {
-
-}
-
-/* Larger than phablet */
-@media (min-width: 550px) {
-
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-
-}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-
-}

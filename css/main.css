@@ -1552,30 +1552,24 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
+.resume-intro-wrapper .resume-watermark {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.02;
+  visibility: hidden; }
+
 .resume {
   background: black; }
 
-.resume-body .experience {
-  max-height: 550px;
-  overflow: scroll; }
-
-.resume-body .experience,
-.resume-body .education {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  min-width: 400px; }
-
-.resume-body p,
-.resume-body li {
-  font-size: 0.9em; }
-
-.resume-body h2 {
+.resume-body h1 {
   text-transform: uppercase; }
 
-.resume-body .experience > h2 {
+.resume-body .experience > h1 {
   margin-bottom: 1em;
   text-decoration: underline; }
 
@@ -1591,15 +1585,21 @@ hr {
 .resume-body .work-description {
   margin-bottom: 1em; }
 
-.resume-body .work-duites li:first-child {
-  list-style: none;
-  padding-left: 0; }
+.resume-body .work-responsibilities {
+  font-family: avant_medium, sans-serif;
+  letter-spacing: inherit; }
 
-/* Larger than mobile */
-/* Larger than phablet */
-/* Larger than tablet */
-/* Larger than desktop */
-/* Larger than Desktop HD */
+.resume-body ul {
+  margin: 0 0 45px; }
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  /*   Intro section   */
+  .resume-intro-wrapper .resume-watermark {
+    visibility: visible; } }
+
 @media print {
   header,
   nav,
