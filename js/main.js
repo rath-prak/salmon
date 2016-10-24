@@ -11,52 +11,44 @@ $(document).ready(function(){
       });
     }
     setTimeout(hidePreloader, 500);
-    // setTimeout(goMan, 2000);
-    // setTimeout(hideAnimation, 2500);
-
-    // function hideAnimation () {
-    //   var transitionContainer = $('#transition-container');
-    //   transitionContainer.fadeOut(2000);
-    // }
-
   });
 
-  // var goMan = function (){
-  //     var svgContainer = document.getElementById('transition-container');
-  //     var animItem = bodymovin.loadAnimation({
-  //     wrapper: svgContainer,
-  //     animType: 'svg',
-  //     loop: false,
-  //     path: '../data/spinbar-data.json'
-  //     });
-  //     bodymovin.setDirection(-1);
-  //   };
 
 
-  //NAVIGATION
-var $menuBar = $(".navbar-toggle"); // rewrite code //refactor code
+//NAVIGATION
+
+// var navigationSlideMenu = {
+//   init: function() {
+//     this.cacheDom();
+//   },
+//   cacheDom: function() {
+//     this.
+//   }
+// }
 
 
-var menuBar = $(".navbar-toggle");
+
+
+
+
+var $menuBar = $(".navbar-toggle");
+var $menuListItem = $("menu-list-items");
+var $slideDown = $(".fp-nav-wrapper");
+var $navBackButton = $(".nav-back-button")
 var menuToggle = new TimelineMax({paused:true, reversed:true});
-var slideDown = $(".fp-nav-wrapper");
 
-TweenMax.set(slideDown, {
-      y: '-100%'
+
+TweenMax.set($slideDown, {
+    y: '-100%'
   });
 
 menuToggle  
-  // .to(menuBar, 0.5, {
-  // x:'-30',
-  // ease: Back.easeOut
-  // ease: Back.easeIn.config(2.2)
-  // })
-  .to(slideDown, 1, {
+  .to($slideDown, 1, {
   y: '0%',
   ease: Power4.easeInOut
   });
 
-$('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
+$menuBar.add($menuListItem).add($navBackButton).click(function () {
   menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
 });
 
@@ -76,17 +68,17 @@ $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
   var previousScroll = 0;
 
   $(window).scroll(function () {
-    var currentScroll = $(this).scrollTop();
-    var logoAndHamburger = $('.logo, .navbar-toggle');
-    var secondaryNav = $('.secondary-nav');
+    var $currentScroll = $(this).scrollTop();
+    var $logoAndHamburger = $('.logo, .navbar-toggle');
+    var $secondaryNav = $('.secondary-nav');
 
-    if (currentScroll > previousScroll){
-      TweenMax.to(secondaryNav, 0.2, {
+    if ($currentScroll > previousScroll){
+      TweenMax.to($secondaryNav, 0.2, {
       y: '-80',
       ease: Linear.easeNone
       })
 
-    TweenMax.to(secondaryNav, 0.2, {
+    TweenMax.to($secondaryNav, 0.2, {
       css: {background: "#212e49"},
       ease: Linear.easeNone
       })
@@ -98,10 +90,10 @@ $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
           ease: Linear.easeNone
           });
         }
-      slideBack(logoAndHamburger, 30);
-      slideBack(secondaryNav, 0);
+      slideBack($logoAndHamburger, 30);
+      slideBack($secondaryNav, 0);
       }
-      previousScroll = currentScroll;
+      previousScroll = $currentScroll;
   });
 
 
