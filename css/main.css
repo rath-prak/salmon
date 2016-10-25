@@ -1574,31 +1574,34 @@ hr {
   .resume-body li {
     color: #373D3F; }
   .resume-body .experience {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
     margin: 0 0 5px 0;
-    max-width: 50%; }
+    max-width: 55%; }
   .resume-body .technical-skills {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
     margin: 0 5px 0 0;
-    max-width: 40%; }
+    max-width: 35%; }
   .resume-body p,
   .resume-body li {
     font-size: 0.9em; }
   .resume-body h1 {
     font-family: avant_bold, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: .5em;
     color: #E94444; }
   .resume-body h1,
   .resume-body .year,
-  .resume-body .work-placement {
+  .resume-body .work-placement,
+  .resume-body .skill-heading,
+  .resume-body .skills-tech {
     font-family: avant_bold, sans-serif; }
   .resume-body .work-title,
   .resume-body .work-responsibilities {
     font-family: avant_medium, sans-serif; }
-  .resume-body .year {
+  .resume-body .year,
+  .resume-body .skill-heading {
     font-size: 1.5em;
     text-decoration: underline; }
   .resume-body .work-placement span {
@@ -1610,6 +1613,13 @@ hr {
     margin-bottom: 1em; }
   .resume-body ul {
     margin: 0 0 45px; }
+  .resume-body .technical-skills p {
+    text-indent: 20px;
+    font-style: italic; }
+  .resume-body .technical-skills .skills-tech {
+    font-family: avant_medium, sans-serif; }
+  .resume-body .technical-skills .skill-heading {
+    margin-top: 30px; }
 
 /**
  * LARGER THAN TABLET

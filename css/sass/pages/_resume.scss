@@ -19,6 +19,8 @@
 }
 
 
+// RESUME
+
 .resume-body {
 	background: #fff;
 	padding-top: 30px;
@@ -33,14 +35,14 @@
 	}
 	
 	.experience {
-		flex-basis: 50%;
+		flex-basis: 55%;
     margin: 0 0 5px 0;
-    max-width: 50%;
+    max-width: 55%;
    }
 	.technical-skills {
-		flex-basis: 40%;
+		flex-basis: 35%;
     margin: 0 5px 0 0;
-    max-width: 40%;
+    max-width: 35%;
 	}
 
 	p, 
@@ -49,14 +51,16 @@
 	}
 	h1 {
 		font-family: $bold_avant;
-		font-size: 3em;
+		font-size: 2.5em;
 		margin-bottom: .5em;
 		color: $salmon;
 	}
 	
 	h1,
 	.year,
-	.work-placement {
+	.work-placement,
+	.skill-heading,
+	.skills-tech {
 		font-family: $bold_avant;
 	}
 	.work-title,
@@ -65,7 +69,8 @@
 	}
 
 
-	.year {
+	.year,
+	.skill-heading {
 		font-size: 1.5em;
 		text-decoration: underline;
 	}
@@ -85,9 +90,26 @@
 		margin: 0 0 45px;
 	}
 
+// TECHNICAL SKILLS
+
+	.technical-skills {
+		p {
+			text-indent: 20px;
+			font-style: italic;
+		}
+		.skills-tech {
+			font-family: $medium_avant;
+		}
+		.skill-heading {
+			margin-top: 30px;
+		}
+	}
 
 }
 
+
+
+// TECHNICAL SKILLS
 
 /**
  * LARGER THAN TABLET
