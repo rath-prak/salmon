@@ -6,7 +6,6 @@
  */
 
 .resume-intro-wrapper {
-	// background: #043464;
 	.resume-watermark {
 		width: 100%;
 		top: 50%;
@@ -19,50 +18,68 @@
 	}
 }
 
-.resume {
-	background: black;
-	.resume-wrapper {
-
-
-	}
-}
 
 .resume-body {
+	background: #fff;
+	padding-top: 30px;
 
-	// .experience,
-	// .technical-skills {
-	// 	flex-basis: 45%;
-	// 	flex-grow: 1;
- //    min-width: 400px;
-	// }
+	p, 
+	h1, 
+	h2, 
+	h3, 
+	h4,
+	li {
+		color: $primary-font-color;
+	}
+	
+	.experience {
+		flex-basis: 50%;
+    margin: 0 0 5px 0;
+    max-width: 50%;
+   }
+	.technical-skills {
+		flex-basis: 40%;
+    margin: 0 5px 0 0;
+    max-width: 40%;
+	}
+
 	p, 
 	li {
-		// font-size: 0.9em;
+		font-size: 0.9em;
 	}
 	h1 {
-		text-transform: uppercase;
+		font-family: $bold_avant;
+		font-size: 3em;
+		margin-bottom: .5em;
+		color: $salmon;
 	}
-	.experience > h1 {
-		margin-bottom: 1em;
-		text-decoration: underline
+	
+	h1,
+	.year,
+	.work-placement {
+		font-family: $bold_avant;
+	}
+	.work-title,
+	.work-responsibilities {
+		font-family: $medium_avant;
+	}
 
+
+	.year {
+		font-size: 1.5em;
+		text-decoration: underline;
 	}
 	.work-placement {
-			font-family: $body_avant; 
 		span {
-			font-family: $bold_avant;
+			font-family: $body_avant;
 		}
 	}
-	.work-position {
+	.work-title {
 		margin-bottom: 1em;
 		font-style: italic;
 	}
 	.work-description {
 		margin-bottom: 1em;
-	}
-	.work-responsibilities {
-		font-family: $medium_avant;
-		letter-spacing: inherit;
 	}
 	ul {
 		margin: 0 0 45px;

@@ -1195,7 +1195,7 @@ hr {
   font-size: 2em; }
 
 .prototype-main-wrapper p {
-  color: #595959;
+  color: #373D3F;
   margin-bottom: 30px; }
 
 .prototype-main-wrapper .scope,
@@ -1563,34 +1563,53 @@ hr {
   opacity: 0.02;
   visibility: hidden; }
 
-.resume {
-  background: black; }
-
-.resume-body h1 {
-  text-transform: uppercase; }
-
-.resume-body .experience > h1 {
-  margin-bottom: 1em;
-  text-decoration: underline; }
-
-.resume-body .work-placement {
-  font-family: avant_book, sans-serif; }
-  .resume-body .work-placement span {
+.resume-body {
+  background: #fff;
+  padding-top: 30px; }
+  .resume-body p,
+  .resume-body h1,
+  .resume-body h2,
+  .resume-body h3,
+  .resume-body h4,
+  .resume-body li {
+    color: #373D3F; }
+  .resume-body .experience {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 0 0 5px 0;
+    max-width: 50%; }
+  .resume-body .technical-skills {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0 5px 0 0;
+    max-width: 40%; }
+  .resume-body p,
+  .resume-body li {
+    font-size: 0.9em; }
+  .resume-body h1 {
+    font-family: avant_bold, sans-serif;
+    font-size: 3em;
+    margin-bottom: .5em;
+    color: #E94444; }
+  .resume-body h1,
+  .resume-body .year,
+  .resume-body .work-placement {
     font-family: avant_bold, sans-serif; }
-
-.resume-body .work-position {
-  margin-bottom: 1em;
-  font-style: italic; }
-
-.resume-body .work-description {
-  margin-bottom: 1em; }
-
-.resume-body .work-responsibilities {
-  font-family: avant_medium, sans-serif;
-  letter-spacing: inherit; }
-
-.resume-body ul {
-  margin: 0 0 45px; }
+  .resume-body .work-title,
+  .resume-body .work-responsibilities {
+    font-family: avant_medium, sans-serif; }
+  .resume-body .year {
+    font-size: 1.5em;
+    text-decoration: underline; }
+  .resume-body .work-placement span {
+    font-family: avant_book, sans-serif; }
+  .resume-body .work-title {
+    margin-bottom: 1em;
+    font-style: italic; }
+  .resume-body .work-description {
+    margin-bottom: 1em; }
+  .resume-body ul {
+    margin: 0 0 45px; }
 
 /**
  * LARGER THAN TABLET
