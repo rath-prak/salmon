@@ -101,7 +101,7 @@ navigationSlideMenu.init();
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
     anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography', 'resume'],
-    // setResponsive: true,
+    setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
  

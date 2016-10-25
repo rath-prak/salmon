@@ -1142,7 +1142,7 @@ hr {
           transform: translate(-50%, -50%); }
   .p-background-icon img {
     opacity: 0.08;
-    width: 500px; }
+    width: 300px; }
 
 .prototype {
   text-align: center; }
@@ -1172,6 +1172,8 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
+  .p-background-icon img {
+    width: 500px; }
   .prototype-container article {
     width: 70%;
     text-align: left; }
@@ -1573,16 +1575,6 @@ hr {
   .resume-body h4,
   .resume-body li {
     color: #373D3F; }
-  .resume-body .experience {
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-    margin: 0 0 5px 0;
-    max-width: 55%; }
-  .resume-body .technical-skills {
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
-    margin: 0 5px 0 0;
-    max-width: 35%; }
   .resume-body p,
   .resume-body li {
     font-size: 0.9em; }
@@ -1618,8 +1610,8 @@ hr {
     font-style: italic; }
   .resume-body .technical-skills .skills-tech {
     font-family: avant_medium, sans-serif; }
-  .resume-body .technical-skills .skill-heading {
-    margin-top: 30px; }
+  .resume-body .technical-skills .skill {
+    margin-bottom: 35px; }
 
 /**
  * LARGER THAN TABLET
@@ -1627,7 +1619,17 @@ hr {
 @media screen and (min-width: 750px) {
   /*   Intro section   */
   .resume-intro-wrapper .resume-watermark {
-    visibility: visible; } }
+    visibility: visible; }
+  .resume-body .experience {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    margin: 0 0 5px 0;
+    max-width: 55%; }
+  .resume-body .technical-skills {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    margin: 0 5px 0 0;
+    max-width: 35%; } }
 
 @media print {
   header,

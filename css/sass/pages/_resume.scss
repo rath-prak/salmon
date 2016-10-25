@@ -34,17 +34,6 @@
 		color: $primary-font-color;
 	}
 	
-	.experience {
-		flex-basis: 55%;
-    margin: 0 0 5px 0;
-    max-width: 55%;
-   }
-	.technical-skills {
-		flex-basis: 35%;
-    margin: 0 5px 0 0;
-    max-width: 35%;
-	}
-
 	p, 
 	li {
 		font-size: 0.9em;
@@ -100,8 +89,8 @@
 		.skills-tech {
 			font-family: $medium_avant;
 		}
-		.skill-heading {
-			margin-top: 30px;
+		.skill {
+			margin-bottom: 35px;
 		}
 	}
 
@@ -121,6 +110,19 @@
 
 		.resume-watermark {
 			visibility: visible;
+		}
+	}
+
+	.resume-body {
+		.experience {
+			flex-basis: 55%;
+	    margin: 0 0 5px 0;
+	    max-width: 55%;
+	   }
+		.technical-skills {
+			flex-basis: 35%;
+	    margin: 0 5px 0 0;
+	    max-width: 35%;
 		}
 	}
 
