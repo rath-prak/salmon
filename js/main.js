@@ -2,6 +2,7 @@
 var navigationSlideMenu = require('./lib/navigation.js');
 var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');
+var animatedText = require('./lib/typographyAnimation.js');
 
 $(document).ready(function(){
 
@@ -15,8 +16,6 @@ $(document).ready(function(){
 
 // NAVIGATION
 navigationSlideMenu.init();
-
-
 
 
 // hamburger menu
@@ -105,9 +104,9 @@ navigationSlideMenu.init();
     // setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
-
+ 
       if (index == 2) {
-        // rayfinnAnimate();
+
       }
 
       if (index === 3) {
@@ -115,7 +114,7 @@ navigationSlideMenu.init();
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#fff');
         $('.watermark-text, .contact-item').css('color', '#fff');
-        fadeInText(fadeTextPrototype);
+        animatedText.fadeInText($fadeTextPrototype);
 
       } else {
         $('.white-logo').removeClass('active-logo');
@@ -125,7 +124,7 @@ navigationSlideMenu.init();
       }
 
       if (index === 4 ) {
-        fadeInText(fadeTextUi);
+        animatedText.fadeInText($fadeTextUi);
       }
 
     },
@@ -133,59 +132,25 @@ navigationSlideMenu.init();
       var leavingSection = $(this);
 
       if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
-        resetfadeText(fadeTextPrototype, 0, 20, 1);
+        animatedText.resetfadeText($fadeTextPrototype, 0, 20, 1);
       }
 
       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
-        resetfadeText(fadeTextUi, 0, 20, 1);
+        animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
       }
-
-
     } 
-
   }); //end of fullpage.js
 
-  /**
-  * VIVIUS/Rayfinn logo
-  */
-    // function rayfinnAnimate (){
-    //   var rayfinn = new Vivus('rayfinn-logo',{
-    //     type: 'delayed',
-    //     duration: 200,
-    //     animTimingFunction: Vivus.EASE,
-    //     });
-    // }
-
-
-  /**
-  * FADE IN TEXT FOR UX/PROTOTYPE PAGE
-  */
-  var fadeTextPrototype = $('.fadetext-prototype');
-  var fadeTextUi = $('.fadetext-ui');
-
-  //set initial state of text
-  TweenMax.set([fadeTextPrototype, fadeTextUi], {
-      alpha: 0,
-      y: 30
-  });
-
-  function fadeInText (section){
-      TweenMax.staggerTo(section, 1 , {
-        y: 0,
-        autoAlpha: 1,
-        ease: Back.easeInOut
-      }, 0.2);
-  }
-
-  //reset fading text fucntion to original postion when leave section.
-  function resetfadeText (fadeSection, opacity, yPos, time){
-      TweenMax.set(fadeSection, {
-        alpha: opacity,
-        y: yPos,
-        delay: time
+  var $fadeTextPrototype = $('.fadetext-prototype');
+  var $fadeTextUi = $('.fadetext-ui');
+  // set initial state of text
+  var setState = function () {
+      TweenMax.set([$fadeTextPrototype, $fadeTextUi], {
+        alpha: 0,
+        y: 30,
       });
-    }
-
+    };
+  setState();
 
   /**
   * RED SALMON ANIMATION
