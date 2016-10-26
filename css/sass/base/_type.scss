@@ -13,26 +13,39 @@
 @font-face { font-family: avant_medium; src: url(../fonts/ITCAvantGardePro-Md.otf);}
 @font-face { font-family: avant_bold; src: url(../fonts/ITCAvantGardePro-Bold.otf);}
 
+/*---------------
+    Proxima Nova
+---------------*/
+@font-face { font-family: proxima_light; src: url(../fonts/Proxima-Nova-Light.otf);}
+@font-face { font-family: proxima_light_italic; src: url(../fonts/Proxima-Nova-Light-Italic.otf);}
+@font-face { font-family: proxima_bold; src: url(../fonts/Proxima-Nova-Bold.otf);}
+@font-face { font-family: proxima_black; src: url(../fonts/Proxima-Nova-Black.otf);}
 
-$body: Gotham_thin, sans-serif;
-$medium: Gotham_medium, sans-serif;
-$bold: Gotham_black, sans-serif;
+// $body: Gotham_thin, sans-serif;
+// $medium: Gotham_medium, sans-serif;
+// $bold: Gotham_black, sans-serif;
+
+$body: proxima_light, sans-serif;
+$body-italic: proxima_light_italic, sans-serif;
+$bold: proxima_bold, sans-serif;
+$black: proxima_black, sans-serif;
 
 $light_avant: avant_light, sans-serif;
 $body_avant: avant_book, sans-serif;
 $medium_avant: avant_medium, sans-serif;
 $bold_avant: avant_bold, sans-serif;
 
-$primary-font-color : #373D3F; //Raven
+$primary-font-color: #373D3F; //Raven
+$reverse-font-color: $reverse;
 
 
 body, 
 p {
   font-family: $body, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
-  color: $reverse;
+  font-size: 18px;
+  line-height: 24px;
+  color: $primary-font-color;
 }
 
 h1,
@@ -46,9 +59,13 @@ h6 {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
 
-    font-family: $medium, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: $bold, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: $reverse;
     margin: 0px;
+}
+
+h1 {
+  font-family: $black;
 }
 
 a {
@@ -58,14 +75,6 @@ a {
   &:focus {
     text-decoration: none;
   }
-}
-
-/* GLOBAL TYPOGRAPHY
-   ========================================================================== */
-
-.quote-text {
-  font-size: 2.5em;
-  font-family: $bold_avant;
 }
 
 

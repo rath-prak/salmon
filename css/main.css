@@ -291,22 +291,26 @@ img {
 
 .fullpage-section {
   width: 100%;
-  height: 100vh; }
-
-.section-container {
-  max-width: 960px;
-  padding: 30px; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /**
  * NEW FLEX STUFF
  */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .flex-container {
   max-width: 960px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: green; }
+  padding: 30px; }
 
 .col-one {
   -ms-flex-preferred-size: 100%;
@@ -319,14 +323,19 @@ img {
   margin: 10px;
   width: 400px; }
 
-.col-three {
+.col-one-third {
   -ms-flex-preferred-size: calc(100%/3);
       flex-basis: calc(100%/3);
   margin: 10px; }
 
+.col-two-thirds {
+  -ms-flex-preferred-size: calc((100%/3)*2);
+      flex-basis: calc((100%/3)*2);
+  margin: 10px; }
+
 .col-four {
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   margin: 10px; }
 
 .col-five {
@@ -339,18 +348,32 @@ img {
       flex-basis: calc(100%/6);
   margin: 10px; }
 
-/**
- * Flex stuff
- */
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center; }
+
+.is-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.is-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+
+/**
+ * Flex stuff
+ */
 .isInline {
   display: -inline-flex; }
 
@@ -399,11 +422,6 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.justify-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .justifyEnd {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -417,12 +435,6 @@ img {
 .contentCenter {
   -ms-flex-line-pack: center;
       align-content: center; }
-
-.align-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center; }
 
 .alignEnd {
   -webkit-box-align: end;
@@ -664,13 +676,32 @@ img {
   font-family: avant_bold;
   src: url(../fonts/ITCAvantGardePro-Bold.otf); }
 
+/*---------------
+    Proxima Nova
+---------------*/
+@font-face {
+  font-family: proxima_light;
+  src: url(../fonts/Proxima-Nova-Light.otf); }
+
+@font-face {
+  font-family: proxima_light_italic;
+  src: url(../fonts/Proxima-Nova-Light-Italic.otf); }
+
+@font-face {
+  font-family: proxima_bold;
+  src: url(../fonts/Proxima-Nova-Bold.otf); }
+
+@font-face {
+  font-family: proxima_black;
+  src: url(../fonts/Proxima-Nova-Black.otf); }
+
 body,
 p {
-  font-family: Gotham_thin, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: proxima_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #FEFEE6; }
+  font-size: 18px;
+  line-height: 24px;
+  color: #373D3F; }
 
 h1,
 h2,
@@ -682,20 +713,17 @@ h6 {
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  font-family: Gotham_medium, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: proxima_bold, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #FEFEE6;
   margin: 0px; }
+
+h1 {
+  font-family: proxima_black, sans-serif; }
 
 a {
   color: #1271db; }
   a:hover, a:focus {
     text-decoration: none; }
-
-/* GLOBAL TYPOGRAPHY
-   ========================================================================== */
-.quote-text {
-  font-size: 2.5em;
-  font-family: avant_bold, sans-serif; }
 
 /* PRELOADER
    ========================================================================== */
@@ -964,7 +992,7 @@ a {
   .social-main .contact-item,
   .social-main .about-btn {
     text-transform: uppercase;
-    font-family: Gotham_thin, sans-serif;
+    font-family: proxima_light, sans-serif;
     font-size: 14px;
     color: #E94444;
     margin-left: 5px; }
@@ -1050,12 +1078,12 @@ hr {
   .main-landing-page h1 {
     font-size: 1.5em;
     margin: 10px;
-    font-family: Gotham_black, sans-serif;
+    font-family: proxima_bold, sans-serif;
     text-transform: uppercase; }
   .main-landing-page p {
     font-size: 0.9em;
     margin: 0 20px 20px;
-    font-family: Gotham_medium, sans-serif; }
+    font-family: proxima_light, sans-serif; }
   .main-landing-page .social-main {
     visibility: hidden; }
 
@@ -1189,7 +1217,7 @@ hr {
 .prototype {
   text-align: center; }
   .prototype h1, .prototype h2, .prototype h3 {
-    font-family: Gotham_medium, sans-serif; }
+    font-family: proxima_bold, sans-serif; }
   .prototype h1 {
     font-size: 1.5em; }
 
@@ -1231,13 +1259,6 @@ hr {
 /* Larger than desktop */
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
-.prototype-main-wrapper h1, .prototype-main-wrapper h2, .prototype-main-wrapper h3, .prototype-main-wrapper h4, .prototype-main-wrapper h5 {
-  color: #E94444;
-  font-family: avant_bold, sans-serif; }
-
-.prototype-main-wrapper h2 {
-  font-size: 2em; }
-
 .prototype-main-wrapper p {
   color: #373D3F;
   margin-bottom: 30px; }
@@ -1252,9 +1273,11 @@ hr {
   width: 100%; }
 
 /**
+	 PROTOTYPE INTRO SECTION
+ 	 ---------------------------------*/
+/**
  * MOBILE FIRST QUERIES
  */
-/* Intro section */
 .prototype-intro-wrapper .prototype-watermark {
   width: 100%;
   top: 50%;
@@ -1266,24 +1289,47 @@ hr {
   opacity: 0.02;
   visibility: hidden; }
 
+.prototype-intro-wrapper .welcome-iphone {
+  margin-top: 90px; }
+
 .prototype-intro-wrapper .intro-text {
-  margin-top: 80px;
-  margin-bottom: 35px; }
+  text-align: center; }
   .prototype-intro-wrapper .intro-text h1 {
-    font-size: 3em;
+    font-size: 2em;
     color: #E94444;
     text-transform: uppercase;
-    font-family: avant_bold, sans-serif; }
+    margin-bottom: 0.5em; }
+  .prototype-intro-wrapper .intro-text h2 {
+    margin-bottom: 0.25em; }
   .prototype-intro-wrapper .intro-text p {
     margin-bottom: 5px;
     color: #FEFEE6; }
-  .prototype-intro-wrapper .intro-text p:nth-child(4) {
-    margin-bottom: 20px; }
-  .prototype-intro-wrapper .intro-text p span {
-    font-family: Gotham_black, sans-serif; }
 
 .prototype-intro-wrapper .welcome-iphone {
-  display: none; }
+  text-align: center;
+  margin-bottom: 1em; }
+  .prototype-intro-wrapper .welcome-iphone img {
+    width: 220px; }
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  .prototype-intro-wrapper {
+    min-height: 100vh; }
+    .prototype-intro-wrapper .prototype-watermark {
+      visibility: visible; }
+    .prototype-intro-wrapper .prototype-case-study {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .prototype-intro-wrapper .intro-text {
+      text-align: left; }
+      .prototype-intro-wrapper .intro-text h1 {
+        font-size: 3.5em; }
+    .prototype-intro-wrapper .welcome-iphone {
+      margin-top: 0px; } }
 
 /* Process section */
 .process {
@@ -1346,26 +1392,6 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  /*   Intro section   */
-  .prototype-intro-wrapper .prototype-watermark {
-    visibility: visible; }
-  .prototype-intro-wrapper .prototype-case-study {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .prototype-intro-wrapper .prototype-case-study .intro-text {
-      margin: 0px;
-      -ms-flex-preferred-size: 67%;
-          flex-basis: 67%;
-      max-width: 67%; }
-      .prototype-intro-wrapper .prototype-case-study .intro-text h1 {
-        font-size: 4em; }
-  .prototype-intro-wrapper .welcome-iphone {
-    display: inline;
-    text-align: center; }
-    .prototype-intro-wrapper .welcome-iphone img {
-      width: 80%; }
   /* Mockup section */
   .mockup .mockup-container {
     -webkit-box-orient: horizontal;
@@ -1400,7 +1426,7 @@ hr {
 .ui {
   text-align: center; }
   .ui h1, .ui h2, .ui h3 {
-    font-family: Gotham_medium, sans-serif; }
+    font-family: proxima_light, sans-serif; }
   .ui h1 {
     font-size: 1.5em; }
 
@@ -1490,7 +1516,7 @@ hr {
     .ui-intro-wrapper .intro-text p:nth-child(4) {
       margin-bottom: 20px; }
     .ui-intro-wrapper .intro-text p span {
-      font-family: Gotham_black, sans-serif; }
+      font-family: proxima_bold, sans-serif; }
   .ui-intro-wrapper .welcome-iphone {
     display: none; }
 

@@ -20,7 +20,7 @@
 	text-align: center;
 
 	h1, h2, h3 {
-		font-family: $medium;
+		font-family: $bold;
 		
 	}
 	h1 {
@@ -108,14 +108,6 @@
    ========================================================================== */
 
 .prototype-main-wrapper {
-	h1, h2, h3, h4, h5 {
-		color: $salmon;
-		// text-transform: uppercase;
-		font-family: $bold_avant;
-	}
-	h2 {
-		font-size: 2em;
-	}
 	p {
 		color: $primary-font-color;
 		margin-bottom: 30px;
@@ -133,12 +125,15 @@
 
 
 /**
+	 PROTOTYPE INTRO SECTION
+ 	 ---------------------------------*/
+
+/**
  * MOBILE FIRST QUERIES
  */
 
-
-/* Intro section */
 .prototype-intro-wrapper {
+
 	.prototype-watermark {
 		width: 100%;
 		top: 50%;
@@ -150,32 +145,64 @@
 		visibility: hidden;
 	}
 
+	.welcome-iphone {
+		margin-top: 90px;
+	}
+
 	.intro-text {
-		margin-top: 80px;
-		margin-bottom: 35px;
+		// margin-top: 80px;
+		// margin-bottom: 35px;
+		text-align: center;
 		h1 {
-			font-size: 3em;
+			font-size: 2em;
 			color: $salmon;
 			text-transform: uppercase;
-			font-family: $bold_avant;
+			margin-bottom: 0.5em;
+		}
+		h2 {
+			margin-bottom: 0.25em;
 		}
 		p {
 			margin-bottom: 5px;
 			color: $reverse;
 		}
-		p:nth-child(4) {
-			margin-bottom: 20px;
-		}
-		p span {
-			font-family: $bold;
-		}
 	}
 
 	.welcome-iphone {
-		display: none;
+		text-align: center;
+		img {
+			width: 220px;
+		}
+		margin-bottom: 1em;
 	}	
 
 }
+
+/**
+ * LARGER THAN TABLET
+ */
+
+@media screen and (min-width: 750px) {
+
+	.prototype-intro-wrapper {
+		min-height: 100vh;
+		.prototype-watermark {
+			visibility: visible;
+		}
+		.prototype-case-study {
+			flex-direction: row;
+		}
+		.intro-text {
+			text-align: left;
+			h1 {
+				font-size: 3.5em;
+			}
+		}
+		.welcome-iphone {
+		margin-top: 0px;
+		}	
+	}
+}	
 
 /* Process section */
 .process {
@@ -260,38 +287,11 @@
 }
 
 
-
 /**
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
 
-	/*   Intro section   */
-	.prototype-intro-wrapper {
-
-		.prototype-watermark {
-			visibility: visible;
-		}
-
-		.prototype-case-study {
-			flex-direction: row;
-			.intro-text {
-				margin: 0px;
-				h1 {
-					font-size: 4em;
-				}
-				flex-basis: 67%;
-    		max-width: 67%;
-			}
-		}
-		.welcome-iphone {
-			display: inline;
-			text-align: center;
-			img {
-				width: 80%;
-			}
-		}	
-	}
 
 	/* Mockup section */
 	.mockup {
