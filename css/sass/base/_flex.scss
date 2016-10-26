@@ -32,6 +32,58 @@ img {
 	padding: 30px;
 }
 
+
+/**
+ * NEW FLEX STUFF
+ */
+
+
+.flex-container {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	background: green;
+}
+
+.col-one {
+	flex-basis: 100%;
+	margin: 10px;
+}
+
+.col-two {
+	flex-basis: 50%;
+	margin: 10px;
+	width: 400px;
+}
+
+.col-three {
+	flex-basis: calc(100%/3);
+	margin: 10px;
+}
+
+.col-four {
+	flex-basis: 24%;
+	margin: 10px;
+}
+
+.col-five {
+	flex-basis: calc(100%/5);
+	margin: 10px;
+}
+
+.col-six {
+	flex-basis: calc(100%/6);
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+
 /**
  * Flex stuff
  */
