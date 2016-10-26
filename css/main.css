@@ -703,7 +703,7 @@ p {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  color: #373D3F; }
+  color: #333; }
 
 h1,
 h2,
@@ -1262,7 +1262,7 @@ hr {
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
 .prototype-main-wrapper p {
-  color: #373D3F;
+  color: #333;
   margin-bottom: 30px; }
 
 .prototype-main-wrapper .scope,
@@ -1655,7 +1655,7 @@ hr {
   .resume-body h3,
   .resume-body h4,
   .resume-body li {
-    color: #373D3F; }
+    color: #333; }
   .resume-body p,
   .resume-body li {
     font-size: 0.9em; }
