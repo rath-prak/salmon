@@ -204,12 +204,28 @@
 	}
 }	
 
-/* Process section */
-.process {
-	min-height: 50vh;
-	background: #F2F2F2;
-}
 
+/**
+	 PROCESS SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+.prototype-main-wrapper {
+	.process {
+		min-height: 50vh;
+		background: #18243c;
+	}
+	.process-text {
+		text-align: center;
+		p {
+			color: $reverse-font-color;
+			font-family: $body_italic;
+		}
+	}
+}
 
 /* scope section */
 

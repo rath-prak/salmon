@@ -1331,10 +1331,21 @@ hr {
     .prototype-intro-wrapper .welcome-iphone {
       margin-top: 0px; } }
 
-/* Process section */
-.process {
+/**
+	 PROCESS SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
+.prototype-main-wrapper .process {
   min-height: 50vh;
-  background: #F2F2F2; }
+  background: #18243c; }
+
+.prototype-main-wrapper .process-text {
+  text-align: center; }
+  .prototype-main-wrapper .process-text p {
+    color: #FEFEE6;
+    font-family: proxima_light_italic, sans-serif; }
 
 /* scope section */
 .scope .client-sketches > div {
