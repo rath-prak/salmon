@@ -315,13 +315,14 @@ img {
 .col-one {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  max-width: 100%;
   margin: 10px; }
 
 .col-two {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  margin: 10px;
-  width: 400px; }
+  max-width: 50%;
+  margin: 10px; }
 
 .col-one-third {
   -ms-flex-preferred-size: calc(100%/3);
@@ -336,6 +337,7 @@ img {
 .col-four {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  max-width: 25%;
   margin: 10px; }
 
 .col-five {

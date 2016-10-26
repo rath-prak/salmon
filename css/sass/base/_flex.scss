@@ -52,13 +52,14 @@ img {
 
 .col-one {
 	flex-basis: 100%;
+    max-width: 100%;
 	margin: 10px;
 }
 
 .col-two {
 	flex-basis: 50%;
-	margin: 10px;
-	width: 400px;
+	max-width: 50%;
+    margin: 10px;
 }
 
 .col-one-third {
@@ -72,6 +73,7 @@ img {
 
 .col-four {
 	flex-basis: 25%;
+    max-width: 25%;
 	margin: 10px;
 }
 
