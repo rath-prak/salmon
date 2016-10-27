@@ -715,12 +715,19 @@ h6 {
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  font-family: proxima_bold, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: proxima_black, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #FEFEE6;
   margin: 0px; }
 
 h1 {
-  font-family: proxima_black, sans-serif; }
+  margin-bottom: 0.5em; }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.25em; }
 
 a {
   color: #1271db; }
@@ -1218,8 +1225,6 @@ hr {
 
 .prototype {
   text-align: center; }
-  .prototype h1, .prototype h2, .prototype h3 {
-    font-family: proxima_bold, sans-serif; }
   .prototype h1 {
     font-size: 1.5em; }
 
@@ -1299,10 +1304,9 @@ hr {
   .prototype-intro-wrapper .intro-text h1 {
     font-size: 2em;
     color: #E94444;
-    text-transform: uppercase;
-    margin-bottom: 0.5em; }
+    text-transform: uppercase; }
   .prototype-intro-wrapper .intro-text h2 {
-    margin-bottom: 0.25em; }
+    font-family: proxima_bold, sans-serif; }
   .prototype-intro-wrapper .intro-text p {
     margin-bottom: 5px;
     color: #FEFEE6; }
@@ -1349,35 +1353,64 @@ hr {
     color: #FEFEE6;
     font-family: proxima_light_italic, sans-serif; }
 
-/* scope section */
+/**
+	 SCOPING SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
+.scope .scope-text h2 {
+  color: #E94444; }
+
 .scope .client-sketches > div {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
-  max-width: 24%; }
+  max-width: 22%; }
 
 .scope h5 {
-  color: #595959;
-  font-style: italic; }
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
 
+/**
+	 WIREFRAME SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
 /* wireframes section */
-.wireframes .pen-paper-wireframes {
-  margin-bottom: 30px; }
+.wireframes .wireframes-container h2,
+.wireframes .wireframes-container h3 {
+  color: #E94444; }
 
-.wireframes .sketch-wireframes .wireframe-item {
+.wireframes .wireframe-sketches > div {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
-  max-width: 24%; }
-  .wireframes .sketch-wireframes .wireframe-item img {
-    border: solid 1px #e5e5e5; }
+  max-width: 22%; }
 
-.wireframes .sketch-wireframes h6 {
-  color: #595959;
-  font-style: italic; }
+.wireframes h6 {
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
 
-/* Mockup section */
-.mockup .mockup-text {
-  max-width: 100%; }
+/**
+	 MOCKUP SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
+.mockup h1,
+.mockup h2,
+.mockup h3 {
+  color: #E94444; }
 
+@media screen and (min-width: 750px) {
+  /* Mockup section */ }
+
+/**
+	 FINAL SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
 /* Final Prototype */
 .final-prototype .final-prototype-screens > div {
   -ms-flex-preferred-size: 22%;
@@ -1405,19 +1438,6 @@ hr {
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
-  /* Mockup section */
-  .mockup .mockup-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .mockup .mockup-text,
-  .mockup .mockup-screens {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    max-width: 49%; }
-  .mockup .mockup-text {
-    margin-right: 50px; }
   /* Framer */
   .framer {
     min-height: 75vh; }
@@ -1545,8 +1565,8 @@ hr {
   max-width: 24%; }
 
 .scope h5 {
-  color: #595959;
-  font-style: italic; }
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
 
 /* wireframes section */
 .wireframes .pen-paper-wireframes {
@@ -1560,8 +1580,8 @@ hr {
     border: solid 1px #e5e5e5; }
 
 .wireframes .sketch-wireframes h6 {
-  color: #595959;
-  font-style: italic; }
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
 
 /* Mockup section */
 .mockup .mockup-text {

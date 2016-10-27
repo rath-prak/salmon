@@ -18,11 +18,6 @@
 
 .prototype {
 	text-align: center;
-
-	h1, h2, h3 {
-		font-family: $bold;
-		
-	}
 	h1 {
 		font-size: 1.5em;
 	}
@@ -157,10 +152,9 @@
 			font-size: 2em;
 			color: $salmon;
 			text-transform: uppercase;
-			margin-bottom: 0.5em;
 		}
 		h2 {
-			margin-bottom: 0.25em;
+			font-family: $bold;
 		}
 		p {
 			margin-bottom: 5px;
@@ -227,12 +221,24 @@
 	}
 }
 
-/* scope section */
+/**
+	 SCOPING SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
 
 .scope {
+	.scope-text {
+		h2 {
+			color: $salmon;
+		}
+	}
+
 	.client-sketches > div {
 	  flex-basis: 22%;
-    max-width: 24%;
+    max-width: 22%;
 	}
 
 	h5 {
@@ -240,33 +246,75 @@
 	}
 }
 
+/**
+	 WIREFRAME SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
 
 /* wireframes section */
 .wireframes {
-	.pen-paper-wireframes {
-		margin-bottom: 30px;
+	.wireframes-container {
+		h2, 
+		h3 {
+			color: $salmon;
+		}
 	}
-
-	.sketch-wireframes {
-		.wireframe-item {
-		img {
-			border: solid 1px #e5e5e5;
-		}
-	    flex-basis: 22%;
-	    max-width: 24%;
-		}
+	.wireframe-sketches > div {
+		flex-basis: 22%;
+    max-width: 22%;
+	}
 		h6 {
 			@include captionitalic;
 		}
+
+}
+
+/**
+	 MOCKUP SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+.mockup {
+	h1, 
+	h2,
+	h3 {
+		color: $salmon;
 	}
 }
 
-/* Mockup section */
-.mockup {
-	.mockup-text {
-		max-width: 100%;
-	}
+@media screen and (min-width: 750px) {
+
+
+	/* Mockup section */
+	// .mockup {
+	// 	.mockup-container {
+	// 		// flex-direction: row;
+	// 	}
+	// 	.mockup-text,
+	// 	.mockup-screens {
+	// 		flex-basis: 50%;
+	//     max-width: 49%;
+	// 	}
+	// 	.mockup-text {
+	// 		margin-right: 50px;
+	// 	}
+	// }
 }
+
+/**
+	 FINAL SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
 
 /* Final Prototype */
 .final-prototype {
@@ -308,21 +356,6 @@
  */
 @media screen and (min-width: 750px) {
 
-
-	/* Mockup section */
-	.mockup {
-		.mockup-container {
-			flex-direction: row;
-		}
-		.mockup-text,
-		.mockup-screens {
-			flex-basis: 50%;
-	    max-width: 49%;
-		}
-		.mockup-text {
-			margin-right: 50px;
-		}
-	}
 
 	/* Framer */
 	.framer {

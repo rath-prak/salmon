@@ -47,7 +47,8 @@
 
 // small text in italic.
 @mixin captionitalic(){
-  color: #595959;
-  font-style: italic;
+  color: $primary-font-color;
+  font-family: $body-italic; 
+
 }
 
