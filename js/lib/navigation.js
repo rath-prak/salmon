@@ -1,3 +1,5 @@
+// var animatedText = require('./lib/typographyAnimation.js');
+
 var navigationSlideMenu = {
   init: function() {
     this.cacheDom();
@@ -8,6 +10,7 @@ var navigationSlideMenu = {
     this.$menuListItem = $("menu-list-items");
     this.$slideDown = $(".fp-nav-wrapper");
     this.$navBackButton = $(".nav-back-button");
+    // this.$menuItem = $(".menu-item");
   },
   render: function () {
     var menuToggle = new TimelineMax({ paused:true, reversed:true });

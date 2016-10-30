@@ -141,7 +141,7 @@
 	}
 
 	.welcome-iphone {
-		margin-top: 90px;
+		margin-top: 60px;
 	}
 
 	.intro-text {
@@ -167,7 +167,7 @@
 		img {
 			width: 220px;
 		}
-		margin-bottom: 1em;
+		margin-bottom: 1.5em;
 	}	
 
 }
@@ -188,6 +188,8 @@
 		}
 		.intro-text {
 			text-align: left;
+			flex-basis: calc((100%/3)*2);
+			margin: 10px;
 			h1 {
 				font-size: 3.5em;
 			}
