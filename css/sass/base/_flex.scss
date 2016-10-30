@@ -106,6 +106,10 @@ img {
     flex-direction: column-reverse;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 
 
 
@@ -146,9 +150,7 @@ img {
 .isMultiple.isReverse {
     flex-wrap: wrap-reverse;
 }
-.space-between {
-    justify-content: space-between;
-}
+
 .spaceAround {
     justify-content: space-around;
 }

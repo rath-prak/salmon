@@ -118,6 +118,19 @@
 	}
 }
 
+.scope,
+.wireframes,
+.mockup,
+.final-prototype,
+.framer {
+	h1, 
+	h2, 
+	h3, 
+	h4 {
+		color: $salmon;
+	}
+} 
+
 
 /**
 	 PROTOTYPE INTRO SECTION
@@ -145,13 +158,11 @@
 	}
 
 	.intro-text {
-		// margin-top: 80px;
-		// margin-bottom: 35px;
 		text-align: center;
 		h1 {
 			font-size: 2em;
-			color: $salmon;
 			text-transform: uppercase;
+			color: $salmon;
 		}
 		h2 {
 			font-family: $bold;
@@ -232,12 +243,6 @@
  */
 
 .scope {
-	.scope-text {
-		h2 {
-			color: $salmon;
-		}
-	}
-
 	.client-sketches > div {
 	  flex-basis: 22%;
     max-width: 22%;
@@ -259,20 +264,19 @@
 
 /* wireframes section */
 .wireframes {
-	.wireframes-container {
-		h2, 
-		h3 {
-			color: $salmon;
+	.pen-paper-wireframes {
+			margin-bottom: 30px;
 		}
-	}
 	.wireframe-sketches > div {
 		flex-basis: 22%;
     max-width: 22%;
-	}
-		h6 {
-			@include captionitalic;
+    img {
+			border: solid 1px #e5e5e5;
 		}
-
+	}
+	h6 {
+		@include captionitalic;
+	}
 }
 
 /**
@@ -284,34 +288,29 @@
  */
 
 .mockup {
-	h1, 
-	h2,
-	h3 {
-		color: $salmon;
-	}
+
 }
 
 @media screen and (min-width: 750px) {
 
-
-	/* Mockup section */
-	// .mockup {
-	// 	.mockup-container {
-	// 		// flex-direction: row;
-	// 	}
-	// 	.mockup-text,
-	// 	.mockup-screens {
-	// 		flex-basis: 50%;
-	//     max-width: 49%;
-	// 	}
-	// 	.mockup-text {
-	// 		margin-right: 50px;
-	// 	}
-	// }
+	.mockup {
+		.mockup-container {
+			flex-direction: row;
+		}
+		.mockup-text,
+		.mockup-screens {
+			flex-basis: 50%;
+	    max-width: 49%;
+		}
+		.mockup-text {
+			margin-right: 50px;
+		}
+	}
+	
 }
 
 /**
-	 FINAL SECTION
+	 FINAL PROTOTYPE SECTION
  	 ---------------------------------*/
 
 /**
@@ -327,16 +326,26 @@
 }
 
 
-/* Framer */
+/**
+	 FRAMER SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+
+
 .framer {
 	min-height: 50vh;
-	.framer-text {
 		p {
 			color: $reverse;
 		}
-	}
-	img {
-		width: 50%;
+	.framer-iphone {
+		img {
+			width: 220px;
+		}
+		margin: 30px 0;
 	}
 }
 
@@ -352,24 +361,20 @@
 		}
 }
 
-
 /**
  * LARGER THAN TABLET
  */
 @media screen and (min-width: 750px) {
 
-
 	/* Framer */
 	.framer {
-		min-height: 75vh;
 		.framer-container {
 			flex-direction: row;
 		}
-		.framer-text {
-			margin-right: 50px;
-		}
-		img {
-		width: 100%;
+		.framer-iphone {
+			flex-basis: 25%;
+			max-width: 25%;
+			text-align: right;
 		}
 	}
 
