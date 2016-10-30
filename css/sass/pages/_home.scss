@@ -96,3 +96,95 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* PROTOTYPE LANDING
+   ========================================================================== */
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+.p-background-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	img {
+		opacity: 0.08;
+		width: 300px;
+	}
+}
+
+.prototype {
+	text-align: center;
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
+.prototype-container {
+	background: $salmon;
+
+	h1 {
+		text-transform: uppercase;
+	}
+	.quote-text {
+		font-size: 1.5em;
+	}
+}
+
+
+/**
+ * LARGER THAN MOBILE
+ */
+@media (min-width: 400px) {
+	.prototype-container {
+		.quote-text {
+			font-size: 1.7em;
+		}
+	}	
+
+}	
+
+/**
+ * LARGER THAN PHAMBLET
+ */
+@media (min-width: 550px) {
+
+}
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+
+
+	.p-background-icon {
+		img {
+			width: 500px;
+		}
+}
+	
+	.prototype-container {
+		article {
+			width: 70%;
+			text-align: left;
+		}
+		h3 {
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+		h3 {
+		}
+		.quote-text {
+			font-size: 3em;
+			line-height: 1em;
+		}
+		p {
+			margin-bottom: 15px;
+		}
+	}
+
+}
+

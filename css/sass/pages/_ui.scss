@@ -1,108 +1,9 @@
-/* USER INTERFACE
-   ========================================================================== */
-
-/**
- * MOBILE FIRST QUERIES
- */
-
-.ui {
-	text-align: center;
-	h1, h2, h3 {
-		font-family: $body;
-		
-	}
-	h1 {
-		font-size: 1.5em;
-	}
-}
-
-.ui-container {
-	// background: $dark-blue;
-	// background: #1D2A46;
-
-	h1 {
-		text-transform: uppercase;
-	}
-	.quote-text {
-		font-size: 1.5em;
-	}
-}
-
-
-/**
- * LARGER THAN MOBILE
- */
-@media (min-width: 400px) {
-	.ui-container {
-		.quote-text {
-			font-size: 1.7em;
-		}
-	}	
-
-}	
-
-/**
- * LARGER THAN PHAMBLET
- */
-@media (min-width: 550px) {
-
-}
-
-/**
- * LARGER THAN TABLET
- */
-@media screen and (min-width: 750px) {
-	
-	.ui-container {
-		article {
-			width: 70%;
-			text-align: left;
-		}
-		h3 {
-			font-size: 2em;
-			margin-bottom: 10px;
-		}
-		h3 {
-		}
-		.quote-text {
-			font-size: 3em;
-			line-height: 1em;
-		}
-		p {
-			margin-bottom: 15px;
-		}
-	}
-
-}
-
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-
-
-}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-	
-
-}
-
-
 /* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
 
 .ui-main-wrapper {
-	h1, h2, h3, h4, h5 {
-		color: $salmon;
-		// text-transform: uppercase;
-		font-family: $bold_avant;
-	}
-	h2 {
-		font-size: 2em;
-	}
 	p {
-		color: #595959;
+		color: $primary-font-color;
 		margin-bottom: 30px;
 	}
 	.scope,
@@ -116,16 +17,30 @@
 	}
 }
 
+.scope,
+.wireframes,
+.mockup,
+.final-prototype,
+.framer {
+	h1, 
+	h2, 
+	h3, 
+	h4 {
+		color: $salmon;
+	}
+}
+
+/**
+	 USER INTERFACE INTRO SECTION
+ 	 ---------------------------------*/
 
 /**
  * MOBILE FIRST QUERIES
  */
 
-
-/* Intro section */
 .ui-intro-wrapper {
-	// background: #043464;
 	min-height: 100vh;
+
 	.ui-watermark {
 		width: 100%;
 		top: 50%;
@@ -138,29 +53,77 @@
 	}
 
 	.intro-text {
-		margin-top: 80px;
-		margin-bottom: 35px;
+		text-align: center;
 		h1 {
-			font-size: 3em;
-			color: $salmon;
+			font-size: 2em;
 			text-transform: uppercase;
-			font-family: $bold_avant;
+			color: $salmon;
+		}
+		h2 {
+			font-family: $bold;
 		}
 		p {
 			margin-bottom: 5px;
 			color: $reverse;
 		}
-		p:nth-child(4) {
-			margin-bottom: 20px;
-		}
-		p span {
-			font-family: $bold;
-		}
 	}
 
-	.welcome-iphone {
-		display: none;
-	}	
-
 }
+
+/**
+ * LARGER THAN TABLET
+ */
+
+@media screen and (min-width: 750px) {
+
+	.ui-intro-wrapper {
+		.ui-watermark {
+			visibility: visible;
+		}
+		.ui-case-study {
+			flex-direction: row;
+		}
+		.intro-text {
+			margin: 10px;
+			h1 {
+				font-size: 3.5em;
+			}
+		}
+		.welcome-iphone {
+		margin-top: 0px;
+		}	
+	}
+}
+
+
+/**
+	 TANDEM INTRO SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+.tandem-intro {
+	text-align: center;
+	color: $primary-font-color;
+	background: $salmon;
+	min-height: 50vh;
+}
+
+.tandem-final-design {
+	margin: 30px 0;
+	.tandem-screen-img {
+		margin-bottom: 35px;
+		img {
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+		}
+
+	}
+}
+
+
+
+
+
 
