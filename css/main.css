@@ -355,6 +355,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -423,11 +428,6 @@ img {
 .spaceAround {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.justifyEnd {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
 
 .justify-start {
   -webkit-box-pack: start;
@@ -947,12 +947,8 @@ a {
     font-size: 2.5em;
     color: #E94444; }
 
-/* Larger than mobile */
-/* Larger than phablet */
 /* Larger than tablet */
-/* Larger than desktop */
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
+@media (min-width: 750px) {
   .fp-nav-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -966,28 +962,19 @@ a {
                 -ms-grid-row-align: center;
             align-items: center; }
   .menu-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     padding: 30px;
-    margin-top: 50px;
-    max-width: 1200px; }
+    margin: 50px; }
   .nav-content {
-    margin-left: 0; }
+    margin-top: 100px; }
     .nav-content li {
-      font-size: 4em;
-      text-align: right; }
+      font-size: 2em;
+      text-align: right;
+      margin-bottom: .75em;
+      font-family: proxima_bold, sans-serif; }
       .nav-content li a {
         color: #FEFEE6;
         text-decoration: none;
-        cursor: pointer; }
-  .nav-content-text {
-    display: inherit;
-    margin-left: 75px; }
-    .nav-content-text p {
-      font-size: 2.3em;
-      font-family: avant_light, sans-serif; } }
+        cursor: pointer; } }
 
 /**
  * FOOTER ELEMENTS - SOCIAL/CONTACT BAR AT RIGHTHAND CORNER OF PAGE
@@ -1487,40 +1474,15 @@ hr {
 
 /* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
-.ui-main-wrapper p {
-  color: #333;
-  margin-bottom: 30px; }
-
-.ui-main-wrapper .scope,
-.ui-main-wrapper .wireframes,
-.ui-main-wrapper .final-prototype {
-  background: #fff; }
-
-.ui-main-wrapper .mockup {
-  background: #F2F2F2;
-  width: 100%; }
-
-.scope h1,
-.scope h2,
-.scope h3,
-.scope h4,
-.wireframes h1,
-.wireframes h2,
-.wireframes h3,
-.wireframes h4,
-.mockup h1,
-.mockup h2,
-.mockup h3,
-.mockup h4,
-.final-prototype h1,
-.final-prototype h2,
-.final-prototype h3,
-.final-prototype h4,
-.framer h1,
-.framer h2,
-.framer h3,
-.framer h4 {
+.ui-main-wrapper h1,
+.ui-main-wrapper h2,
+.ui-main-wrapper h3,
+.ui-main-wrapper h4 {
   color: #E94444; }
+
+.ui-main-wrapper p {
+  color: #FEFEE6;
+  margin-bottom: 30px; }
 
 /**
 	 USER INTERFACE INTRO SECTION
@@ -1581,9 +1543,12 @@ hr {
   color: #333;
   background: #E94444;
   min-height: 50vh; }
+  .tandem-intro h2 {
+    color: #FEFEE6; }
 
 .tandem-final-design {
-  margin: 30px 0; }
+  margin: 30px 0;
+  color: #333; }
   .tandem-final-design .tandem-screen-img {
     margin-bottom: 35px; }
     .tandem-final-design .tandem-screen-img img {

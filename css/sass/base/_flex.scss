@@ -88,6 +88,10 @@ img {
     justify-content: center;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
+
 .align-center {
     align-items: center;
 }
@@ -150,9 +154,7 @@ img {
     justify-content: space-around;
 }
 
-.justifyEnd {
-    justify-content: flex-end;
-}
+
 .justify-start {
     justify-content: flex-start;
 }

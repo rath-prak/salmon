@@ -2,34 +2,17 @@
    ========================================================================== */
 
 .ui-main-wrapper {
-	p {
-		color: $primary-font-color;
-		margin-bottom: 30px;
-	}
-	.scope,
-	.wireframes,
-	.final-prototype {
-		background: #fff;
-	}
-	.mockup {
-		background: #F2F2F2;
-		width: 100%;
-	}
-}
-
-.scope,
-.wireframes,
-.mockup,
-.final-prototype,
-.framer {
 	h1, 
 	h2, 
 	h3, 
 	h4 {
 		color: $salmon;
 	}
+	p {
+		color: $reverse-font-color;
+		margin-bottom: 30px;
+	}
 }
-
 /**
 	 USER INTERFACE INTRO SECTION
  	 ---------------------------------*/
@@ -109,16 +92,19 @@
 	color: $primary-font-color;
 	background: $salmon;
 	min-height: 50vh;
+	h2 {
+		color: $reverse;
+	}
 }
 
 .tandem-final-design {
 	margin: 30px 0;
+	color: $primary-font-color;
 	.tandem-screen-img {
 		margin-bottom: 35px;
 		img {
 			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 		}
-
 	}
 }
 
