@@ -70,88 +70,143 @@
 .fp-nav-wrapper {
 	position: fixed;
 	z-index: 200;
-	background: #000;
+	background: #3b5998;
 	width: 100%;
 	height: 100%;
-	flex-direction: column;
+
 
 }
 	
 .menu-container {
-	flex-direction: column;
-	padding: 30px;
-	margin-top: 50px;
+	p, 
+	li, 
+	a, 
+	i {
+		color: $reverse;
+	}
+
 }
 
-.nav-content {
-	font-family: $bold_avant;
-	margin-left: 20px;
-	ul {
-		padding: 0;
-	}
+.nav-menu-content {
+	font-family: $black;
+	text-align: left;
+	margin-top: 40px;
 	li {
 		list-style-type: none;
-		font-size: 2.5em;
+		font-size: 1.85em;
+		margin-bottom: 15px;
 		& a{
-			color: $reverse;
 			text-decoration: none;
 			cursor: pointer;
 		}
 	}
+	.menu-list-items {
+		padding-left: 0;
+	}
+	.social-main-nav {
+		a {
+			margin-left: 10px;
+		}
+		a:first-of-type {
+			margin-left: 0px;
+		}
+		margin-bottom: 25px;
+	}
+}
+
+.nav-about-text {
+	h2, 
+	p {
+		font-family: $thin;
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+	h2 {
+		margin-bottom: 0.5em;
+	}
+
+	h2 {
+		span {
+			font-family: $bold;
+		}
+	}
+
 }
 
 .nav-back-button {
 	cursor: pointer;
 	position: absolute;
 	top: 4%;
-	right: 4%;
-	i {
-		font-size: 2.5em;
-		color: $salmon;
+	right: 6%;
+	p {
+		font-size: 1em;
+		text-transform: uppercase;
 	}
 
 }
-
-// .nav-content-text{
-// 	display: none;
-// }
 
 
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-	.fp-nav-wrapper {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 
+	.nav-menu-content,
+	.nav-about-text {
+		flex-basis: 45%;
+		max-width: 45%;
 	}
 
 	.menu-container {
-		padding: 30px;
-		margin: 50px;
-		// max-width: 1200px;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	.nav-content {
-		margin-top: 100px;
+	.nav-menu-content {
+		text-align: right;
 		li {
-			font-size: 2em;
-			text-align: right;
-			margin-bottom: .75em;
-			font-family: $bold;
-		& a{
-				color: $reverse;
+			list-style-type: none;
+			font-size: 2.5em;
+			margin-bottom: 0.75em;
+			& a{
 				text-decoration: none;
 				cursor: pointer;
+				color: $reverse;
+				transition: color 0.5s;
+			}
+		}
+		.menu-list-items {
+			a:hover {
+			color: $salmon;
+			}
+		}
+		.social-main-nav {
+			a {
+				margin-left: 10px;
 			}
 		}
 	}
 
+	.nav-about-text {
+		h2 {
+			font-size: 1.85em;
+			line-height: 1.2em;
+			span {
+				font-family: $bold;
+			}
+		}
+	}
 
 }
 
+@media (min-width: 850px) {
+	.nav-menu-content {
 
+		li {
+			font-size: 3em;
+		}
+	}
+}
 
 
 

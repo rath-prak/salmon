@@ -682,6 +682,10 @@ img {
     Proxima Nova
 ---------------*/
 @font-face {
+  font-family: proxima_thin;
+  src: url(../fonts/Proxima-Nova-Thin.otf); }
+
+@font-face {
   font-family: proxima_light;
   src: url(../fonts/Proxima-Nova-Light.otf); }
 
@@ -909,72 +913,101 @@ a {
 .fp-nav-wrapper {
   position: fixed;
   z-index: 200;
-  background: #000;
+  background: #3b5998;
   width: 100%;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  height: 100%; }
 
-.menu-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 30px;
-  margin-top: 50px; }
+.menu-container p,
+.menu-container li,
+.menu-container a,
+.menu-container i {
+  color: #FEFEE6; }
 
-.nav-content {
-  font-family: avant_bold, sans-serif;
-  margin-left: 20px; }
-  .nav-content ul {
-    padding: 0; }
-  .nav-content li {
+.nav-menu-content {
+  font-family: proxima_black, sans-serif;
+  text-align: left;
+  margin-top: 40px; }
+  .nav-menu-content li {
     list-style-type: none;
-    font-size: 2.5em; }
-    .nav-content li a {
-      color: #FEFEE6;
+    font-size: 1.85em;
+    margin-bottom: 15px; }
+    .nav-menu-content li a {
       text-decoration: none;
       cursor: pointer; }
+  .nav-menu-content .menu-list-items {
+    padding-left: 0; }
+  .nav-menu-content .social-main-nav {
+    margin-bottom: 25px; }
+    .nav-menu-content .social-main-nav a {
+      margin-left: 10px; }
+    .nav-menu-content .social-main-nav a:first-of-type {
+      margin-left: 0px; }
+
+.nav-about-text h2,
+.nav-about-text p {
+  font-family: proxima_thin, sans-serif;
+  font-size: 1em;
+  line-height: 1.2em; }
+
+.nav-about-text h2 {
+  margin-bottom: 0.5em; }
+
+.nav-about-text h2 span {
+  font-family: proxima_bold, sans-serif; }
 
 .nav-back-button {
   cursor: pointer;
   position: absolute;
   top: 4%;
-  right: 4%; }
-  .nav-back-button i {
-    font-size: 2.5em;
-    color: #E94444; }
+  right: 6%; }
+  .nav-back-button p {
+    font-size: 1em;
+    text-transform: uppercase; }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .fp-nav-wrapper {
+  .nav-menu-content,
+  .nav-about-text {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    max-width: 45%; }
+  .menu-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
             align-items: center; }
-  .menu-container {
-    padding: 30px;
-    margin: 50px; }
-  .nav-content {
-    margin-top: 100px; }
-    .nav-content li {
-      font-size: 2em;
-      text-align: right;
-      margin-bottom: .75em;
-      font-family: proxima_bold, sans-serif; }
-      .nav-content li a {
-        color: #FEFEE6;
+  .nav-menu-content {
+    text-align: right; }
+    .nav-menu-content li {
+      list-style-type: none;
+      font-size: 2.5em;
+      margin-bottom: 0.75em; }
+      .nav-menu-content li a {
         text-decoration: none;
-        cursor: pointer; } }
+        cursor: pointer;
+        color: #FEFEE6;
+        -webkit-transition: color 0.5s;
+        transition: color 0.5s; }
+    .nav-menu-content .menu-list-items a:hover {
+      color: #E94444; }
+    .nav-menu-content .social-main-nav a {
+      margin-left: 10px; }
+  .nav-about-text h2 {
+    font-size: 1.85em;
+    line-height: 1.2em; }
+    .nav-about-text h2 span {
+      font-family: proxima_bold, sans-serif; } }
+
+@media (min-width: 850px) {
+  .nav-menu-content li {
+    font-size: 3em; } }
 
 /**
  * FOOTER ELEMENTS - SOCIAL/CONTACT BAR AT RIGHTHAND CORNER OF PAGE

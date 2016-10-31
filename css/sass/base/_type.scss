@@ -16,6 +16,7 @@
 /*---------------
     Proxima Nova
 ---------------*/
+@font-face { font-family: proxima_thin; src: url(../fonts/Proxima-Nova-Thin.otf);}
 @font-face { font-family: proxima_light; src: url(../fonts/Proxima-Nova-Light.otf);}
 @font-face { font-family: proxima_light_italic; src: url(../fonts/Proxima-Nova-Light-Italic.otf);}
 @font-face { font-family: proxima_bold; src: url(../fonts/Proxima-Nova-Bold.otf);}
@@ -25,6 +26,8 @@
 // $medium: Gotham_medium, sans-serif;
 // $bold: Gotham_black, sans-serif;
 
+
+$thin: proxima_thin, sans-serif;
 $body: proxima_light, sans-serif;
 $body-italic: proxima_light_italic, sans-serif;
 $bold: proxima_bold, sans-serif;

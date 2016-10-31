@@ -18,15 +18,7 @@ $(document).ready(function(){
 navigationSlideMenu.init();
 
 
-// hamburger menu
-    var bar = $('.menu-bar');
-    var tl = new TimelineMax();
-        tl.staggerTo(bar, 2, {
-        scaleX: '1.3',
-        repeat: -1,
-        yoyo: true,
-        ease: Linear.easeNone
-    }, 0.5); 
+ 
 
 // Secondary nav-menu hides when scroll
 

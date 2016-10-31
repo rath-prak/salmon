@@ -1,5 +1,3 @@
-// var animatedText = require('./lib/typographyAnimation.js');
-
 var navigationSlideMenu = {
   init: function() {
     this.cacheDom();
@@ -8,19 +6,31 @@ var navigationSlideMenu = {
   cacheDom: function() {
     this.$menuBar = $(".navbar-toggle");
     this.$menuListItem = $("menu-list-items");
-    this.$slideDown = $(".fp-nav-wrapper");
+    this.$fade = $(".fp-nav-wrapper");
     this.$navBackButton = $(".nav-back-button");
-    // this.$menuItem = $(".menu-item");
+    this.$menuItem = $(".menu-item");
+  },
+  hamburgerMenu: function() {
+    // hamburger menu
+    var bar = $('.menu-bar');
+    var tl = new TimelineMax();
+        tl.staggerTo(bar, 2, {
+        scaleX: '1.3',
+        repeat: -1,
+        yoyo: true,
+        ease: Linear.easeNone
+    }, 0.5);
   },
   render: function () {
-    var menuToggle = new TimelineMax({ paused:true, reversed:true });
+    this.hamburgerMenu();
+    var menuToggle = new TimelineMax({ paused:true, reversed:true });    
 
-    TweenMax.set(this.$slideDown, { 
-      y: '-100%' 
+    TweenMax.set(this.$fade, { 
+      autoAlpha: 0,
     });
 
-    menuToggle.to(this.$slideDown, 1, { 
-      y: '0%',
+    menuToggle.to(this.$fade, 1, { 
+      autoAlpha: 1,
       ease: Power4.easeInOut,
     });
 
