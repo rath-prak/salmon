@@ -61,15 +61,11 @@ navigationSlideMenu.init();
   $('#fullpage').fullpage({
   //Navigation
     menu: '#myMenu',
-    slideSelector: '.horizontal',
-    scrollHorizontally: true,
-    // responsiveWidth: 900,
     lockAnchors: false,
-    navigation: false,
+    navigation: true,
     navigationPosition: 'right',
-    showActiveTooltip: false,
-    slidesNavigation: false,
-    slidesNavPosition: 'bottom',
+    // navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPE', 'USER INTERFACE', 'DESIGN', 'RESUME'],
+    showActiveTooltip: true,
     css3: true,
     fadingEffect: true,
     scrollingSpeed: 700,
