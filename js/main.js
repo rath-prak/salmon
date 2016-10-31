@@ -9,16 +9,14 @@ $(document).ready(function(){
   
 // PRE-LAODER
   $(window).load(function(){
-    pagePreloader()
-    setTimeout(pagePreloader, 500);
+    // pagePreloader()
+    setTimeout(pagePreloader, 800);
   });
 
 
 // NAVIGATION
 navigationSlideMenu.init();
 
-
- 
 
 // Secondary nav-menu hides when scroll
 
