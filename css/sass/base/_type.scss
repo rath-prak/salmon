@@ -47,9 +47,10 @@ body,
 p {
   font-family: $body, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
-    font-size: 18px;
-    line-height: 28px;
+  font-size: 18px;
+  line-height: 28px;
   color: $primary-font-color;
+  font-weight: normal;
 }
 
 h1,
@@ -66,6 +67,7 @@ h6 {
     font-family: $black , "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: $reverse;
     margin: 0px;
+    font-weight: normal;
 }
 
 h1 {

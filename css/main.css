@@ -759,7 +759,8 @@ p {
   margin: 0;
   font-size: 18px;
   line-height: 28px;
-  color: #333; }
+  color: #333;
+  font-weight: normal; }
 
 h1,
 h2,
@@ -773,7 +774,8 @@ h6 {
   -webkit-margin-end: 0;
   font-family: proxima_black, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #FEFEE6;
-  margin: 0px; }
+  margin: 0px;
+  font-weight: normal; }
 
 h1 {
   margin-bottom: 0.5em; }
@@ -1103,6 +1105,10 @@ a {
   height: 60px;
   background: #273340; }
   .footer .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     font-size: 0.75em;
     width: 960px;
@@ -1112,9 +1118,21 @@ a {
       color: #fff; }
     .footer .main-footer i {
       margin-right: 5px; }
+    .footer .main-footer .social-icons {
+      display: none; }
     .footer .main-footer p {
       font-size: 0.95em;
-      margin: 0px; }
+      margin: 0px;
+      line-height: 1.5em; }
+
+@media (min-width: 550px) {
+  .footer .main-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .footer .main-footer .social-icons {
+      display: inherit; } }
 
 * {
   box-sizing: border-box !important; }
@@ -1376,8 +1394,7 @@ hr {
   background: #fff; }
 
 .prototype-main-wrapper .mockup {
-  background: #F2F2F2;
-  width: 100%; }
+  background: #F2F2F2; }
 
 .process h1,
 .process h2,
@@ -1590,8 +1607,7 @@ hr {
  */
 /* Final Prototype */
 .final-prototype {
-  min-height: 85vh;
-  background: green; }
+  min-height: 85vh; }
   .final-prototype .final-prototype-screens > div {
     -ms-flex-preferred-size: 22%;
         flex-basis: 22%;
@@ -1637,7 +1653,7 @@ hr {
   color: #E94444; }
 
 .ui-main-wrapper p {
-  color: #FEFEE6;
+  color: #333;
   margin-bottom: 30px; }
 
 /**
@@ -1704,24 +1720,52 @@ hr {
 /**
 	 TANDEM INTRO SECTION
  	 ---------------------------------*/
-/**
- * MOBILE FIRST QUERIES
- */
 .tandem-intro {
-  text-align: center;
-  color: #333;
-  background: #E94444;
-  min-height: 50vh; }
-  .tandem-intro h2 {
+  min-height: 85vh;
+  background: #1D2A46; }
+  .tandem-intro .intro-text p {
+    text-align: left;
     color: #FEFEE6; }
+  .tandem-intro .intro-text p:last-child {
+    margin-bottom: 0; }
+  .tandem-intro .intro-text .intro-para {
+    font-size: 1.3em;
+    line-height: 1.2;
+    font-family: proxima_medium, sans-serif; }
 
+@media screen and (min-width: 750px) {
+  .tandem-intro .intro-text h5 {
+    margin-bottom: 3em; }
+  .tandem-intro .intro-text p {
+    text-align: left; }
+  .tandem-intro .intro-text p:last-child {
+    margin-bottom: 0; }
+  .tandem-intro .intro-text .intro-para {
+    font-size: 1.6em;
+    line-height: 1.4; } }
+
+/**
+	 TANDEM PROCESS SECTION
+ 	 ---------------------------------*/
+.tadem-process {
+  min-height: 85vh;
+  background: #fff; }
+  .tadem-process h6 {
+    color: #333;
+    font-family: proxima_light_italic, sans-serif; }
+
+/**
+	 TANDEM FINAL DESIGN SECTION
+ 	 ---------------------------------*/
 .tandem-final-design {
-  margin: 30px 0;
+  background: #F2F2F2;
   color: #333; }
+  .tandem-final-design .final-design-container {
+    margin: 30px auto; }
   .tandem-final-design .tandem-screen-img {
     margin-bottom: 35px; }
     .tandem-final-design .tandem-screen-img img {
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); }
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
 
 /* RESUME
    ========================================================================== */

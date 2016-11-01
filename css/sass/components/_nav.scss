@@ -255,6 +255,7 @@
 	height: 60px;
 	background: #273340;
 		.main-footer {
+			flex-direction: column;
 			text-align: center;
 			font-size: 0.75em;
 			width: 960px;
@@ -266,12 +267,26 @@
 			i {
 				margin-right: 5px;
 			}
+			.social-icons {
+				display: none;
+			}
 			p {
 				font-size: 0.95em;
 				margin: 0px;
+				line-height: 1.5em;
 			}
 		}
 }
 	
+@media (min-width: 550px) {
+	.footer {
+		.main-footer {
+			flex-direction: row;
+			.social-icons {
+			display: inherit;
+			}
+		}
+	}
+}
 
 
