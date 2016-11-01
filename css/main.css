@@ -753,8 +753,8 @@ body,
 p {
   font-family: proxima_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 32px;
   color: #333; }
 
 h1,
@@ -950,7 +950,7 @@ a {
  * SECONDARY NAVIGATION
  */
 .secondary-nav {
-  background: #1D2A46;
+  background: #1e2832;
   width: 100%;
   height: 80px;
   position: fixed; }
@@ -1147,7 +1147,7 @@ hr {
 /* Homepage - Main Laning page */
 /* Mobile first queries */
 .main-landing-page {
-  background: #1D2A46; }
+  background: #1e2832; }
   .main-landing-page .container img {
     width: 50%; }
   .main-landing-page h1, .main-landing-page p {
@@ -1439,14 +1439,27 @@ hr {
  * MOBILE FIRST QUERIES
  */
 .prototype-main-wrapper .process {
-  min-height: 50vh;
-  background: #18243c; }
+  min-height: 85vh;
+  background: #fdfdf3; }
 
-.prototype-main-wrapper .process-text {
-  text-align: center; }
-  .prototype-main-wrapper .process-text p {
-    color: #FEFEE6;
-    font-family: proxima_light_italic, sans-serif; }
+.prototype-main-wrapper .process-text h1,
+.prototype-main-wrapper .process-text h5 {
+  text-align: center;
+  color: #333;
+  font-family: proxima_light, sans-serif; }
+
+.prototype-main-wrapper .process-text h5 {
+  margin-bottom: 3em; }
+
+.prototype-main-wrapper .process-text p {
+  text-align: left; }
+
+.prototype-main-wrapper .process-text p:last-child {
+  margin-bottom: 0; }
+
+.prototype-main-wrapper .process-text .intro-para {
+  font-size: 1.6em;
+  line-height: 1.4; }
 
 /**
 	 SCOPING SECTION
@@ -1752,11 +1765,11 @@ hr {
   color: #FEFEE6;
   background: #E94444;
   text-transform: uppercase;
+  position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 10px;
   letter-spacing: 0.4em;
-  cursor: pointer;
-  z-index: 5000; }
+  cursor: pointer; }

@@ -121,17 +121,32 @@
 
 .prototype-main-wrapper {
 	.process {
-		min-height: 50vh;
-		background: #18243c;
+		min-height: 85vh;
+		background: #fdfdf3;
 	}
 	.process-text {
-		text-align: center;
+		h1,
+		h5 {
+			text-align: center;
+			color: $primary-font-color;
+			font-family: $body;
+		}
+		h5 {
+			margin-bottom: 3em;
+		}
 		p {
-			color: $reverse-font-color;
-			font-family: $body_italic;
+			text-align: left;
+		}
+		p:last-child{
+			margin-bottom: 0;
+		}
+		.intro-para {
+			font-size: 1.6em;
+			line-height: 1.4;
 		}
 	}
 }
+
 
 /**
 	 SCOPING SECTION

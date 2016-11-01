@@ -6,7 +6,7 @@ var animatedText = require('./lib/typographyAnimation.js');
 
 $(document).ready(function(){
 
-  var scrollDown = $("#scroll-down.btn");
+  // var scrollDown = $("#scroll-down.btn");
 
 // Prototype scroll down
     // scrollDown.on( "click", function(){
@@ -16,7 +16,7 @@ $(document).ready(function(){
     //     console.log('hi')
     // });
 
-    $( "#scroll-down.btn" ).on( "click", function() {
+    $( "#scroll-down-btn" ).on( "click", function() {
          $('html, body').animate({
             scrollTop: $("#process").offset().top
         }, 500);
@@ -50,7 +50,7 @@ navigationSlideMenu.init();
       })
 
     TweenMax.to($secondaryNav, 0.2, {
-      css: {background: "#212e49"},
+      css: {background: "rgba(255, 255, 255, 0.03)"},
       ease: Linear.easeNone
       })
     }
