@@ -19,6 +19,7 @@
 @font-face { font-family: proxima_thin; src: url(../fonts/Proxima-Nova-Thin.otf);}
 @font-face { font-family: proxima_light; src: url(../fonts/Proxima-Nova-Light.otf);}
 @font-face { font-family: proxima_light_italic; src: url(../fonts/Proxima-Nova-Light-Italic.otf);}
+@font-face { font-family: proxima_medium; src: url(../fonts/Proxima-Nova-Regular.otf);}
 @font-face { font-family: proxima_bold; src: url(../fonts/Proxima-Nova-Bold.otf);}
 @font-face { font-family: proxima_black; src: url(../fonts/Proxima-Nova-Black.otf);}
 
@@ -26,10 +27,10 @@
 // $medium: Gotham_medium, sans-serif;
 // $bold: Gotham_black, sans-serif;
 
-
 $thin: proxima_thin, sans-serif;
 $body: proxima_light, sans-serif;
 $body-italic: proxima_light_italic, sans-serif;
+$medium: proxima_medium, sans-serif;
 $bold: proxima_bold, sans-serif;
 $black: proxima_black, sans-serif;
 
@@ -46,8 +47,8 @@ body,
 p {
   font-family: $body, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
-  font-size: 20px;
-  line-height: 32px;
+    font-size: 18px;
+    line-height: 28px;
   color: $primary-font-color;
 }
 
@@ -88,7 +89,13 @@ a {
   }
 }
 
-
+@media screen and (min-width: 750px) {
+  body, 
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
 
 
 

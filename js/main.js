@@ -50,7 +50,7 @@ navigationSlideMenu.init();
       })
 
     TweenMax.to($secondaryNav, 0.2, {
-      css: {background: "rgba(255, 255, 255, 0.03)"},
+      css: {background: "#273340"},
       ease: Linear.easeNone
       })
     }

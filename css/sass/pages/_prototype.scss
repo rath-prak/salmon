@@ -17,6 +17,7 @@
 	}
 }
 
+.process,
 .scope,
 .wireframes,
 .mockup,
@@ -26,10 +27,21 @@
 	h2, 
 	h3, 
 	h4 {
+		text-align: center;
 		color: $salmon;
+		font-family: $black;
 	}
 } 
 
+.framer,
+.mockup {
+	h1, 
+	h2, 
+	h3, 
+	h4 {
+		text-align: left;
+	}	
+}
 
 /**
 	 PROTOTYPE INTRO SECTION
@@ -61,10 +73,7 @@
 		h1 {
 			font-size: 2em;
 			text-transform: uppercase;
-			color: $salmon;
-		}
-		h2 {
-			font-family: $bold;
+
 		}
 		p {
 			margin-bottom: 5px;
@@ -102,6 +111,7 @@
 			margin: 10px;
 			h1 {
 				font-size: 3.5em;
+				color: $salmon;
 			}
 		}
 		.welcome-iphone {
@@ -119,21 +129,10 @@
  * MOBILE FIRST QUERIES
  */
 
-.prototype-main-wrapper {
-	.process {
+.process {
 		min-height: 85vh;
 		background: #fdfdf3;
-	}
 	.process-text {
-		h1,
-		h5 {
-			text-align: center;
-			color: $primary-font-color;
-			font-family: $body;
-		}
-		h5 {
-			margin-bottom: 3em;
-		}
 		p {
 			text-align: left;
 		}
@@ -141,8 +140,30 @@
 			margin-bottom: 0;
 		}
 		.intro-para {
-			font-size: 1.6em;
-			line-height: 1.4;
+			font-size: 1.3em;
+			line-height: 1.2;
+			font-family: $medium;
+		}
+	}
+}
+
+
+@media screen and (min-width: 750px) {
+	.process {
+		.process-text {
+			h5 {
+				margin-bottom: 3em;
+			}
+			p {
+				text-align: left;
+			}
+			p:last-child{
+				margin-bottom: 0;
+			}
+			.intro-para {
+				font-size: 1.6em;
+				line-height: 1.4;
+			}
 		}
 	}
 }
@@ -157,16 +178,33 @@
  */
 
 .scope {
+	.scope-text {
+		h1 {
+			text-align: center;
+			color: $salmon;
+			font-family: $black;
+		}
+		span {
+			font-family: $bold;
+		}
+	}
+
 	.client-sketches > div {
 	  flex-basis: 22%;
     max-width: 22%;
 	}
 
-	h5 {
+	h6 {
 		@include captionitalic;
 	}
 }
 
+
+@media screen and (min-width: 750px) {
+	.scope-text {
+		margin: 30px 0;
+	}
+}
 /**
 	 WIREFRAME SECTION
  	 ---------------------------------*/
@@ -193,6 +231,16 @@
 	}
 }
 
+@media screen and (min-width: 750px) {
+	.wireframes-text {
+		margin-top: 30px;
+	}
+	.sketch-wireframes {
+		margin-bottom: 30px;
+	}
+
+}
+
 /**
 	 MOCKUP SECTION
  	 ---------------------------------*/
@@ -202,7 +250,7 @@
  */
 
 .mockup {
-
+	min-height: 85vh;
 }
 
 @media screen and (min-width: 750px) {
@@ -233,6 +281,8 @@
 
 /* Final Prototype */
 .final-prototype {
+	min-height: 85vh;
+	background: green;
 	.final-prototype-screens > div {
 		flex-basis: 22%;
     max-width: 24%;
@@ -251,7 +301,7 @@
 
 
 .framer {
-	min-height: 50vh;
+	min-height: 85vh;
 		p {
 			color: $reverse;
 		}
@@ -263,17 +313,6 @@
 	}
 }
 
-/* Footer */
-
-.footer {
-	height: 200px;
-	background: #000;
-		.social-footer {
-			color: #fff;
-			text-align: center;
-			font-size: 1.5em;
-		}
-}
 
 /**
  * LARGER THAN TABLET
@@ -292,6 +331,19 @@
 		}
 	}
 
+}
+
+
+/* Footer */
+
+.footer {
+	height: 200px;
+	background: #000;
+		.social-footer {
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
 }
 
 

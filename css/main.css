@@ -742,6 +742,10 @@ img {
   src: url(../fonts/Proxima-Nova-Light-Italic.otf); }
 
 @font-face {
+  font-family: proxima_medium;
+  src: url(../fonts/Proxima-Nova-Regular.otf); }
+
+@font-face {
   font-family: proxima_bold;
   src: url(../fonts/Proxima-Nova-Bold.otf); }
 
@@ -753,8 +757,8 @@ body,
 p {
   font-family: proxima_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
   color: #333; }
 
 h1,
@@ -785,6 +789,12 @@ a {
   color: #1271db; }
   a:hover, a:focus {
     text-decoration: none; }
+
+@media screen and (min-width: 750px) {
+  body,
+  p {
+    font-size: 20px;
+    line-height: 32px; } }
 
 /* PRELOADER
    ========================================================================== */
@@ -1349,6 +1359,10 @@ hr {
   background: #F2F2F2;
   width: 100%; }
 
+.process h1,
+.process h2,
+.process h3,
+.process h4,
 .scope h1,
 .scope h2,
 .scope h3,
@@ -1369,7 +1383,19 @@ hr {
 .framer h2,
 .framer h3,
 .framer h4 {
-  color: #E94444; }
+  text-align: center;
+  color: #E94444;
+  font-family: proxima_black, sans-serif; }
+
+.framer h1,
+.framer h2,
+.framer h3,
+.framer h4,
+.mockup h1,
+.mockup h2,
+.mockup h3,
+.mockup h4 {
+  text-align: left; }
 
 /**
 	 PROTOTYPE INTRO SECTION
@@ -1395,10 +1421,7 @@ hr {
   text-align: center; }
   .prototype-intro-wrapper .intro-text h1 {
     font-size: 2em;
-    text-transform: uppercase;
-    color: #E94444; }
-  .prototype-intro-wrapper .intro-text h2 {
-    font-family: proxima_bold, sans-serif; }
+    text-transform: uppercase; }
   .prototype-intro-wrapper .intro-text p {
     margin-bottom: 5px;
     color: #FEFEE6; }
@@ -1428,7 +1451,8 @@ hr {
           flex-basis: calc((100%/3)*2);
       margin: 10px; }
       .prototype-intro-wrapper .intro-text h1 {
-        font-size: 3.5em; }
+        font-size: 3.5em;
+        color: #E94444; }
     .prototype-intro-wrapper .welcome-iphone {
       margin-top: 0px; } }
 
@@ -1438,28 +1462,28 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
-.prototype-main-wrapper .process {
+.process {
   min-height: 85vh;
   background: #fdfdf3; }
+  .process .process-text p {
+    text-align: left; }
+  .process .process-text p:last-child {
+    margin-bottom: 0; }
+  .process .process-text .intro-para {
+    font-size: 1.3em;
+    line-height: 1.2;
+    font-family: proxima_medium, sans-serif; }
 
-.prototype-main-wrapper .process-text h1,
-.prototype-main-wrapper .process-text h5 {
-  text-align: center;
-  color: #333;
-  font-family: proxima_light, sans-serif; }
-
-.prototype-main-wrapper .process-text h5 {
-  margin-bottom: 3em; }
-
-.prototype-main-wrapper .process-text p {
-  text-align: left; }
-
-.prototype-main-wrapper .process-text p:last-child {
-  margin-bottom: 0; }
-
-.prototype-main-wrapper .process-text .intro-para {
-  font-size: 1.6em;
-  line-height: 1.4; }
+@media screen and (min-width: 750px) {
+  .process .process-text h5 {
+    margin-bottom: 3em; }
+  .process .process-text p {
+    text-align: left; }
+  .process .process-text p:last-child {
+    margin-bottom: 0; }
+  .process .process-text .intro-para {
+    font-size: 1.6em;
+    line-height: 1.4; } }
 
 /**
 	 SCOPING SECTION
@@ -1467,14 +1491,26 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
+.scope .scope-text h1 {
+  text-align: center;
+  color: #E94444;
+  font-family: proxima_black, sans-serif; }
+
+.scope .scope-text span {
+  font-family: proxima_bold, sans-serif; }
+
 .scope .client-sketches > div {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
   max-width: 22%; }
 
-.scope h5 {
+.scope h6 {
   color: #333;
   font-family: proxima_light_italic, sans-serif; }
+
+@media screen and (min-width: 750px) {
+  .scope-text {
+    margin: 30px 0; } }
 
 /**
 	 WIREFRAME SECTION
@@ -1497,12 +1533,21 @@ hr {
   color: #333;
   font-family: proxima_light_italic, sans-serif; }
 
+@media screen and (min-width: 750px) {
+  .wireframes-text {
+    margin-top: 30px; }
+  .sketch-wireframes {
+    margin-bottom: 30px; } }
+
 /**
 	 MOCKUP SECTION
  	 ---------------------------------*/
 /**
  * MOBILE FIRST QUERIES
  */
+.mockup {
+  min-height: 85vh; }
+
 @media screen and (min-width: 750px) {
   .mockup .mockup-container {
     -webkit-box-orient: horizontal;
@@ -1524,10 +1569,13 @@ hr {
  * MOBILE FIRST QUERIES
  */
 /* Final Prototype */
-.final-prototype .final-prototype-screens > div {
-  -ms-flex-preferred-size: 22%;
-      flex-basis: 22%;
-  max-width: 24%; }
+.final-prototype {
+  min-height: 85vh;
+  background: green; }
+  .final-prototype .final-prototype-screens > div {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+    max-width: 24%; }
 
 /**
 	 FRAMER SECTION
@@ -1536,22 +1584,13 @@ hr {
  * MOBILE FIRST QUERIES
  */
 .framer {
-  min-height: 50vh; }
+  min-height: 85vh; }
   .framer p {
     color: #FEFEE6; }
   .framer .framer-iphone {
     margin: 30px 0; }
     .framer .framer-iphone img {
       width: 220px; }
-
-/* Footer */
-.footer {
-  height: 200px;
-  background: #000; }
-  .footer .social-footer {
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em; }
 
 /**
  * LARGER THAN TABLET
@@ -1568,6 +1607,15 @@ hr {
         flex-basis: 25%;
     max-width: 25%;
     text-align: right; } }
+
+/* Footer */
+.footer {
+  height: 200px;
+  background: #000; }
+  .footer .social-footer {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em; }
 
 /* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
