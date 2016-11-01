@@ -5,7 +5,7 @@
 /* util colors */
 /* global background color */
 html {
-  background: #1D2A46; }
+  background: #1e2832; }
 
 .clearfix,
 .group {
@@ -1219,19 +1219,18 @@ hr {
     font-size: 1.5em; }
 
 .prototype-container {
-  background: #E94444; }
+  background: #0176ea; }
+  .prototype-container h3,
+  .prototype-container p {
+    color: #FEFEE6; }
   .prototype-container h1 {
     text-transform: uppercase; }
-  .prototype-container .quote-text {
+  .prototype-container .quote-text p {
     font-size: 1.5em; }
 
 /**
  * LARGER THAN MOBILE
  */
-@media (min-width: 400px) {
-  .prototype-container .quote-text {
-    font-size: 1.7em; } }
-
 /**
  * LARGER THAN PHAMBLET
  */
@@ -1248,10 +1247,14 @@ hr {
     font-size: 2em;
     margin-bottom: 10px; }
   .prototype-container .quote-text {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1em; }
   .prototype-container p {
     margin-bottom: 15px; } }
+
+.about-me .about-footer-text h2 {
+  font-size: 2.5em;
+  color: #0176e8; }
 
 /* Interactiive */
 /* Mobile first queries */
@@ -1740,3 +1743,20 @@ hr {
   body {
     font: 14pt Georgia, "Times New Roman", Times, serif;
     line-height: 1.3; } }
+
+#scroll-down-btn {
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #FEFEE6;
+  background: #E94444;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  cursor: pointer;
+  z-index: 5000; }

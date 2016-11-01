@@ -123,13 +123,20 @@
 }
 
 .prototype-container {
-	background: $salmon;
+	// background: $salmon;
+	background: #0176ea;
+	h3,
+	p {
+		color: $reverse;
+	}
 
 	h1 {
 		text-transform: uppercase;
 	}
 	.quote-text {
+		p {
 		font-size: 1.5em;
+		}
 	}
 }
 
@@ -138,11 +145,6 @@
  * LARGER THAN MOBILE
  */
 @media (min-width: 400px) {
-	.prototype-container {
-		.quote-text {
-			font-size: 1.7em;
-		}
-	}	
 
 }	
 
@@ -177,7 +179,7 @@
 		h3 {
 		}
 		.quote-text {
-			font-size: 3em;
+			font-size: 2em;
 			line-height: 1em;
 		}
 		p {
@@ -186,4 +188,15 @@
 	}
 
 }
+
+
+.about-me {
+	.about-footer-text {
+		h2 {
+			font-size: 2.5em;
+			color: #0176e8;
+		}
+	}
+}
+	
 

@@ -6,6 +6,21 @@ var animatedText = require('./lib/typographyAnimation.js');
 
 $(document).ready(function(){
 
+  var scrollDown = $("#scroll-down.btn");
+
+// Prototype scroll down
+    // scrollDown.on( "click", function(){
+    //     // $('html, body').animate({
+    //     //     scrollTop: $("#process").offset().top
+    //     // }, 2000);
+    //     console.log('hi')
+    // });
+
+    $( "#scroll-down.btn" ).on( "click", function() {
+         $('html, body').animate({
+            scrollTop: $("#process").offset().top
+        }, 500);
+});
   
 // PRE-LAODER
   $(window).load(function(){
@@ -16,6 +31,7 @@ $(document).ready(function(){
 
 // NAVIGATION
 navigationSlideMenu.init();
+
 
 
 // Secondary nav-menu hides when scroll
@@ -98,8 +114,10 @@ navigationSlideMenu.init();
       if (index === 3) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
-        $('.menu-bar').css('background', '#fff');
-        $('.watermark-text, .contact-item').css('color', '#fff');
+        // $('.menu-bar').css('background', '#fff');
+        // $('.watermark-text, .contact-item').css('color', '#fff');
+        $('.menu-bar').css('background', '#0176e8');
+        $('.watermark-text, .contact-item').css('color', '#0176e8');
         animatedText.fadeInText($fadeTextPrototype);
 
       } else {
@@ -107,6 +125,7 @@ navigationSlideMenu.init();
         $('.red-logo').addClass('active-logo'); 
         $('.menu-bar').css('background', '#E94444');
         $('.watermark-text, .contact-item').css('color', '#E94444');
+
       }
 
       if (index === 4 ) {

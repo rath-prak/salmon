@@ -47,6 +47,7 @@ $tertiary-color: #aaa;
 $reverse: #FEFEE6;
 
 $salmon: #E94444;
+// $salmon: #e9c2c3;
 $dark-blue: #1D2A46;
 $light-blue: #33b2ff;
 $pink: #F15FA8;
@@ -66,6 +67,10 @@ $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
 
 /* global background color */
+// html {
+// 	background: $dark-blue;
+// }
+
 html {
-	background: $dark-blue;
+	background: #1e2832;
 }
