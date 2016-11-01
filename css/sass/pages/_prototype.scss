@@ -73,6 +73,7 @@
 		h1 {
 			font-size: 2em;
 			text-transform: uppercase;
+			color: $salmon;
 
 		}
 		p {
@@ -111,7 +112,6 @@
 			margin: 10px;
 			h1 {
 				font-size: 3.5em;
-				color: $salmon;
 			}
 		}
 		.welcome-iphone {
@@ -334,17 +334,7 @@
 }
 
 
-/* Footer */
 
-.footer {
-	height: 200px;
-	background: #000;
-		.social-footer {
-			color: #fff;
-			text-align: center;
-			font-size: 1.5em;
-		}
-}
 
 
 
