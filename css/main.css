@@ -1005,9 +1005,7 @@ a {
 
 .nav-about-text h2,
 .nav-about-text p {
-  font-family: proxima_thin, sans-serif;
-  font-size: 1em;
-  line-height: 1.2em; }
+  font-family: proxima_thin, sans-serif; }
 
 .nav-about-text h2 {
   margin-bottom: 0.5em; }
