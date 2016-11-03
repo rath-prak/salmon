@@ -4,9 +4,12 @@
 /* Mobile first queries */
 
 .main-landing-page {
-		background: $dark-blue;
+		// background: $dark-blue;
 
-
+		.pixi-background {
+			width: 100%;
+			height: 100%;
+		}
 		.container {
 			img {
 			width: 50%;

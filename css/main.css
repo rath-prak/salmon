@@ -1184,6 +1184,17 @@ hr {
   .pulse .pulse-button {
     stroke: #E94444; }
 
+/* Pixi Js */
+.rendererView {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
 /* UX - Prototype */
 /* Larger than mobile */
 /* Larger than phablet */
@@ -1192,23 +1203,29 @@ hr {
 /* Larger than Desktop HD */
 /* Homepage - Main Laning page */
 /* Mobile first queries */
-.main-landing-page {
-  background: #1e2832; }
-  .main-landing-page .container img {
-    width: 50%; }
-  .main-landing-page h1, .main-landing-page p {
-    color: #E94444; }
-  .main-landing-page h1 {
-    font-size: 1.5em;
-    margin: 10px;
-    font-family: proxima_bold, sans-serif;
-    text-transform: uppercase; }
-  .main-landing-page p {
-    font-size: 0.9em;
-    margin: 0 20px 20px;
-    font-family: proxima_light, sans-serif; }
-  .main-landing-page .social-main {
-    visibility: hidden; }
+.main-landing-page .pixi-background {
+  width: 100%;
+  height: 100%; }
+
+.main-landing-page .container img {
+  width: 50%; }
+
+.main-landing-page h1, .main-landing-page p {
+  color: #E94444; }
+
+.main-landing-page h1 {
+  font-size: 1.5em;
+  margin: 10px;
+  font-family: proxima_bold, sans-serif;
+  text-transform: uppercase; }
+
+.main-landing-page p {
+  font-size: 0.9em;
+  margin: 0 20px 20px;
+  font-family: proxima_light, sans-serif; }
+
+.main-landing-page .social-main {
+  visibility: hidden; }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
