@@ -1874,3 +1874,8 @@ hr {
   font-size: 10px;
   letter-spacing: 0.4em;
   cursor: pointer; }
+
+.sketch-screenshot {
+  margin: 0 auto; }
+  .sketch-screenshot img {
+    width: 960px; }
