@@ -39,10 +39,16 @@ img {
 
 
 .flex-container {
-	max-width: 960px;
+	max-width: 850px;
 	margin: 0 auto;
 	display: flex;
 	padding: 30px;
+}
+
+@media (min-width: 1280px) {
+	.flex-container {
+	max-width: 960px;
+	}
 }
 
 .col-one {

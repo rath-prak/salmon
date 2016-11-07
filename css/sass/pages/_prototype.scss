@@ -6,7 +6,7 @@
 		color: $primary-font-color;
 		margin-bottom: 30px;
 	}
-	.scope,
+	.background,
 	.wireframes,
 	.final-prototype {
 		background: #fff;
@@ -14,10 +14,13 @@
 	.mockup {
 		background: #F2F2F2;
 	}
+	span {
+		font-family: $bold;
+	}
 }
 
-.process,
-.scope,
+.introduction,
+.background,
 .wireframes,
 .mockup,
 .final-prototype,
@@ -33,7 +36,7 @@
 } 
 
 .framer,
-.mockup {
+ {
 	h1, 
 	h2, 
 	h3, 
@@ -53,14 +56,7 @@
 .prototype-intro-wrapper {
 
 	.prototype-watermark {
-		width: 100%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		position: absolute;
-		z-index: -1;
-		opacity: 0.02;
-		visibility: hidden;
+		@include watermark;
 	}
 
 	.welcome-iphone {
@@ -114,24 +110,27 @@
 			}
 		}
 		.welcome-iphone {
-		margin-top: 0px;
+			margin: 0px;
 		}	
 	}
 }	
 
 
 /**
-	 PROCESS SECTION
+	 INTRODUCTION SECTION
  	 ---------------------------------*/
 
 /**
  * MOBILE FIRST QUERIES
  */
 
-.process {
+.introduction {
 		min-height: 85vh;
-		background: #fdfdf3;
-	.process-text {
+		background: #FFF5DD;
+	.introduction-text {
+		a {
+			color: $primary-font-color;
+		}
 		p {
 			text-align: left;
 		}
@@ -139,17 +138,18 @@
 			margin-bottom: 0;
 		}
 		.intro-para {
-			font-size: 1.3em;
-			line-height: 1.2;
-			font-family: $medium;
+			@include intro-paragraph;
 		}
 	}
 }
 
 
 @media screen and (min-width: 750px) {
-	.process {
-		.process-text {
+	.introduction {
+		.introduction-container {
+		margin: 60px auto;
+		}
+		.introduction-text {
 			h5 {
 				margin-bottom: 3em;
 			}
@@ -159,32 +159,28 @@
 			p:last-child{
 				margin-bottom: 0;
 			}
-			.intro-para {
-				font-size: 1.6em;
-				line-height: 1.4;
-			}
 		}
 	}
 }
 
 
 /**
-	 SCOPING SECTION
+	 BACKGROUND SECTION
  	 ---------------------------------*/
 
 /**
  * MOBILE FIRST QUERIES
  */
 
-.scope {
-	.scope-text {
+.background {
+	.background-text {
 		h1 {
 			text-align: center;
 			color: $salmon;
 			font-family: $black;
 		}
-		span {
-			font-family: $bold;
+		.intro-para {
+			@include intro-paragraph;
 		}
 	}
 
@@ -193,19 +189,19 @@
     max-width: 22%;
 	}
 
-	h6 {
+	h5 {
 		@include captionitalic;
 	}
 }
 
 
 @media screen and (min-width: 750px) {
-	.scope-text {
-		margin: 30px 0;
+	.background-container {
+		margin-top: 60px;
 	}
 }
 /**
-	 WIREFRAME SECTION
+	 WIREFRAMING SECTION
  	 ---------------------------------*/
 
 /**
@@ -215,9 +211,14 @@
 
 /* wireframes section */
 .wireframes {
-	.pen-paper-wireframes {
-			margin-bottom: 30px;
+	.intro-para {
+		@include intro-paragraph;
+	}
+	.sketch-wireframes {
+		h2 {
+			text-align: left;
 		}
+	}
 	.wireframe-sketches > div {
 		flex-basis: 22%;
     max-width: 22%;
@@ -225,17 +226,17 @@
 			border: solid 1px #e5e5e5;
 		}
 	}
-	h6 {
+	h5 {
 		@include captionitalic;
 	}
 }
 
 @media screen and (min-width: 750px) {
-	.wireframes-text {
-		margin-top: 30px;
+	.wireframes-container {
+		margin: 60px auto;
 	}
 	.sketch-wireframes {
-		margin-bottom: 30px;
+		margin-top: 60px;
 	}
 
 }
@@ -249,22 +250,30 @@
  */
 
 .mockup {
-	min-height: 85vh;
+	.sketch-screenshot {
+		img {
+			border: solid 1px #e5e5e5;
+		}
+	}
+	.mockup-text {
+		h3 {
+			text-align: left;
+		}
+	}
+	.mockup-container {
+		margin: 60px auto;
+		h5 {
+		@include captionitalic;
+		}
+	}
+
 }
 
 @media screen and (min-width: 750px) {
 
 	.mockup {
 		.mockup-container {
-			flex-direction: row;
-		}
-		.mockup-text,
-		.mockup-screens {
-			flex-basis: 50%;
-	    max-width: 49%;
-		}
-		.mockup-text {
-			margin-right: 50px;
+			// flex-direction: row;
 		}
 	}
 	

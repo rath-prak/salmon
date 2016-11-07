@@ -41,6 +41,19 @@
   }
 }
 
+// Background watermark
+
+@mixin watermark(){
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.02;
+  visibility: hidden; 
+}
+
 /**
  * TYPOGRAPHY
  */
@@ -51,4 +64,21 @@
   font-family: $body-italic; 
 
 }
+
+
+// intro paragraph style
+@mixin intro-paragraph(){
+  font-size: 1.3em;
+  line-height: 1.2;
+  font-family: $medium;
+  
+  @media screen and (min-width: 750px) {
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+
+}
+
+
+
 
