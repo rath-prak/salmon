@@ -1088,7 +1088,7 @@ a {
     list-style-type: none;
     font-size: 14px;
     float: left;
-    border: 1px solid rgba(233, 68, 68, 0.1); }
+    border: 1px solid rgba(233, 68, 68, 0.15); }
     .social-main li i {
       height: 35px;
       width: 35px;
@@ -1269,6 +1269,16 @@ hr {
 
 .main-landing-page .social-main {
   visibility: hidden; }
+
+.main-landing-page .landing-header h1 {
+  text-transform: initial;
+  font-family: proxima_black, sans-serif;
+  margin-bottom: 0.25em;
+  font-size: 3em; }
+
+.main-landing-page .landing-header h3 {
+  font-family: proxima_light, sans-serif;
+  color: #E94444; }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
