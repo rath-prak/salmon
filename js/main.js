@@ -174,134 +174,66 @@ navigationSlideMenu.init();
   * PIXI JS / FISH
   */
 
-    var viewWidth = 630;
+  var viewWidth = 630;
   var viewHeight = 410;
 
-  // Create a pixi renderer
+
   var renderer = PIXI.autoDetectRenderer(viewWidth, viewHeight);
   renderer.view.className = "rendererView";
-  
-  // add render view to DOM
+  // var renderer = PIXI.autoDetectRenderer(800, 600);
   document.body.appendChild(renderer.view);
 
-  // create an new instance of a pixi stage
-  var stage = new PIXI.Stage(0xFFFFFF);
+  // create the root of the scene graph
+  var stage = new PIXI.Container();
 
-  // create a background texture
-  var pondFloorTexture = PIXI.Texture.fromImage("img/pixi/pondFloor.jpg");
-  // create a new background sprite
-  var pondFloorSprite = new PIXI.Sprite(pondFloorTexture);
-  stage.addChild(pondFloorSprite);
+  var count = 0;
 
-  // create an array to store a refference to the fish in the pond
-  var fishArray = [];
-   
-  var totalFish = 20;
+  // build a rope!
+  var ropeLength = 918 / 7;
 
-  for (var i = 0; i < totalFish; i++) 
+  var points = [];
+
+  for (var i = 0; i < 20; i++)
   {
-    // generate a fish id betwen 0 and 3 using the modulo operator
-    var fishId = i % 4;
-    fishId += 1;
-
-    // genrate an image name based on the fish id
-    var imagePath = "img/pixi/fish"+fishId+".png";
-    // create a new Texture that uses the image name that we just generated as its source
-    var fishTexture = PIXI.Texture.fromImage(imagePath);
-    // create asprite that uses our new sprite texture
-    var fish =  new PIXI.Sprite(fishTexture);
-
-    // set the anchor point so the the fish texture is centerd on the sprite
-    fish.anchor.x = fish.anchor.y = 0.5;
-
-    // set a random scale for the fish - no point them all being the same size!
-    fish.scale.x = fish.scale.y = 0.8 + Math.random() * 0.3;
-    
-    // finally let's set the fish to be a random position..
-    fish.position.x = Math.random() * viewWidth;
-    fish.position.y = Math.random() * viewHeight;
-  
-    // time to add the fish to the pond container!
-    stage.addChild(fish);
-
-    // create some extra properties that will control movment
-
-    // create a random direction in radians. This is a number between 0 and PI*2 which is the equivalent of 0 - 360 degrees
-    fish.direction = Math.random() * Math.PI * 2;
-
-    // this number will be used to modify the direction of the fish over time
-    fish.turningSpeed = Math.random() - 0.8;
-
-    // create a random speed for the fish between 0 - 2
-    fish.speed = 2 + Math.random() * 2; 
-
-    // finally we push the fish into the fishArray so it it can be easily accessed later
-    fishArray.push(fish);
-
+      points.push(new PIXI.Point(i * ropeLength, 0));
   }
 
-  // create a bounding box box for the little fish 
-  var fishBoundsPadding = 100;
-  var fishBounds = new PIXI.Rectangle(-fishBoundsPadding,
-                    -fishBoundsPadding, 
-                    viewWidth + fishBoundsPadding * 2, 
-                    viewHeight + fishBoundsPadding * 2);
+  var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('../img/pixi/underwaterocean.png'), points);
 
-  
-  // create a new wave texture to add over the fish
-  var waveTexture = PIXI.Texture.fromImage("img/pixi/waves.png");
-  var wavesTilingSprite = new PIXI.TilingSprite(waveTexture, viewWidth, viewHeight);
-  wavesTilingSprite.alpha = 0.2;
-  stage.addChild(wavesTilingSprite);
-  
-  // create a displacment map (the texture must be a power of two for the filter)
-  var waveDisplacementTexture = PIXI.Texture.fromImage("img/pixi/displacementMap.jpg");
-  var displacementFilter = new PIXI.DisplacementFilter(waveDisplacementTexture);
-  
-  // apply the filters to the stage
-  stage.filters = [displacementFilter];
-  
-  // configure the displacement filter..
-  displacementFilter.scale.x = 25;
-  displacementFilter.scale.y = 25;
+  strip.x = -750;
+  strip.y = -200;
 
-  var tick = 0;
+  var snakeContainer = new PIXI.Container();
+  snakeContainer.position.x = 400;
+  snakeContainer.position.y = 300;
+
+  snakeContainer.scale.set(0.70);
+  stage.addChild(snakeContainer);
+
+  snakeContainer.addChild(strip);
+
+  // start animating
   requestAnimationFrame(animate);
 
-  function animate() 
-  {
-    // iterate through the fish and update the positiond
-    for (var i = 0; i < fishArray.length; i++) 
-    {
-      var fish = fishArray[i];
-      fish.direction += fish.turningSpeed * 0.01;
-      fish.position.x += Math.sin(fish.direction) * fish.speed;
-      fish.position.y += Math.cos(fish.direction) * fish.speed;
-      fish.rotation = -fish.direction - Math.PI/2;
+  function animate() {
 
-      // wrap the fish by testing there bounds..
-      if(fish.position.x < fishBounds.x)fish.position.x += fishBounds.width;
-      else if(fish.position.x > fishBounds.x + fishBounds.width)fish.position.x -= fishBounds.width
-      
-      if(fish.position.y < fishBounds.y)fish.position.y += fishBounds.height;
-      else if(fish.position.y > fishBounds.y + fishBounds.height)fish.position.y -= fishBounds.height
-    }
-    
-    // increment the ticker
-    tick += 0.1;
-    
-    // scroll the wave sprite
-    wavesTilingSprite.tilePosition.x = wavesTilingSprite.tilePosition.y = tick * -10
-    
-    // update the displacment filter by moving the offset of the filter
-    displacementFilter.offset.x = displacementFilter.offset.y = tick * 10
-    
-    // time to render the state!
+      count += 0.01;
+
+      // make the snake
+      for (var i = 0; i < points.length; i++) {
+
+          points[i].y = Math.sin((i * 0.5) + count) * 30;
+
+          points[i].x = i * ropeLength + Math.cos((i * 0.3) + count) * 5;
+
+      }
+
+      // render the stage
       renderer.render(stage);
-      
-      // request another animation frame..
-      requestAnimationFrame( animate );
+
+      requestAnimationFrame(animate);
   }
+
 
 
   
