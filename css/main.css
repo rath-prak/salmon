@@ -353,12 +353,16 @@ img {
   display: flex; }
 
 .flex-container {
-  max-width: 960px;
+  max-width: 850px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 30px; }
+
+@media (min-width: 1280px) {
+  .flex-container {
+    max-width: 960px; } }
 
 .col-one {
   -ms-flex-preferred-size: 100%;
@@ -753,6 +757,10 @@ img {
   font-family: proxima_black;
   src: url(../fonts/Proxima-Nova-Black.otf); }
 
+@font-face {
+  font-family: galaxy_body;
+  src: url(../fonts/GalaxieCopernicus-Book.otf); }
+
 body,
 p {
   font-family: proxima_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -772,13 +780,14 @@ h6 {
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  font-family: proxima_black, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: proxima_bold, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #FEFEE6;
   margin: 0px;
   font-weight: normal; }
 
 h1 {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  font-family: proxima_black, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 h2,
 h3,
@@ -1075,24 +1084,58 @@ a {
   position: absolute;
   right: 4%;
   bottom: 4%; }
-  .social-main .contact,
-  .social-main .contact-item,
-  .social-main .about-btn {
-    text-transform: uppercase;
-    font-family: proxima_light, sans-serif;
+  .social-main li {
+    list-style-type: none;
     font-size: 14px;
-    color: #E94444;
-    margin-left: 5px; }
-  .social-main .contact {
-    margin-right: 5px; }
-  .social-main .about-btn {
-    font-family: avant_medium, sans-serif;
-    cursor: pointer; }
-  .social-main .about-tube-separator {
-    font-family: avant_book, sans-serif;
-    cursor: default; }
+    float: left;
+    border: 1px solid rgba(233, 68, 68, 0.1); }
+    .social-main li i {
+      height: 35px;
+      width: 35px;
+      text-align: center;
+      line-height: 35px; }
+  .social-main li:nth-of-type(1),
+  .social-main li:nth-of-type(2),
+  .social-main li:nth-of-type(3) {
+    border-right: 0px; }
+  .social-main li:hover {
+    background: #E94444;
+    -webkit-transition: background 1.5s;
+    transition: background 1.5s; }
+    .social-main li:hover i {
+      color: #1e2832; }
+  .social-main .social-title {
+    border: none;
+    margin-right: 14px;
+    line-height: 35px;
+    font-family: proxima_thin, sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(233, 68, 68, 0.75); }
+    .social-main .social-title span {
+      font-family: proxima_medium, sans-serif;
+      font-size: 10px; }
 
-@media (max-width: 550px) {
+.location-caption {
+  z-index: 100;
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  height: 35px;
+  line-height: 35px; }
+  .location-caption p {
+    font-family: proxima_thin, sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: rgba(233, 68, 68, 0.75); }
+    .location-caption p span {
+      font-family: proxima_medium, sans-serif;
+      font-size: 10px; }
+
+@media (max-width: 565px) {
+  .location-caption,
   .social-main {
     visibility: hidden; } }
 
@@ -1403,7 +1446,7 @@ hr {
   color: #333;
   margin-bottom: 30px; }
 
-.prototype-main-wrapper .scope,
+.prototype-main-wrapper .background,
 .prototype-main-wrapper .wireframes,
 .prototype-main-wrapper .final-prototype {
   background: #fff; }
@@ -1411,14 +1454,17 @@ hr {
 .prototype-main-wrapper .mockup {
   background: #F2F2F2; }
 
-.process h1,
-.process h2,
-.process h3,
-.process h4,
-.scope h1,
-.scope h2,
-.scope h3,
-.scope h4,
+.prototype-main-wrapper span {
+  font-family: proxima_bold, sans-serif; }
+
+.introduction h1,
+.introduction h2,
+.introduction h3,
+.introduction h4,
+.background h1,
+.background h2,
+.background h3,
+.background h4,
 .wireframes h1,
 .wireframes h2,
 .wireframes h3,
@@ -1442,11 +1488,7 @@ hr {
 .framer h1,
 .framer h2,
 .framer h3,
-.framer h4,
-.mockup h1,
-.mockup h2,
-.mockup h3,
-.mockup h4 {
+.framer h4 {
   text-align: left; }
 
 /**
@@ -1506,73 +1548,93 @@ hr {
       .prototype-intro-wrapper .intro-text h1 {
         font-size: 3.5em; }
     .prototype-intro-wrapper .welcome-iphone {
-      margin-top: 0px; } }
+      margin: 0px; } }
 
 /**
-	 PROCESS SECTION
+	 INTRODUCTION SECTION
  	 ---------------------------------*/
 /**
  * MOBILE FIRST QUERIES
  */
-.process {
+.introduction {
   min-height: 85vh;
-  background: #fdfdf3; }
-  .process .process-text p {
+  background: #e4ecf1; }
+  .introduction .introduction-text a {
+    color: #333; }
+  .introduction .introduction-text p {
     text-align: left; }
-  .process .process-text p:last-child {
+  .introduction .introduction-text p:last-child {
     margin-bottom: 0; }
-  .process .process-text .intro-para {
+  .introduction .introduction-text .intro-para {
     font-size: 1.3em;
     line-height: 1.2;
     font-family: proxima_medium, sans-serif; }
+    @media screen and (min-width: 750px) {
+      .introduction .introduction-text .intro-para {
+        font-size: 1.4em;
+        line-height: 1.4; } }
 
 @media screen and (min-width: 750px) {
-  .process .process-text h5 {
+  .introduction .introduction-container {
+    margin: 60px auto; }
+  .introduction .introduction-text h5 {
     margin-bottom: 3em; }
-  .process .process-text p {
+  .introduction .introduction-text p {
     text-align: left; }
-  .process .process-text p:last-child {
-    margin-bottom: 0; }
-  .process .process-text .intro-para {
-    font-size: 1.6em;
-    line-height: 1.4; } }
+  .introduction .introduction-text p:last-child {
+    margin-bottom: 0; } }
 
 /**
-	 SCOPING SECTION
+	 BACKGROUND SECTION
  	 ---------------------------------*/
 /**
  * MOBILE FIRST QUERIES
  */
-.scope .scope-text h1 {
+.background .background-text h1 {
   text-align: center;
   color: #E94444;
   font-family: proxima_black, sans-serif; }
 
-.scope .scope-text span {
-  font-family: proxima_bold, sans-serif; }
+.background .background-text .intro-para {
+  font-size: 1.3em;
+  line-height: 1.2;
+  font-family: proxima_medium, sans-serif; }
+  @media screen and (min-width: 750px) {
+    .background .background-text .intro-para {
+      font-size: 1.4em;
+      line-height: 1.4; } }
 
-.scope .client-sketches > div {
+.background .client-sketches > div {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
   max-width: 22%; }
 
-.scope h6 {
+.background h5 {
   color: #333;
   font-family: proxima_light_italic, sans-serif; }
 
 @media screen and (min-width: 750px) {
-  .scope-text {
-    margin: 30px 0; } }
+  .background-container {
+    margin-top: 60px; } }
 
 /**
-	 WIREFRAME SECTION
+	 WIREFRAMING SECTION
  	 ---------------------------------*/
 /**
  * MOBILE FIRST QUERIES
  */
 /* wireframes section */
-.wireframes .pen-paper-wireframes {
-  margin-bottom: 30px; }
+.wireframes .intro-para {
+  font-size: 1.3em;
+  line-height: 1.2;
+  font-family: proxima_medium, sans-serif; }
+  @media screen and (min-width: 750px) {
+    .wireframes .intro-para {
+      font-size: 1.4em;
+      line-height: 1.4; } }
+
+.wireframes .sketch-wireframes h2 {
+  text-align: left; }
 
 .wireframes .wireframe-sketches > div {
   -ms-flex-preferred-size: 22%;
@@ -1581,15 +1643,15 @@ hr {
   .wireframes .wireframe-sketches > div img {
     border: solid 1px #e5e5e5; }
 
-.wireframes h6 {
+.wireframes h5 {
   color: #333;
   font-family: proxima_light_italic, sans-serif; }
 
 @media screen and (min-width: 750px) {
-  .wireframes-text {
-    margin-top: 30px; }
+  .wireframes-container {
+    margin: 60px auto; }
   .sketch-wireframes {
-    margin-bottom: 30px; } }
+    margin-top: 60px; } }
 
 /**
 	 MOCKUP SECTION
@@ -1597,22 +1659,17 @@ hr {
 /**
  * MOBILE FIRST QUERIES
  */
-.mockup {
-  min-height: 85vh; }
+.mockup .sketch-screenshot img {
+  border: solid 1px #e5e5e5; }
 
-@media screen and (min-width: 750px) {
-  .mockup .mockup-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .mockup .mockup-text,
-  .mockup .mockup-screens {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    max-width: 49%; }
-  .mockup .mockup-text {
-    margin-right: 50px; } }
+.mockup .mockup-text h3 {
+  text-align: left; }
+
+.mockup .mockup-container {
+  margin: 60px auto; }
+  .mockup .mockup-container h5 {
+    color: #333;
+    font-family: proxima_light_italic, sans-serif; }
 
 /**
 	 FINAL PROTOTYPE SECTION
