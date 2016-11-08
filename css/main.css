@@ -1084,22 +1084,26 @@ a {
   position: absolute;
   right: 4%;
   bottom: 4%; }
-  .social-main .contact,
-  .social-main .contact-item,
-  .social-main .about-btn {
-    text-transform: uppercase;
-    font-family: proxima_light, sans-serif;
+  .social-main li {
+    list-style-type: none;
     font-size: 14px;
-    color: #E94444;
-    margin-left: 5px; }
-  .social-main .contact {
-    margin-right: 5px; }
-  .social-main .about-btn {
-    font-family: avant_medium, sans-serif;
-    cursor: pointer; }
-  .social-main .about-tube-separator {
-    font-family: avant_book, sans-serif;
-    cursor: default; }
+    float: left;
+    border: 1px solid rgba(233, 68, 68, 0.1); }
+    .social-main li i {
+      height: 35px;
+      width: 35px;
+      text-align: center;
+      line-height: 35px; }
+  .social-main li:nth-of-type(1),
+  .social-main li:nth-of-type(2),
+  .social-main li:nth-of-type(3) {
+    border-right: 0px; }
+  .social-main li:hover {
+    background: #E94444;
+    -webkit-transition: background 1.5s;
+    transition: background 1.5s; }
+    .social-main li:hover i {
+      color: #1e2832; }
 
 @media (max-width: 550px) {
   .social-main {
