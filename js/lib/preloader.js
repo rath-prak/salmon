@@ -1,7 +1,8 @@
 function pagePreloader() {
   var preloader = $('.spinner-wrapper');
-  TweenMax.to(preloader, 0.5, {
-    y: '100%',
+  TweenMax.to(preloader, 2, {
+    autoAlpha: 0,
+    ease: Back.easeIn.config(1.7),
   });
 }
 
