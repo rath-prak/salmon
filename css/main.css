@@ -1104,8 +1104,34 @@ a {
     transition: background 1.5s; }
     .social-main li:hover i {
       color: #1e2832; }
+  .social-main .social-title {
+    border: none;
+    margin-right: 14px;
+    line-height: 35px;
+    font-family: proxima_thin, sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(233, 68, 68, 0.75); }
+    .social-main .social-title span {
+      font-family: proxima_medium, sans-serif;
+      font-size: 10px; }
 
-@media (max-width: 550px) {
+.location-caption {
+  z-index: 100;
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  height: 35px;
+  line-height: 35px; }
+  .location-caption p {
+    font-family: proxima_medium, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(233, 68, 68, 0.75); }
+
+@media (max-width: 565px) {
   .social-main {
     visibility: hidden; } }
 

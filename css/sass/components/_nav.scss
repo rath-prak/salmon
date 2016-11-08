@@ -241,10 +241,41 @@
 		}
 		transition: background 1.5s;
 	}
+	.social-title {
+		border: none;
+		margin-right: 14px;
+		line-height: 35px;
+		font-family: $thin;
+		font-size: 8px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: rgba(233,68, 68, 0.75);
+		// color: rgba(255, 255, 255, 0.25);
+		span {
+			font-family: $medium;
+			font-size: 10px;
+		}
+	}
+}
+
+.location-caption {
+	z-index: 100;
+	position: absolute;
+	left: 4%;
+	bottom: 4%;
+	height: 35px;
+	line-height: 35px;
+	p {
+		font-family: $medium;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: rgba(233,68, 68, 0.75);
+	}
 }
 
 // **********
-@media (max-width: 550px) {
+@media (max-width: 565px) {
 	.social-main {
 		visibility: hidden;
 	}
