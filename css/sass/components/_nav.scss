@@ -217,29 +217,70 @@
 	position: absolute;
 	right: 4%;
 	bottom: 4%;
-	.contact,
-	.contact-item,
-	.about-btn {
-		text-transform: uppercase;
-		font-family: $body;
+	li {
+		list-style-type: none;
 		font-size: 14px;
-		color: $salmon;
-		margin-left: 5px;
+		float: left;
+		border: 1px solid rgba(233,68, 68, 0.1);
+		i {
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		line-height: 35px;
+		}
 	}
-	.contact {
-		margin-right: 5px;
+	li:nth-of-type(1),
+	li:nth-of-type(2),
+	li:nth-of-type(3) {
+		border-right: 0px;
 	}
-	.about-btn {
-	font-family: $medium_avant;
-	cursor: pointer;
+	li:hover {
+		background: $salmon;
+		i {
+			color: $dark-blue;
+		}
+		transition: background 1.5s;
 	}
-	.about-tube-separator {
-		font-family: $body_avant;
-		cursor: default;
+	.social-title {
+		border: none;
+		margin-right: 14px;
+		line-height: 35px;
+		font-family: $thin;
+		font-size: 8px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: rgba(233,68, 68, 0.75);
+		// color: rgba(255, 255, 255, 0.25);
+		span {
+			font-family: $medium;
+			font-size: 10px;
+		}
 	}
 }
+
+.location-caption {
+	z-index: 100;
+	position: absolute;
+	left: 4%;
+	bottom: 4%;
+	height: 35px;
+	line-height: 35px;
+	p {
+		font-family: $thin;
+		font-size: 8px;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		color: rgba(233,68, 68, 0.75);
+		span {
+			font-family: $medium;
+			font-size: 10px;
+		}
+	}
+}
+
 // **********
-@media (max-width: 550px) {
+@media (max-width: 565px) {
+	.location-caption,
 	.social-main {
 		visibility: hidden;
 	}
