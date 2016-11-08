@@ -266,16 +266,21 @@
 	height: 35px;
 	line-height: 35px;
 	p {
-		font-family: $medium;
-		font-size: 10px;
+		font-family: $thin;
+		font-size: 8px;
 		text-transform: uppercase;
-		letter-spacing: 3px;
+		letter-spacing: 2.5px;
 		color: rgba(233,68, 68, 0.75);
+		span {
+			font-family: $medium;
+			font-size: 10px;
+		}
 	}
 }
 
 // **********
 @media (max-width: 565px) {
+	.location-caption,
 	.social-main {
 		visibility: hidden;
 	}
