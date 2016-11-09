@@ -116,8 +116,8 @@ navigationSlideMenu.init();
         $('.white-logo').addClass('active-logo');
         // $('.menu-bar').css('background', '#fff');
         // $('.watermark-text, .contact-item').css('color', '#fff');
-        $('.menu-bar').css('background', '#0176e8');
-        $('.watermark-text, .contact-item').css('color', '#0176e8');
+        $('.menu-bar').css('background', '#fff');
+        $('.watermark-text, .contact-item').css('color', '#fff');
         animatedText.fadeInText($fadeTextPrototype);
 
       } else {

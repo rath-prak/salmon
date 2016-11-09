@@ -1344,7 +1344,7 @@ hr {
     font-size: 1.5em; }
 
 .prototype-container {
-  background: #0176ea; }
+  background: #E94444; }
   .prototype-container h3,
   .prototype-container p {
     color: #FEFEE6; }
@@ -1379,7 +1379,7 @@ hr {
 
 .about-me .about-footer-text h2 {
   font-size: 2.5em;
-  color: #0176e8; }
+  color: #E94444; }
 
 /* Interactiive */
 /* Mobile first queries */
