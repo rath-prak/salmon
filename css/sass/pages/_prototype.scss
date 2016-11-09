@@ -125,7 +125,6 @@
  */
 
 .introduction {
-		min-height: 85vh;
 		background: #e4ecf1;
 	.introduction-text {
 		a {
@@ -238,7 +237,6 @@
 	.sketch-wireframes {
 		margin-top: 60px;
 	}
-
 }
 
 /**
@@ -261,7 +259,6 @@
 		}
 	}
 	.mockup-container {
-		margin: 60px auto;
 		h5 {
 		@include captionitalic;
 		}
@@ -273,7 +270,7 @@
 
 	.mockup {
 		.mockup-container {
-			// flex-direction: row;
+			margin: 60px auto;
 		}
 	}
 	
@@ -289,12 +286,19 @@
 
 /* Final Prototype */
 .final-prototype {
-	min-height: 85vh;
 	.final-prototype-screens > div {
 		flex-basis: 22%;
     max-width: 24%;
 	}
 }
+
+@media screen and (min-width: 750px) {
+	.final-prototype-container {
+		margin: 60px auto;
+	}
+	
+}
+
 
 
 /**
@@ -306,12 +310,18 @@
  */
 
 
-
 .framer {
 	min-height: 85vh;
 		p {
 			color: $reverse;
 		}
+	.framer-text {
+		h2 {
+			font-family: $body-italic;
+			color: $reverse-font-color;
+			margin-bottom: 30px;
+		}
+	}	
 	.framer-iphone {
 		img {
 			width: 220px;

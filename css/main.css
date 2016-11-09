@@ -1576,7 +1576,6 @@ hr {
  * MOBILE FIRST QUERIES
  */
 .introduction {
-  min-height: 85vh;
   background: #e4ecf1; }
   .introduction .introduction-text a {
     color: #333; }
@@ -1684,11 +1683,13 @@ hr {
 .mockup .mockup-text h3 {
   text-align: left; }
 
-.mockup .mockup-container {
-  margin: 60px auto; }
-  .mockup .mockup-container h5 {
-    color: #333;
-    font-family: proxima_light_italic, sans-serif; }
+.mockup .mockup-container h5 {
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
+
+@media screen and (min-width: 750px) {
+  .mockup .mockup-container {
+    margin: 60px auto; } }
 
 /**
 	 FINAL PROTOTYPE SECTION
@@ -1697,12 +1698,14 @@ hr {
  * MOBILE FIRST QUERIES
  */
 /* Final Prototype */
-.final-prototype {
-  min-height: 85vh; }
-  .final-prototype .final-prototype-screens > div {
-    -ms-flex-preferred-size: 22%;
-        flex-basis: 22%;
-    max-width: 24%; }
+.final-prototype .final-prototype-screens > div {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  max-width: 24%; }
+
+@media screen and (min-width: 750px) {
+  .final-prototype-container {
+    margin: 60px auto; } }
 
 /**
 	 FRAMER SECTION
@@ -1714,6 +1717,10 @@ hr {
   min-height: 85vh; }
   .framer p {
     color: #FEFEE6; }
+  .framer .framer-text h2 {
+    font-family: proxima_light_italic, sans-serif;
+    color: #FEFEE6;
+    margin-bottom: 30px; }
   .framer .framer-iphone {
     margin: 30px 0; }
     .framer .framer-iphone img {
