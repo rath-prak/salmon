@@ -1054,7 +1054,7 @@ a {
     text-align: right; }
     .nav-menu-content li {
       list-style-type: none;
-      font-size: 2.5em;
+      font-size: 2em;
       margin-bottom: 0.75em; }
       .nav-menu-content li a {
         text-decoration: none;
@@ -1074,7 +1074,7 @@ a {
 
 @media (min-width: 850px) {
   .nav-menu-content li {
-    font-size: 3em; } }
+    font-size: 2.5em; } }
 
 /**
  * FOOTER ELEMENTS - SOCIAL/CONTACT BAR AT RIGHTHAND CORNER OF PAGE
