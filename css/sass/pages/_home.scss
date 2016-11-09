@@ -40,11 +40,22 @@
 			font-family: $black;
 			margin-bottom: 0.25em;
 			font-size: 3em;
+			line-height: 1em;
 
 		}
 		h3 {
 			font-family: $body;
 			color: $salmon;
+		}
+	}
+
+	#salmon-fish {
+		position: relative;
+		#salmon-fin {
+			position: absolute;
+			width: 11px;
+			left: 176px;
+			top: 44px;
 		}
 	}
 }
