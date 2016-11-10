@@ -1399,7 +1399,7 @@ hr {
 
 .about-me h1 {
   font-size: 1.5em;
-  font-family: avant_bold, sans-serif;
+  font-family: proxima_black, sans-serif;
   line-height: 1em; }
 
 .about-me .skills {
@@ -1731,8 +1731,6 @@ hr {
 
 /* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
-/* PROTOTYPE CASE STUDY / BIRD NERD
-   ========================================================================== */
 .ui-main-wrapper p {
   color: #333;
   margin-bottom: 30px; }
@@ -1976,6 +1974,11 @@ hr {
         flex-basis: 35%;
     margin: 0 5px 0 0;
     max-width: 35%; } }
+
+/* CONTACT
+   ========================================================================== */
+.contact {
+  background: #1e2832; }
 
 @media print {
   header,

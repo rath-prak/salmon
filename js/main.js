@@ -102,13 +102,13 @@ navigationSlideMenu.init();
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography', 'resume'],
+    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography', 'contact'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
  
       if (index == 2) {
-
+        animatedText.fadeInText($fadeTextAbout);
       }
 
       if (index === 3) {
@@ -136,6 +136,10 @@ navigationSlideMenu.init();
     onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
 
+      if(index === 2 && direction === 'up' || index === 3 && direction === 'down'){
+        animatedText.resetfadeText($fadeTextAbout, 0, 20, 1);
+      }
+
       if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
         animatedText.resetfadeText($fadeTextPrototype, 0, 20, 1);
       }
@@ -148,10 +152,11 @@ navigationSlideMenu.init();
 
   var $fadeTextPrototype = $('.fadetext-prototype');
   var $fadeTextUi = $('.fadetext-ui');
+  var $fadeTextAbout = $('.fadetext-about');
   var $menuItem = $('.menu-item');
   // set initial state of text
   var setState = function () {
-      TweenMax.set([$fadeTextPrototype, $fadeTextUi], {
+      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout], {
         alpha: 0,
         y: 30,
       });
