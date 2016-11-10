@@ -354,7 +354,7 @@ img {
 
 .flex-container {
   max-width: 850px;
-  margin: 0 auto;
+  margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1593,8 +1593,6 @@ hr {
         line-height: 1.4; } }
 
 @media screen and (min-width: 750px) {
-  .introduction .introduction-container {
-    margin: 60px auto; }
   .introduction .introduction-text h5 {
     margin-bottom: 3em; }
   .introduction .introduction-text p {
@@ -1631,10 +1629,6 @@ hr {
   color: #333;
   font-family: proxima_light_italic, sans-serif; }
 
-@media screen and (min-width: 750px) {
-  .background-container {
-    margin-top: 60px; } }
-
 /**
 	 WIREFRAMING SECTION
  	 ---------------------------------*/
@@ -1642,6 +1636,9 @@ hr {
  * MOBILE FIRST QUERIES
  */
 /* wireframes section */
+.wireframes .wireframes-container {
+  margin-top: 0px; }
+
 .wireframes .intro-para {
   font-size: 1.3em;
   line-height: 1.2;
@@ -1666,8 +1663,6 @@ hr {
   font-family: proxima_light_italic, sans-serif; }
 
 @media screen and (min-width: 750px) {
-  .wireframes-container {
-    margin: 60px auto; }
   .sketch-wireframes {
     margin-top: 60px; } }
 
@@ -1687,10 +1682,6 @@ hr {
   color: #333;
   font-family: proxima_light_italic, sans-serif; }
 
-@media screen and (min-width: 750px) {
-  .mockup .mockup-container {
-    margin: 60px auto; } }
-
 /**
 	 FINAL PROTOTYPE SECTION
  	 ---------------------------------*/
@@ -1702,10 +1693,6 @@ hr {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
   max-width: 24%; }
-
-@media screen and (min-width: 750px) {
-  .final-prototype-container {
-    margin: 60px auto; } }
 
 /**
 	 FRAMER SECTION
@@ -1744,15 +1731,45 @@ hr {
 
 /* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
-.ui-main-wrapper h1,
-.ui-main-wrapper h2,
-.ui-main-wrapper h3,
-.ui-main-wrapper h4 {
-  color: #E94444; }
-
+/* PROTOTYPE CASE STUDY / BIRD NERD
+   ========================================================================== */
 .ui-main-wrapper p {
   color: #333;
   margin-bottom: 30px; }
+
+.ui-main-wrapper span {
+  font-family: proxima_bold, sans-serif; }
+
+.tadem-technology,
+.tadem-process {
+  background: #fff; }
+
+.tandem-intro,
+.tandem-final-design {
+  background: #e4ecf1; }
+
+.ui-intro-wrapper h1,
+.ui-intro-wrapper h2,
+.ui-intro-wrapper h3,
+.ui-intro-wrapper h4,
+.tandem-intro h1,
+.tandem-intro h2,
+.tandem-intro h3,
+.tandem-intro h4,
+.tadem-technology h1,
+.tadem-technology h2,
+.tadem-technology h3,
+.tadem-technology h4,
+.tadem-process h1,
+.tadem-process h2,
+.tadem-process h3,
+.tadem-process h4,
+.tandem-final-design h1,
+.tandem-final-design h2,
+.tandem-final-design h3,
+.tandem-final-design h4 {
+  color: #E94444;
+  font-family: proxima_black, sans-serif; }
 
 /**
 	 USER INTERFACE INTRO SECTION
@@ -1774,17 +1791,18 @@ hr {
 .ui-intro-wrapper .welcome-iphone {
   margin-top: 60px; }
 
-.ui-intro-wrapper .intro-text {
-  text-align: center; }
-  .ui-intro-wrapper .intro-text h1 {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: #E94444; }
-  .ui-intro-wrapper .intro-text h2 {
-    font-family: proxima_bold, sans-serif; }
-  .ui-intro-wrapper .intro-text p {
-    margin-bottom: 5px;
-    color: #FEFEE6; }
+.ui-intro-wrapper .intro-text h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #E94444; }
+
+.ui-intro-wrapper .intro-text h2 {
+  font-family: proxima_bold, sans-serif;
+  color: #FEFEE6; }
+
+.ui-intro-wrapper .intro-text p {
+  margin-bottom: 5px;
+  color: #FEFEE6; }
 
 .ui-intro-wrapper .welcome-iphone {
   text-align: center;
@@ -1806,7 +1824,6 @@ hr {
           -ms-flex-direction: row;
               flex-direction: row; }
     .ui-intro-wrapper .intro-text {
-      text-align: left;
       -ms-flex-preferred-size: calc((100%/3)*2);
           flex-basis: calc((100%/3)*2);
       margin: 10px; }
@@ -1818,12 +1835,10 @@ hr {
 /**
 	 TANDEM INTRO SECTION
  	 ---------------------------------*/
-.tandem-intro {
-  min-height: 85vh;
-  background: #1D2A46; }
+.tandem-intro .intro-text {
+  text-align: center; }
   .tandem-intro .intro-text p {
-    text-align: left;
-    color: #FEFEE6; }
+    text-align: left; }
   .tandem-intro .intro-text p:last-child {
     margin-bottom: 0; }
   .tandem-intro .intro-text .intro-para {
@@ -1843,27 +1858,42 @@ hr {
     line-height: 1.4; } }
 
 /**
+	 TANDEM TECHNOLOGY
+ 	 ---------------------------------*/
+.tadem-technology h1 {
+  text-align: center; }
+
+.tadem-technology p,
+.tadem-technology .tadem-technology-container {
+  margin-bottom: 0px; }
+
+/**
 	 TANDEM PROCESS SECTION
  	 ---------------------------------*/
-.tadem-process {
-  min-height: 85vh;
-  background: #fff; }
-  .tadem-process h6 {
-    color: #333;
-    font-family: proxima_light_italic, sans-serif; }
+.tadem-process h1 {
+  text-align: center; }
+
+.tadem-process .tadem-process-container {
+  margin-top: 0px; }
+
+.tadem-process h6 {
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
 
 /**
 	 TANDEM FINAL DESIGN SECTION
  	 ---------------------------------*/
-.tandem-final-design {
-  background: #F2F2F2;
-  color: #333; }
-  .tandem-final-design .final-design-container {
-    margin: 30px auto; }
-  .tandem-final-design .tandem-screen-img {
-    margin-bottom: 35px; }
-    .tandem-final-design .tandem-screen-img img {
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
+.tandem-final-design h1 {
+  text-align: center; }
+
+.tandem-final-design .final-design-container h6 {
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
+
+.tandem-final-design .tandem-screen-img {
+  margin-bottom: 35px; }
+  .tandem-final-design .tandem-screen-img img {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
 
 /* RESUME
    ========================================================================== */

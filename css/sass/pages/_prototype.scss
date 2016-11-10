@@ -145,9 +145,6 @@
 
 @media screen and (min-width: 750px) {
 	.introduction {
-		.introduction-container {
-		margin: 60px auto;
-		}
 		.introduction-text {
 			h5 {
 				margin-bottom: 3em;
@@ -195,9 +192,6 @@
 
 
 @media screen and (min-width: 750px) {
-	.background-container {
-		margin-top: 60px;
-	}
 }
 /**
 	 WIREFRAMING SECTION
@@ -210,6 +204,9 @@
 
 /* wireframes section */
 .wireframes {
+	.wireframes-container {
+		margin-top: 0px;
+	}
 	.intro-para {
 		@include intro-paragraph;
 	}
@@ -231,9 +228,6 @@
 }
 
 @media screen and (min-width: 750px) {
-	.wireframes-container {
-		margin: 60px auto;
-	}
 	.sketch-wireframes {
 		margin-top: 60px;
 	}
@@ -268,11 +262,7 @@
 
 @media screen and (min-width: 750px) {
 
-	.mockup {
-		.mockup-container {
-			margin: 60px auto;
-		}
-	}
+
 	
 }
 
@@ -290,13 +280,6 @@
 		flex-basis: 22%;
     max-width: 24%;
 	}
-}
-
-@media screen and (min-width: 750px) {
-	.final-prototype-container {
-		margin: 60px auto;
-	}
-	
 }
 
 

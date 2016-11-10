@@ -1,18 +1,44 @@
 /* USER INTERFACE CASE STUDY / TANDEM
    ========================================================================== */
 
+/* PROTOTYPE CASE STUDY / BIRD NERD
+   ========================================================================== */
+
 .ui-main-wrapper {
+	p {
+		color: $primary-font-color;
+		margin-bottom: 30px;
+	}
+	span {
+		font-family: $bold;
+	}
+}
+
+.tadem-technology,
+.tadem-process {
+		background: #fff;
+	}
+
+.tandem-intro,
+.tandem-final-design {
+		background: #e4ecf1;
+}
+
+.ui-intro-wrapper,
+.tandem-intro,
+.tadem-technology,
+.tadem-process,
+.tandem-final-design
+ {
 	h1, 
 	h2, 
 	h3, 
 	h4 {
 		color: $salmon;
+		font-family: $black;
 	}
-	p {
-		color: $primary-font-color;
-		margin-bottom: 30px;
-	}
-}
+} 
+
 /**
 	 USER INTERFACE INTRO SECTION
  	 ---------------------------------*/
@@ -32,7 +58,6 @@
 	}
 
 	.intro-text {
-		text-align: center;
 		h1 {
 			font-size: 2em;
 			text-transform: uppercase;
@@ -40,6 +65,7 @@
 		}
 		h2 {
 			font-family: $bold;
+			color: $reverse-font-color;
 		}
 		p {
 			margin-bottom: 5px;
@@ -72,7 +98,6 @@
 			flex-direction: row;
 		}
 		.intro-text {
-			text-align: left;
 			flex-basis: calc((100%/3)*2);
 			margin: 10px;
 			h1 {
@@ -91,12 +116,10 @@
  	 ---------------------------------*/
 
 .tandem-intro {
-		min-height: 85vh;
-		background: #1D2A46;
 	.intro-text {
+		text-align: center;
 		p {
 			text-align: left;
-			color: $reverse;
 		}
 		p:last-child{
 			margin-bottom: 0;
@@ -131,12 +154,30 @@
 }
 
 /**
+	 TANDEM TECHNOLOGY
+ 	 ---------------------------------*/
+.tadem-technology {
+		h1 {
+			text-align: center;
+		}
+	p,
+	.tadem-technology-container {
+	margin-bottom: 0px;
+	}
+}
+ 	 
+
+/**
 	 TANDEM PROCESS SECTION
  	 ---------------------------------*/
 
 .tadem-process {
-	min-height: 85vh;
-	background: #fff;
+		h1 {
+			text-align: center;
+		}
+	.tadem-process-container {
+		margin-top: 0px;
+	}
 	h6 {
 		@include captionitalic;
 	}
@@ -149,10 +190,13 @@
 
 
 .tandem-final-design {
-	background: #F2F2F2;
-	color: $primary-font-color;
+	h1 {
+		text-align: center;
+	}
 	.final-design-container {
-		margin: 30px auto;
+		h6 {
+		@include captionitalic;
+		}
 	}
 	.tandem-screen-img {
 		margin-bottom: 35px;
