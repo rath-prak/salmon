@@ -117,14 +117,14 @@ navigationSlideMenu.init();
         // $('.menu-bar').css('background', '#fff');
         // $('.watermark-text, .contact-item').css('color', '#fff');
         $('.menu-bar').css('background', '#fff');
-        $('.watermark-text, .contact-item').css('color', '#fff');
+        $('.watermark-text, .contact-item, .title-caption').css('color', '#fff');
         animatedText.fadeInText($fadeTextPrototype);
 
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo'); 
         $('.menu-bar').css('background', '#E94444');
-        $('.watermark-text, .contact-item').css('color', '#E94444');
+        $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
 
       }
 
