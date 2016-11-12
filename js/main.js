@@ -3,6 +3,7 @@ var navigationSlideMenu = require('./lib/navigation.js');
 var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');
 var animatedText = require('./lib/typographyAnimation.js');
+var pixiBackground = require('./lib/background.js');
 
 $(document).ready(function(){
 
@@ -118,6 +119,7 @@ navigationSlideMenu.init();
         // $('.watermark-text, .contact-item').css('color', '#fff');
         $('.menu-bar').css('background', '#fff');
         $('.watermark-text, .contact-item, .title-caption').css('color', '#fff');
+        $('.social-main li').css('border-color', 'rgba(255,255, 255, 0.25)');
         animatedText.fadeInText($fadeTextPrototype);
 
       } else {
@@ -125,6 +127,7 @@ navigationSlideMenu.init();
         $('.red-logo').addClass('active-logo'); 
         $('.menu-bar').css('background', '#E94444');
         $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
+        $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
 
       }
 
@@ -154,6 +157,7 @@ navigationSlideMenu.init();
   var $fadeTextUi = $('.fadetext-ui');
   var $fadeTextAbout = $('.fadetext-about');
   var $menuItem = $('.menu-item');
+
   // set initial state of text
   var setState = function () {
       TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout], {
@@ -179,66 +183,7 @@ navigationSlideMenu.init();
   * PIXI JS / FISH
   */
 
-  var viewWidth = 630;
-  var viewHeight = 410;
-
-
-  var renderer = PIXI.autoDetectRenderer(viewWidth, viewHeight);
-  renderer.view.className = "rendererView";
-  // var renderer = PIXI.autoDetectRenderer(800, 600);
-  document.body.appendChild(renderer.view);
-
-  // create the root of the scene graph
-  var stage = new PIXI.Container();
-
-  var count = 0;
-
-  // build a rope!
-  var ropeLength = 918 / 7;
-
-  var points = [];
-
-  for (var i = 0; i < 20; i++)
-  {
-      points.push(new PIXI.Point(i * ropeLength, 0));
-  }
-
-  var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('../img/pixi/underwaterocean.png'), points);
-
-  strip.x = -750;
-  strip.y = -200;
-
-  var snakeContainer = new PIXI.Container();
-  snakeContainer.position.x = 400;
-  snakeContainer.position.y = 300;
-
-  snakeContainer.scale.set(0.70);
-  stage.addChild(snakeContainer);
-
-  snakeContainer.addChild(strip);
-
-  // start animating
-  requestAnimationFrame(animate);
-
-  function animate() {
-
-      count += 0.01;
-
-      // make the snake
-      for (var i = 0; i < points.length; i++) {
-
-          points[i].y = Math.sin((i * 0.5) + count) * 30;
-
-          points[i].x = i * ropeLength + Math.cos((i * 0.3) + count) * 5;
-
-      }
-
-      // render the stage
-      renderer.render(stage);
-
-      requestAnimationFrame(animate);
-  }
-
+  pixiBackground();
 
 
   
