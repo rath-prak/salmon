@@ -1883,7 +1883,7 @@ a {
 /**
  * MOBILE FIRST QUERIES
  */
-.design-intro .design-watermark {
+.design-intro-wrapper .design-watermark {
   width: 100%;
   top: 50%;
   left: 50%;
@@ -1894,16 +1894,16 @@ a {
   opacity: 0.02;
   visibility: hidden; }
 
-.design-intro .intro-text h1 {
+.design-intro-wrapper .intro-text h1 {
   font-size: 2em;
   text-transform: uppercase;
   color: #E94444; }
 
-.design-intro .intro-text h2 {
+.design-intro-wrapper .intro-text h2 {
   font-family: proxima_bold, sans-serif;
   color: #FEFEE6; }
 
-.design-intro .intro-text p {
+.design-intro-wrapper .intro-text p {
   margin-bottom: 5px;
   color: #FEFEE6; }
 
@@ -1925,10 +1925,22 @@ a {
 /**
 	 PORTFOLIO GALLERY SECTION
  	 ---------------------------------*/
+.design-portfolio-items p {
+  color: #333;
+  font-family: proxima_light_italic, sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+.design-portfolio-items article {
+  margin-bottom: 5px; }
+
 .design-portfolio-items .portfolio-wrap div img {
-  width: 100%; }
+  width: 100%;
+  border: solid 1px #e5e5e5; }
 
 @media screen and (min-width: 750px) {
+  .design-portfolio-items article {
+    margin-bottom: 30px; }
   .design-portfolio-items .portfolio-wrap {
     display: -webkit-box;
     display: -ms-flexbox;

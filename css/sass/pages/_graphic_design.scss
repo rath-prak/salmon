@@ -38,7 +38,7 @@
  * MOBILE FIRST QUERIES
  */
 
-.design-intro {
+.design-intro-wrapper {
 
 	.design-watermark {
 		@include watermark;
@@ -89,14 +89,26 @@
  	 ---------------------------------*/
 
 .design-portfolio-items {
+	p {
+		@include portfolio-captionitalic;
+	}
+	article {
+		margin-bottom: 5px;
+	}
 	.portfolio-wrap {
 		div img {
 			width: 100%;
+			border: solid 1px #e5e5e5;
 		}
 	}
 }
 
 @media screen and (min-width: 750px) {
+	.design-portfolio-items {
+		article {
+			margin-bottom: 30px;
+		}
+	}
 	.design-portfolio-items {
 		.portfolio-wrap {
 			display: flex;
