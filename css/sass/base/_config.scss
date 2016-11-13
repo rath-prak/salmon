@@ -16,27 +16,6 @@ $big-break: 780px;
 $margin-bottom: 60px;
 $margin-top: 35px;
 
-/* Colors */
-// Cool
-$aqua:  #7fdbff;
-$blue:  #0074d9;
-$navy:  #001f3f;
-$teal:  #39cccc;
-$green: #229919;
-$olive: #3d9970;
-$lime:  #01ff70;
-// Warm
-$yellow:  #ffdc00;
-$orange:  #ff851b;
-$red:     #ff4136;
-$fuchsia: #f012be;
-$purple:  #b10dc9;
-$maroon:  #85144b;
-// Gray Scale
-$white:  #fff;
-$silver: #ddd;
-$grey:   #aaa;
-$black:  #111;
 
 /* project colors - this project colors need assigned to these variables once you comfirm color scheme */
 
@@ -50,6 +29,9 @@ $salmon: #E94444;
 // $salmon: #e9c2c3;
 $dark-blue: #1e2832;
 // $dark-blue: #1D2A46;
+
+$grey: #e4ecf1;
+
 $light-blue: #33b2ff;
 $pink: #F15FA8;
 $warm-grey: #1D2831;
@@ -60,12 +42,7 @@ $bright-blue: #2100A4;
 $light-salmon: #FF948D;
 $light-red: #FF4533;
 
-/* util colors */
-$danger-color: $red; // Bad color for errors, validation etc.
-$success-color: $green; // Good color for success etc.
-$info-color: $blue; // Good color for success etc.
-$warning-color: $orange; // Good color for success etc.
-$subtle-color: $grey; // Subtle color for subtle text
+
 
 /* global background color */
 // html {

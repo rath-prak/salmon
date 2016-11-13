@@ -1,8 +1,6 @@
 /* Consistent settings */
-/* Colors */
 /* project colors - this project colors need assigned to these variables once you comfirm color scheme */
 /* project two colors */
-/* util colors */
 /* global background color */
 html {
   background: #1e2832; }
@@ -340,23 +338,23 @@ img {
 .fullpage-section {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex; }
 
 /**
- * NEW FLEX STUFF
+ * FLEX STUFF
  */
 .flex {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex; }
 
 .flex-container {
   max-width: 850px;
   margin: 60px auto;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   padding: 30px; }
 
@@ -439,7 +437,9 @@ img {
  * Flex stuff
  */
 .isInline {
-  display: -inline-flex; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .is-row {
   -webkit-box-orient: horizontal;
@@ -1177,43 +1177,6 @@ a {
 * {
   box-sizing: border-box !important; }
 
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.text-left {
-  text-align: left; }
-
-.clear {
-  clear: both; }
-
-.right {
-  float: right; }
-
-.left {
-  float: left; }
-
-.list-unstyled {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0; }
-
-.valign {
-  vertical-align: middle; }
-
-hr {
-  border: 0;
-  border-bottom: 1px solid #ddd;
-  margin: 40px 0; }
-
-.subtle {
-  color: #aaa; }
-
-.relative {
-  position: relative; }
-
 /* Homepage - pulsing button */
 .pulse {
   position: absolute;
@@ -1891,6 +1854,98 @@ hr {
   margin-bottom: 35px; }
   .tandem-final-design .tandem-screen-img img {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
+
+/* USER INTERFACE CASE STUDY / TANDEM
+   ========================================================================== */
+.design-main-wrapper p {
+  color: #333;
+  margin-bottom: 30px; }
+
+.design-main-wrapper span {
+  font-family: proxima_bold, sans-serif; }
+
+.design-intro {
+  background: #e4ecf1; }
+
+.design-portfolio-items {
+  background: #fff; }
+
+.design-main-wrapper h1,
+.design-main-wrapper h2,
+.design-main-wrapper h3,
+.design-main-wrapper h4 {
+  color: #E94444;
+  font-family: proxima_black, sans-serif; }
+
+/**
+	 USER INTERFACE INTRO SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
+.design-intro .design-watermark {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.02;
+  visibility: hidden; }
+
+.design-intro .intro-text h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #E94444; }
+
+.design-intro .intro-text h2 {
+  font-family: proxima_bold, sans-serif;
+  color: #FEFEE6; }
+
+.design-intro .intro-text p {
+  margin-bottom: 5px;
+  color: #FEFEE6; }
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  .design-intro-wrapper {
+    min-height: 100vh; }
+    .design-intro-wrapper .design-watermark {
+      visibility: visible; }
+    .design-intro-wrapper .intro-text {
+      -ms-flex-preferred-size: calc((100%/3)*2);
+          flex-basis: calc((100%/3)*2);
+      margin: 10px; }
+      .design-intro-wrapper .intro-text h1 {
+        font-size: 3.5em; } }
+
+/**
+	 PORTFOLIO GALLERY SECTION
+ 	 ---------------------------------*/
+.design-portfolio-items .portfolio-wrap div img {
+  width: 100%; }
+
+@media screen and (min-width: 750px) {
+  .design-portfolio-items .portfolio-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .design-portfolio-items .col-2 {
+    width: 49%; }
+  .design-portfolio-items .col-1 {
+    width: 100%; } }
 
 /* RESUME
    ========================================================================== */

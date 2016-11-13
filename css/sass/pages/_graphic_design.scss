@@ -1,0 +1,122 @@
+/* USER INTERFACE CASE STUDY / TANDEM
+   ========================================================================== */
+
+.design-main-wrapper {
+	p {
+		color: $primary-font-color;
+		margin-bottom: 30px;
+	}
+	span {
+		font-family: $bold;
+	}
+}
+
+
+.design-intro {
+	background: $grey;
+}
+
+.design-portfolio-items {
+	background: #fff;
+}
+
+.design-main-wrapper {
+	h1, 
+	h2, 
+	h3, 
+	h4 {
+		color: $salmon;
+		font-family: $black;
+	}
+} 
+
+/**
+	 USER INTERFACE INTRO SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+.design-intro {
+
+	.design-watermark {
+		@include watermark;
+	}
+
+	.intro-text {
+		h1 {
+			font-size: 2em;
+			text-transform: uppercase;
+			color: $salmon;
+		}
+		h2 {
+			font-family: $bold;
+			color: $reverse-font-color;
+		}
+		p {
+			margin-bottom: 5px;
+			color: $reverse;
+		}
+	}
+
+}
+
+/**
+ * LARGER THAN TABLET
+ */
+
+@media screen and (min-width: 750px) {
+
+	.design-intro-wrapper {
+		min-height: 100vh;
+		.design-watermark {
+			visibility: visible;
+		}
+		.intro-text {
+			flex-basis: calc((100%/3)*2);
+			margin: 10px;
+			h1 {
+				font-size: 3.5em;
+			}
+		}	
+	}
+}
+
+
+/**
+	 PORTFOLIO GALLERY SECTION
+ 	 ---------------------------------*/
+
+.design-portfolio-items {
+	.portfolio-wrap {
+		div img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.design-portfolio-items {
+		.portfolio-wrap {
+			display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: row;
+	    justify-content: space-between;
+		}
+		.col-2 {
+			width: 49%;
+		}
+		.col-1 {
+			width: 100%;
+		}
+	}
+
+
+}
+
+
+
+
+
+
