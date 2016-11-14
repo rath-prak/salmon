@@ -796,10 +796,8 @@ h5,
 h6 {
   margin-bottom: 0.25em; }
 
-a {
-  color: #1271db; }
-  a:hover, a:focus {
-    text-decoration: none; }
+a:hover, a:focus {
+  text-decoration: none; }
 
 @media screen and (min-width: 750px) {
   body,
@@ -885,50 +883,6 @@ a {
     border-color: #fff;
     color: #fff;
     text-decoration: none; }
-  .btn:active {
-    background: #0e59ac;
-    border-color: #0e59ac; }
-
-.btn-primary {
-  background-color: #1271db;
-  border-color: #1271db;
-  color: #fff; }
-  .btn-primary:hover, .btn-primary:focus {
-    background: #1065c3;
-    border-color: #1065c3;
-    color: #fff; }
-  .btn-primary:active {
-    background: #0e59ac;
-    border-color: #0e59ac;
-    color: #fff; }
-
-.btn-lg {
-  font-size: 1.4em;
-  height: 66px;
-  padding: 0 60px; }
-
-.btn-sm {
-  font-size: .85em;
-  height: 30.8px;
-  padding: 0 10px; }
-
-.btn-link {
-  box-shadow: none;
-  background: transparent;
-  border: 0;
-  color: #1271db;
-  text-shadow: none;
-  text-transform: none; }
-  .btn-link:hover, .btn-link:focus {
-    background: transparent;
-    color: #1271db;
-    text-decoration: underline; }
-
-@media screen and (max-width: 480px) {
-  .btn {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%; } }
 
 /* NAVIGATION
    ========================================================================== */
