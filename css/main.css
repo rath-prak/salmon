@@ -869,18 +869,20 @@ a {
 
 .btn {
   background: transparent;
-  border: 1px solid #FEFEE6;
-  color: #FEFEE6;
+  border: 1px solid #E94444;
+  color: #E94444;
   display: inline-block;
   height: 44px;
   outline: none;
   padding: 0 25px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  -webkit-transition: background 1s;
+  transition: background 1s; }
   .btn:hover, .btn:focus {
-    background: #1271db;
-    border-color: #1271db;
+    background: #E94444;
+    border-color: #fff;
     color: #fff;
     text-decoration: none; }
   .btn:active {
@@ -1429,7 +1431,8 @@ a {
 
 .prototype-main-wrapper .background,
 .prototype-main-wrapper .wireframes,
-.prototype-main-wrapper .final-prototype {
+.prototype-main-wrapper .final-prototype,
+.prototype-main-wrapper .interactive-prototype {
   background: #fff; }
 
 .prototype-main-wrapper .mockup {
@@ -1458,18 +1461,18 @@ a {
 .final-prototype h2,
 .final-prototype h3,
 .final-prototype h4,
-.framer h1,
-.framer h2,
-.framer h3,
-.framer h4 {
+.interactive-prototype h1,
+.interactive-prototype h2,
+.interactive-prototype h3,
+.interactive-prototype h4 {
   text-align: center;
   color: #E94444;
   font-family: proxima_black, sans-serif; }
 
-.framer h1,
-.framer h2,
-.framer h3,
-.framer h4 {
+.interactive-prototype h1,
+.interactive-prototype h2,
+.interactive-prototype h3,
+.interactive-prototype h4 {
   text-align: left; }
 
 /**
@@ -1656,23 +1659,24 @@ a {
       flex-basis: 22%;
   max-width: 24%; }
 
+.final-prototype h5 {
+  color: #333;
+  font-family: proxima_light_italic, sans-serif; }
+
 /**
 	 FRAMER SECTION
  	 ---------------------------------*/
 /**
  * MOBILE FIRST QUERIES
  */
-.framer {
+.interactive-prototype {
   min-height: 85vh; }
-  .framer p {
-    color: #FEFEE6; }
-  .framer .framer-text h2 {
+  .interactive-prototype .interactive-prototype-text h2 {
     font-family: proxima_light_italic, sans-serif;
-    color: #FEFEE6;
     margin-bottom: 30px; }
-  .framer .framer-iphone {
+  .interactive-prototype .interactive-prototype-iphone {
     margin: 30px 0; }
-    .framer .framer-iphone img {
+    .interactive-prototype .interactive-prototype-iphone img {
       width: 220px; }
 
 /**
@@ -1680,12 +1684,12 @@ a {
  */
 @media screen and (min-width: 750px) {
   /* Framer */
-  .framer .framer-container {
+  .interactive-prototype .interactive-prototype-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-  .framer .framer-iphone {
+  .interactive-prototype .interactive-prototype-iphone {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     max-width: 25%;

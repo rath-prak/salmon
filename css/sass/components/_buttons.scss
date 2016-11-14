@@ -4,11 +4,9 @@
 
 // Default button
 .btn {
-  // border-radius: $btn-br;
-  // border-radius: 50%;
   background: transparent;
-  border: 1px solid $reverse;
-  color: $reverse;
+  border: 1px solid $salmon;
+  color: $salmon;
   display: inline-block;
   height: $line-height;
   outline: none;
@@ -16,13 +14,15 @@
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
+  transition: background 1s;
 
   &:hover,
   &:focus {
-    background: $primary-color;
-    border-color: $primary-color;
+    background: $salmon;
+    border-color: #fff;
     color: #fff;
     text-decoration: none;
+
   }
 
   &:active {

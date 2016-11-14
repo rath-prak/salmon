@@ -8,7 +8,8 @@
 	}
 	.background,
 	.wireframes,
-	.final-prototype {
+	.final-prototype,
+	.interactive-prototype {
 		background: #fff;
 	}
 	.mockup {
@@ -24,7 +25,7 @@
 .wireframes,
 .mockup,
 .final-prototype,
-.framer {
+.interactive-prototype {
 	h1, 
 	h2, 
 	h3, 
@@ -35,7 +36,7 @@
 	}
 } 
 
-.framer,
+.interactive-prototype,
  {
 	h1, 
 	h2, 
@@ -280,6 +281,9 @@
 		flex-basis: 22%;
     max-width: 24%;
 	}
+	h5 {
+		@include captionitalic;
+	}
 }
 
 
@@ -293,19 +297,15 @@
  */
 
 
-.framer {
+.interactive-prototype {
 	min-height: 85vh;
-		p {
-			color: $reverse;
-		}
-	.framer-text {
+	.interactive-prototype-text {
 		h2 {
 			font-family: $body-italic;
-			color: $reverse-font-color;
 			margin-bottom: 30px;
 		}
 	}	
-	.framer-iphone {
+	.interactive-prototype-iphone {
 		img {
 			width: 220px;
 		}
@@ -320,11 +320,11 @@
 @media screen and (min-width: 750px) {
 
 	/* Framer */
-	.framer {
-		.framer-container {
+	.interactive-prototype {
+		.interactive-prototype-container {
 			flex-direction: row;
 		}
-		.framer-iphone {
+		.interactive-prototype-iphone {
 			flex-basis: 25%;
 			max-width: 25%;
 			text-align: right;
