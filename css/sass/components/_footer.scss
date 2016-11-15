@@ -2,12 +2,10 @@
    ========================================================================== */
 
 .footer {
-	height: 350px;
-	background: #273340;
-	position: relative;
+	height: 280px;
+	margin-top: 10px;
 	.main-footer {
 		text-align: center;
-			margin-top: 10px;
 		p, 
 		i {
 			color: $reverse;
@@ -22,10 +20,21 @@
 		}
 	}
 
+	.backto-top {
+		display: none;
+	}
+
 	.details {
+		figure {
+			width: 45%;
+			padding: 0px;
+			margin: 0 auto 20px;
+
+		}
 		margin-bottom: 20px;
 		p:first-of-type {
 			text-transform: uppercase;
+			font-family: $bold;
 		}
 		p:nth-of-type(3) {
 			font-family: $bold;
@@ -36,23 +45,48 @@
 	}
 
 	p.copy-right {
-		position: absolute;
-		bottom: 25px;
-		left: 50%;
-		transform: translateX(-50%);
 		font-size: 0.7em;
 	}
 }
 	
-// @media (min-width: 550px) {
-// 	.footer {
-// 		.main-footer {
-// 			flex-direction: row;
-// 			.social-icons {
-// 			display: inherit;
-// 			}
-// 		}
-// 	}
-// }
+@media (min-width: 650px) {
+	.footer {
+		.main-footer {
+			flex-direction: row;
+			text-align: left;
+			align-items: flex-end;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.details {
+			font-size: 0.75em;
+			margin-bottom: 0px;
+			figure {
+				margin: 0 0 20px;
+			}
+			p {
+				line-height: 1.7em;
+			}
+			p:first-of-type {
+				margin-bottom: 30px;
+			}
+		}
+		.social-icons {
+			i {
+				font-size: 0.8em;
+			}
+		}
+		.backtop-btn {
+		display: inherit;
+		text-align: right;
+		cursor: pointer;
+		}
+		p.copy-right {
+			font-size: 0.65em;
+			transform: translateY(4px)
+		}
+	}
+}
 
 

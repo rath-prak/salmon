@@ -4,6 +4,7 @@ var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');
 var animatedText = require('./lib/typographyAnimation.js');
 var pixiBackground = require('./lib/background.js');
+var scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
 
@@ -17,11 +18,8 @@ $(document).ready(function(){
     //     console.log('hi')
     // });
 
-    $( "#scroll-down-btn" ).on( "click", function() {
-         $('html, body').animate({
-            scrollTop: $("#process").offset().top
-        }, 500);
-});
+// SCROLL BACK TO TOP OF PAGE
+  scrollToTop();    
   
 // PRE-LAODER
   $(window).load(function(){
