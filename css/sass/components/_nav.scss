@@ -71,8 +71,8 @@
 	position: fixed;
 	z-index: 200;
 	background: $salmon;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 
 
 }
@@ -90,7 +90,7 @@
 .nav-menu-content {
 	font-family: $black;
 	text-align: left;
-	margin-top: 40px;
+	margin-top: 20px;
 	li {
 		list-style-type: none;
 		font-size: 1.85em;
@@ -117,16 +117,17 @@
 .nav-about-text {
 	h2, 
 	p {
-		font-family: $thin;
+		font-family: $body;
 	}
 	h2 {
 		margin-bottom: 0.5em;
-	}
-
-	h2 {
+		font-size: 1.2em;
 		span {
 			font-family: $bold;
 		}
+	}
+	p {
+		display: none;
 	}
 
 }
@@ -135,10 +136,11 @@
 	cursor: pointer;
 	position: absolute;
 	top: 4%;
-	right: 6%;
+	right: 4%;
 	p {
 		font-size: 1em;
 		text-transform: uppercase;
+		transform: translateY(-5px);
 	}
 
 }
@@ -165,17 +167,19 @@
 		li {
 			list-style-type: none;
 			font-size: 2em;
-			margin-bottom: 0.75em;
+			margin-bottom: 0.6em;
 			& a{
 				text-decoration: none;
 				cursor: pointer;
 				color: $reverse;
-				transition: color 0.5s;
+				// transition: color 0.5s;
 			}
 		}
 		.menu-list-items {
 			a:hover {
-			color: $salmon;
+			// color: $salmon;
+			// color: rgba(254,254,230, 0.5);
+			text-decoration: underline;
 			}
 		}
 		.social-main-nav {
@@ -187,11 +191,11 @@
 
 	.nav-about-text {
 		h2 {
-			font-size: 1.85em;
+			font-size: 1.6em;
 			line-height: 1.2em;
-			span {
-				font-family: $bold;
-			}
+		}
+		p {
+			display: inherit;
 		}
 	}
 

@@ -42,7 +42,7 @@ img {
 
 .flex-container {
 	max-width: 850px;
-	margin: 60px auto;
+	margin: 20px auto;
 	display: -ms-flexbox;
 	display: flex;
 	padding: 30px;
@@ -51,6 +51,7 @@ img {
 @media (min-width: 1280px) {
 	.flex-container {
 	max-width: 960px;
+    margin: 60px auto;
 	}
 }
 
