@@ -103,7 +103,7 @@ navigationSlideMenu.init();
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'photography', 'contact'],
+    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'design', 'contact'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
