@@ -987,12 +987,11 @@ a:hover, a:focus {
   cursor: pointer;
   position: absolute;
   top: 4%;
-  right: 4%; }
-  .nav-back-button p {
-    font-size: 1em;
-    text-transform: uppercase;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px); }
+  right: 4%;
+  width: 30px;
+  height: 30px; }
+  .nav-back-button img {
+    width: 100%; }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
