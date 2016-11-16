@@ -70,7 +70,11 @@
 .fp-nav-wrapper {
 	position: fixed;
 	z-index: 200;
-	background: $salmon;
+	// background: $salmon;
+	// background: #181723;
+	// background: #1D2A46;
+	// background: #082a3c;
+	background: #072231;
 	width: 100vw;
 	height: 100vh;
 
@@ -106,12 +110,13 @@
 	.social-main-nav {
 		a {
 			margin-left: 10px;
+			font-size: 0.7em;
 		}
 		a:first-of-type {
 			margin-left: 0px;
 		}
 		margin-bottom: 25px;
-	}
+		}
 }
 
 .nav-about-text {
@@ -172,14 +177,14 @@
 				text-decoration: none;
 				cursor: pointer;
 				color: $reverse;
-				// transition: color 0.5s;
+				transition: color 0.25s;
 			}
 		}
 		.menu-list-items {
 			a:hover {
-			// color: $salmon;
+			color: $salmon;
 			// color: rgba(254,254,230, 0.5);
-			text-decoration: underline;
+			// text-decoration: underline;
 			}
 		}
 		.social-main-nav {

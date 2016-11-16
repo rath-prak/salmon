@@ -23,19 +23,51 @@ var navigationSlideMenu = {
   },
   render: function () {
     this.hamburgerMenu();
-    var menuToggle = new TimelineMax({ paused:true, reversed:true });    
+    var menuToggle = new TimelineMax({ paused:true, reversed:true }); 
+    var menuSlideText = new TimelineMax({ paused:true, reversed:true });   
+
+    // TweenMax.set(this.$fade, { 
+    //   autoAlpha: 0,
+    // });
+
+    TweenMax.set(this.$menuItem, {
+      autoAlpha: 0,
+      y: -40,
+    });
+
+    menuSlideText.staggerTo(this.$menuItem, 1 , {
+      y: 0,
+      autoAlpha: 1,
+      ease: Back.easeInOut,
+    }, 0.05);
+
+
+    // menuToggle.to(this.$fade, 1, { 
+    //   autoAlpha: 1,
+    //   ease: Power4.easeInOut,
+    // });
 
     TweenMax.set(this.$fade, { 
-      autoAlpha: 0,
+      y: '-100%',
     });
 
     menuToggle.to(this.$fade, 1, { 
-      autoAlpha: 1,
+      // autoAlpha: 1,
+      y: '0%',
       ease: Power4.easeInOut,
     });
 
+    // menuSlideText.to(this.$menuItem, 1, {
+    //   autoAlpha: 1,
+    //   y: 0,
+    // });
+
     $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
       menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
+      setTimeout(function(){ 
+        menuSlideText.reversed() ? menuSlideText.restart() : menuSlideText.reverse();
+      }, 250);
+      
     });
     // (this.$menuBar).add(this.$menuListItem).add(this.$navBackButton).click(function () {
     // menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();

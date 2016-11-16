@@ -939,7 +939,7 @@ a:hover, a:focus {
 .fp-nav-wrapper {
   position: fixed;
   z-index: 200;
-  background: #E94444;
+  background: #072231;
   width: 100vw;
   height: 100vh; }
 
@@ -965,7 +965,8 @@ a:hover, a:focus {
   .nav-menu-content .social-main-nav {
     margin-bottom: 25px; }
     .nav-menu-content .social-main-nav a {
-      margin-left: 10px; }
+      margin-left: 10px;
+      font-size: 0.7em; }
     .nav-menu-content .social-main-nav a:first-of-type {
       margin-left: 0px; }
 
@@ -1021,9 +1022,11 @@ a:hover, a:focus {
       .nav-menu-content li a {
         text-decoration: none;
         cursor: pointer;
-        color: #FEFEE6; }
+        color: #FEFEE6;
+        -webkit-transition: color 0.25s;
+        transition: color 0.25s; }
     .nav-menu-content .menu-list-items a:hover {
-      text-decoration: underline; }
+      color: #E94444; }
     .nav-menu-content .social-main-nav a {
       margin-left: 10px; }
   .nav-about-text h2 {
