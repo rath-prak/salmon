@@ -3,7 +3,7 @@ var navigationSlideMenu = require('./lib/navigation.js');
 var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');
 var animatedText = require('./lib/typographyAnimation.js');
-var pixiBackground = require('./lib/background.js');
+var pixiBackground = require('./lib/pixiBackground.js');
 var scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
@@ -35,38 +35,36 @@ navigationSlideMenu.init();
 
 // Secondary nav-menu hides when scroll
 
-  var previousScroll = 0;
+  // var previousScroll = 0;
 
-  $(window).scroll(function () {
-    var $currentScroll = $(this).scrollTop();
-    var $logoAndHamburger = $('.logo, .navbar-toggle');
-    var $secondaryNav = $('.secondary-nav');
+  // $(window).scroll(function () {
+  //   var $currentScroll = $(this).scrollTop();
+  //   var $logoAndHamburger = $('.logo, .navbar-toggle');
+  //   var $secondaryNav = $('.secondary-nav');
 
-    if ($currentScroll > previousScroll){
-      TweenMax.to($secondaryNav, 0.2, {
-      y: '-80',
-      ease: Linear.easeNone
-      })
+  //   if ($currentScroll > previousScroll){
+  //     TweenMax.to($secondaryNav, 0.2, {
+  //     y: '-80',
+  //     ease: Linear.easeNone
+  //     })
 
-
-
-    TweenMax.to($secondaryNav, 0.2, {
-      css: {background: "#1e2832"},
-      ease: Linear.easeNone
-      })
-    }
-    else {
-      function slideBack (divElement, yPos) {
-          TweenMax.to(divElement, 0.2, {
-          y: yPos,
-          ease: Linear.easeNone
-          });
-        }
-      slideBack($logoAndHamburger, 30);
-      slideBack($secondaryNav, 0);
-      }
-      previousScroll = $currentScroll;
-  });
+  //   TweenMax.to($secondaryNav, 0.2, {
+  //     css: {background: "#1e2832"},
+  //     ease: Linear.easeNone
+  //     })
+  //   }
+  //   else {
+  //     function slideBack (divElement, yPos) {
+  //         TweenMax.to(divElement, 0.2, {
+  //         y: yPos,
+  //         ease: Linear.easeNone
+  //         });
+  //       }
+  //     slideBack($logoAndHamburger, 30);
+  //     slideBack($secondaryNav, 0);
+  //     }
+  //     previousScroll = $currentScroll;
+  // });
 
 
 /**
@@ -115,11 +113,18 @@ navigationSlideMenu.init();
       if (index === 3) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
-        // $('.menu-bar').css('background', '#fff');
-        // $('.watermark-text, .contact-item').css('color', '#fff');
-        $('.menu-bar').css('background', '#fff');
-        $('.watermark-text, .contact-item, .title-caption').css('color', '#fff');
-        $('.social-main li').css('border-color', 'rgba(255,255, 255, 0.25)');
+        $('.menu-bar').css({
+          'background': '#fff',
+          'transition': 'background 1.5s',
+        });
+        $('.watermark-text, .contact-item, .title-caption').css({
+          'color': '#fff',
+          'transition': 'color 1.5s'
+        });
+        $('.social-main li').css({
+          'border-color': 'rgba(255,255, 255, 0.25)',
+          'transition': 'border-color 1.5s',
+        });
         animatedText.fadeInText($fadeTextPrototype);
 
       } else {

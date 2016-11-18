@@ -18,6 +18,7 @@
 	      delay: time,
 	    });
 		},
+		
 	};
 
 module.exports = animatedText

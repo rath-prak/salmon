@@ -24,19 +24,19 @@ var pixiBackground = function () {
       points.push(new PIXI.Point(i * ropeLength, 0));
   }
 
-  var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('../img/pixi/underwaterocean.png'), points);
+  var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('img/pixi/underwaterocean.png'), points);
 
   strip.x = -750;
   strip.y = -200;
 
-  var snakeContainer = new PIXI.Container();
-  snakeContainer.position.x = 400;
-  snakeContainer.position.y = 300;
+  var backgroundContainer = new PIXI.Container();
+  backgroundContainer.position.x = 400;
+  backgroundContainer.position.y = 300;
 
-  snakeContainer.scale.set(0.70);
-  stage.addChild(snakeContainer);
+  backgroundContainer.scale.set(0.70);
+  stage.addChild(backgroundContainer);
 
-  snakeContainer.addChild(strip);
+ backgroundContainer.addChild(strip);
 
   // start animating
   requestAnimationFrame(animate);

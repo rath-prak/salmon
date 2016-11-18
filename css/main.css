@@ -915,7 +915,9 @@ a:hover, a:focus {
   .navbar-toggle .hamburger-container {
     width: 40px;
     height: 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
     .navbar-toggle .hamburger-container .menu-bar {
       background: #E94444;
       width: 40px;
