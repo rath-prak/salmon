@@ -207,7 +207,7 @@ navigationSlideMenu.init();
       points.push(new PIXI.Point(i * ropeLength, 0));
   }
 
-  var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('../img/underwaterocean.png'), points);
+  var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('img/underwaterocean.png'), points);
 
   strip.x = -750;
   strip.y = -200;
