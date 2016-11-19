@@ -125,6 +125,10 @@ navigationSlideMenu.init();
           'border-color': 'rgba(255,255, 255, 0.25)',
           'transition': 'border-color 1.5s',
         });
+        $('.pulse-button').css({
+          'stroke': "#fff",
+          'transition': 'color 1.5s',
+        });
         animatedText.fadeInText($fadeTextPrototype);
 
       } else {
@@ -133,6 +137,7 @@ navigationSlideMenu.init();
         $('.menu-bar').css('background', '#E94444');
         $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
+        $('.pulse-button').css('stroke', "#E94444");
 
       }
 
