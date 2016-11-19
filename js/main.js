@@ -110,7 +110,7 @@ navigationSlideMenu.init();
         animatedText.fadeInText($fadeTextAbout);
       }
 
-      if (index === 3) {
+      if (index === 3 ) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css({

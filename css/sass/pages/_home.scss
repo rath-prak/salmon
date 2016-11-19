@@ -1,10 +1,11 @@
 /* Homepage - Main Laning page */
 
 
-/* Mobile first queries */
+/**
+	 MIAN LANDING SECTION
+ 	 ---------------------------------*/
 
 .main-landing-page {
-		// background: $dark-blue;
 
 		.pixi-background {
 			width: 100%;
@@ -41,6 +42,9 @@
 			margin-bottom: 0.25em;
 			font-size: 3em;
 			line-height: 1em;
+			span {
+				text-decoration: line-through;
+			}
 
 		}
 		h3 {
@@ -120,8 +124,46 @@
 	}
 }
 
+/* ABOUT SECTION
+   ========================================================================== */
+
+.about-me,
+.resume{
+
+	h1,
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	p {
+		color: $salmon;
+		text-align: center;
+	}
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.about-me {
+		h1 {
+			font-size: 2.5em;
+		}
+
+		h4 {
+			font-size: 1.5em;
+		}
+	}
+
+}
+
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+		.about-me {
+		h1 {
+			font-size: 3.5em;
+		}
+	}
+}
 
 
 /* PROTOTYPE LANDING
@@ -142,28 +184,18 @@
 	}
 }
 
-.prototype {
-	text-align: center;
-	h1 {
-		font-size: 1.5em;
-	}
-}
 
 .prototype-container {
 	background: $salmon;
-	h3,
+	h1 {
+		font-size: 3em;
+	}
 	p {
 		color: $reverse;
+		margin-bottom: 15px;
 	}
 
-	h1 {
-		text-transform: uppercase;
-	}
-	.quote-text {
-		p {
-		font-size: 1.5em;
-		}
-	}
+
 }
 
 
@@ -208,21 +240,35 @@
 			font-size: 2em;
 			line-height: 1em;
 		}
-		p {
-			margin-bottom: 15px;
-		}
 	}
 
 }
 
+/* USER INTERFACE
+   ========================================================================== */
 
-.about-me {
-	.about-footer-text {
-		h2 {
-			font-size: 2.5em;
-			color: $salmon;
-		}
+
+.ui {
+	background: $salmon;
+	h1 {
+		font-size: 3em;
+	}
+	p {
+		color: $reverse;
+		margin-bottom: 15px;
 	}
 }
-	
+
+
+/* RESUME SECTION
+   ========================================================================== */
+
+.resume {
+
+}
+
+
+
+
+
 

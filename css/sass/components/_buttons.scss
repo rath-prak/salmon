@@ -26,3 +26,32 @@
   }
 }
 
+.main-btn-reverse {
+  background: $reverse;
+  border: 1px solid $salmon;
+  color: $salmon;
+  display: inline-block;
+  height: $line-height;
+  outline: none;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 1s;
+  font-family: $bold;
+  
+  i {
+    margin-left: 10px;
+
+
+  }
+  
+  &:hover,
+  &:focus {
+    background: $salmon;
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+
+  }
+}
