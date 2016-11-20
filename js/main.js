@@ -8,6 +8,24 @@ var scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
 
+  var $prototypeTest = $('#proto-test');
+  TweenMax.set($prototypeTest, {
+    autoAlpha: 0,
+    y: 100,
+    // scale: 0,
+  })
+
+  var prototypeMakeBig = function () {
+    setTimeout(function(){
+      TweenMax.to($prototypeTest, 0.5, {
+      autoAlpha: 1,
+      y: 0,
+      // scale: 1, 
+      ease: Bounce.easeIn
+      })
+    }, 1000)
+  }
+
   // var scrollDown = $("#scroll-down.btn");
 
 // Prototype scroll down
@@ -44,7 +62,6 @@ navigationSlideMenu.init();
     lockAnchors: false,
     navigation: true,
     navigationPosition: 'right',
-    // navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPE', 'USER INTERFACE', 'DESIGN', 'RESUME'],
     showActiveTooltip: true,
     css3: true,
     fadingEffect: true,
@@ -95,6 +112,7 @@ navigationSlideMenu.init();
           'transition': 'color 1.5s',
         });
         animatedText.fadeInText($fadeTextPrototype);
+        prototypeMakeBig();
 
       } else {
         $('.white-logo').removeClass('active-logo');
