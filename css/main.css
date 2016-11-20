@@ -360,12 +360,11 @@ img {
 
 @media (min-width: 750px) {
   .flex-container {
-    max-width: 960px;
-    margin: 60px auto; } }
+    margin: 90px auto; } }
 
 @media (min-width: 1280px) {
   .flex-container {
-    margin: 60px auto; } }
+    max-width: 960px; } }
 
 .col-one {
   -ms-flex-preferred-size: 100%;
@@ -1166,39 +1165,41 @@ a:hover, a:focus {
     font-size: 0.7em; }
 
 @media (min-width: 650px) {
-  .footer .main-footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    text-align: left;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
-            align-items: flex-end;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .footer .details {
-    font-size: 0.75em;
-    margin-bottom: 0px; }
-    .footer .details figure {
-      margin: 0 0 20px; }
-    .footer .details p {
-      line-height: 1.7em; }
-    .footer .details p:first-of-type {
-      margin-bottom: 30px; }
-  .footer .social-icons i {
-    font-size: 0.8em; }
-  .footer .backtop-btn {
-    display: inherit;
-    text-align: right;
-    cursor: pointer; }
-  .footer p.copy-right {
-    font-size: 0.65em;
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px); } }
+  .footer {
+    margin-bottom: 30px; }
+    .footer .main-footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      text-align: left;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+                  -ms-grid-row-align: flex-end;
+              align-items: flex-end;
+      width: 100%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .footer .details {
+      font-size: 0.75em;
+      margin-bottom: 0px; }
+      .footer .details figure {
+        margin: 0 0 20px; }
+      .footer .details p {
+        line-height: 1.7em; }
+      .footer .details p:first-of-type {
+        margin-bottom: 30px; }
+    .footer .social-icons i {
+      font-size: 0.8em; }
+    .footer .backtop-btn {
+      display: inherit;
+      text-align: right;
+      cursor: pointer; }
+    .footer p.copy-right {
+      font-size: 0.65em;
+      -webkit-transform: translateY(4px);
+              transform: translateY(4px); } }
 
 * {
   box-sizing: border-box !important; }
