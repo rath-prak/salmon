@@ -3,7 +3,7 @@
 /* project two colors */
 /* global background color */
 html {
-  background: #1e2832; }
+  background: #072231; }
 
 .clearfix,
 .group {
@@ -952,7 +952,7 @@ a:hover, a:focus {
  * SECONDARY NAVIGATION
  */
 .secondary-nav {
-  background: #1e2832;
+  background: #072231;
   width: 100%;
   height: 80px;
   position: fixed; }
@@ -1143,6 +1143,8 @@ a:hover, a:focus {
       font-size: 1.3em; }
   .footer .backtop-btn {
     display: none; }
+    .footer .backtop-btn img {
+      width: 40px; }
   .footer .details {
     margin-bottom: 20px; }
     .footer .details figure {
@@ -1385,7 +1387,7 @@ a:hover, a:focus {
 /* USER INTERFACE
    ========================================================================== */
 .ui {
-  background: #E94444; }
+  background: #f56d6f; }
   .ui h1 {
     font-size: 3em; }
   .ui p {
@@ -1394,6 +1396,9 @@ a:hover, a:focus {
 
 /* RESUME SECTION
    ========================================================================== */
+.graphic-design {
+  background: #f8abac; }
+
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
 .prototype-main-wrapper p {

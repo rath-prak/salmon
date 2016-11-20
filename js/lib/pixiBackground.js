@@ -45,7 +45,6 @@ var pixiBackground = function () {
 
       count += 0.01;
 
-      // make the snake
       for (var i = 0; i < points.length; i++) {
 
           points[i].y = Math.sin((i * 0.5) + count) * 30;

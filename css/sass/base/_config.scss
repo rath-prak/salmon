@@ -27,6 +27,7 @@ $reverse: #FEFEE6;
 
 $salmon: #E94444;
 // $salmon: #e9c2c3;
+$aqua-blue: #072231;
 $dark-blue: #1e2832;
 // $dark-blue: #1D2A46;
 
@@ -39,7 +40,8 @@ $cobolt-blue: #0176EA;
 
 /* project two colors */ 
 $bright-blue: #2100A4;
-$light-salmon: #FF948D;
+$pink: #f8abac;
+$light-salmon: #f56d6f;
 $light-red: #FF4533;
 
 
@@ -50,6 +52,6 @@ $light-red: #FF4533;
 // }
 
 html {
-	background: #1e2832;
+	background: $aqua-blue;
 	// background: #072231;
 }

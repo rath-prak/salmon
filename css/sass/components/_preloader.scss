@@ -2,38 +2,12 @@
    ========================================================================== */
 
 
-
-// .fisher-wrapper {
-// 	width: 100%;
-// 	height: 100%;
-// 	background: $salmon;
-// }
-// .puff-fish {
-// 	background: url(../../img/pufferfish.png);
-// 	width: 230px;
-// 	height: 208px;
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// 	transform: translate(-50%, -50%);
-// 	z-index: 999999;
-
-// 	animation: puffer 1.0s steps(7) infinite;
-// }
-
-// @keyframes puffer {
-// 	from { background-position: 0px; }
-// 	to { background-position: -1610px; }
-// }
-
-
-
 .spinner-wrapper {
-	position: fixed;
-	height: 100vh;
-	width: 100%;
-	background-color: $salmon;
-	z-index: 999999;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: $salmon;
+  z-index: 999999;
 }
 
 .spinner {

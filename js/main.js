@@ -32,41 +32,6 @@ $(document).ready(function(){
 navigationSlideMenu.init();
 
 
-
-// Secondary nav-menu hides when scroll
-
-  // var previousScroll = 0;
-
-  // $(window).scroll(function () {
-  //   var $currentScroll = $(this).scrollTop();
-  //   var $logoAndHamburger = $('.logo, .navbar-toggle');
-  //   var $secondaryNav = $('.secondary-nav');
-
-  //   if ($currentScroll > previousScroll){
-  //     TweenMax.to($secondaryNav, 0.2, {
-  //     y: '-80',
-  //     ease: Linear.easeNone
-  //     })
-
-  //   TweenMax.to($secondaryNav, 0.2, {
-  //     css: {background: "#1e2832"},
-  //     ease: Linear.easeNone
-  //     })
-  //   }
-  //   else {
-  //     function slideBack (divElement, yPos) {
-  //         TweenMax.to(divElement, 0.2, {
-  //         y: yPos,
-  //         ease: Linear.easeNone
-  //         });
-  //       }
-  //     slideBack($logoAndHamburger, 30);
-  //     slideBack($secondaryNav, 0);
-  //     }
-  //     previousScroll = $currentScroll;
-  // });
-
-
 /**
 * FULL PAGE PLUGIN
 */
@@ -101,7 +66,7 @@ navigationSlideMenu.init();
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'design', 'contact'],
+    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'design'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
