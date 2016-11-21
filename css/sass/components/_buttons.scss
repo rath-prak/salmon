@@ -3,28 +3,7 @@
 //**
 
 // Default button
-.btn {
-  background: transparent;
-  border: 1px solid $salmon;
-  color: $salmon;
-  display: inline-block;
-  height: $line-height;
-  outline: none;
-  padding: 0 25px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: background 1s;
 
-  &:hover,
-  &:focus {
-    background: $salmon;
-    border-color: #fff;
-    color: #fff;
-    text-decoration: none;
-
-  }
-}
 
 .main-btn-reverse {
   background: $reverse;
@@ -47,17 +26,21 @@
   
   &:hover,
   &:focus {
-    background: $salmon;
-    border-color: #fff;
-    color: #fff;
+    background: transparent;
+    border-color: $reverse;
+    color: $reverse;
     text-decoration: none;
 
   }
 }
 
-.btn-2 {
-  color: $reverse;
-  font-family: $black;
-  text-decoration: underline;
-  font-size: 0.9em;
+.ui-container {
+  .main-btn-reverse {
+    color: $light-salmon;
+    border: 1px solid $light-salmon;
+  }
+  .main-btn-reverse:hover {
+    color: $reverse;
+    border: 1px solid $reverse;
+  }
 }

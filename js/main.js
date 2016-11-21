@@ -8,34 +8,6 @@ var scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
 
-  var $prototypeTest = $('#proto-test');
-  TweenMax.set($prototypeTest, {
-    autoAlpha: 0,
-    y: 100,
-    // scale: 0,
-  })
-
-  var prototypeMakeBig = function () {
-    setTimeout(function(){
-      TweenMax.to($prototypeTest, 0.5, {
-      autoAlpha: 1,
-      y: 0,
-      // scale: 1, 
-      ease: Bounce.easeIn
-      })
-    }, 1000)
-  }
-
-  // var scrollDown = $("#scroll-down.btn");
-
-// Prototype scroll down
-    // scrollDown.on( "click", function(){
-    //     // $('html, body').animate({
-    //     //     scrollTop: $("#process").offset().top
-    //     // }, 2000);
-    //     console.log('hi')
-    // });
-
 // SCROLL BACK TO TOP OF PAGE
   scrollToTop();    
   
@@ -94,7 +66,6 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
-        prototypeMakeBig();
       }
 
       if (index === 4) {
@@ -102,7 +73,12 @@ navigationSlideMenu.init();
 
       }
 
-      if (index === 3 || index === 4) {
+      if (index === 5) {
+          animatedText.fadeInText($fadeTextDesign);
+
+      }
+
+      if (index === 3 || index === 4 || index === 5) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css({
@@ -147,17 +123,22 @@ navigationSlideMenu.init();
       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
         animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
       }
+
+      if(index === 4 && direction === 'up'){
+        animatedText.resetfadeText($fadeTextDesign, 0, 20, 1);
+      }
     } 
   }); //end of fullpage.js
 
   var $fadeTextPrototype = $('.fadetext-prototype');
   var $fadeTextUi = $('.fadetext-ui');
   var $fadeTextAbout = $('.fadetext-about');
+  var $fadeTextDesign = $('.fadetext-design')
   var $menuItem = $('.menu-item');
 
   // set initial state of text
   var setState = function () {
-      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout], {
+      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
         alpha: 0,
         y: 30,
       });

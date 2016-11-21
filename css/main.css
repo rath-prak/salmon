@@ -874,25 +874,6 @@ a:hover, a:focus {
     transform: scale(1);
     -webkit-transform: scale(1); } }
 
-.btn {
-  background: transparent;
-  border: 1px solid #E94444;
-  color: #E94444;
-  display: inline-block;
-  height: 44px;
-  outline: none;
-  padding: 0 25px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-  -webkit-transition: background 1s;
-  transition: background 1s; }
-  .btn:hover, .btn:focus {
-    background: #E94444;
-    border-color: #fff;
-    color: #fff;
-    text-decoration: none; }
-
 .main-btn-reverse {
   background: #FEFEE6;
   border: 1px solid #E94444;
@@ -910,16 +891,18 @@ a:hover, a:focus {
   .main-btn-reverse i {
     margin-left: 10px; }
   .main-btn-reverse:hover, .main-btn-reverse:focus {
-    background: #E94444;
-    border-color: #fff;
-    color: #fff;
+    background: transparent;
+    border-color: #FEFEE6;
+    color: #FEFEE6;
     text-decoration: none; }
 
-.btn-2 {
+.ui-container .main-btn-reverse {
+  color: #f56d6f;
+  border: 1px solid #f56d6f; }
+
+.ui-container .main-btn-reverse:hover {
   color: #FEFEE6;
-  font-family: fat_frank, sans-serif;
-  text-decoration: underline;
-  font-size: 0.9em; }
+  border: 1px solid #FEFEE6; }
 
 /* NAVIGATION
    ========================================================================== */
@@ -1332,13 +1315,7 @@ a:hover, a:focus {
 .about-me h3,
 .about-me h4,
 .about-me h5,
-.about-me p,
-.resume h1,
-.resume h2,
-.resume h3,
-.resume h4,
-.resume h5,
-.resume p {
+.about-me p {
   color: #E94444;
   text-align: center; }
 
@@ -1376,13 +1353,10 @@ a:hover, a:focus {
   .prototype-container p {
     color: #FEFEE6;
     margin-bottom: 15px; }
+  .prototype-container .prototype-mockup img {
+    width: 80%;
+    display: none; }
 
-/**
- * LARGER THAN MOBILE
- */
-/**
- * LARGER THAN PHAMBLET
- */
 /**
  * LARGER THAN TABLET
  */
@@ -1397,7 +1371,9 @@ a:hover, a:focus {
     margin-bottom: 10px; }
   .prototype-container .quote-text {
     font-size: 2em;
-    line-height: 1em; } }
+    line-height: 1em; }
+  .prototype-container .prototype-mockup img {
+    display: inherit; } }
 
 /* USER INTERFACE
    ========================================================================== */
@@ -1408,11 +1384,25 @@ a:hover, a:focus {
   .ui p {
     color: #FEFEE6;
     margin-bottom: 15px; }
+  .ui .ui-container .ui-mockup img {
+    width: 400px;
+    display: none; }
+
+@media screen and (min-width: 750px) {
+  .ui .ui-container .ui-mockup img {
+    display: inherit; } }
 
 /* RESUME SECTION
    ========================================================================== */
 .graphic-design {
-  background: #f8abac; }
+  background: #E94444; }
+  .graphic-design .design-container {
+    background: #E94444; }
+    .graphic-design .design-container h1 {
+      font-size: 3em; }
+    .graphic-design .design-container p {
+      color: #FEFEE6;
+      margin-bottom: 15px; }
 
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
@@ -1985,6 +1975,3 @@ a:hover, a:focus {
   font-size: 10px;
   letter-spacing: 0.4em;
   cursor: pointer; }
-
-.prototype-container .prototype-test img {
-  width: 175px; }
