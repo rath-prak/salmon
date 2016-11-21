@@ -18,10 +18,14 @@
 			margin: 5px;
 			font-size: 1.3em;
 		}
+		margin-bottom: 20px;
 	}
 
 	.backtop-btn {
 		display: none;
+		img {
+			width: 40px;
+		}
 	}
 
 	.details {
@@ -43,15 +47,15 @@
 			text-transform: uppercase;
 		}
 	}
-
 	p.copy-right {
 		font-size: 0.7em;
-		// margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 }
 	
 @media (min-width: 650px) {
 	.footer {
+		margin-bottom: 30px;
 		.main-footer {
 			flex-direction: row;
 			text-align: left;
@@ -85,7 +89,8 @@
 		}
 		p.copy-right {
 			font-size: 0.65em;
-			transform: translateY(4px)
+			transform: translateY(4px);
+			margin-bottom: 0px;
 		}
 	}
 }

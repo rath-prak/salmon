@@ -21,7 +21,6 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-  <!-- <div id="transition-container"></div> -->
   <div class="spinner-wrapper">
     <div class="spinner">
       <div class="dot1"></div>
@@ -32,13 +31,11 @@
   <div class="main-header">
 
     <figure class="logo red-logo active-logo">
-      <a href="#home"><img src="img/rayfinn-logo-red.svg" alt="rayfinn logo"></a>
+      <a href="#home"><img src="img/rayfinn-logo-red.svg" alt="rayfinn red logo"></a>
     </figure>
     <figure class="logo white-logo">
       <a href="#home"><img src="img/rayfinn-logo.svg" alt="rayfinn white logo"></a>
     </figure>
-
-
 
     <div class="navbar-toggle">
       <div class="hamburger-container">
@@ -57,7 +54,6 @@
           <li data-menuanchor="prototype" class="menu-item"><a href="prototype.html">prototype</a></li>
           <li data-menuanchor="user-interface" class="menu-item"><a href="user-interface.html">user interface</a></li>
           <li data-menuanchor="photography" class="menu-item"><a href="graphic-design.html">design</a></li>
-          <li data-menuanchor="contact" class="menu-item"><a href="#contact">contact</a></li>
         </ul>
 
         <div class="social-main-nav menu-item">
@@ -75,7 +71,7 @@
       </div>
 
       <div class="nav-back-button">
-        <p>back</p>
+        <img src="img/close-icon.svg">
       </div>
 
     </div> <!-- .menu-container -->
@@ -102,12 +98,11 @@
       <div class="rendererView"></div>
       <div class="container center-content">
         <div class="landing-header">
-          <h1>Big, tailor-made ideas.</h1>
-          <h3>Kingsize — Creative Agency.</h3>
+          <h1>Excited to build whatever comes next!</h1>
+          <h3>Designer — Developer.</h3>
         </div>
         <div id="salmon-fish">
           <img src="img/salmon-split.png">
-          <img id="salmon-fin" src="img/finn.png">
         </div>       
       </div>
 
@@ -128,9 +123,9 @@
     <div class="section about-me flex justify-center">
        <div class="wrapper-container flex is-column justify-center">
           <div class="about">
-            <h1 class="fadetext-about">Interested in collaborating?</h1>
-            <h2 class="fadetext-about">“Keeping up with trends in technology improves product design and how we prototype them”</h2>
-            <p class="fadetext-about">Like the design you see, but not seeing the pages or features you need for your site in our example? No problem, you can add any of Squarespace's core features to any of our templates.</p>
+            <h1 class="fadetext-about">A few things about myself</h1>
+            <h2 class="fadetext-about">Driven by curiosity and a little self-doubt, I'm a designer and <br>front-end developer based in New Zealand.</h2>
+            <p class="fadetext-about">I use design and technology to create things that are meaningful and creative. I’m interested in UI/UX, web technologies and mobile apps, photography and films. I understand that the best results come from collaboration and experimentation.</p>
           </div>
         </div>
 
@@ -153,44 +148,75 @@
       <div class="p-background-icon">
         <img src="img/prototype_icon.svg" alt="prototype and design initial">
       </div>
-      <div class="prototype-container flex justify-center is-row">
-        <div class="wrapper-container flex justify-center align-center is-row">
+      <div class="prototype-container flex justify-center">
+        <div class="wrapper-container flex justify-center align-center space-between">
           <article>
-            <h3 class="fadetext-prototype">prototyping + design</h3>
-            <p class="quote-text fadetext-prototype">“Even the darkest moments in our history can get got”
-            </p>
-            <p class="fadetext-prototype">I believe prototyping and design are going to become more and more related in the future. Showing is always better than telling and high-fidelity prototypes with interactivity requires little description. And instant feedback</p>
-            <a href="prototype.html"><button class="btn fadetext-prototype">view case study</button></a>
+            <h1 class="fadetext-prototype">prototyping</h1>
+            <p class="fadetext-prototype">This case study was based on a project I worked on in 2014 and reworked as a personal project in 2016 using different tools and techniques.</p>
+            <!-- <a href="prototype.html" class="btn-2">View Case Study</a> -->
+            <a href="prototype.html"><button class="main-btn-reverse fadetext-prototype">Case study<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></a>
           </article>
+          <div class="prototype-mockup fadetext-prototype">
+            <img id="proto-test" src="img/prototype-test.png" alt="">
+          </div>
         </div>
+      </div>
+      <div class="pulse">
+        <a href="#user-interface">
+          <svg class="pulse-button" height="65" viewBox="0 0 65 65" width="65" xmlns="http://www.w3.org/2000/svg">
+            <g fill-rule="evenodd" fill="none" stroke-width="2" transform="translate(1 1)">
+            <circle cx="22" cy="22" r="6" stroke-opacity="0"></circle>
+            <circle cx="22" cy="22" r="6" stroke-opacity="0"></circle>
+            <circle cx="22" cy="22" r="8"></circle>
+            </g>
+          </svg>
+        </a>
       </div>
     </div> <!-- .section user-interface -->
 
     <div class="section ui">
-      <div class="ui-container flex justify-center is-row">
-        <div class="wrapper-container flex justify-center align-center is-row">
+      <div class="ui-background-icon">
+        <img src="img/ui_icon.svg" alt="prototype and design initial">
+      </div>
+      <div class="ui-container flex justify-center">
+        <div class="wrapper-container flex justify-center align-center space-between">
           <article>
-            <h3 class="fadetext-ui">User Interface</h3>
-            <p class="quote-text fadetext-ui">“Talk about how important micro-interactions are to UX design”
-            </p>
-            <p class="fadetext-ui">Can talk about prototyping and adding/enhanceing use experience with microinteractions</p>
-            <a href="user-interface.html"><button class="btn fadetext-ui">view case study</button></a>
+            <h1 class="fadetext-ui">User Interface</h1>
+            <p class="fadetext-ui">The following UI case study is based on a group project I worked on during my time at Enspiral Dev Academy in 2016. Each group had 6 days to complete and present the project.</p>
+            <a href="user-interface.html"><button class="main-btn-reverse fadetext-ui">Case study<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></a>
+          </article>
+          <div class="ui-mockup fadetext-ui">
+            <img id="proto-test" src="img/ui-desktop.png" alt="wireframe of laptop">
+          </div>
+        </div>
+      </div>
+      <div class="pulse">
+        <a href="#design">
+          <svg class="pulse-button" height="65" viewBox="0 0 65 65" width="65" xmlns="http://www.w3.org/2000/svg">
+            <g fill-rule="evenodd" fill="none" stroke-width="2" transform="translate(1 1)">
+            <circle cx="22" cy="22" r="6" stroke-opacity="0"></circle>
+            <circle cx="22" cy="22" r="6" stroke-opacity="0"></circle>
+            <circle cx="22" cy="22" r="8"></circle>
+            </g>
+          </svg>
+        </a>
+      </div> 
+    </div> <!-- .section interaction --> 
+
+    <div class="section graphic-design">
+      <div class="design-background-icon">
+        <img src="img/design_icon.svg" alt="prototype and design initial">
+      </div>
+      <div class="design-container flex justify-center">
+        <div class="wrapper-container flex justify-center align-center space-between">
+          <article>
+            <h1 class="fadetext-design">Graphic Design</h1>
+            <p class="fadetext-design">Graphic designer and photographer with 6+ years of experience developing, designing and producing a variety of print and digital collateral including marketing material, branding, annual reports, user interface, E-newsletters, and posters.</p>
+            <a href="graphic-design.html"><button class="main-btn-reverse fadetext-design">View Portfolio<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></a>
           </article>
         </div>
       </div> 
-    </div> <!-- .section interaction --> 
-   
-    <div class="section photography">
-      <div class="center-content">
-        <h1>photography content and design</h1>
-      </div>
-    </div>
-
-    <div class="section contact">
-      <div class="center-content">
-        <h1>This is where the contact section will go</h1>
-      </div>
-    </div>  
+    </div> <!-- .section interaction -->   
 
   </main> <!-- end of main section -->
 

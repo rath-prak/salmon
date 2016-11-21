@@ -1,10 +1,11 @@
 /* Homepage - Main Laning page */
 
 
-/* Mobile first queries */
+/**
+	 MIAN LANDING SECTION
+ 	 ---------------------------------*/
 
 .main-landing-page {
-		// background: $dark-blue;
 
 		.pixi-background {
 			width: 100%;
@@ -41,21 +42,14 @@
 			margin-bottom: 0.25em;
 			font-size: 3em;
 			line-height: 1em;
+			span {
+				text-decoration: line-through;
+			}
 
 		}
 		h3 {
 			font-family: $body;
 			color: $salmon;
-		}
-	}
-
-	#salmon-fish {
-		position: relative;
-		#salmon-fin {
-			position: absolute;
-			width: 11px;
-			left: 176px;
-			top: 44px;
 		}
 	}
 }
@@ -104,24 +98,48 @@
 		p {
 			font-size: 1.3em;
 		}
-		// .container img {
-		// 	width: 25%;
-		// }
-
-		#salmon-fish {
-			position: relative;
-			#salmon-fin {
-				position: absolute;
-				width: 20px;
-				left: 450px;
-				top: 83px;
-			}
-		}
 	}
 }
 
+/* ABOUT SECTION
+   ========================================================================== */
+
+.about-me {
+
+	h1,
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	p {
+		color: $salmon;
+		text-align: center;
+	}
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.about-me {
+		h1 {
+			font-size: 2.5em;
+		}
+
+		h4 {
+			font-size: 1.5em;
+		}
+	}
+
+}
+
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+		.about-me {
+		h1 {
+			font-size: 3.5em;
+		}
+	}
+}
 
 
 /* PROTOTYPE LANDING
@@ -131,7 +149,9 @@
  * MOBILE FIRST QUERIES
  */
 
-.p-background-icon {
+.p-background-icon, 
+.ui-background-icon,
+.design-background-icon {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -142,44 +162,25 @@
 	}
 }
 
-.prototype {
-	text-align: center;
-	h1 {
-		font-size: 1.5em;
-	}
-}
 
 .prototype-container {
 	background: $salmon;
-	h3,
+	h1 {
+		font-size: 2.4em
+	}
 	p {
 		color: $reverse;
+		margin-bottom: 15px;
 	}
-
-	h1 {
-		text-transform: uppercase;
-	}
-	.quote-text {
-		p {
-		font-size: 1.5em;
+	.prototype-mockup {
+		img {
+			width: 80%;
+			display: none;
 		}
 	}
-}
-
-
-/**
- * LARGER THAN MOBILE
- */
-@media (min-width: 400px) {
-
-}	
-
-/**
- * LARGER THAN PHAMBLET
- */
-@media (min-width: 550px) {
 
 }
+
 
 /**
  * LARGER THAN TABLET
@@ -191,9 +192,12 @@
 		img {
 			width: 500px;
 		}
-}
+	}
 	
 	.prototype-container {
+		h1 {
+		font-size: 3em;
+		}
 		article {
 			width: 70%;
 			text-align: left;
@@ -202,27 +206,94 @@
 			font-size: 2em;
 			margin-bottom: 10px;
 		}
-		h3 {
+		.prototype-mockup {
+			img {
+				display: inherit;
+			}
 		}
-		.quote-text {
-			font-size: 2em;
-			line-height: 1em;
+	}
+
+}
+
+/* USER INTERFACE
+   ========================================================================== */
+
+
+.ui {
+	background: $light-salmon;
+	h1 {
+		font-size: 2.4em
+	}
+	p {
+		color: $reverse;
+		margin-bottom: 15px;
+	}
+	.ui-container {
+		.ui-mockup {
+			img {
+			width: 400px;
+			display: none;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 750px) {
+	.ui-background-icon {
+		img {
+			width: 500px;
+		}
+	}
+
+	.ui-container {
+		h1 {
+		font-size: 3em;
+		}
+	}
+	.ui {
+		.ui-container {
+			.ui-mockup {
+				img {
+				display: inherit;
+				}
+			}
+		}
+	}
+}
+
+/* RESUME SECTION
+   ========================================================================== */
+
+.graphic-design {
+	background: $salmon;
+	.design-container {
+		background: $salmon;
+		h1 {
+			font-size: 2.4em
 		}
 		p {
+			color: $reverse;
 			margin-bottom: 15px;
 		}
 	}
-
 }
 
-
-.about-me {
-	.about-footer-text {
-		h2 {
-			font-size: 2.5em;
-			color: $salmon;
+@media screen and (min-width: 750px) {
+	.design-container {
+		h1 {
+		font-size: 3em;
+		}
+	}
+	.design-background-icon {
+		img {
+			width: 500px;
 		}
 	}
 }
-	
+
+
+
+
+
 

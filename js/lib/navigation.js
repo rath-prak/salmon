@@ -26,9 +26,6 @@ var navigationSlideMenu = {
     var menuToggle = new TimelineMax({ paused:true, reversed:true }); 
     var menuSlideText = new TimelineMax({ paused:true, reversed:true });   
 
-    // TweenMax.set(this.$fade, { 
-    //   autoAlpha: 0,
-    // });
 
     TweenMax.set(this.$menuItem, {
       autoAlpha: 0,
@@ -42,25 +39,14 @@ var navigationSlideMenu = {
     }, 0.05);
 
 
-    // menuToggle.to(this.$fade, 1, { 
-    //   autoAlpha: 1,
-    //   ease: Power4.easeInOut,
-    // });
-
     TweenMax.set(this.$fade, { 
       y: '-100%',
     });
 
     menuToggle.to(this.$fade, 1, { 
-      // autoAlpha: 1,
       y: '0%',
       ease: Power4.easeInOut,
     });
-
-    // menuSlideText.to(this.$menuItem, 1, {
-    //   autoAlpha: 1,
-    //   y: 0,
-    // });
 
     $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
       menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();

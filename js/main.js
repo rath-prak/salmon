@@ -3,20 +3,10 @@ var navigationSlideMenu = require('./lib/navigation.js');
 var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');
 var animatedText = require('./lib/typographyAnimation.js');
-var pixiBackground = require('./lib/background.js');
+var pixiBackground = require('./lib/pixiBackground.js');
 var scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
-
-  // var scrollDown = $("#scroll-down.btn");
-
-// Prototype scroll down
-    // scrollDown.on( "click", function(){
-    //     // $('html, body').animate({
-    //     //     scrollTop: $("#process").offset().top
-    //     // }, 2000);
-    //     console.log('hi')
-    // });
 
 // SCROLL BACK TO TOP OF PAGE
   scrollToTop();    
@@ -24,49 +14,46 @@ $(document).ready(function(){
 // PRE-LAODER
   $(window).load(function(){
     // pagePreloader()
-    setTimeout(pagePreloader, 800);
+    setTimeout(pagePreloader, 500);
   });
 
+// HIDE NAV MENU ON SCROLLING
+  var NavNide = function () {
+    var previousScroll = 0;
+
+    $(window).scroll(function () {
+      var $currentScroll = $(this).scrollTop();
+      var $logoAndHamburger = $('.logo, .navbar-toggle');
+      var $secondaryNav = $('.secondary-nav');
+
+      if ($currentScroll > previousScroll){
+        TweenMax.to($secondaryNav, 0.2, {
+        y: '-100',
+        ease: Linear.easeNone
+        })
+
+      TweenMax.to($secondaryNav, 0.2, {
+        css: {background: "#072231"},
+        ease: Linear.easeNone
+        })
+      }
+      else {
+        function slideBack (divElement, yPos) {
+            TweenMax.to(divElement, 0.2, {
+            y: yPos,
+            ease: Linear.easeNone
+            });
+          }
+        slideBack($logoAndHamburger, 30);
+        slideBack($secondaryNav, 0);
+        }
+        previousScroll = $currentScroll;
+    });
+  }
+  NavNide(); 
 
 // NAVIGATION
 navigationSlideMenu.init();
-
-
-
-// Secondary nav-menu hides when scroll
-
-  var previousScroll = 0;
-
-  $(window).scroll(function () {
-    var $currentScroll = $(this).scrollTop();
-    var $logoAndHamburger = $('.logo, .navbar-toggle');
-    var $secondaryNav = $('.secondary-nav');
-
-    if ($currentScroll > previousScroll){
-      TweenMax.to($secondaryNav, 0.2, {
-      y: '-80',
-      ease: Linear.easeNone
-      })
-
-
-
-    TweenMax.to($secondaryNav, 0.2, {
-      css: {background: "#1e2832"},
-      ease: Linear.easeNone
-      })
-    }
-    else {
-      function slideBack (divElement, yPos) {
-          TweenMax.to(divElement, 0.2, {
-          y: yPos,
-          ease: Linear.easeNone
-          });
-        }
-      slideBack($logoAndHamburger, 30);
-      slideBack($secondaryNav, 0);
-      }
-      previousScroll = $currentScroll;
-  });
 
 
 /**
@@ -81,7 +68,6 @@ navigationSlideMenu.init();
     lockAnchors: false,
     navigation: true,
     navigationPosition: 'right',
-    // navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPE', 'USER INTERFACE', 'DESIGN', 'RESUME'],
     showActiveTooltip: true,
     css3: true,
     fadingEffect: true,
@@ -103,7 +89,7 @@ navigationSlideMenu.init();
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'design', 'contact'],
+    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'design'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
@@ -113,14 +99,38 @@ navigationSlideMenu.init();
       }
 
       if (index === 3) {
+        animatedText.fadeInText($fadeTextPrototype);
+      }
+
+      if (index === 4) {
+          animatedText.fadeInText($fadeTextUi);
+
+      }
+
+      if (index === 5) {
+          animatedText.fadeInText($fadeTextDesign);
+
+      }
+
+      if (index === 3 || index === 4 || index === 5) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
-        // $('.menu-bar').css('background', '#fff');
-        // $('.watermark-text, .contact-item').css('color', '#fff');
-        $('.menu-bar').css('background', '#fff');
-        $('.watermark-text, .contact-item, .title-caption').css('color', '#fff');
-        $('.social-main li').css('border-color', 'rgba(255,255, 255, 0.25)');
-        animatedText.fadeInText($fadeTextPrototype);
+        $('.menu-bar').css({
+          'background': '#FEFEE6',
+          'transition': 'background 1.5s',
+        });
+        $('.watermark-text, .contact-item, .title-caption').css({
+          'color': '#FEFEE6',
+          'transition': 'color 1.5s'
+        });
+        $('.social-main li').css({
+          'border-color': 'rgba(255,255, 255, 0.25)',
+          'transition': 'border-color 1.5s',
+        });
+        $('.pulse-button').css({
+          'stroke': "#FEFEE6",
+          'transition': 'color 1.5s',
+        });
 
       } else {
         $('.white-logo').removeClass('active-logo');
@@ -128,11 +138,8 @@ navigationSlideMenu.init();
         $('.menu-bar').css('background', '#E94444');
         $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
+        $('.pulse-button').css('stroke', "#E94444");
 
-      }
-
-      if (index === 4 ) {
-        animatedText.fadeInText($fadeTextUi);
       }
 
     },
@@ -150,17 +157,22 @@ navigationSlideMenu.init();
       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
         animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
       }
+
+      if(index === 4 && direction === 'up'){
+        animatedText.resetfadeText($fadeTextDesign, 0, 20, 1);
+      }
     } 
   }); //end of fullpage.js
 
   var $fadeTextPrototype = $('.fadetext-prototype');
   var $fadeTextUi = $('.fadetext-ui');
   var $fadeTextAbout = $('.fadetext-about');
+  var $fadeTextDesign = $('.fadetext-design')
   var $menuItem = $('.menu-item');
 
   // set initial state of text
   var setState = function () {
-      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout], {
+      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
         alpha: 0,
         y: 30,
       });

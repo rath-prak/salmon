@@ -1,19 +1,4 @@
 /*---------------
-    GOTHAM
----------------*/
-@font-face { font-family: Gotham_black; src: url(../fonts/GOTHAM-BLACK.TTF);}
-@font-face { font-family: Gotham_medium; src: url(../fonts/GOTHAM-MEDIUM.TTF);}
-@font-face { font-family: Gotham_thin; src: url(../fonts/GOTHAM-LIGHT.TTF);}
-
-/*---------------
-    AVANTGARDE
----------------*/
-@font-face { font-family: avant_light; src: url(../fonts/ITCAvantGardePro-XLt.otf);}
-@font-face { font-family: avant_book; src: url(../fonts/ITCAvantGardePro-Bk.otf);}
-@font-face { font-family: avant_medium; src: url(../fonts/ITCAvantGardePro-Md.otf);}
-@font-face { font-family: avant_bold; src: url(../fonts/ITCAvantGardePro-Bold.otf);}
-
-/*---------------
     Proxima Nova
 ---------------*/
 @font-face { font-family: proxima_thin; src: url(../fonts/Proxima-Nova-Thin.otf);}
@@ -23,26 +8,20 @@
 @font-face { font-family: proxima_bold; src: url(../fonts/Proxima-Nova-Bold.otf);}
 @font-face { font-family: proxima_black; src: url(../fonts/Proxima-Nova-Black.otf);}
 
-@font-face { font-family: galaxy_body; src: url(../fonts/GalaxieCopernicus-Book.otf);}
+@font-face { font-family: fat_frank; src: url(../fonts/FatFrank-Free.otf);}
+@font-face { font-family: freight_light; src: url(../fonts/FreightSanProLig.otf);}
 
 
-// $body: Gotham_thin, sans-serif;
-// $medium: Gotham_medium, sans-serif;
-// $bold: Gotham_black, sans-serif;
 
 $thin: proxima_thin, sans-serif;
 $body: proxima_light, sans-serif;
+// $body: freight_light, sans-serif;
 $body-italic: proxima_light_italic, sans-serif;
 $medium: proxima_medium, sans-serif;
 $bold: proxima_bold, sans-serif;
-$black: proxima_black, sans-serif;
+// $black: proxima_black, sans-serif;
+$black: fat_frank, sans-serif;
 
-$light_avant: avant_light, sans-serif;
-$body_avant: avant_book, sans-serif;
-$medium_avant: avant_medium, sans-serif;
-$bold_avant: avant_bold, sans-serif;
-
-$body_galaxy: galaxy_body, sans-serif;
 
 $primary-font-color: #333; //Raven
 $reverse-font-color: $reverse;
