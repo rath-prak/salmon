@@ -1892,6 +1892,8 @@ a:hover, a:focus {
   .design-intro-wrapper .intro-text p {
     margin-bottom: 5px;
     color: #FEFEE6; }
+  .design-intro-wrapper .intro-text .design-body-text a {
+    color: #FEFEE6; }
 
 /**
  * LARGER THAN TABLET
@@ -1911,7 +1913,7 @@ a:hover, a:focus {
  	 ---------------------------------*/
 .design-portfolio-items p {
   color: #333;
-  font-family: proxima_light_italic, sans-serif;
+  font-family: proxima_bold, sans-serif;
   font-size: 14px;
   line-height: 20px; }
 
