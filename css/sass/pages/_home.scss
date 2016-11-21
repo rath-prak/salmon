@@ -7,40 +7,25 @@
 
 .main-landing-page {
 
-		.pixi-background {
-			width: 100%;
-			height: 100%;
+	.container {
+		img {
+		width: 50%;
 		}
-		.container {
-			img {
-			width: 50%;
-			}
-		}
+	}
 
-		h1, p {
-			color: $salmon;
-		}
-		h1 {
-			font-size: 1.5em;
-			margin: 10px;
-			font-family: $bold;	
-    	text-transform: uppercase;
-		}
-		p {
-			font-size: 0.9em;
-			margin: 0 20px 20px;
-			font-family: $body;
-		}
-		.social-main {
+	.social-main {
 			visibility: hidden;
 		}
 
 	.landing-header {
+		h1, p {
+		color: $salmon;
+		}
 		h1 {
 			text-transform: initial;
 			font-family: $black;
 			margin-bottom: 0.25em;
-			font-size: 3em;
+			font-size: 2.5em;
 			line-height: 1em;
 			span {
 				text-decoration: line-through;
@@ -55,19 +40,19 @@
 }
 
 /* Larger than mobile */
-@media (min-width: 400px) {
-	.main-landing-page {
-		h1 {
-			font-size: 2em;
-		}
-		p {
-			font-size: 1em;
-		}
-		.container img {
-			width: 40%;
-		}
-	}
-}
+// @media (min-width: 400px) {
+// 	.main-landing-page {
+// 		h1 {
+// 			font-size: 2em;
+// 		}
+// 		p {
+// 			font-size: 1em;
+// 		}
+// 		.container img {
+// 			width: 40%;
+// 		}
+// 	}
+// }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -84,10 +69,6 @@
 	}
 }
 
-/* Larger than tablet */
-@media (min-width: 750px) {
-
-}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {

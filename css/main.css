@@ -878,18 +878,15 @@ a:hover, a:focus {
   left: 4%;
   z-index: 25;
   margin: 0;
+  width: 110px;
   display: none;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px); }
   .logo img {
-    width: 50%; }
+    width: 100%; }
 
 .logo.active-logo {
   display: inherit; }
-
-@media (min-width: 450px) {
-  .logo img {
-    width: 40%; } }
 
 /**
  * HAMBURGER TOGGLE MENU
@@ -920,7 +917,7 @@ a:hover, a:focus {
 .secondary-nav {
   background: #072231;
   width: 100%;
-  height: 10%;
+  height: 100px;
   position: fixed; }
 
 /**
@@ -984,7 +981,7 @@ a:hover, a:focus {
     width: 100%; }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 400px) {
   .nav-menu-content,
   .nav-about-text {
     -ms-flex-preferred-size: 45%;
@@ -1019,10 +1016,14 @@ a:hover, a:focus {
     .nav-menu-content .social-main-nav a {
       margin-left: 10px; }
   .nav-about-text h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 1.2em; }
   .nav-about-text p {
     display: inherit; } }
+
+@media (min-width: 750px) {
+  .nav-about-text h2 {
+    font-size: 1.6em; } }
 
 @media (min-width: 850px) {
   .nav-menu-content li {
@@ -1203,35 +1204,20 @@ a:hover, a:focus {
 /**
 	 MIAN LANDING SECTION
  	 ---------------------------------*/
-.main-landing-page .pixi-background {
-  width: 100%;
-  height: 100%; }
-
 .main-landing-page .container img {
   width: 50%; }
 
-.main-landing-page h1, .main-landing-page p {
-  color: #E94444; }
-
-.main-landing-page h1 {
-  font-size: 1.5em;
-  margin: 10px;
-  font-family: proxima_bold, sans-serif;
-  text-transform: uppercase; }
-
-.main-landing-page p {
-  font-size: 0.9em;
-  margin: 0 20px 20px;
-  font-family: proxima_light, sans-serif; }
-
 .main-landing-page .social-main {
   visibility: hidden; }
+
+.main-landing-page .landing-header h1, .main-landing-page .landing-header p {
+  color: #E94444; }
 
 .main-landing-page .landing-header h1 {
   text-transform: initial;
   font-family: fat_frank, sans-serif;
   margin-bottom: 0.25em;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1em; }
   .main-landing-page .landing-header h1 span {
     text-decoration: line-through; }
@@ -1241,14 +1227,6 @@ a:hover, a:focus {
   color: #E94444; }
 
 /* Larger than mobile */
-@media (min-width: 400px) {
-  .main-landing-page h1 {
-    font-size: 2em; }
-  .main-landing-page p {
-    font-size: 1em; }
-  .main-landing-page .container img {
-    width: 40%; } }
-
 /* Larger than phablet */
 @media (min-width: 550px) {
   .main-landing-page h1 {
@@ -1258,7 +1236,6 @@ a:hover, a:focus {
   .main-landing-page .container img {
     width: 30%; } }
 
-/* Larger than tablet */
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .main-landing-page h1 {
@@ -1866,7 +1843,8 @@ a:hover, a:focus {
     margin-bottom: 5px;
     color: #FEFEE6; }
   .design-intro-wrapper .intro-text .design-body-text a {
-    color: #FEFEE6; }
+    color: #FEFEE6;
+    font-family: proxima_bold, sans-serif; }
 
 /**
  * LARGER THAN TABLET
