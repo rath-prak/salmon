@@ -92,15 +92,25 @@ navigationSlideMenu.init();
         animatedText.fadeInText($fadeTextAbout);
       }
 
-      if (index === 3 ) {
+      if (index === 3) {
+        animatedText.fadeInText($fadeTextPrototype);
+        prototypeMakeBig();
+      }
+
+      if (index === 4) {
+          animatedText.fadeInText($fadeTextUi);
+
+      }
+
+      if (index === 3 || index === 4) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css({
-          'background': '#fff',
+          'background': '#FEFEE6',
           'transition': 'background 1.5s',
         });
         $('.watermark-text, .contact-item, .title-caption').css({
-          'color': '#fff',
+          'color': '#FEFEE6',
           'transition': 'color 1.5s'
         });
         $('.social-main li').css({
@@ -108,11 +118,9 @@ navigationSlideMenu.init();
           'transition': 'border-color 1.5s',
         });
         $('.pulse-button').css({
-          'stroke': "#fff",
+          'stroke': "#FEFEE6",
           'transition': 'color 1.5s',
         });
-        animatedText.fadeInText($fadeTextPrototype);
-        prototypeMakeBig();
 
       } else {
         $('.white-logo').removeClass('active-logo');
@@ -122,10 +130,6 @@ navigationSlideMenu.init();
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
         $('.pulse-button').css('stroke', "#E94444");
 
-      }
-
-      if (index === 4 ) {
-        animatedText.fadeInText($fadeTextUi);
       }
 
     },

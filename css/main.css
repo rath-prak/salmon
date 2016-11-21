@@ -762,8 +762,12 @@ img {
   src: url(../fonts/Proxima-Nova-Black.otf); }
 
 @font-face {
-  font-family: galaxy_body;
-  src: url(../fonts/GalaxieCopernicus-Book.otf); }
+  font-family: fat_frank;
+  src: url(../fonts/FatFrank-Free.otf); }
+
+@font-face {
+  font-family: freight_light;
+  src: url(../fonts/FreightSanProLig.otf); }
 
 body,
 p {
@@ -792,7 +796,7 @@ h6 {
 
 h1 {
   margin-bottom: 0.2em;
-  font-family: proxima_black, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: fat_frank, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 h2,
 h3,
@@ -911,6 +915,12 @@ a:hover, a:focus {
     color: #fff;
     text-decoration: none; }
 
+.btn-2 {
+  color: #FEFEE6;
+  font-family: fat_frank, sans-serif;
+  text-decoration: underline;
+  font-size: 0.9em; }
+
 /* NAVIGATION
    ========================================================================== */
 .logo {
@@ -977,7 +987,7 @@ a:hover, a:focus {
   color: #FEFEE6; }
 
 .nav-menu-content {
-  font-family: proxima_black, sans-serif;
+  font-family: fat_frank, sans-serif;
   text-align: left;
   margin-top: 20px; }
   .nav-menu-content li {
@@ -1263,7 +1273,7 @@ a:hover, a:focus {
 
 .main-landing-page .landing-header h1 {
   text-transform: initial;
-  font-family: proxima_black, sans-serif;
+  font-family: fat_frank, sans-serif;
   margin-bottom: 0.25em;
   font-size: 3em;
   line-height: 1em; }
@@ -1448,7 +1458,7 @@ a:hover, a:focus {
 .interactive-prototype h4 {
   text-align: center;
   color: #E94444;
-  font-family: proxima_black, sans-serif; }
+  font-family: fat_frank, sans-serif; }
 
 .interactive-prototype h1,
 .interactive-prototype h2,
@@ -1558,7 +1568,7 @@ a:hover, a:focus {
 .background .background-text h1 {
   text-align: center;
   color: #E94444;
-  font-family: proxima_black, sans-serif; }
+  font-family: fat_frank, sans-serif; }
 
 .background .background-text .intro-para {
   font-size: 1.3em;
@@ -1718,7 +1728,7 @@ a:hover, a:focus {
 .tandem-final-design h3,
 .tandem-final-design h4 {
   color: #E94444;
-  font-family: proxima_black, sans-serif; }
+  font-family: fat_frank, sans-serif; }
 
 /**
 	 USER INTERFACE INTRO SECTION
@@ -1864,7 +1874,7 @@ a:hover, a:focus {
 .design-main-wrapper h3,
 .design-main-wrapper h4 {
   color: #E94444;
-  font-family: proxima_black, sans-serif; }
+  font-family: fat_frank, sans-serif; }
 
 /**
 	 USER INTERFACE INTRO SECTION

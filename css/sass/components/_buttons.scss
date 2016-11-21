@@ -43,7 +43,6 @@
   i {
     margin-left: 10px;
 
-
   }
   
   &:hover,
@@ -54,4 +53,11 @@
     text-decoration: none;
 
   }
+}
+
+.btn-2 {
+  color: $reverse;
+  font-family: $black;
+  text-decoration: underline;
+  font-size: 0.9em;
 }
