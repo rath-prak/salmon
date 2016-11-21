@@ -18,6 +18,7 @@
 			margin: 5px;
 			font-size: 1.3em;
 		}
+		margin-bottom: 20px;
 	}
 
 	.backtop-btn {
@@ -46,10 +47,9 @@
 			text-transform: uppercase;
 		}
 	}
-
 	p.copy-right {
 		font-size: 0.7em;
-		// margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 }
 	
@@ -89,7 +89,8 @@
 		}
 		p.copy-right {
 			font-size: 0.65em;
-			transform: translateY(4px)
+			transform: translateY(4px);
+			margin-bottom: 0px;
 		}
 	}
 }

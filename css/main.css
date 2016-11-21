@@ -701,40 +701,6 @@ img {
   display: flex; }
 
 /*---------------
-    GOTHAM
----------------*/
-@font-face {
-  font-family: Gotham_black;
-  src: url(../fonts/GOTHAM-BLACK.TTF); }
-
-@font-face {
-  font-family: Gotham_medium;
-  src: url(../fonts/GOTHAM-MEDIUM.TTF); }
-
-@font-face {
-  font-family: Gotham_thin;
-  src: url(../fonts/GOTHAM-LIGHT.TTF); }
-
-/*---------------
-    AVANTGARDE
----------------*/
-@font-face {
-  font-family: avant_light;
-  src: url(../fonts/ITCAvantGardePro-XLt.otf); }
-
-@font-face {
-  font-family: avant_book;
-  src: url(../fonts/ITCAvantGardePro-Bk.otf); }
-
-@font-face {
-  font-family: avant_medium;
-  src: url(../fonts/ITCAvantGardePro-Md.otf); }
-
-@font-face {
-  font-family: avant_bold;
-  src: url(../fonts/ITCAvantGardePro-Bold.otf); }
-
-/*---------------
     Proxima Nova
 ---------------*/
 @font-face {
@@ -912,12 +878,18 @@ a:hover, a:focus {
   left: 4%;
   z-index: 25;
   margin: 0;
-  display: none; }
+  display: none;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px); }
   .logo img {
-    width: 40%; }
+    width: 50%; }
 
 .logo.active-logo {
   display: inherit; }
+
+@media (min-width: 450px) {
+  .logo img {
+    width: 40%; } }
 
 /**
  * HAMBURGER TOGGLE MENU
@@ -933,9 +905,7 @@ a:hover, a:focus {
   .navbar-toggle .hamburger-container {
     width: 40px;
     height: 20px;
-    overflow: hidden;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px); }
+    overflow: hidden; }
     .navbar-toggle .hamburger-container .menu-bar {
       background: #E94444;
       width: 40px;
@@ -950,7 +920,7 @@ a:hover, a:focus {
 .secondary-nav {
   background: #072231;
   width: 100%;
-  height: 80px;
+  height: 10%;
   position: fixed; }
 
 /**
@@ -1127,7 +1097,8 @@ a:hover, a:focus {
   height: 280px;
   margin-top: 10px; }
   .footer .main-footer {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
     .footer .main-footer p,
     .footer .main-footer i {
       color: #FEFEE6; }
@@ -1155,7 +1126,8 @@ a:hover, a:focus {
     .footer .details p:nth-of-type(4) {
       text-transform: uppercase; }
   .footer p.copy-right {
-    font-size: 0.7em; }
+    font-size: 0.7em;
+    margin-bottom: 30px; }
 
 @media (min-width: 650px) {
   .footer {
@@ -1192,7 +1164,8 @@ a:hover, a:focus {
     .footer p.copy-right {
       font-size: 0.65em;
       -webkit-transform: translateY(4px);
-              transform: translateY(4px); } }
+              transform: translateY(4px);
+      margin-bottom: 0px; } }
 
 * {
   box-sizing: border-box !important; }
