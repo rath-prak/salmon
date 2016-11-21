@@ -166,7 +166,7 @@
 .prototype-container {
 	background: $salmon;
 	h1 {
-		font-size: 3em;
+		font-size: 2.4em
 	}
 	p {
 		color: $reverse;
@@ -195,6 +195,9 @@
 	}
 	
 	.prototype-container {
+		h1 {
+		font-size: 3em;
+		}
 		article {
 			width: 70%;
 			text-align: left;
@@ -202,12 +205,6 @@
 		h3 {
 			font-size: 2em;
 			margin-bottom: 10px;
-		}
-		h3 {
-		}
-		.quote-text {
-			font-size: 2em;
-			line-height: 1em;
 		}
 		.prototype-mockup {
 			img {
@@ -225,7 +222,7 @@
 .ui {
 	background: $light-salmon;
 	h1 {
-		font-size: 3em;
+		font-size: 2.4em
 	}
 	p {
 		color: $reverse;
@@ -249,6 +246,11 @@
 		}
 	}
 
+	.ui-container {
+		h1 {
+		font-size: 3em;
+		}
+	}
 	.ui {
 		.ui-container {
 			.ui-mockup {
@@ -268,7 +270,7 @@
 	.design-container {
 		background: $salmon;
 		h1 {
-			font-size: 3em;
+			font-size: 2.4em
 		}
 		p {
 			color: $reverse;
@@ -278,6 +280,11 @@
 }
 
 @media screen and (min-width: 750px) {
+	.design-container {
+		h1 {
+		font-size: 3em;
+		}
+	}
 	.design-background-icon {
 		img {
 			width: 500px;

@@ -39,7 +39,7 @@
  */
 
 .design-intro-wrapper {
-
+	min-height: 100vh;
 	.design-watermark {
 		@include watermark;
 	}
@@ -69,7 +69,6 @@
 @media screen and (min-width: 750px) {
 
 	.design-intro-wrapper {
-		min-height: 100vh;
 		.design-watermark {
 			visibility: visible;
 		}
