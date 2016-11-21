@@ -32,18 +32,11 @@ var animation = {
   },
   salmonAnimation: function () {
     var salmonLogo = $('#salmon-fish');
-    var finn = $('#salmon-fin');
 
     salmonTl = new TimelineMax({repeat:-1});
     salmonTl.to(salmonLogo, 5, {
       bezier:[{x:10, y:11}, {x:0, y:20}, {x:-10, y:10}, {x:0, y:0}], 
       ease:Linear.easeNone
-    });
-
-    TweenMax.staggerTo(finn, 1, {
-        rotationY: -30, 
-        repeat: -1, 
-        yoyo: true
     });
   },
 

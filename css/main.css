@@ -1267,14 +1267,6 @@ a:hover, a:focus {
   font-family: proxima_light, sans-serif;
   color: #E94444; }
 
-.main-landing-page #salmon-fish {
-  position: relative; }
-  .main-landing-page #salmon-fish #salmon-fin {
-    position: absolute;
-    width: 11px;
-    left: 176px;
-    top: 44px; }
-
 /* Larger than mobile */
 @media (min-width: 400px) {
   .main-landing-page h1 {
@@ -1299,14 +1291,7 @@ a:hover, a:focus {
   .main-landing-page h1 {
     font-size: 4em; }
   .main-landing-page p {
-    font-size: 1.3em; }
-  .main-landing-page #salmon-fish {
-    position: relative; }
-    .main-landing-page #salmon-fish #salmon-fin {
-      position: absolute;
-      width: 20px;
-      left: 450px;
-      top: 83px; } }
+    font-size: 1.3em; } }
 
 /* ABOUT SECTION
    ========================================================================== */
@@ -1336,13 +1321,17 @@ a:hover, a:focus {
 /**
  * MOBILE FIRST QUERIES
  */
-.p-background-icon {
+.p-background-icon,
+.ui-background-icon,
+.design-background-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
-  .p-background-icon img {
+  .p-background-icon img,
+  .ui-background-icon img,
+  .design-background-icon img {
     opacity: 0.08;
     width: 300px; }
 
@@ -1389,6 +1378,8 @@ a:hover, a:focus {
     display: none; }
 
 @media screen and (min-width: 750px) {
+  .ui-background-icon img {
+    width: 500px; }
   .ui .ui-container .ui-mockup img {
     display: inherit; } }
 
@@ -1403,6 +1394,10 @@ a:hover, a:focus {
     .graphic-design .design-container p {
       color: #FEFEE6;
       margin-bottom: 15px; }
+
+@media screen and (min-width: 750px) {
+  .design-background-icon img {
+    width: 500px; } }
 
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
