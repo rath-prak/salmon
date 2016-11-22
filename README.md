@@ -4,6 +4,6 @@ Personal portfolio
 
 ## dev setup
 
-Standard `npm install`
+Standard: `npm install`
 
 To start : `gulp watch`
