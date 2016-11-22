@@ -1,4 +1,14 @@
-Personl Portfolio Website
+Personal Portfolio
 
-1. npm install
-2. run gulp watch
+Standard npm install
+
+
+# Rayfinn Digital
+
+Personal portfolio
+
+## dev setup
+
+Standard `npm install`
+
+To start : `gulp watch`
