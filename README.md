@@ -1,8 +1,3 @@
-Personal Portfolio
-
-Standard npm install
-
-
 # Rayfinn Digital
 
 Personal portfolio
