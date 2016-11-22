@@ -176,7 +176,7 @@
 		margin-top: 0px;
 	}
 	h6 {
-		@include captionitalic;
+		@include captiontext;
 	}
 }
 
@@ -192,7 +192,7 @@
 	}
 	.final-design-container {
 		h6 {
-		@include captionitalic;
+		@include captiontext;
 		}
 	}
 	.tandem-screen-img {

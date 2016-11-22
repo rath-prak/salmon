@@ -95,7 +95,7 @@
 
 .design-portfolio-items {
 	p {
-		@include portfolio-captionitalic;
+		@include captiontext;
 	}
 	article {
 		margin-bottom: 5px;

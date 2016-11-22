@@ -1,4 +1,3 @@
-// var $ = require('jquery');
 var navigationSlideMenu = require('./lib/navigation.js');
 var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');

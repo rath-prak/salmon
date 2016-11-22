@@ -58,18 +58,13 @@
  * TYPOGRAPHY
  */
 
-// small text in italic.
-@mixin captionitalic(){
-  color: $primary-font-color;
-  font-family: $body-italic; 
 
-}
-
-@mixin portfolio-captionitalic(){
+@mixin captiontext(){
   color: $primary-font-color;
   font-family: $bold; 
   font-size: 14px;
-  line-height: 20px;
+  line-height: 16px;
+  font-style: italic;
 }
 
 

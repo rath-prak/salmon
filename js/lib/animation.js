@@ -1,3 +1,5 @@
+// Animated elements
+
 var animation = {
   pulseButton: function () {
     TweenMax.to('.pulse-button circle:nth-child(1)', 4, {

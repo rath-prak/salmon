@@ -4,7 +4,6 @@
 @import "vendor/jquery.fullPage";
 
 // Import typical layout styles
-@import "base/grid";
 @import "base/flex";
 @import "base/type";
 
@@ -17,7 +16,6 @@
 @import "components/animation";
 
 // Specific project styles, add any section specific sass modules here
-@import "pages/layout";
 @import "pages/home";
 @import "pages/prototype";
 @import "pages/ui";

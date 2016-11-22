@@ -1,3 +1,4 @@
+// scroll back to top
     
 var scrollToTop = function () {
   var $topOfPage = $('.top-of-page');
