@@ -190,7 +190,7 @@
 	}
 
 	h5 {
-		@include captionitalic;
+		@include captiontext;
 	}
 }
 
@@ -228,7 +228,7 @@
 		}
 	}
 	h5 {
-		@include captionitalic;
+		@include captiontext;
 	}
 }
 
@@ -262,7 +262,7 @@
 	}
 	.mockup-container {
 		h5 {
-		@include captionitalic;
+		@include captiontext;
 		}
 	}
 
@@ -289,7 +289,7 @@
     max-width: 24%;
 	}
 	h5 {
-		@include captionitalic;
+		@include captiontext;
 	}
 }
 
@@ -305,8 +305,10 @@
 
 
 .interactive-prototype {
-	// min-height: 85vh;
 	.interactive-prototype-text {
+		h1 {
+			margin-bottom: 0.5em;
+		}
 		h2 {
 			font-family: $body-italic;
 			margin-bottom: 30px;

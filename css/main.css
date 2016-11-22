@@ -1456,7 +1456,10 @@ a:hover, a:focus {
 
 .background h5 {
   color: #333;
-  font-family: proxima_light_italic, sans-serif; }
+  font-family: proxima_bold, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic; }
 
 /**
 	 WIREFRAMING SECTION
@@ -1491,7 +1494,10 @@ a:hover, a:focus {
 
 .wireframes h5 {
   color: #333;
-  font-family: proxima_light_italic, sans-serif; }
+  font-family: proxima_bold, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic; }
 
 @media screen and (min-width: 750px) {
   .wireframes-container .sketch-wireframes {
@@ -1511,7 +1517,10 @@ a:hover, a:focus {
 
 .mockup .mockup-container h5 {
   color: #333;
-  font-family: proxima_light_italic, sans-serif; }
+  font-family: proxima_bold, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic; }
 
 /**
 	 FINAL PROTOTYPE SECTION
@@ -1527,7 +1536,10 @@ a:hover, a:focus {
 
 .final-prototype h5 {
   color: #333;
-  font-family: proxima_light_italic, sans-serif; }
+  font-family: proxima_bold, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic; }
 
 /**
 	 FRAMER SECTION
@@ -1535,6 +1547,9 @@ a:hover, a:focus {
 /**
  * MOBILE FIRST QUERIES
  */
+.interactive-prototype .interactive-prototype-text h1 {
+  margin-bottom: 0.5em; }
+
 .interactive-prototype .interactive-prototype-text h2 {
   font-family: proxima_light_italic, sans-serif;
   margin-bottom: 30px; }
@@ -1707,7 +1722,10 @@ a:hover, a:focus {
 
 .tadem-process h6 {
   color: #333;
-  font-family: proxima_light_italic, sans-serif; }
+  font-family: proxima_bold, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic; }
 
 /**
 	 TANDEM FINAL DESIGN SECTION
@@ -1717,7 +1735,10 @@ a:hover, a:focus {
 
 .tandem-final-design .final-design-container h6 {
   color: #333;
-  font-family: proxima_light_italic, sans-serif; }
+  font-family: proxima_bold, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic; }
 
 .tandem-final-design .tandem-screen-img {
   margin-bottom: 35px; }
@@ -1798,7 +1819,8 @@ a:hover, a:focus {
   color: #333;
   font-family: proxima_bold, sans-serif;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 16px;
+  font-style: italic; }
 
 .design-portfolio-items article {
   margin-bottom: 5px; }
