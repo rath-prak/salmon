@@ -1,3 +1,5 @@
+// full page transition
+
 function pagePreloader() {
   var preloader = $('.spinner-wrapper');
   TweenMax.to(preloader, 2, {

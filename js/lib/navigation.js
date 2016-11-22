@@ -55,9 +55,6 @@ var navigationSlideMenu = {
       }, 250);
       
     });
-    // (this.$menuBar).add(this.$menuListItem).add(this.$navBackButton).click(function () {
-    // menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
-    // });
   },
 };
 
