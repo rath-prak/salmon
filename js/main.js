@@ -11,9 +11,9 @@ $(document).ready(function(){
   scrollToTop();    
   
 // PRE-LAODER
-  // $(window).load(function(){
-  //   setTimeout(pagePreloader, 500);
-  // });
+  $(window).load(function(){
+    setTimeout(pagePreloader, 500);
+  });
 
 // HIDE NAV MENU ON SCROLLING
   var NavNide = function () {
