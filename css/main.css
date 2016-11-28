@@ -1663,6 +1663,10 @@ a:hover, a:focus {
   .ui-intro-wrapper .welcome-iphone img {
     width: 220px; }
 
+.ui-intro-wrapper a {
+  color: #FEFEE6;
+  font-style: italic; }
+
 /**
  * LARGER THAN TABLET
  */
