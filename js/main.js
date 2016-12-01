@@ -16,6 +16,15 @@ $(document).ready(function(){
     setTimeout(pagePreloader, 500);
   });
 
+  var $letter = $('.st0');
+
+  TweenMax.staggerTo($letter, 0.6, {
+    y: -30,
+    repeat: -1,
+    ease: Power4.easeInOut,
+    yoyo: true,
+  }, 0.05);
+
 // HIDE NAV MENU ON SCROLLING
   var NavNide = function () {
     var previousScroll = 0;
