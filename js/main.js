@@ -8,8 +8,8 @@ var scrollToTop = require('./lib/scrollToTop.js');
 $(document).ready(function(){
 
 // SCROLL BACK TO TOP OF PAGE
-  scrollToTop();    
-  
+  scrollToTop();
+
 // PRE-LAODER
   $(window).load(function(){
     setTimeout(pagePreloader, 500);
@@ -57,7 +57,7 @@ $(document).ready(function(){
         previousScroll = $currentScroll;
     });
   }
-  NavNide(); 
+  NavNide();
 
 // NAVIGATION
 navigationSlideMenu.init();
@@ -100,7 +100,7 @@ navigationSlideMenu.init();
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
- 
+
       if (index == 2) {
         animatedText.fadeInText($fadeTextAbout);
       }
@@ -141,7 +141,7 @@ navigationSlideMenu.init();
 
       } else {
         $('.white-logo').removeClass('active-logo');
-        $('.red-logo').addClass('active-logo'); 
+        $('.red-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#E94444');
         $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
@@ -168,7 +168,7 @@ navigationSlideMenu.init();
       if(index === 4 && direction === 'up'){
         animatedText.resetfadeText($fadeTextDesign, 0, 20, 1);
       }
-    } 
+    }
   }); //end of fullpage.js
 
   var $fadeTextPrototype = $('.fadetext-prototype');
@@ -205,28 +205,3 @@ navigationSlideMenu.init();
   pixiBackground();
 
 }); // end of document.ready()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
