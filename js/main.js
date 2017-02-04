@@ -7,6 +7,11 @@ var scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
 
+  $(".toggle").on("click", function(){
+    $(".chatbot-list-items").toggleClass("active");
+  });
+
+
 // SCROLL BACK TO TOP OF PAGE
   scrollToTop();
 
@@ -194,14 +199,18 @@ navigationSlideMenu.init();
   /**
   * PULSE ANIMATION
   */
-
   animation.pulseButton();
-
 
   /**
   * PIXI JS / FISH
   */
-
   pixiBackground();
+
+  /**
+  * chatbot responsive nav menu
+  */
+
+
+
 
 }); // end of document.ready()

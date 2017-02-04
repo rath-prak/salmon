@@ -1,6 +1,7 @@
 /* Consistent settings */
 /* project colors - this project colors need assigned to these variables once you comfirm color scheme */
 /* project two colors */
+/* chatbot blue colors */
 html {
   background: #072231; }
 
@@ -1251,6 +1252,166 @@ a:hover, a:focus {
     font-size: 3em; }
   .design-background-icon img {
     width: 500px; } }
+
+/* USER INTERFACE CASE STUDY / bluey
+   ========================================================================== */
+html {
+  background: #749CD1; }
+
+/**
+ CHATBOT NAVIGATION
+ ---------------------------------*/
+.chatbot-header {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .chatbot-header .chatbot-nav-container {
+    margin-right: 0px;
+    background: #50659C; }
+  .chatbot-header .chatbot-logo {
+    margin-top: 0px;
+    padding-top: 27px; }
+    .chatbot-header .chatbot-logo img {
+      width: 100px; }
+  .chatbot-header .chatbot-list-items {
+    display: none;
+    list-style: none; }
+    .chatbot-header .chatbot-list-items li {
+      margin-bottom: 10px; }
+    .chatbot-header .chatbot-list-items li:nth-of-type(5) {
+      padding-bottom: 30px; }
+    .chatbot-header .chatbot-list-items li a {
+      text-decoration: none;
+      color: #FEFEE6;
+      font-size: 20px;
+      font-family: proxima_bold, sans-serif; }
+    .chatbot-header .chatbot-list-items li a:hover {
+      color: #50659C; }
+  .chatbot-header .chatbot-list-items.active {
+    display: block; }
+  .chatbot-header .toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FEFEE6;
+    font-size: 18px; }
+
+.bluey-intro,
+.bluey-final-design {
+  background: #e4ecf1; }
+
+/**
+	 BLUEY SECTION
+ 	 ---------------------------------*/
+/**
+ * MOBILE FIRST QUERIES
+ */
+.chatbot-intro-wrapper {
+  background: #749CD1;
+  text-align: center; }
+  .chatbot-intro-wrapper .bluey-main-image {
+    padding-top: 150px; }
+    .chatbot-intro-wrapper .bluey-main-image img {
+      width: 50%; }
+  .chatbot-intro-wrapper .intro-text h1 {
+    font-size: 2em;
+    color: #FEFEE6; }
+  .chatbot-intro-wrapper .intro-text h2 {
+    font-family: proxima_bold, sans-serif;
+    color: #FEFEE6; }
+  .chatbot-intro-wrapper .intro-text p {
+    margin-bottom: 5px;
+    color: #FEFEE6; }
+
+.bluey-intro {
+  background: #50659C;
+  color: #FEFEE6; }
+  .bluey-intro .intro-text h1 {
+    font-size: 2em;
+    color: #FEFEE6; }
+  .bluey-intro .intro-text h2 {
+    font-family: proxima_bold, sans-serif;
+    color: #FEFEE6; }
+  .bluey-intro .intro-text p {
+    margin-bottom: 5px;
+    color: #FEFEE6; }
+  .bluey-intro .bluey-chatbot-diagram {
+    text-align: center; }
+    .bluey-intro .bluey-chatbot-diagram img {
+      width: 75%;
+      margin-bottom: 50px; }
+
+/**
+ * LARGER THAN TABLET
+ */
+@media screen and (min-width: 750px) {
+  .chatbot-header .chatbot-logo {
+    padding-top: 0px; }
+  .chatbot-header .chatbot-nav-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none; }
+  .chatbot-header .chatbot-list-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .chatbot-header .chatbot-list-items li {
+      margin-left: 30px; }
+    .chatbot-header .chatbot-list-items li a {
+      font-size: 16px; }
+  .chatbot-header .toggle {
+    display: none; }
+  .chatbot-intro-wrapper {
+    min-height: 100vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .chatbot-intro-wrapper .chatbot-case-study {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-preferred-size: calc((100%/4)*2);
+          flex-basis: calc((100%/4)*2); }
+    .chatbot-intro-wrapper .intro-text {
+      margin: 10px; }
+      .chatbot-intro-wrapper .intro-text h1 {
+        font-size: 2.5em; }
+    .chatbot-intro-wrapper .bluey-main-image {
+      margin-top: 0px; } }
+
+/**
+	 bluey INTRO SECTION
+ 	 ---------------------------------*/
+.bluey-intro .intro-text {
+  text-align: center; }
+  .bluey-intro .intro-text p {
+    text-align: left; }
+  .bluey-intro .intro-text p:last-child {
+    margin-bottom: 0; }
+  .bluey-intro .intro-text .intro-para {
+    font-size: 1.3em;
+    line-height: 1.2;
+    font-family: proxima_medium, sans-serif; }
 
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */

@@ -1,0 +1,212 @@
+/* USER INTERFACE CASE STUDY / bluey
+   ========================================================================== */
+
+html {
+  background: $chatbot-primary;
+}
+
+/**
+ CHATBOT NAVIGATION
+ ---------------------------------*/
+.chatbot-header {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+
+  .chatbot-nav-container {
+    margin-right: 0px;
+    background: $chatbot-blue01;
+  }
+
+  .chatbot-logo {
+    margin-top: 0px;
+    padding-top: 27px;
+    img {
+      width: 100px;
+    }
+  }
+
+  .chatbot-list-items {
+    display: none;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+    }
+    li:nth-of-type(5) {
+      padding-bottom: 30px;
+    }
+    li a{
+      text-decoration: none;
+      color: $reverse;
+      font-size: 20px;
+      font-family: $bold;
+    }
+    li a:hover {
+      color: $chatbot-blue01;
+    }
+  }
+  .chatbot-list-items.active {
+      display: block;
+  }
+  .toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: $reverse;
+    font-size: 18px;
+  }
+
+}
+
+
+.bluey-intro,
+.bluey-final-design {
+		background: #e4ecf1;
+}
+
+
+/**
+	 BLUEY SECTION
+ 	 ---------------------------------*/
+
+/**
+ * MOBILE FIRST QUERIES
+ */
+
+.chatbot-intro-wrapper {
+  background: $chatbot-primary;
+  text-align: center;
+
+  .bluey-main-image {
+  padding-top: 150px;
+  // border: 1px solid green;
+    img {
+      width: 50%;
+    }
+  }
+
+  .intro-text {
+    h1 {
+      font-size: 2em;
+      color: $reverse;
+    }
+    h2 {
+      font-family: $bold;
+      color: $reverse;
+    }
+    p {
+      margin-bottom: 5px;
+      color: $reverse;
+    }
+  }
+
+}
+
+.bluey-intro {
+  background: $chatbot-blue01;
+  color: $reverse-font-color;
+  .intro-text {
+    h1 {
+      font-size: 2em;
+      color: $reverse;
+    }
+    h2 {
+      font-family: $bold;
+      color: $reverse;
+    }
+    p {
+      margin-bottom: 5px;
+      color: $reverse;
+    }
+  }
+  .bluey-chatbot-diagram {
+    text-align: center;
+    img {
+      width: 75%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+/**
+ * LARGER THAN TABLET
+ */
+
+@media screen and (min-width: 750px) {
+
+  //navigation menu
+.chatbot-header {
+  .chatbot-logo {
+    padding-top: 0px;
+  }
+
+  .chatbot-nav-container {
+    justify-content: space-between;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    background: none;
+  }
+  .chatbot-list-items {
+    display: flex;
+
+    li {
+      margin-left: 30px;
+    }
+    li a {
+      font-size: 16px;
+    }
+  }
+  .toggle {
+    display: none;
+  }
+}
+	.chatbot-intro-wrapper {
+		min-height: 100vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		.chatbot-case-study {
+			flex-direction: row;
+      flex-basis: calc((100%/4)*2);
+		}
+		.intro-text {
+			margin: 10px;
+			h1 {
+				font-size: 2.5em;
+			}
+		}
+    .bluey-main-image {
+    margin-top: 0px;
+    }
+	}
+
+
+}
+
+
+/**
+	 bluey INTRO SECTION
+ 	 ---------------------------------*/
+
+.bluey-intro {
+	.intro-text {
+		text-align: center;
+		p {
+			text-align: left;
+		}
+		p:last-child{
+			margin-bottom: 0;
+		}
+		.intro-para {
+			font-size: 1.3em;
+			line-height: 1.2;
+			font-family: $medium;
+		}
+	}
+}
