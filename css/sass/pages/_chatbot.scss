@@ -102,6 +102,16 @@
       margin-bottom: 20px;
       color: $reverse;
     }
+    .messenger-button {
+      width: 50%;
+      height: 50px;
+      background: #1D364C;
+      border-radius: 4px;
+      h4 {
+        line-height: 50px;
+        text-align: center;
+      }
+    }
   }
 
 }
@@ -219,6 +229,10 @@
  	 ---------------------------------*/
 
 .bluey-intro {
+  .bluey-intro-container {
+    flex-direction: row-reverse;
+  }
+
 	.intro-text {
 		text-align: center;
 		p {

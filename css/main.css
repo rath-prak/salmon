@@ -1324,6 +1324,14 @@ a:hover, a:focus {
     .chatbot-intro-wrapper .intro-text h4 {
       margin-bottom: 20px;
       color: #FEFEE6; }
+    .chatbot-intro-wrapper .intro-text .messenger-button {
+      width: 50%;
+      height: 50px;
+      background: #1D364C;
+      border-radius: 4px; }
+      .chatbot-intro-wrapper .intro-text .messenger-button h4 {
+        line-height: 50px;
+        text-align: center; }
 
 .bluey-intro {
   background: #50659C;
@@ -1427,6 +1435,12 @@ a:hover, a:focus {
 /**
 	 bluey INTRO SECTION
  	 ---------------------------------*/
+.bluey-intro .bluey-intro-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
 .bluey-intro .intro-text {
   text-align: center; }
   .bluey-intro .intro-text p {
