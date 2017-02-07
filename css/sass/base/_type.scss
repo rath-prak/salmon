@@ -15,11 +15,11 @@
 
 $thin: proxima_thin, sans-serif;
 $body: proxima_light, sans-serif;
-// $body: freight_light, sans-serif;
+$body-2: freight_light, sans-serif;
 $body-italic: proxima_light_italic, sans-serif;
 $medium: proxima_medium, sans-serif;
 $bold: proxima_bold, sans-serif;
-// $black: proxima_black, sans-serif;
+$black-2: proxima_black, sans-serif;
 $black: fat_frank, sans-serif;
 
 
@@ -27,7 +27,7 @@ $primary-font-color: #333; //Raven
 $reverse-font-color: $reverse;
 
 
-body, 
+body,
 p {
   font-family: $body, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
@@ -77,18 +77,9 @@ a {
 }
 
 @media screen and (min-width: 750px) {
-  body, 
+  body,
   p {
     font-size: 20px;
     line-height: 32px;
   }
 }
-
-
-
-
-
-
-
-
-

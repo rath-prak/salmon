@@ -1,5 +1,6 @@
  /* Homepage - pulsing button */
 .pulse {
+  margin: 0 auto;
   position: absolute;
   top: 88%;
   left: 50%;
@@ -9,6 +10,7 @@
   .pulse-button {
     stroke: $salmon;
      text-align: center;
+     margin-left: 5px;
   }
   .down-arrow {
     width: 40%;

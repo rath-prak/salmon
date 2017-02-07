@@ -14,12 +14,13 @@
   .chatbot-nav-container {
     margin-right: 0px;
     background: $chatbot-blue01;
+    padding-bottom: 1px;
   }
 
   .chatbot-logo {
     margin-top: 0px;
-    padding-top: 27px;
     img {
+      margin-top: 15px;
       width: 100px;
     }
   }
@@ -27,12 +28,14 @@
   .chatbot-list-items {
     display: none;
     list-style: none;
+    background: $chatbot-blue01;
 
     li {
       margin-bottom: 10px;
+
     }
     li:nth-of-type(5) {
-      padding-bottom: 30px;
+      padding-bottom: 10px;
     }
     li a{
       text-decoration: none;
@@ -80,11 +83,12 @@
   padding-top: 150px;
   // border: 1px solid green;
     img {
-      width: 50%;
+      width: 45%;
     }
   }
 
   .intro-text {
+    padding: 20px;
     h1 {
       font-size: 2em;
       color: $reverse;
@@ -92,9 +96,10 @@
     h2 {
       font-family: $bold;
       color: $reverse;
+      font-size: 1.4em;
     }
-    p {
-      margin-bottom: 5px;
+    h4 {
+      margin-bottom: 20px;
       color: $reverse;
     }
   }
@@ -121,7 +126,7 @@
   .bluey-chatbot-diagram {
     text-align: center;
     img {
-      width: 75%;
+      width: 60%;
       margin-bottom: 50px;
     }
   }
@@ -149,6 +154,7 @@
   }
   .chatbot-list-items {
     display: flex;
+    background: none;
 
     li {
       margin-left: 30px;
@@ -162,23 +168,45 @@
   }
 }
 	.chatbot-intro-wrapper {
-		min-height: 100vh;
     flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 960px;
+    padding: 30px;
+    height: 100vh;
+    margin: 0 auto;
 		.chatbot-case-study {
 			flex-direction: row;
       flex-basis: calc((100%/4)*2);
 		}
 		.intro-text {
-			margin: 10px;
-			h1 {
-				font-size: 2.5em;
-			}
+      padding: 20px;
+      // background: green;
+      width: 600px;
+      h1 {
+        font-size: 3em;
+        color: $reverse;
+      }
+      h2 {
+        font-family: $bold;
+        color: $reverse;
+      }
+      p {
+        margin-bottom: 5px;
+        color: $reverse;
+      }
 		}
     .bluey-main-image {
-    margin-top: 0px;
+      padding-top: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      // background: yellow;
+      img {
+        width: 70%;
+      }
     }
 	}
 

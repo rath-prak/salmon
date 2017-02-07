@@ -281,7 +281,8 @@ img {
 .wrapper-container {
   max-width: 960px;
   padding: 30px;
-  height: 100vh; }
+  height: 100vh;
+  margin: 0 auto; }
 
 .fullpage-section {
   width: 100%;
@@ -1072,6 +1073,7 @@ a:hover, a:focus {
 
 /* Homepage - pulsing button */
 .pulse {
+  margin: 0 auto;
   position: absolute;
   top: 88%;
   left: 50%;
@@ -1081,7 +1083,8 @@ a:hover, a:focus {
   height: 50px; }
   .pulse .pulse-button {
     stroke: #E94444;
-    text-align: center; }
+    text-align: center;
+    margin-left: 5px; }
   .pulse .down-arrow {
     width: 40%;
     margin: 0 auto;
@@ -1261,19 +1264,21 @@ a:hover, a:focus {
   padding: 0; }
   .chatbot-header .chatbot-nav-container {
     margin-right: 0px;
-    background: #50659C; }
+    background: #50659C;
+    padding-bottom: 1px; }
   .chatbot-header .chatbot-logo {
-    margin-top: 0px;
-    padding-top: 27px; }
+    margin-top: 0px; }
     .chatbot-header .chatbot-logo img {
+      margin-top: 15px;
       width: 100px; }
   .chatbot-header .chatbot-list-items {
     display: none;
-    list-style: none; }
+    list-style: none;
+    background: #50659C; }
     .chatbot-header .chatbot-list-items li {
       margin-bottom: 10px; }
     .chatbot-header .chatbot-list-items li:nth-of-type(5) {
-      padding-bottom: 30px; }
+      padding-bottom: 10px; }
     .chatbot-header .chatbot-list-items li a {
       text-decoration: none;
       color: #FEFEE6;
@@ -1306,16 +1311,19 @@ a:hover, a:focus {
   .chatbot-intro-wrapper .bluey-main-image {
     padding-top: 150px; }
     .chatbot-intro-wrapper .bluey-main-image img {
-      width: 50%; }
-  .chatbot-intro-wrapper .intro-text h1 {
-    font-size: 2em;
-    color: #FEFEE6; }
-  .chatbot-intro-wrapper .intro-text h2 {
-    font-family: proxima_bold, sans-serif;
-    color: #FEFEE6; }
-  .chatbot-intro-wrapper .intro-text p {
-    margin-bottom: 5px;
-    color: #FEFEE6; }
+      width: 45%; }
+  .chatbot-intro-wrapper .intro-text {
+    padding: 20px; }
+    .chatbot-intro-wrapper .intro-text h1 {
+      font-size: 2em;
+      color: #FEFEE6; }
+    .chatbot-intro-wrapper .intro-text h2 {
+      font-family: proxima_bold, sans-serif;
+      color: #FEFEE6;
+      font-size: 1.4em; }
+    .chatbot-intro-wrapper .intro-text h4 {
+      margin-bottom: 20px;
+      color: #FEFEE6; }
 
 .bluey-intro {
   background: #50659C;
@@ -1332,7 +1340,7 @@ a:hover, a:focus {
   .bluey-intro .bluey-chatbot-diagram {
     text-align: center; }
     .bluey-intro .bluey-chatbot-diagram img {
-      width: 75%;
+      width: 60%;
       margin-bottom: 50px; }
 
 /**
@@ -1356,7 +1364,8 @@ a:hover, a:focus {
   .chatbot-header .chatbot-list-items {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    background: none; }
     .chatbot-header .chatbot-list-items li {
       margin-left: 30px; }
     .chatbot-header .chatbot-list-items li a {
@@ -1364,7 +1373,6 @@ a:hover, a:focus {
   .chatbot-header .toggle {
     display: none; }
   .chatbot-intro-wrapper {
-    min-height: 100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1377,7 +1385,11 @@ a:hover, a:focus {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    max-width: 960px;
+    padding: 30px;
+    height: 100vh;
+    margin: 0 auto; }
     .chatbot-intro-wrapper .chatbot-case-study {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1386,11 +1398,31 @@ a:hover, a:focus {
       -ms-flex-preferred-size: calc((100%/4)*2);
           flex-basis: calc((100%/4)*2); }
     .chatbot-intro-wrapper .intro-text {
-      margin: 10px; }
+      padding: 20px;
+      width: 600px; }
       .chatbot-intro-wrapper .intro-text h1 {
-        font-size: 2.5em; }
+        font-size: 3em;
+        color: #FEFEE6; }
+      .chatbot-intro-wrapper .intro-text h2 {
+        font-family: proxima_bold, sans-serif;
+        color: #FEFEE6; }
+      .chatbot-intro-wrapper .intro-text p {
+        margin-bottom: 5px;
+        color: #FEFEE6; }
     .chatbot-intro-wrapper .bluey-main-image {
-      margin-top: 0px; } }
+      padding-top: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 0px; }
+      .chatbot-intro-wrapper .bluey-main-image img {
+        width: 70%; } }
 
 /**
 	 bluey INTRO SECTION

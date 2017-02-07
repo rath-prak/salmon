@@ -131,7 +131,7 @@ navigationSlideMenu.init();
           'background': '#FEFEE6',
           'transition': 'background 1.5s',
         });
-        $('.portfolio-menu, .watermark-text, .contact-item, .title-caption').css({
+        $('.watermark-text, .contact-item, .title-caption').css({
           'color': '#FEFEE6',
           'transition': 'color 1.5s'
         });
@@ -148,7 +148,7 @@ navigationSlideMenu.init();
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#E94444');
-        $('.portfolio-menu, .watermark-text, .contact-item, .title-caption').css('color', '#E94444');
+        $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
         $('.pulse-button').css('stroke', "#E94444");
 
@@ -181,7 +181,6 @@ navigationSlideMenu.init();
   var $fadeTextAbout = $('.fadetext-about');
   var $fadeTextDesign = $('.fadetext-design')
   var $menuItem = $('.menu-item');
-  var $portfolioMenu = $('.portfolio-menu');
 
   // set initial state of text
   var setState = function () {
