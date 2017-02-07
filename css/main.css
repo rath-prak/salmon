@@ -747,7 +747,7 @@ a:hover, a:focus {
 #prelaoder {
   width: 150px; }
 
-.main-btn-reverse {
+.main-btn-reverse, .portfolio-btn {
   background: #FEFEE6;
   border: 1px solid #E94444;
   color: #E94444;
@@ -761,9 +761,9 @@ a:hover, a:focus {
   -webkit-transition: background 1s;
   transition: background 1s;
   font-family: proxima_bold, sans-serif; }
-  .main-btn-reverse i {
+  .main-btn-reverse i, .portfolio-btn i {
     margin-left: 10px; }
-  .main-btn-reverse:hover, .main-btn-reverse:focus {
+  .main-btn-reverse:hover, .main-btn-reverse:focus, .portfolio-btn:hover, .portfolio-btn:focus {
     background: transparent;
     border-color: #FEFEE6;
     color: #FEFEE6;
@@ -1080,7 +1080,7 @@ a:hover, a:focus {
 /* Homepage - pulsing button */
 .pulse {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1089,6 +1089,10 @@ a:hover, a:focus {
   .pulse .pulse-button {
     stroke: #E94444;
     text-align: center; }
+  .pulse .down-arrow {
+    width: 40%;
+    margin: 0 auto;
+    opacity: 0.75; }
 
 /* Pixi Js */
 .rendererView {

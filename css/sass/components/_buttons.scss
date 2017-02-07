@@ -5,7 +5,7 @@
 // Default button
 
 
-.main-btn-reverse {
+.main-btn-reverse, .portfolio-btn {
   background: $reverse;
   border: 1px solid $salmon;
   color: $salmon;
@@ -18,12 +18,12 @@
   border-radius: 25px;
   transition: background 1s;
   font-family: $bold;
-  
+
   i {
     margin-left: 10px;
 
   }
-  
+
   &:hover,
   &:focus {
     background: transparent;
@@ -33,6 +33,7 @@
 
   }
 }
+
 
 .ui-container {
   .main-btn-reverse {

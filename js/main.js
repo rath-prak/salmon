@@ -179,12 +179,13 @@ navigationSlideMenu.init();
   var $fadeTextPrototype = $('.fadetext-prototype');
   var $fadeTextUi = $('.fadetext-ui');
   var $fadeTextAbout = $('.fadetext-about');
-  var $fadeTextDesign = $('.fadetext-design')
+  var $fadeTextDesign = $('.fadetext-design');
   var $menuItem = $('.menu-item');
+  var $fadetextPortfolio = ('.fadetext-portfolio');
 
   // set initial state of text
   var setState = function () {
-      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
+      TweenMax.set($fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
         alpha: 0,
         y: 30,
       });

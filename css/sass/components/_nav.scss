@@ -12,7 +12,7 @@
 		img {
 			width: 100%;
 		}
-	display: none; 
+	display: none;
 	transform: translateY(-5px);
 }
 
@@ -58,7 +58,7 @@
 
 
 
-.secondary-nav { 
+.secondary-nav {
 	background: $aqua-blue;
 	width: 100%;
 	height: 100px;
@@ -78,11 +78,11 @@
 	height: 100vh;
 
 }
-	
+
 .menu-container {
-	p, 
-	li, 
-	a, 
+	p,
+	li,
+	a,
 	i {
 		color: $reverse;
 	}
@@ -119,7 +119,7 @@
 }
 
 .nav-about-text {
-	h2, 
+	h2,
 	p {
 		font-family: $body;
 	}
@@ -293,4 +293,3 @@
 		visibility: hidden;
 	}
 }
-

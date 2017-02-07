@@ -1,7 +1,7 @@
  /* Homepage - pulsing button */
 .pulse {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
@@ -9,6 +9,11 @@
   .pulse-button {
     stroke: $salmon;
      text-align: center;
+  }
+  .down-arrow {
+    width: 40%;
+    margin: 0 auto;
+    opacity: 0.75;
   }
 }
 
@@ -23,5 +28,5 @@
 			bottom: 0;
 			right: 0;
 			z-index: -1
-			
+
  }

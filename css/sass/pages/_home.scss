@@ -74,10 +74,10 @@
 .about-me {
 
 	h1,
-	h2, 
-	h3, 
-	h4, 
-	h5, 
+	h2,
+	h3,
+	h4,
+	h5,
 	p {
 		color: $salmon;
 		text-align: center;
@@ -116,7 +116,7 @@
  * MOBILE FIRST QUERIES
  */
 
-.p-background-icon, 
+.p-background-icon,
 .ui-background-icon,
 .design-background-icon {
 	position: absolute;
@@ -160,7 +160,7 @@
 			width: 500px;
 		}
 	}
-	
+
 	.prototype-container {
 		h1 {
 		font-size: 3em;
@@ -258,9 +258,3 @@
 		}
 	}
 }
-
-
-
-
-
-
