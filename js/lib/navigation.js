@@ -23,8 +23,8 @@ var navigationSlideMenu = {
   },
   render: function () {
     this.hamburgerMenu();
-    var menuToggle = new TimelineMax({ paused:true, reversed:true }); 
-    var menuSlideText = new TimelineMax({ paused:true, reversed:true });   
+    var menuToggle = new TimelineMax({ paused:true, reversed:true });
+    var menuSlideText = new TimelineMax({ paused:true, reversed:true });
 
 
     TweenMax.set(this.$menuItem, {
@@ -39,21 +39,21 @@ var navigationSlideMenu = {
     }, 0.05);
 
 
-    TweenMax.set(this.$fade, { 
+    TweenMax.set(this.$fade, {
       y: '-100%',
     });
 
-    menuToggle.to(this.$fade, 1, { 
+    menuToggle.to(this.$fade, 1, {
       y: '0%',
       ease: Power4.easeInOut,
     });
 
     $('.navbar-toggle, .menu-list-items, .nav-back-button').click(function () {
       menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
-      setTimeout(function(){ 
+      setTimeout(function(){
         menuSlideText.reversed() ? menuSlideText.restart() : menuSlideText.reverse();
       }, 250);
-      
+
     });
   },
 };

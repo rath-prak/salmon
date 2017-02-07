@@ -131,7 +131,7 @@ navigationSlideMenu.init();
           'background': '#FEFEE6',
           'transition': 'background 1.5s',
         });
-        $('.watermark-text, .contact-item, .title-caption').css({
+        $('.portfolio-menu, .watermark-text, .contact-item, .title-caption').css({
           'color': '#FEFEE6',
           'transition': 'color 1.5s'
         });
@@ -148,7 +148,7 @@ navigationSlideMenu.init();
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo');
         $('.menu-bar').css('background', '#E94444');
-        $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
+        $('.portfolio-menu, .watermark-text, .contact-item, .title-caption').css('color', '#E94444');
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
         $('.pulse-button').css('stroke', "#E94444");
 
@@ -179,13 +179,13 @@ navigationSlideMenu.init();
   var $fadeTextPrototype = $('.fadetext-prototype');
   var $fadeTextUi = $('.fadetext-ui');
   var $fadeTextAbout = $('.fadetext-about');
-  var $fadeTextDesign = $('.fadetext-design');
+  var $fadeTextDesign = $('.fadetext-design')
   var $menuItem = $('.menu-item');
-  var $fadetextPortfolio = ('.fadetext-portfolio');
+  var $portfolioMenu = $('.portfolio-menu');
 
   // set initial state of text
   var setState = function () {
-      TweenMax.set($fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
+      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
         alpha: 0,
         y: 30,
       });

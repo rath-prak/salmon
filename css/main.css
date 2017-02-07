@@ -796,7 +796,7 @@ a:hover, a:focus {
   display: inherit; }
 
 /**
- * HAMBURGER TOGGLE MENU
+ * PORTFOLIO TOGGLE MENU
  */
 .navbar-toggle {
   position: fixed;
@@ -804,19 +804,12 @@ a:hover, a:focus {
   right: 4%;
   z-index: 20;
   cursor: pointer; }
-  .navbar-toggle #menu {
-    width: 50px; }
-  .navbar-toggle .hamburger-container {
-    width: 40px;
-    height: 20px;
-    overflow: hidden; }
-    .navbar-toggle .hamburger-container .menu-bar {
-      background: #E94444;
-      width: 40px;
-      height: 2px;
-      margin-bottom: 6px;
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px); }
+  .navbar-toggle p {
+    font-family: fat_frank, sans-serif;
+    color: #E94444;
+    letter-spacing: 1px;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); }
 
 /**
  * SECONDARY NAVIGATION
