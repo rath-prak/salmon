@@ -770,6 +770,14 @@ a:hover, a:focus {
     color: #FEFEE6;
     text-decoration: none; }
 
+.chatbot-container .main-btn-reverse {
+  color: #0398DC;
+  border: 1px solid #0398DC; }
+
+.chatbot-container .main-btn-reverse:hover {
+  color: #FEFEE6;
+  border: 1px solid #FEFEE6; }
+
 .ui-container .main-btn-reverse {
   color: #f56d6f;
   border: 1px solid #f56d6f; }
@@ -1190,7 +1198,7 @@ a:hover, a:focus {
   .ui-background-icon img,
   .design-background-icon img {
     opacity: 0.08;
-    width: 300px; }
+    width: 600px; }
 
 /* PROTOTYPE LANDING
    ========================================================================== */
@@ -1225,14 +1233,14 @@ a:hover, a:focus {
 /* USER INTERFACE / CHATBOT
    ========================================================================== */
 .chatbot {
-  background: #f56d6f; }
+  background: #0398DC; }
   .chatbot h1 {
     font-size: 2.4em; }
   .chatbot p {
     color: #FEFEE6;
     margin-bottom: 15px; }
-  .chatbot .ui-chatbot .prototype-mockup img {
-    width: 400px;
+  .chatbot .chatbot-mockup img {
+    width: 350px;
     display: none; }
 
 @media screen and (min-width: 750px) {
@@ -1240,7 +1248,7 @@ a:hover, a:focus {
     width: 500px; }
   .chatbot-container h1 {
     font-size: 3em; }
-  .chatbot .chatbot-container .prototype-mockup img {
+  .chatbot .chatbot-container .chatbot-mockup img {
     display: inherit; } }
 
 /* USER INTERFACE
@@ -1388,7 +1396,7 @@ a:hover, a:focus {
       line-height: 50px;
       text-align: center;
       text-transform: uppercase;
-      font-size: .85em;
+      font-size: 1em;
       color: #1D364C; }
     .final-chatbot .intro-text .messenger-button a {
       text-decoration: none; }
@@ -1476,9 +1484,6 @@ a:hover, a:focus {
     .final-chatbot .intro-text p {
       margin-bottom: 5px;
       color: #FEFEE6; }
-    .final-chatbot .intro-text .messenger-button {
-      width: 65%;
-      font-size: 1.4em; }
   .final-chatbot .side-graphic {
     text-align: center;
     width: 45%; }

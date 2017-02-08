@@ -34,6 +34,16 @@
   }
 }
 
+.chatbot-container {
+  .main-btn-reverse {
+    color: $chatbot-primary;
+    border: 1px solid $chatbot-primary;
+  }
+  .main-btn-reverse:hover {
+    color: $reverse;
+    border: 1px solid $reverse;
+  }
+}
 
 .ui-container {
   .main-btn-reverse {
