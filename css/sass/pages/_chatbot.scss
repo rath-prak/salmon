@@ -1,5 +1,15 @@
-/* USER INTERFACE CASE STUDY / bluey
+/* CONVERSATIONAL INTERFACE / BLUEY
    ========================================================================== */
+
+ /**
+ 	 CHATBOT MAIN BACKGROUND COLOR
+  	 ---------------------------------*/
+
+ .chatbot-main-wrapper {
+   background: $chatbot-primary;
+ }
+
+ /**
 
 /**
  CHATBOT NAVIGATION
@@ -13,7 +23,7 @@
 
   .chatbot-nav-container {
     margin-right: 0px;
-    background: $chatbot-blue01;
+    background: $chatbot-secondary;
     padding-bottom: 1px;
   }
 
@@ -28,7 +38,7 @@
   .chatbot-list-items {
     display: none;
     list-style: none;
-    background: $chatbot-blue01;
+    background: $chatbot-secondary;
 
     li {
       margin-bottom: 10px;
@@ -44,7 +54,7 @@
       font-family: $bold;
     }
     li a:hover {
-      color: $chatbot-blue01;
+      color: $chatbot-secondary;
     }
   }
   .chatbot-list-items.active {
@@ -61,12 +71,6 @@
 }
 
 
-.bluey-intro,
-.bluey-final-design {
-		background: #e4ecf1;
-}
-
-
 /**
 	 BLUEY SECTION
  	 ---------------------------------*/
@@ -76,14 +80,12 @@
  */
 
 .chatbot-intro-wrapper {
-  background: $chatbot-primary;
   text-align: center;
 
   .bluey-main-image {
   padding-top: 150px;
-  // border: 1px solid green;
     img {
-      width: 45%;
+      width: 100%;
     }
   }
 
@@ -91,57 +93,70 @@
     padding: 20px;
     h1 {
       font-size: 2em;
-      color: $reverse;
     }
     h2 {
-      font-family: $bold;
-      color: $reverse;
-      font-size: 1.4em;
+      font-family: $thin;
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      line-height: 1.2em
     }
     h4 {
       margin-bottom: 20px;
-      color: $reverse;
-    }
-    .messenger-button {
-      width: 50%;
-      height: 50px;
-      background: #1D364C;
-      border-radius: 4px;
-      h4 {
-        line-height: 50px;
-        text-align: center;
-      }
+      font-family: $medium;
+
     }
   }
-
 }
 
-.bluey-intro {
-  background: $chatbot-blue01;
-  color: $reverse-font-color;
+.climate-change-intro, .final-chatbot  {
+  background: $chatbot-secondary;
+  text-align: center;
+
   .intro-text {
     h1 {
-      font-size: 2em;
-      color: $reverse;
-    }
-    h2 {
-      font-family: $bold;
-      color: $reverse;
+      font-size: 1.8em;
     }
     p {
       margin-bottom: 5px;
       color: $reverse;
     }
   }
-  .bluey-chatbot-diagram {
+  .side-graphic {
     text-align: center;
+    margin: 0 auto;
+    width: 60%;
     img {
-      width: 60%;
-      margin-bottom: 50px;
+      width: 100%;
+      margin-bottom: 40px;
     }
   }
 }
 
+.final-chatbot {
+  background: $chatbot-third;
+  .intro-text {
+    p {
+      margin-bottom: 20px;
+    }
+    .messenger-button {
+      margin: 20 auto 0;
+      width: 80%;
+      height: 50px;
+      background: #f29312;
+      border-radius: 4px;
+      h4 {
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .85em;
+        color: $chatbot-third;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 /**
  * LARGER THAN TABLET
@@ -149,110 +164,118 @@
 
 @media screen and (min-width: 750px) {
 
-  //navigation menu
-.chatbot-header {
-  .chatbot-logo {
-    padding-top: 0px;
-  }
-
-  .chatbot-nav-container {
-    justify-content: space-between;
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
-    background: none;
-  }
-  .chatbot-list-items {
-    display: flex;
-    background: none;
-
-    li {
-      margin-left: 30px;
+    //navigation menu
+  .chatbot-header {
+    .chatbot-logo {
+      padding-top: 0px;
+      img {
+        margin-top: 0px;
+      }
     }
-    li a {
-      font-size: 16px;
+
+    .chatbot-nav-container {
+      justify-content: space-between;
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      background: none;
+    }
+    .chatbot-list-items {
+      display: flex;
+      background: none;
+
+      li {
+        margin-left: 20px;
+      }
+      li a {
+        font-size: 18px;
+      }
+    }
+    .toggle {
+      display: none;
     }
   }
-  .toggle {
-    display: none;
-  }
-}
 	.chatbot-intro-wrapper {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 960px;
     padding: 30px;
     height: 100vh;
     margin: 0 auto;
-		.chatbot-case-study {
-			flex-direction: row;
-      flex-basis: calc((100%/4)*2);
-		}
+
 		.intro-text {
-      padding: 20px;
-      // background: green;
-      width: 600px;
       h1 {
         font-size: 3em;
-        color: $reverse;
       }
       h2 {
-        font-family: $bold;
-        color: $reverse;
+        font-size: 2.2em;
       }
-      p {
-        margin-bottom: 5px;
-        color: $reverse;
+      h4 {
+        font-size: 1.2em;
       }
 		}
     .bluey-main-image {
       padding-top: 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 250px;
       margin-top: 0px;
-      // background: yellow;
       img {
-        width: 70%;
+        width: 100%;
+
       }
     }
 	}
 
-
-}
-
-
-/**
-	 bluey INTRO SECTION
- 	 ---------------------------------*/
-
-.bluey-intro {
-  .bluey-intro-container {
-    flex-direction: row-reverse;
+  .climate-change-intro {
+    .climate-change-container {
+      flex-direction: row;
+    }
+   .intro-text {
+     flex-basis: 100%;
+     margin-left: 50px;
+     h1 {
+       font-size: 2.5em;
+     }
+     p {
+       margin-bottom: 5px;
+       color: $reverse;
+     }
+   }
+   .side-graphic {
+     text-align: center;
+     width: 35%;
+     img {
+       transform: translateY(30px);
+       width: 100%;
+     }
+   }
   }
 
-	.intro-text {
-		text-align: center;
-		p {
-			text-align: left;
-		}
-		p:last-child{
-			margin-bottom: 0;
-		}
-		.intro-para {
-			font-size: 1.3em;
-			line-height: 1.2;
-			font-family: $medium;
-		}
-	}
-}
+  .final-chatbot {
+    .final-chatbot-container {
+      flex-direction: row-reverse;
+    }
+   .intro-text {
+     flex-basis: 100%;
+     margin-right: 50px;
+     h1 {
+       font-size: 2.5em;
+     }
+     p {
+       margin-bottom: 5px;
+       color: $reverse;
+     }
+     .messenger-button {
+       width: 65%;
+       font-size: 1.4em;
+     }
+   }
+   .side-graphic {
+     text-align: center;
+     width: 45%;
+     img {
+       transform: translateY(30px);
+       width: 100%;
+     }
+   }
+  }
 
-/**
-	 Chatbot footer
- 	 ---------------------------------*/
 
-.chatbot-main-wrapper {
-  background: $chatbot-primary;
 }

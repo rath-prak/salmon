@@ -1252,8 +1252,16 @@ a:hover, a:focus {
   .design-background-icon img {
     width: 500px; } }
 
-/* USER INTERFACE CASE STUDY / bluey
+/* CONVERSATIONAL INTERFACE / BLUEY
    ========================================================================== */
+/**
+ 	 CHATBOT MAIN BACKGROUND COLOR
+  	 ---------------------------------*/
+.chatbot-main-wrapper {
+  background: #0398DC; }
+
+/**
+
 /**
  CHATBOT NAVIGATION
  ---------------------------------*/
@@ -1264,7 +1272,7 @@ a:hover, a:focus {
   padding: 0; }
   .chatbot-header .chatbot-nav-container {
     margin-right: 0px;
-    background: #50659C;
+    background: #1477AF;
     padding-bottom: 1px; }
   .chatbot-header .chatbot-logo {
     margin-top: 0px; }
@@ -1274,7 +1282,7 @@ a:hover, a:focus {
   .chatbot-header .chatbot-list-items {
     display: none;
     list-style: none;
-    background: #50659C; }
+    background: #1477AF; }
     .chatbot-header .chatbot-list-items li {
       margin-bottom: 10px; }
     .chatbot-header .chatbot-list-items li:nth-of-type(5) {
@@ -1285,7 +1293,7 @@ a:hover, a:focus {
       font-size: 20px;
       font-family: proxima_bold, sans-serif; }
     .chatbot-header .chatbot-list-items li a:hover {
-      color: #50659C; }
+      color: #1477AF; }
   .chatbot-header .chatbot-list-items.active {
     display: block; }
   .chatbot-header .toggle {
@@ -1295,10 +1303,6 @@ a:hover, a:focus {
     color: #FEFEE6;
     font-size: 18px; }
 
-.bluey-intro,
-.bluey-final-design {
-  background: #e4ecf1; }
-
 /**
 	 BLUEY SECTION
  	 ---------------------------------*/
@@ -1306,50 +1310,58 @@ a:hover, a:focus {
  * MOBILE FIRST QUERIES
  */
 .chatbot-intro-wrapper {
-  background: #749CD1;
   text-align: center; }
   .chatbot-intro-wrapper .bluey-main-image {
     padding-top: 150px; }
     .chatbot-intro-wrapper .bluey-main-image img {
-      width: 45%; }
+      width: 100%; }
   .chatbot-intro-wrapper .intro-text {
     padding: 20px; }
     .chatbot-intro-wrapper .intro-text h1 {
-      font-size: 2em;
-      color: #FEFEE6; }
+      font-size: 2em; }
     .chatbot-intro-wrapper .intro-text h2 {
-      font-family: proxima_bold, sans-serif;
-      color: #FEFEE6;
-      font-size: 1.4em; }
+      font-family: proxima_thin, sans-serif;
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      line-height: 1.2em; }
     .chatbot-intro-wrapper .intro-text h4 {
       margin-bottom: 20px;
-      color: #FEFEE6; }
-    .chatbot-intro-wrapper .intro-text .messenger-button {
-      width: 50%;
-      height: 50px;
-      background: #1D364C;
-      border-radius: 4px; }
-      .chatbot-intro-wrapper .intro-text .messenger-button h4 {
-        line-height: 50px;
-        text-align: center; }
+      font-family: proxima_medium, sans-serif; }
 
-.bluey-intro {
-  background: #50659C;
-  color: #FEFEE6; }
-  .bluey-intro .intro-text h1 {
-    font-size: 2em;
-    color: #FEFEE6; }
-  .bluey-intro .intro-text h2 {
-    font-family: proxima_bold, sans-serif;
-    color: #FEFEE6; }
-  .bluey-intro .intro-text p {
+.climate-change-intro, .final-chatbot {
+  background: #1477AF;
+  text-align: center; }
+  .climate-change-intro .intro-text h1, .final-chatbot .intro-text h1 {
+    font-size: 1.8em; }
+  .climate-change-intro .intro-text p, .final-chatbot .intro-text p {
     margin-bottom: 5px;
     color: #FEFEE6; }
-  .bluey-intro .bluey-chatbot-diagram {
-    text-align: center; }
-    .bluey-intro .bluey-chatbot-diagram img {
-      width: 60%;
-      margin-bottom: 50px; }
+  .climate-change-intro .side-graphic, .final-chatbot .side-graphic {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%; }
+    .climate-change-intro .side-graphic img, .final-chatbot .side-graphic img {
+      width: 100%;
+      margin-bottom: 40px; }
+
+.final-chatbot {
+  background: #1D364C; }
+  .final-chatbot .intro-text p {
+    margin-bottom: 20px; }
+  .final-chatbot .intro-text .messenger-button {
+    margin: 20 auto 0;
+    width: 80%;
+    height: 50px;
+    background: #f29312;
+    border-radius: 4px; }
+    .final-chatbot .intro-text .messenger-button h4 {
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: .85em;
+      color: #1D364C; }
+    .final-chatbot .intro-text .messenger-button a {
+      text-decoration: none; }
 
 /**
  * LARGER THAN TABLET
@@ -1357,6 +1369,8 @@ a:hover, a:focus {
 @media screen and (min-width: 750px) {
   .chatbot-header .chatbot-logo {
     padding-top: 0px; }
+    .chatbot-header .chatbot-logo img {
+      margin-top: 0px; }
   .chatbot-header .chatbot-nav-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1375,88 +1389,73 @@ a:hover, a:focus {
     display: flex;
     background: none; }
     .chatbot-header .chatbot-list-items li {
-      margin-left: 30px; }
+      margin-left: 20px; }
     .chatbot-header .chatbot-list-items li a {
-      font-size: 16px; }
+      font-size: 18px; }
   .chatbot-header .toggle {
     display: none; }
   .chatbot-intro-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     max-width: 960px;
     padding: 30px;
     height: 100vh;
     margin: 0 auto; }
-    .chatbot-intro-wrapper .chatbot-case-study {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-preferred-size: calc((100%/4)*2);
-          flex-basis: calc((100%/4)*2); }
-    .chatbot-intro-wrapper .intro-text {
-      padding: 20px;
-      width: 600px; }
-      .chatbot-intro-wrapper .intro-text h1 {
-        font-size: 3em;
-        color: #FEFEE6; }
-      .chatbot-intro-wrapper .intro-text h2 {
-        font-family: proxima_bold, sans-serif;
-        color: #FEFEE6; }
-      .chatbot-intro-wrapper .intro-text p {
-        margin-bottom: 5px;
-        color: #FEFEE6; }
+    .chatbot-intro-wrapper .intro-text h1 {
+      font-size: 3em; }
+    .chatbot-intro-wrapper .intro-text h2 {
+      font-size: 2.2em; }
+    .chatbot-intro-wrapper .intro-text h4 {
+      font-size: 1.2em; }
     .chatbot-intro-wrapper .bluey-main-image {
       padding-top: 0px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      width: 250px;
       margin-top: 0px; }
       .chatbot-intro-wrapper .bluey-main-image img {
-        width: 70%; } }
-
-/**
-	 bluey INTRO SECTION
- 	 ---------------------------------*/
-.bluey-intro .bluey-intro-container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
-
-.bluey-intro .intro-text {
-  text-align: center; }
-  .bluey-intro .intro-text p {
-    text-align: left; }
-  .bluey-intro .intro-text p:last-child {
-    margin-bottom: 0; }
-  .bluey-intro .intro-text .intro-para {
-    font-size: 1.3em;
-    line-height: 1.2;
-    font-family: proxima_medium, sans-serif; }
-
-/**
-	 Chatbot footer
- 	 ---------------------------------*/
-.chatbot-main-wrapper {
-  background: #749CD1; }
+        width: 100%; }
+  .climate-change-intro .climate-change-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .climate-change-intro .intro-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 50px; }
+    .climate-change-intro .intro-text h1 {
+      font-size: 2.5em; }
+    .climate-change-intro .intro-text p {
+      margin-bottom: 5px;
+      color: #FEFEE6; }
+  .climate-change-intro .side-graphic {
+    text-align: center;
+    width: 35%; }
+    .climate-change-intro .side-graphic img {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+      width: 100%; }
+  .final-chatbot .final-chatbot-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .final-chatbot .intro-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 50px; }
+    .final-chatbot .intro-text h1 {
+      font-size: 2.5em; }
+    .final-chatbot .intro-text p {
+      margin-bottom: 5px;
+      color: #FEFEE6; }
+    .final-chatbot .intro-text .messenger-button {
+      width: 65%;
+      font-size: 1.4em; }
+  .final-chatbot .side-graphic {
+    text-align: center;
+    width: 45%; }
+    .final-chatbot .side-graphic img {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+      width: 100%; } }
 
 /* PROTOTYPE CASE STUDY / BIRD NERD
    ========================================================================== */
