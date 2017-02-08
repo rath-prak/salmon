@@ -101,7 +101,7 @@ navigationSlideMenu.init();
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
     verticalCentered: false,
-    anchors: ['home', 'about-me', 'prototype', 'user-interface', 'design'],
+    anchors: ['home', 'about-me', 'prototype','chatbot', 'user-interface', 'design'],
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
@@ -115,13 +115,15 @@ navigationSlideMenu.init();
       }
 
       if (index === 4) {
-          animatedText.fadeInText($fadeTextUi);
-
+          animatedText.fadeInText($fadeTextChatbot);
       }
 
       if (index === 5) {
-          animatedText.fadeInText($fadeTextDesign);
+          animatedText.fadeInText($fadeTextUi);
+      }
 
+      if (index === 6) {
+          animatedText.fadeInText($fadeTextDesign);
       }
 
       if (index === 3 || index === 4 || index === 5) {
@@ -167,16 +169,21 @@ navigationSlideMenu.init();
       }
 
       if(index === 4 && direction === 'up' || index === 4 && direction === 'down'){
+        animatedText.resetfadeText($fadeTextChatbot, 0, 20, 1);
+      }
+
+      if(index === 5 && direction === 'up' || index === 5 && direction === 'down'){
         animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
       }
 
-      if(index === 4 && direction === 'up'){
+      if(index === 5 && direction === 'up'){
         animatedText.resetfadeText($fadeTextDesign, 0, 20, 1);
       }
     }
   }); //end of fullpage.js
 
   var $fadeTextPrototype = $('.fadetext-prototype');
+  var $fadeTextChatbot = $('.fadetext-chatbot');
   var $fadeTextUi = $('.fadetext-ui');
   var $fadeTextAbout = $('.fadetext-about');
   var $fadeTextDesign = $('.fadetext-design')
@@ -184,7 +191,7 @@ navigationSlideMenu.init();
 
   // set initial state of text
   var setState = function () {
-      TweenMax.set([$fadeTextPrototype, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
+      TweenMax.set([$fadeTextPrototype, $fadeTextChatbot, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
         alpha: 0,
         y: 30,
       });

@@ -1166,11 +1166,10 @@ a:hover, a:focus {
   .about-me h1 {
     font-size: 3.5em; } }
 
-/* PROTOTYPE LANDING
-   ========================================================================== */
 /**
  * MOBILE FIRST QUERIES
  */
+.c-background-icon,
 .p-background-icon,
 .ui-background-icon,
 .design-background-icon {
@@ -1179,12 +1178,15 @@ a:hover, a:focus {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  .c-background-icon img,
   .p-background-icon img,
   .ui-background-icon img,
   .design-background-icon img {
     opacity: 0.08;
     width: 300px; }
 
+/* PROTOTYPE LANDING
+   ========================================================================== */
 .prototype-container {
   background: #E94444; }
   .prototype-container h1 {
@@ -1211,6 +1213,27 @@ a:hover, a:focus {
     font-size: 2em;
     margin-bottom: 10px; }
   .prototype-container .prototype-mockup img {
+    display: inherit; } }
+
+/* USER INTERFACE / CHATBOT
+   ========================================================================== */
+.chatbot {
+  background: #f56d6f; }
+  .chatbot h1 {
+    font-size: 2.4em; }
+  .chatbot p {
+    color: #FEFEE6;
+    margin-bottom: 15px; }
+  .chatbot .ui-chatbot .prototype-mockup img {
+    width: 400px;
+    display: none; }
+
+@media screen and (min-width: 750px) {
+  .chatbot-background-icon img {
+    width: 500px; }
+  .chatbot-container h1 {
+    font-size: 3em; }
+  .chatbot .chatbot-container .prototype-mockup img {
     display: inherit; } }
 
 /* USER INTERFACE
