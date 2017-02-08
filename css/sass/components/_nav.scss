@@ -22,7 +22,7 @@
 
 
 /**
- * PORTFOLIO TOGGLE MENU
+ * HAMBURGER TOGGLE MENU
  */
 
 .navbar-toggle {
@@ -32,11 +32,23 @@
 	z-index: 20;
 	cursor: pointer;
 
-	p {
-		font-family: $black;
-		color: $salmon;
-		letter-spacing: 1px;
-		transform: translateY(-2px);
+	#menu {
+  width:50px;
+	}
+
+.hamburger-container {
+		width: 40px;
+		height: 20px;
+		overflow: hidden;
+
+
+		.menu-bar {
+		  background: $salmon;
+		  width: 40px;
+		  height: 2px;
+	 	 	margin-bottom: 6px;
+	 	 	transform: translateX(10px)
+		}
 	}
 }
 
