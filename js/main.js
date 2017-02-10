@@ -126,7 +126,7 @@ navigationSlideMenu.init();
           animatedText.fadeInText($fadeTextDesign);
       }
 
-      if (index === 3 || index === 4 || index === 5) {
+      if (index === 3 || index === 4 || index === 5 || index === 6) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css({
