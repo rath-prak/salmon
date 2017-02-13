@@ -1396,7 +1396,7 @@ a:hover, a:focus {
       line-height: 50px;
       text-align: center;
       text-transform: uppercase;
-      font-size: 1em;
+      font-size: .9em;
       color: #1D364C; }
     .final-chatbot .intro-text .messenger-button a {
       text-decoration: none; }
