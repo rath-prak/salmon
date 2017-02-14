@@ -2,8 +2,8 @@ var navigationSlideMenu = require('./lib/navigation.js');
 var pagePreloader = require('./lib/preloader.js');
 var animation = require('./lib/animation.js');
 var animatedText = require('./lib/typographyAnimation.js');
-var pixiBackground = require('./lib/pixiBackground.js');
-var scrollToTop = require('./lib/scrollToTop.js');
+const pixiBackground = require('./lib/pixiBackground.js');
+const scrollToTop = require('./lib/scrollToTop.js');
 
 $(document).ready(function(){
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
   }, 0.05);
 
 // HIDE NAV MENU ON SCROLLING
-  var NavNide = function () {
+  var NavNide = () => {
     var previousScroll = 0;
 
     $(window).scroll(function () {
@@ -157,7 +157,7 @@ navigationSlideMenu.init();
       }
 
     },
-    onLeave: function(index, nextIndex, direction){
+    onLeave: (index, nextIndex, direction) => {
       var leavingSection = $(this);
 
       if(index === 2 && direction === 'up' || index === 3 && direction === 'down'){
@@ -176,21 +176,21 @@ navigationSlideMenu.init();
         animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
       }
 
-      if(index === 5 && direction === 'up'){
+      if(index === 6 && direction === 'up'){
         animatedText.resetfadeText($fadeTextDesign, 0, 20, 1);
       }
     }
   }); //end of fullpage.js
 
-  var $fadeTextPrototype = $('.fadetext-prototype');
-  var $fadeTextChatbot = $('.fadetext-chatbot');
-  var $fadeTextUi = $('.fadetext-ui');
-  var $fadeTextAbout = $('.fadetext-about');
-  var $fadeTextDesign = $('.fadetext-design')
-  var $menuItem = $('.menu-item');
+  const $fadeTextPrototype = $('.fadetext-prototype');
+  const $fadeTextChatbot = $('.fadetext-chatbot');
+  const $fadeTextUi = $('.fadetext-ui');
+  const $fadeTextAbout = $('.fadetext-about');
+  const $fadeTextDesign = $('.fadetext-design')
+  const $menuItem = $('.menu-item');
 
   // set initial state of text
-  var setState = function () {
+  const setState = () => {
       TweenMax.set([$fadeTextPrototype, $fadeTextChatbot, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
         alpha: 0,
         y: 30,
@@ -198,10 +198,6 @@ navigationSlideMenu.init();
     };
   setState();
 
-  /**
-  * RED SALMON ANIMATION
-  */
-  animation.salmonAnimation();
 
   /**
   * PULSE ANIMATION

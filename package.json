@@ -18,8 +18,9 @@
   "homepage": "https://github.com/rath-prak/salmon#readme",
   "devDependencies": {
     "apache-server-configs": "^2.14.0",
+    "babelify": "^7.3.0",
     "browser-sync": "^2.14.0",
-    "browserify": "^13.1.1",
+    "browserify": "^13.3.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-browserify": "^0.5.1",
@@ -27,7 +28,9 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
-    "gutil": "^1.6.4"
+    "gutil": "^1.6.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "jquery": "^3.1.1"

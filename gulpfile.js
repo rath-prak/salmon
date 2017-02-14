@@ -1,11 +1,14 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var autoprefixer = require('gulp-autoprefixer');
-var browserify = require('gulp-browserify');
-var uglify = require('gulp-uglify');
-var cssmin = require('gulp-cssmin');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');;
+const uglify = require('gulp-uglify');
+const cssmin = require('gulp-cssmin');
+const rename = require('gulp-rename');
+const babelify = require('babelify');
+const browserify = require('browserify')
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
 
 gulp.task('sass', function() {
 	return gulp.src('css/sass/**/*.scss')
@@ -25,25 +28,34 @@ gulp.task('browserSync', function() {
 	});
 });
 
-gulp.task('browserify', function() {
-	return gulp.src(['./js/main.js'])
-	.pipe(browserify())
-	.pipe(uglify())
-	.pipe(gulp.dest('./js/dist'))
+gulp.task('es6', () => {
+	browserify('./js/main.js')
+		.transform('babelify', {
+			presets: ['es2015']
+		})
+		.bundle()
+		.pipe(source('main.js'))
+		.pipe(buffer())
+		.pipe(gulp.dest('./js/dist/'));
 });
 
-gulp.task('cssmin', function () {
-  gulp.src('./css/main.css')
-      .pipe(cssmin())
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./css'));
-});
+// gulp.task('browserify', function() {
+// 	return gulp.src(['./js/main.js'])
+// 	.pipe(browserify())
+// 	.pipe(uglify())
+// 	.pipe(gulp.dest('./js/dist'))
+// });
 
-// dont forget to 'cssmin' for production
+// gulp.task('cssmin', function () {
+//   gulp.src('./css/main.css')
+//       .pipe(cssmin())
+//       .pipe(rename({suffix: '.min'}))
+//       .pipe(gulp.dest('./css'));
+// });
 
-gulp.task('watch', ['browserSync', 'sass', 'browserify', 'cssmin'], function() {
+gulp.task('watch', ['es6', 'browserSync', 'sass'], function() {
+	gulp.watch('src/app.js',['es6']);
 	gulp.watch('css/sass/**/*.scss', ['sass']);
-	// reload browser when HTML or JS file is changed
 	gulp.watch('./*.html', browserSync.reload);
 	gulp.watch('js/**/*.js', browserSync.reload);
 	gulp.watch('js/dist/*.js', browserSync.reload);
