@@ -1,17 +1,19 @@
 
 'use strict'
 
-import navigationSlideMenu from './lib/navigation.js';
-import pagePreloader from './lib/preloader.js';
 import animation from './lib/animation.js';
 import animatedText from './lib/typographyAnimation.js';
+import chatbotSlideMenu from './lib/chatbotSlideMenu.js';
+import navHide from './lib/navHide.js';
+import navigationSlideMenu from './lib/navigation.js';
+import pagePreloader from './lib/preloader.js';
 import pixiBackground from './lib/pixiBackground.js';
-import scrollToTop from './lib/scrollToTop.js'
-import chatbotSlideMenu from './lib/chatbotSlideMenu.js'
+import scrollToTop from './lib/scrollToTop.js';
+
 
 $(document).ready(function(){
 
-  // Chatbot slidedown menu
+// Chatbot slidedown menu
   chatbotSlideMenu();
 
 // SCROLL BACK TO TOP OF PAGE
@@ -24,49 +26,13 @@ $(document).ready(function(){
   });
 
 // HIDE NAV MENU ON SCROLLING
-  var NavNide = () => {
-    var previousScroll = 0;
-
-    $(window).scroll(function () {
-      var $currentScroll = $(this).scrollTop();
-      var $logoAndHamburger = $('.logo, .navbar-toggle');
-      var $secondaryNav = $('.secondary-nav');
-
-      if ($currentScroll > previousScroll){
-        TweenMax.to($secondaryNav, 0.2, {
-        y: '-100',
-        ease: Linear.easeNone
-        })
-
-      TweenMax.to($secondaryNav, 0.2, {
-        css: {background: "#072231"},
-        ease: Linear.easeNone
-        })
-      }
-      else {
-        function slideBack (divElement, yPos) {
-            TweenMax.to(divElement, 0.2, {
-            y: yPos,
-            ease: Linear.easeNone
-            });
-          }
-        slideBack($logoAndHamburger, 30);
-        slideBack($secondaryNav, 0);
-        }
-        previousScroll = $currentScroll;
-    });
-  }
-  NavNide();
+  navHide();
 
 // NAVIGATION
 navigationSlideMenu.init();
 
 
-/**
-* FULL PAGE PLUGIN
-*/
-
-// initialize fullpage
+// FULL PAGE PLUGIN - initialize fullpage
 
   $('#fullpage').fullpage({
   //Navigation

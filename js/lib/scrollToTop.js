@@ -1,13 +1,13 @@
 // scroll back to top
-var scrollToTop = function () {
-  var $topOfPage = $('.top-of-page');
-  var $backTopBtn = $('.backtop-btn');
+const scrollToTop = () => {
+  let $topOfPage = $('.top-of-page');
+  let $backTopBtn = $('.backtop-btn');
 
-  $backTopBtn.on( "click", function() {
+  $backTopBtn.on( "click", () => {
      $('html, body').animate({
         scrollTop: $topOfPage.offset().top
     }, 500);
   });
 }
 
-module.exports = scrollToTop
+export default scrollToTop

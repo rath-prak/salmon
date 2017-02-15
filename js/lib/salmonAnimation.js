@@ -1,6 +1,6 @@
 // might want to wrap this in a document.ready function.
 
-(function () {
+(() => {
   var salmonLogo = $('#salmon-fish');
 
   salmonTl = new TimelineMax({repeat:-1});

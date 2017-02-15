@@ -1088,22 +1088,32 @@ a:hover, a:focus {
 
 /* Homepage - pulsing button */
 .pulse {
-  margin: 0 auto;
   position: absolute;
-  top: 88%;
+  top: 93%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px; }
+  width: 65px;
+  height: 65px; }
   .pulse .pulse-button {
     stroke: #E94444;
     text-align: center;
-    margin-left: 5px; }
-  .pulse .down-arrow {
-    width: 40%;
-    margin: 0 auto;
-    opacity: 0.75; }
+    margin-left: 10px; }
+
+/* case study type above pulsing circles */
+.case-study-type {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .case-study-type span {
+    color: #E94444;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: proxima_bold, sans-serif; }
+  .case-study-type a {
+    text-decoration: none; }
 
 /* Pixi Js */
 .rendererView {
@@ -1141,6 +1151,14 @@ a:hover, a:focus {
 .main-landing-page .landing-header h3 {
   font-family: proxima_light, sans-serif;
   color: #E94444; }
+
+.main-landing-page .down-arrow {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10px; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {

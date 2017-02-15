@@ -1,7 +1,7 @@
 // Animated elements
 
-var animation = {
-  pulseButton: function () {
+const animation = {
+  pulseButton: () => {
     TweenMax.to('.pulse-button circle:nth-child(1)', 4, {
     attr: {
       r: 25,
@@ -35,5 +35,4 @@ var animation = {
 
 }
 
-
-module.exports = animation;
+export default animation;

@@ -1,6 +1,9 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 // Animated elements
 
 var animation = {
@@ -38,7 +41,7 @@ var animation = {
 
 };
 
-module.exports = animation;
+exports.default = animation;
 
 },{}],2:[function(require,module,exports){
 "use strict";
@@ -56,8 +59,52 @@ var chatbotSlideMenu = function chatbotSlideMenu() {
 exports.default = chatbotSlideMenu;
 
 },{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var navHide = function navHide() {
+  var previousScroll = 0;
+
+  $(window).scroll(function () {
+    var $currentScroll = $(this).scrollTop();
+    var $logoAndHamburger = $('.logo, .navbar-toggle');
+    var $secondaryNav = $('.secondary-nav');
+
+    if ($currentScroll > previousScroll) {
+      TweenMax.to($secondaryNav, 0.2, {
+        y: '-100',
+        ease: Linear.easeNone
+      });
+
+      TweenMax.to($secondaryNav, 0.2, {
+        css: { background: "#072231" },
+        ease: Linear.easeNone
+      });
+    } else {
+      var slideBack = function slideBack(divElement, yPos) {
+        TweenMax.to(divElement, 0.2, {
+          y: yPos,
+          ease: Linear.easeNone
+        });
+      };
+
+      slideBack($logoAndHamburger, 30);
+      slideBack($secondaryNav, 0);
+    }
+    previousScroll = $currentScroll;
+  });
+};
+
+exports.default = navHide;
+
+},{}],4:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var navigationSlideMenu = {
   init: function init() {
     this.cacheDom();
@@ -115,9 +162,9 @@ var navigationSlideMenu = {
   }
 };
 
-module.exports = navigationSlideMenu;
+exports.default = navigationSlideMenu;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -183,7 +230,7 @@ var pixiBackground = function pixiBackground() {
 
 exports.default = pixiBackground;
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -210,9 +257,12 @@ var pagePreloader = {
 
 exports.default = pagePreloader;
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 // scroll back to top
 var scrollToTop = function scrollToTop() {
   var $topOfPage = $('.top-of-page');
@@ -225,16 +275,18 @@ var scrollToTop = function scrollToTop() {
   });
 };
 
-module.exports = scrollToTop;
+exports.default = scrollToTop;
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 // Animated Typography - text fading in and out
 
-
 var animatedText = {
-	// animate text 
+	// animate text
 	fadeInText: function fadeInText(section) {
 		TweenMax.staggerTo(section, 1, {
 			y: 0,
@@ -253,19 +305,11 @@ var animatedText = {
 
 };
 
-module.exports = animatedText;
+exports.default = animatedText;
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 
 'use strict';
-
-var _navigation = require('./lib/navigation.js');
-
-var _navigation2 = _interopRequireDefault(_navigation);
-
-var _preloader = require('./lib/preloader.js');
-
-var _preloader2 = _interopRequireDefault(_preloader);
 
 var _animation = require('./lib/animation.js');
 
@@ -275,6 +319,22 @@ var _typographyAnimation = require('./lib/typographyAnimation.js');
 
 var _typographyAnimation2 = _interopRequireDefault(_typographyAnimation);
 
+var _chatbotSlideMenu = require('./lib/chatbotSlideMenu.js');
+
+var _chatbotSlideMenu2 = _interopRequireDefault(_chatbotSlideMenu);
+
+var _navHide = require('./lib/navHide.js');
+
+var _navHide2 = _interopRequireDefault(_navHide);
+
+var _navigation = require('./lib/navigation.js');
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
+var _preloader = require('./lib/preloader.js');
+
+var _preloader2 = _interopRequireDefault(_preloader);
+
 var _pixiBackground = require('./lib/pixiBackground.js');
 
 var _pixiBackground2 = _interopRequireDefault(_pixiBackground);
@@ -282,10 +342,6 @@ var _pixiBackground2 = _interopRequireDefault(_pixiBackground);
 var _scrollToTop = require('./lib/scrollToTop.js');
 
 var _scrollToTop2 = _interopRequireDefault(_scrollToTop);
-
-var _chatbotSlideMenu = require('./lib/chatbotSlideMenu.js');
-
-var _chatbotSlideMenu2 = _interopRequireDefault(_chatbotSlideMenu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -308,48 +364,12 @@ $(document).ready(function () {
   });
 
   // HIDE NAV MENU ON SCROLLING
-  var NavNide = function NavNide() {
-    var previousScroll = 0;
-
-    $(window).scroll(function () {
-      var $currentScroll = $(this).scrollTop();
-      var $logoAndHamburger = $('.logo, .navbar-toggle');
-      var $secondaryNav = $('.secondary-nav');
-
-      if ($currentScroll > previousScroll) {
-        TweenMax.to($secondaryNav, 0.2, {
-          y: '-100',
-          ease: Linear.easeNone
-        });
-
-        TweenMax.to($secondaryNav, 0.2, {
-          css: { background: "#072231" },
-          ease: Linear.easeNone
-        });
-      } else {
-        var slideBack = function slideBack(divElement, yPos) {
-          TweenMax.to(divElement, 0.2, {
-            y: yPos,
-            ease: Linear.easeNone
-          });
-        };
-
-        slideBack($logoAndHamburger, 30);
-        slideBack($secondaryNav, 0);
-      }
-      previousScroll = $currentScroll;
-    });
-  };
-  NavNide();
+  (0, _navHide2.default)();
 
   // NAVIGATION
   _navigation2.default.init();
 
-  /**
-  * FULL PAGE PLUGIN
-  */
-
-  // initialize fullpage
+  // FULL PAGE PLUGIN - initialize fullpage
 
   $('#fullpage').fullpage((_$$fullpage = {
     //Navigation
@@ -478,4 +498,4 @@ $(document).ready(function () {
   (0, _pixiBackground2.default)();
 }); // end of document.ready()
 
-},{"./lib/animation.js":1,"./lib/chatbotSlideMenu.js":2,"./lib/navigation.js":3,"./lib/pixiBackground.js":4,"./lib/preloader.js":5,"./lib/scrollToTop.js":6,"./lib/typographyAnimation.js":7}]},{},[8]);
+},{"./lib/animation.js":1,"./lib/chatbotSlideMenu.js":2,"./lib/navHide.js":3,"./lib/navigation.js":4,"./lib/pixiBackground.js":5,"./lib/preloader.js":6,"./lib/scrollToTop.js":7,"./lib/typographyAnimation.js":8}]},{},[9]);

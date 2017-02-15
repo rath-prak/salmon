@@ -1,6 +1,6 @@
 const pagePreloader = {
   background: () => {
-    var preloader = $('.preload-wrapper');
+    const preloader = $('.preload-wrapper');
     TweenMax.to(preloader, 2, {
       autoAlpha: 0,
       ease: Back.easeIn.config(1.7),

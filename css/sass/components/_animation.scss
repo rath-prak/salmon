@@ -1,21 +1,32 @@
  /* Homepage - pulsing button */
 .pulse {
-  margin: 0 auto;
   position: absolute;
-  top: 88%;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   .pulse-button {
     stroke: $salmon;
      text-align: center;
-     margin-left: 5px;
+     margin-left: 10px;
   }
-  .down-arrow {
-    width: 40%;
-    margin: 0 auto;
-    opacity: 0.75;
+}
+
+ /* case study type above pulsing circles */
+.case-study-type {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  span {
+    color: $salmon;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: $bold;
+  }
+  a {
+    text-decoration: none;
   }
 }
 

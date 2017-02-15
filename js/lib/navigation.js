@@ -58,4 +58,4 @@ var navigationSlideMenu = {
   },
 };
 
-module.exports = navigationSlideMenu
+export default navigationSlideMenu
