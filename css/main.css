@@ -199,7 +199,7 @@ html.fp-enabled,
   height: 4px;
   width: 4px;
   border: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.5);
   left: 50%;
   top: 50%;
   margin: -2px 0 0 -2px;
@@ -957,16 +957,15 @@ a:hover, a:focus {
     list-style-type: none;
     font-size: 14px;
     float: left;
-    border: 1px solid rgba(233, 68, 68, 0.15); }
+    border: 1px solid rgba(233, 68, 68, 0.15);
+    border-right: 0px; }
     .social-main li i {
       height: 35px;
       width: 35px;
       text-align: center;
       line-height: 35px; }
-  .social-main li:nth-of-type(1),
-  .social-main li:nth-of-type(2),
-  .social-main li:nth-of-type(3) {
-    border-right: 0px; }
+  .social-main li:last-of-type {
+    border-right: 1px solid rgba(233, 68, 68, 0.15); }
   .social-main li:hover {
     background: #E94444;
     -webkit-transition: background 1.5s;
@@ -1103,14 +1102,14 @@ a:hover, a:focus {
 /* case study type above pulsing circles */
 .case-study-type {
   position: absolute;
-  top: 87%;
+  top: 86%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .case-study-type span {
     color: #E94444;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     font-family: proxima_bold, sans-serif; }
   .case-study-type a {
     text-decoration: none; }

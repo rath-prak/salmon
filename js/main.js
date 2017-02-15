@@ -66,7 +66,16 @@ navigationSlideMenu.init();
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
 
-      if (index == 2) {
+      if (index === 1 || index === 2 ) {
+        $fpSideNav.css({
+          'background' :'#E94444',
+          'opacity': '0.55'
+        });
+      } else {
+        $fpSideNav.css('background', 'rgba(255, 255, 255, 0.4)');
+      }
+
+      if (index === 2) {
         animatedText.fadeInText($fadeTextAbout);
       }
 
@@ -142,6 +151,7 @@ navigationSlideMenu.init();
     }
   }); //end of fullpage.js
 
+  const $fpSideNav = $('#fp-nav').find('span');
   const $fadeTextPrototype = $('.fadetext-prototype');
   const $fadeTextChatbot = $('.fadetext-chatbot');
   const $fadeTextUi = $('.fadetext-ui');

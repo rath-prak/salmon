@@ -400,7 +400,16 @@ $(document).ready(function () {
   }, _defineProperty(_$$fullpage, 'verticalCentered', false), _defineProperty(_$$fullpage, 'anchors', ['home', 'about-me', 'prototype', 'chatbot', 'user-interface', 'design']), _defineProperty(_$$fullpage, 'setResponsive', true), _defineProperty(_$$fullpage, 'afterLoad', function afterLoad(anchorLink, index) {
     var loadedSection = $(this);
 
-    if (index == 2) {
+    if (index === 1 || index === 2) {
+      $fpSideNav.css({
+        'background': '#E94444',
+        'opacity': '0.55'
+      });
+    } else {
+      $fpSideNav.css('background', 'rgba(255, 255, 255, 0.4)');
+    }
+
+    if (index === 2) {
       _typographyAnimation2.default.fadeInText($fadeTextAbout);
     }
 
@@ -471,6 +480,7 @@ $(document).ready(function () {
     }
   }), _$$fullpage)); //end of fullpage.js
 
+  var $fpSideNav = $('#fp-nav').find('span');
   var $fadeTextPrototype = $('.fadetext-prototype');
   var $fadeTextChatbot = $('.fadetext-chatbot');
   var $fadeTextUi = $('.fadetext-ui');
