@@ -39,13 +39,6 @@ gulp.task('es6', () => {
 		.pipe(gulp.dest('./js/dist/'));
 });
 
-// gulp.task('browserify', function() {
-// 	return gulp.src(['./js/main.js'])
-// 	.pipe(browserify())
-// 	.pipe(uglify())
-// 	.pipe(gulp.dest('./js/dist'))
-// });
-
 // gulp.task('cssmin', function () {
 //   gulp.src('./css/main.css')
 //       .pipe(cssmin())
@@ -57,6 +50,6 @@ gulp.task('watch', ['es6', 'browserSync', 'sass'], function() {
 	gulp.watch('src/app.js',['es6']);
 	gulp.watch('css/sass/**/*.scss', ['sass']);
 	gulp.watch('./*.html', browserSync.reload);
-	gulp.watch('js/**/*.js', browserSync.reload);
+	// gulp.watch('js/**/*.js', browserSync.reload);
 	gulp.watch('js/dist/*.js', browserSync.reload);
 });
