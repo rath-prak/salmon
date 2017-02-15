@@ -1,33 +1,27 @@
-var navigationSlideMenu = require('./lib/navigation.js');
-var pagePreloader = require('./lib/preloader.js');
-var animation = require('./lib/animation.js');
-var animatedText = require('./lib/typographyAnimation.js');
-const pixiBackground = require('./lib/pixiBackground.js');
-const scrollToTop = require('./lib/scrollToTop.js');
+
+'use strict'
+
+import navigationSlideMenu from './lib/navigation.js';
+import pagePreloader from './lib/preloader.js';
+import animation from './lib/animation.js';
+import animatedText from './lib/typographyAnimation.js';
+import pixiBackground from './lib/pixiBackground.js';
+import scrollToTop from './lib/scrollToTop.js'
+import chatbotSlideMenu from './lib/chatbotSlideMenu.js'
 
 $(document).ready(function(){
 
-  $(".toggle").on("click", function(){
-    $(".chatbot-list-items").toggleClass("active");
-  });
-
+  // Chatbot slidedown menu
+  chatbotSlideMenu();
 
 // SCROLL BACK TO TOP OF PAGE
   scrollToTop();
 
 // PRE-LAODER
   $(window).load(function(){
-    setTimeout(pagePreloader, 500);
+    setTimeout(pagePreloader.background, 500);
+    pagePreloader.preloader();
   });
-
-  var $letter = $('.st0');
-
-  TweenMax.staggerTo($letter, 0.6, {
-    y: -30,
-    repeat: -1,
-    ease: Power4.easeInOut,
-    yoyo: true,
-  }, 0.05);
 
 // HIDE NAV MENU ON SCROLLING
   var NavNide = () => {
@@ -208,12 +202,6 @@ navigationSlideMenu.init();
   * PIXI JS / FISH
   */
   pixiBackground();
-
-  /**
-  * chatbot responsive nav menu
-  */
-
-
 
 
 }); // end of document.ready()

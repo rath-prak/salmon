@@ -43,6 +43,21 @@ module.exports = animation;
 },{}],2:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var chatbotSlideMenu = function chatbotSlideMenu() {
+  $(".toggle").on("click", function () {
+    $(".chatbot-list-items").toggleClass("active");
+  });
+};
+
+exports.default = chatbotSlideMenu;
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
 var navigationSlideMenu = {
   init: function init() {
     this.cacheDom();
@@ -102,9 +117,12 @@ var navigationSlideMenu = {
 
 module.exports = navigationSlideMenu;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 var pixiBackground = function pixiBackground() {
 
     var viewWidth = 630;
@@ -115,7 +133,6 @@ var pixiBackground = function pixiBackground() {
     // var renderer = PIXI.autoDetectRenderer(800, 600);
     document.body.appendChild(renderer.view);
 
-    // create the root of the scene graph
     var stage = new PIXI.Container();
 
     var count = 0;
@@ -164,28 +181,39 @@ var pixiBackground = function pixiBackground() {
     }
 };
 
-module.exports = pixiBackground;
-
-},{}],4:[function(require,module,exports){
-'use strict';
-
-// full page transition
-
-function pagePreloader() {
-  var preloader = $('.preload-wrapper');
-  TweenMax.to(preloader, 2, {
-    autoAlpha: 0,
-    ease: Back.easeIn.config(1.7)
-  });
-}
-
-module.exports = pagePreloader;
+exports.default = pixiBackground;
 
 },{}],5:[function(require,module,exports){
 'use strict';
 
-// scroll back to top
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var pagePreloader = {
+  background: function background() {
+    var preloader = $('.preload-wrapper');
+    TweenMax.to(preloader, 2, {
+      autoAlpha: 0,
+      ease: Back.easeIn.config(1.7)
+    });
+  },
+  preloader: function preloader() {
+    var $letter = $('.st0');
+    TweenMax.staggerTo($letter, 0.6, {
+      y: -30,
+      repeat: -1,
+      ease: Power4.easeInOut,
+      yoyo: true
+    }, 0.05);
+  }
+};
 
+exports.default = pagePreloader;
+
+},{}],6:[function(require,module,exports){
+'use strict';
+
+// scroll back to top
 var scrollToTop = function scrollToTop() {
   var $topOfPage = $('.top-of-page');
   var $backTopBtn = $('.backtop-btn');
@@ -199,7 +227,7 @@ var scrollToTop = function scrollToTop() {
 
 module.exports = scrollToTop;
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 "use strict";
 
 // Animated Typography - text fading in and out
@@ -227,42 +255,57 @@ var animatedText = {
 
 module.exports = animatedText;
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
+
 'use strict';
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var _navigation = require('./lib/navigation.js');
 
-var navigationSlideMenu = require('./lib/navigation.js');
-var pagePreloader = require('./lib/preloader.js');
-var animation = require('./lib/animation.js');
-var animatedText = require('./lib/typographyAnimation.js');
-var pixiBackground = require('./lib/pixiBackground.js');
-var scrollToTop = require('./lib/scrollToTop.js');
+var _navigation2 = _interopRequireDefault(_navigation);
+
+var _preloader = require('./lib/preloader.js');
+
+var _preloader2 = _interopRequireDefault(_preloader);
+
+var _animation = require('./lib/animation.js');
+
+var _animation2 = _interopRequireDefault(_animation);
+
+var _typographyAnimation = require('./lib/typographyAnimation.js');
+
+var _typographyAnimation2 = _interopRequireDefault(_typographyAnimation);
+
+var _pixiBackground = require('./lib/pixiBackground.js');
+
+var _pixiBackground2 = _interopRequireDefault(_pixiBackground);
+
+var _scrollToTop = require('./lib/scrollToTop.js');
+
+var _scrollToTop2 = _interopRequireDefault(_scrollToTop);
+
+var _chatbotSlideMenu = require('./lib/chatbotSlideMenu.js');
+
+var _chatbotSlideMenu2 = _interopRequireDefault(_chatbotSlideMenu);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 $(document).ready(function () {
   var _this = this,
       _$$fullpage;
 
-  $(".toggle").on("click", function () {
-    $(".chatbot-list-items").toggleClass("active");
-  });
+  // Chatbot slidedown menu
+  (0, _chatbotSlideMenu2.default)();
 
   // SCROLL BACK TO TOP OF PAGE
-  scrollToTop();
+  (0, _scrollToTop2.default)();
 
   // PRE-LAODER
   $(window).load(function () {
-    setTimeout(pagePreloader, 500);
+    setTimeout(_preloader2.default.background, 500);
+    _preloader2.default.preloader();
   });
-
-  var $letter = $('.st0');
-
-  TweenMax.staggerTo($letter, 0.6, {
-    y: -30,
-    repeat: -1,
-    ease: Power4.easeInOut,
-    yoyo: true
-  }, 0.05);
 
   // HIDE NAV MENU ON SCROLLING
   var NavNide = function NavNide() {
@@ -300,7 +343,7 @@ $(document).ready(function () {
   NavNide();
 
   // NAVIGATION
-  navigationSlideMenu.init();
+  _navigation2.default.init();
 
   /**
   * FULL PAGE PLUGIN
@@ -338,23 +381,23 @@ $(document).ready(function () {
     var loadedSection = $(this);
 
     if (index == 2) {
-      animatedText.fadeInText($fadeTextAbout);
+      _typographyAnimation2.default.fadeInText($fadeTextAbout);
     }
 
     if (index === 3) {
-      animatedText.fadeInText($fadeTextPrototype);
+      _typographyAnimation2.default.fadeInText($fadeTextPrototype);
     }
 
     if (index === 4) {
-      animatedText.fadeInText($fadeTextChatbot);
+      _typographyAnimation2.default.fadeInText($fadeTextChatbot);
     }
 
     if (index === 5) {
-      animatedText.fadeInText($fadeTextUi);
+      _typographyAnimation2.default.fadeInText($fadeTextUi);
     }
 
     if (index === 6) {
-      animatedText.fadeInText($fadeTextDesign);
+      _typographyAnimation2.default.fadeInText($fadeTextDesign);
     }
 
     if (index === 3 || index === 4 || index === 5 || index === 6) {
@@ -388,23 +431,23 @@ $(document).ready(function () {
     var leavingSection = $(_this);
 
     if (index === 2 && direction === 'up' || index === 3 && direction === 'down') {
-      animatedText.resetfadeText($fadeTextAbout, 0, 20, 1);
+      _typographyAnimation2.default.resetfadeText($fadeTextAbout, 0, 20, 1);
     }
 
     if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
-      animatedText.resetfadeText($fadeTextPrototype, 0, 20, 1);
+      _typographyAnimation2.default.resetfadeText($fadeTextPrototype, 0, 20, 1);
     }
 
     if (index === 4 && direction === 'up' || index === 4 && direction === 'down') {
-      animatedText.resetfadeText($fadeTextChatbot, 0, 20, 1);
+      _typographyAnimation2.default.resetfadeText($fadeTextChatbot, 0, 20, 1);
     }
 
     if (index === 5 && direction === 'up' || index === 5 && direction === 'down') {
-      animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
+      _typographyAnimation2.default.resetfadeText($fadeTextUi, 0, 20, 1);
     }
 
     if (index === 6 && direction === 'up') {
-      animatedText.resetfadeText($fadeTextDesign, 0, 20, 1);
+      _typographyAnimation2.default.resetfadeText($fadeTextDesign, 0, 20, 1);
     }
   }), _$$fullpage)); //end of fullpage.js
 
@@ -427,16 +470,12 @@ $(document).ready(function () {
   /**
   * PULSE ANIMATION
   */
-  animation.pulseButton();
+  _animation2.default.pulseButton();
 
   /**
   * PIXI JS / FISH
   */
-  pixiBackground();
-
-  /**
-  * chatbot responsive nav menu
-  */
+  (0, _pixiBackground2.default)();
 }); // end of document.ready()
 
-},{"./lib/animation.js":1,"./lib/navigation.js":2,"./lib/pixiBackground.js":3,"./lib/preloader.js":4,"./lib/scrollToTop.js":5,"./lib/typographyAnimation.js":6}]},{},[7]);
+},{"./lib/animation.js":1,"./lib/chatbotSlideMenu.js":2,"./lib/navigation.js":3,"./lib/pixiBackground.js":4,"./lib/preloader.js":5,"./lib/scrollToTop.js":6,"./lib/typographyAnimation.js":7}]},{},[8]);

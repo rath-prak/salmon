@@ -47,9 +47,9 @@ gulp.task('es6', () => {
 // });
 
 gulp.task('watch', ['es6', 'browserSync', 'sass'], function() {
-	gulp.watch('src/app.js',['es6']);
-	gulp.watch('css/sass/**/*.scss', ['sass']);
+	gulp.watch('./js/main.js',['es6']);
+	gulp.watch('./css/sass/**/*.scss', ['sass']);
 	gulp.watch('./*.html', browserSync.reload);
-	// gulp.watch('js/**/*.js', browserSync.reload);
+	gulp.watch('js/**/*.js', browserSync.reload);
 	gulp.watch('js/dist/*.js', browserSync.reload);
 });

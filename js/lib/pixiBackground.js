@@ -1,16 +1,15 @@
-var pixiBackground = function () {
+const pixiBackground = () => {
 
-  var viewWidth = 630;
-  var viewHeight = 410;
+  const viewWidth = 630;
+  const viewHeight = 410;
 
 
-  var renderer = PIXI.autoDetectRenderer(viewWidth, viewHeight);
+  const renderer = PIXI.autoDetectRenderer(viewWidth, viewHeight);
   renderer.view.className = "rendererView";
   // var renderer = PIXI.autoDetectRenderer(800, 600);
   document.body.appendChild(renderer.view);
 
-  // create the root of the scene graph
-  var stage = new PIXI.Container();
+  const stage = new PIXI.Container();
 
   var count = 0;
 
@@ -41,7 +40,7 @@ var pixiBackground = function () {
   // start animating
   requestAnimationFrame(animate);
 
-  function animate() {
+  function animate () {
 
       count += 0.01;
 
@@ -61,4 +60,4 @@ var pixiBackground = function () {
 
 }
 
-module.exports = pixiBackground
+export default pixiBackground;
