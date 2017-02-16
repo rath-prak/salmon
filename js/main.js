@@ -40,6 +40,7 @@ navigationSlideMenu.init();
     lockAnchors: false,
     navigation: true,
     navigationPosition: 'right',
+    navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPING', 'CHATBOT', 'USER-INTERFACE', 'DESIGN'],
     showActiveTooltip: true,
     css3: true,
     fadingEffect: true,
@@ -68,11 +69,10 @@ navigationSlideMenu.init();
 
       if (index === 1 || index === 2 ) {
         $fpSideNav.css({
-          'background' :'#E94444',
-          'opacity': '0.55'
+          'background' :'rgba(255, 255, 255, 0.25)'
         });
       } else {
-        $fpSideNav.css('background', 'rgba(255, 255, 255, 0.4)');
+        $fpSideNav.css('background', 'rgba(255, 255, 255, 0.5)');
       }
 
       if (index === 2) {

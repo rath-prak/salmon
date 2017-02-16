@@ -188,19 +188,19 @@ html.fp-enabled,
   height: 12px;
   width: 12px;
   margin: -6px 0 0 -6px;
-  border-radius: 100%; }
+  border-radius: 100%;
+  display: none; }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   display: none;
-  border-radius: 50%;
   position: absolute;
   z-index: 1;
-  height: 4px;
-  width: 4px;
+  height: 1px;
+  width: 10px;
   border: 0;
-  background: rgba(255, 255, 255, 0.5);
-  left: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  left: -50%;
   top: 50%;
   margin: -2px 0 0 -2px;
   -webkit-transition: all 0.1s ease-in-out;
@@ -239,7 +239,9 @@ html.fp-enabled,
   opacity: 1; }
 
 #fp-nav ul li .fp-tooltip.right {
-  right: 20px; }
+  right: 5px;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px); }
 
 #fp-nav ul li .fp-tooltip.left {
   left: 20px; }
@@ -771,8 +773,8 @@ a:hover, a:focus {
     text-decoration: none; }
 
 .chatbot-container .main-btn-reverse {
-  color: #0398DC;
-  border: 1px solid #0398DC; }
+  color: #53657f;
+  border: 1px solid #53657f; }
 
 .chatbot-container .main-btn-reverse:hover {
   color: #FEFEE6;
@@ -790,8 +792,8 @@ a:hover, a:focus {
    ========================================================================== */
 .logo {
   position: fixed;
-  top: 4%;
-  left: 4%;
+  top: 3.5%;
+  left: 6%;
   z-index: 25;
   margin: 0;
   width: 110px;
@@ -805,27 +807,20 @@ a:hover, a:focus {
   display: inherit; }
 
 /**
- * HAMBURGER TOGGLE MENU
+ *  TOGGLE MENU RIGHT HAND CORNER
  */
 .navbar-toggle {
   position: fixed;
-  top: 4%;
-  right: 4%;
-  z-index: 20;
+  top: 3%;
+  right: 6%;
+  z-index: 500;
   cursor: pointer; }
-  .navbar-toggle #menu {
-    width: 50px; }
-  .navbar-toggle .hamburger-container {
-    width: 40px;
-    height: 20px;
-    overflow: hidden; }
-    .navbar-toggle .hamburger-container .menu-bar {
-      background: #E94444;
-      width: 40px;
-      height: 2px;
-      margin-bottom: 6px;
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px); }
+  .navbar-toggle .my-work {
+    color: #FEFEE6;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px 18px;
+    border: 1px solid #FEFEE6; }
 
 /**
  * SECONDARY NAVIGATION
@@ -841,7 +836,7 @@ a:hover, a:focus {
  */
 .fp-nav-wrapper {
   position: fixed;
-  z-index: 200;
+  z-index: 1000;
   background: #072231;
   width: 100vw;
   height: 100vh; }
@@ -937,6 +932,14 @@ a:hover, a:focus {
   .nav-about-text p {
     display: inherit; } }
 
+@media (min-width: 560px) {
+  .logo {
+    top: 3.5%;
+    left: 2%; }
+  .navbar-toggle {
+    top: 3%;
+    right: 2%; } }
+
 @media (min-width: 750px) {
   .nav-about-text h2 {
     font-size: 1.6em; } }
@@ -951,7 +954,7 @@ a:hover, a:focus {
 .social-main {
   z-index: 100;
   position: absolute;
-  right: 4%;
+  right: 2%;
   bottom: 4%; }
   .social-main li {
     list-style-type: none;
@@ -988,7 +991,7 @@ a:hover, a:focus {
 .location-caption {
   z-index: 100;
   position: absolute;
-  left: 4%;
+  left: 2%;
   bottom: 4%;
   height: 35px;
   line-height: 35px; }
@@ -1088,7 +1091,7 @@ a:hover, a:focus {
 /* Homepage - pulsing button */
 .pulse {
   position: absolute;
-  top: 93%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1102,7 +1105,7 @@ a:hover, a:focus {
 /* case study type above pulsing circles */
 .case-study-type {
   position: absolute;
-  top: 86%;
+  top: 84%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
@@ -1251,7 +1254,7 @@ a:hover, a:focus {
 /* USER INTERFACE / CHATBOT
    ========================================================================== */
 .chatbot {
-  background: #0398DC; }
+  background: #53657f; }
   .chatbot h1 {
     font-size: 2.4em; }
   .chatbot p {
@@ -1314,7 +1317,7 @@ a:hover, a:focus {
  	 CHATBOT MAIN BACKGROUND COLOR
   	 ---------------------------------*/
 .chatbot-main-wrapper {
-  background: #0398DC; }
+  background: #53657f; }
 
 /**
 
@@ -1408,14 +1411,14 @@ a:hover, a:focus {
     margin: 20 auto 0;
     width: 80%;
     height: 50px;
-    background: #f29312;
+    background: #e85998;
     border-radius: 4px; }
     .final-chatbot .intro-text .messenger-button h4 {
       line-height: 50px;
       text-align: center;
       text-transform: uppercase;
       font-size: .9em;
-      color: #1D364C; }
+      color: #FEFEE6; }
     .final-chatbot .intro-text .messenger-button a {
       text-decoration: none; }
 

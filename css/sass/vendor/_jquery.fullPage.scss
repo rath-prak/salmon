@@ -166,18 +166,18 @@ html.fp-enabled,
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
+    display: none;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     display: none;
-    border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 1px;
+    width: 10px;
     border: 0;
-    background: rgba(255, 255, 255, 0.5);
-    left: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    left: -50%;
     top: 50%;
     margin: -2px 0 0 -2px;
     -webkit-transition: all 0.1s ease-in-out;
@@ -223,7 +223,8 @@ html.fp-enabled,
     opacity: 1;
 }
 #fp-nav ul li .fp-tooltip.right {
-    right: 20px;
+    right: 5px;
+    transform: translateY(-7px);
 }
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
