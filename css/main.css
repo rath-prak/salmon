@@ -820,7 +820,8 @@ a:hover, a:focus {
     font-size: 12px;
     text-transform: uppercase;
     padding: 3px 18px;
-    border: 1px solid #FEFEE6; }
+    border: 1px solid #FEFEE6;
+    font-family: proxima_bold, sans-serif; }
 
 /**
  * SECONDARY NAVIGATION

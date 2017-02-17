@@ -371,6 +371,18 @@ $(document).ready(function () {
 
   // FULL PAGE PLUGIN - initialize fullpage
 
+  var $fpSideNav = $('#fp-nav').find('span');
+  var $fadeTextPrototype = $('.fadetext-prototype');
+  var $fadeTextChatbot = $('.fadetext-chatbot');
+  var $fadeTextUi = $('.fadetext-ui');
+  var $fadeTextAbout = $('.fadetext-about');
+  var $fadeTextDesign = $('.fadetext-design');
+  var $menuItem = $('.menu-item');
+  var $myWorkButton = $('.my-work');
+
+  var $salmon = '#E94444';
+  var $reverse = '#FEFEE6';
+
   $('#fullpage').fullpage((_$$fullpage = {
     //Navigation
     menu: '#myMenu',
@@ -402,11 +414,17 @@ $(document).ready(function () {
     var loadedSection = $(this);
 
     if (index === 1 || index === 2) {
-      $fpSideNav.css({
-        'background': 'rgba(255, 255, 255, 0.25)'
+      $fpSideNav.css('background', 'rgba(255, 255, 255, 0.25)');
+      $myWorkButton.css({
+        'color': '' + $salmon,
+        'border': '1px solid ' + $salmon
       });
     } else {
       $fpSideNav.css('background', 'rgba(255, 255, 255, 0.5)');
+      $myWorkButton.css({
+        'color': '' + $reverse,
+        'border': '1px solid ' + $reverse
+      });
     }
 
     if (index === 2) {
@@ -433,11 +451,11 @@ $(document).ready(function () {
       $('.red-logo').removeClass('active-logo');
       $('.white-logo').addClass('active-logo');
       $('.menu-bar').css({
-        'background': '#FEFEE6',
+        'background': '' + $reverse,
         'transition': 'background 1.5s'
       });
       $('.watermark-text, .contact-item, .title-caption').css({
-        'color': '#FEFEE6',
+        'color': '' + $reverse,
         'transition': 'color 1.5s'
       });
       $('.social-main li').css({
@@ -445,7 +463,7 @@ $(document).ready(function () {
         'transition': 'border-color 1.5s'
       });
       $('.pulse-button').css({
-        'stroke': "#FEFEE6",
+        'stroke': '' + $reverse,
         'transition': 'color 1.5s'
       });
     } else {
@@ -480,13 +498,6 @@ $(document).ready(function () {
     }
   }), _$$fullpage)); //end of fullpage.js
 
-  var $fpSideNav = $('#fp-nav').find('span');
-  var $fadeTextPrototype = $('.fadetext-prototype');
-  var $fadeTextChatbot = $('.fadetext-chatbot');
-  var $fadeTextUi = $('.fadetext-ui');
-  var $fadeTextAbout = $('.fadetext-about');
-  var $fadeTextDesign = $('.fadetext-design');
-  var $menuItem = $('.menu-item');
 
   // set initial state of text
   var setState = function setState() {

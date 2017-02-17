@@ -34,6 +34,18 @@ navigationSlideMenu.init();
 
 // FULL PAGE PLUGIN - initialize fullpage
 
+const $fpSideNav = $('#fp-nav').find('span');
+const $fadeTextPrototype = $('.fadetext-prototype');
+const $fadeTextChatbot = $('.fadetext-chatbot');
+const $fadeTextUi = $('.fadetext-ui');
+const $fadeTextAbout = $('.fadetext-about');
+const $fadeTextDesign = $('.fadetext-design')
+const $menuItem = $('.menu-item');
+const $myWorkButton = $('.my-work');
+
+const $salmon = '#E94444';
+const $reverse = '#FEFEE6';
+
   $('#fullpage').fullpage({
   //Navigation
     menu: '#myMenu',
@@ -68,11 +80,18 @@ navigationSlideMenu.init();
       var loadedSection = $(this);
 
       if (index === 1 || index === 2 ) {
-        $fpSideNav.css({
-          'background' :'rgba(255, 255, 255, 0.25)'
+        $fpSideNav.css('background', 'rgba(255, 255, 255, 0.25)');
+        $myWorkButton.css({
+          'color': `${$salmon}`,
+          'border': `1px solid ${$salmon}`,
         });
+
       } else {
         $fpSideNav.css('background', 'rgba(255, 255, 255, 0.5)');
+        $myWorkButton.css({
+          'color': `${$reverse}`,
+          'border': `1px solid ${$reverse}`,
+        });
       }
 
       if (index === 2) {
@@ -99,11 +118,11 @@ navigationSlideMenu.init();
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css({
-          'background': '#FEFEE6',
+          'background': `${$reverse}`,
           'transition': 'background 1.5s',
         });
         $('.watermark-text, .contact-item, .title-caption').css({
-          'color': '#FEFEE6',
+          'color': `${$reverse}`,
           'transition': 'color 1.5s'
         });
         $('.social-main li').css({
@@ -111,7 +130,7 @@ navigationSlideMenu.init();
           'transition': 'border-color 1.5s',
         });
         $('.pulse-button').css({
-          'stroke': "#FEFEE6",
+          'stroke': `${$reverse}`,
           'transition': 'color 1.5s',
         });
 
@@ -151,13 +170,7 @@ navigationSlideMenu.init();
     }
   }); //end of fullpage.js
 
-  const $fpSideNav = $('#fp-nav').find('span');
-  const $fadeTextPrototype = $('.fadetext-prototype');
-  const $fadeTextChatbot = $('.fadetext-chatbot');
-  const $fadeTextUi = $('.fadetext-ui');
-  const $fadeTextAbout = $('.fadetext-about');
-  const $fadeTextDesign = $('.fadetext-design')
-  const $menuItem = $('.menu-item');
+
 
   // set initial state of text
   const setState = () => {
