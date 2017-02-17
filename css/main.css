@@ -215,7 +215,8 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a span {
   width: 10px;
   height: 10px;
-  margin: -5px 0px 0px -5px; }
+  margin: -5px 0px 0px -5px;
+  display: none; }
 
 #fp-nav ul li .fp-tooltip {
   position: absolute;
@@ -1139,7 +1140,7 @@ a:hover, a:focus {
   visibility: hidden; }
 
 .main-landing-page .landing-header h1, .main-landing-page .landing-header p {
-  color: #E94444; }
+  color: #FEFEE6; }
 
 .main-landing-page .landing-header h1 {
   text-transform: initial;
