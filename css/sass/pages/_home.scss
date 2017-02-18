@@ -199,12 +199,6 @@
 		color: $reverse;
 		margin-bottom: 15px;
 	}
-	.chatbot-container {
-		article {
-			width: 60%;
-			text-align: left;
-		}
-	}
 		.chatbot-mockup {
 			img {
 			width: 300px;
@@ -224,16 +218,17 @@
 		h1 {
 		font-size: 3em;
 		}
-	}
-	.chatbot {
-		.chatbot-container {
-			.chatbot-mockup {
-				img {
-				display: inherit;
-				}
+		article {
+			width: 60%;
+			text-align: left;
+		}
+		.chatbot-mockup {
+			img {
+			display: inherit;
 			}
 		}
 	}
+
 }
 
 /* USER INTERFACE

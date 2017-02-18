@@ -681,11 +681,6 @@ html.fp-enabled,
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
-@media (min-width: 750px) {
-  #fp-nav ul li a span,
-  .fp-slidesNav ul li a span {
-    display: inherit; } }
-
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
   width: 10px;
@@ -712,7 +707,8 @@ html.fp-enabled,
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
   width: auto;
-  opacity: 1; }
+  opacity: 1;
+  display: none; }
 
 #fp-nav ul li .fp-tooltip.right {
   right: 5px;
@@ -731,6 +727,12 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
+
+@media (min-width: 750px) {
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span,
+  #fp-nav.fp-show-active a.active + .fp-tooltip {
+    display: inherit; } }
 
 /* PRELOADER
    ========================================================================== */
@@ -1243,9 +1245,6 @@ html.fp-enabled,
   .chatbot p {
     color: #FEFEE6;
     margin-bottom: 15px; }
-  .chatbot .chatbot-container article {
-    width: 60%;
-    text-align: left; }
   .chatbot .chatbot-mockup img {
     width: 300px;
     display: none; }
@@ -1255,7 +1254,10 @@ html.fp-enabled,
     width: 600px; }
   .chatbot-container h1 {
     font-size: 3em; }
-  .chatbot .chatbot-container .chatbot-mockup img {
+  .chatbot-container article {
+    width: 60%;
+    text-align: left; }
+  .chatbot-container .chatbot-mockup img {
     display: inherit; } }
 
 /* USER INTERFACE
