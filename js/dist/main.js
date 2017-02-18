@@ -379,7 +379,6 @@ $(document).ready(function () {
   _navigation2.default.init();
 
   // FULL PAGE PLUGIN - initialize fullpage
-
   $('#fullpage').fullpage((_$$fullpage = {
     //Navigation
     menu: '#myMenu',
@@ -434,11 +433,11 @@ $(document).ready(function () {
       $('.red-logo').removeClass('active-logo');
       $('.white-logo').addClass('active-logo');
       $('.menu-bar').css({
-        'background': '#FEFEE6',
+        'background': '' + $reverse,
         'transition': 'background 1.5s'
       });
       $('.watermark-text, .contact-item, .title-caption').css({
-        'color': '#FEFEE6',
+        'color': '' + $reverse,
         'transition': 'color 1.5s'
       });
       $('.social-main li').css({
@@ -446,7 +445,7 @@ $(document).ready(function () {
         'transition': 'border-color 1.5s'
       });
       $('.pulse-button').css({
-        'stroke': "#FEFEE6",
+        'stroke': '' + $reverse,
         'transition': 'color 1.5s'
       });
       $('#fp-nav').find('span').css({

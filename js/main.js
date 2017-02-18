@@ -41,7 +41,6 @@ const $reverse = '#FEFEE6';
 navigationSlideMenu.init();
 
 // FULL PAGE PLUGIN - initialize fullpage
-
   $('#fullpage').fullpage({
   //Navigation
     menu: '#myMenu',
@@ -99,11 +98,11 @@ navigationSlideMenu.init();
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
         $('.menu-bar').css({
-          'background': '#FEFEE6',
+          'background': `${$reverse}`,
           'transition': 'background 1.5s',
         });
         $('.watermark-text, .contact-item, .title-caption').css({
-          'color': '#FEFEE6',
+          'color': `${$reverse}`,
           'transition': 'color 1.5s'
         });
         $('.social-main li').css({
@@ -111,7 +110,7 @@ navigationSlideMenu.init();
           'transition': 'border-color 1.5s',
         });
         $('.pulse-button').css({
-          'stroke': "#FEFEE6",
+          'stroke': `${$reverse}`,
           'transition': 'color 1.5s',
         });
         $('#fp-nav').find('span').css({
