@@ -415,6 +415,10 @@ $(document).ready(function () {
 
     if (index === 3) {
       _typographyAnimation2.default.fadeInText($fadeTextPrototype);
+      $('.social-main li:hover').css({
+        'border-color': '' + $reverse,
+        'background': '' + $reverse
+      });
     }
 
     if (index === 4) {
@@ -432,10 +436,6 @@ $(document).ready(function () {
     if (index === 3 || index === 4 || index === 5 || index === 6) {
       $('.red-logo').removeClass('active-logo');
       $('.white-logo').addClass('active-logo');
-      $('.menu-bar').css({
-        'background': '' + $reverse,
-        'transition': 'background 1.5s'
-      });
       $('.watermark-text, .contact-item, .title-caption').css({
         'color': '' + $reverse,
         'transition': 'color 1.5s'
@@ -461,7 +461,6 @@ $(document).ready(function () {
     } else {
       $('.white-logo').removeClass('active-logo');
       $('.red-logo').addClass('active-logo');
-      $('.menu-bar').css('background', '' + $salmon);
       $('.watermark-text, .contact-item, .title-caption').css('color', '' + $salmon);
       $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
       $('.pulse-button').css('stroke', '' + $salmon);

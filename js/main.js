@@ -80,6 +80,10 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
+        $('.social-main li:hover').css({
+          'border-color': `${$reverse}`,
+          'background': `${$reverse}`
+        })
       }
 
       if (index === 4) {
@@ -97,10 +101,6 @@ navigationSlideMenu.init();
       if (index === 3 || index === 4 || index === 5 || index === 6) {
         $('.red-logo').removeClass('active-logo');
         $('.white-logo').addClass('active-logo');
-        $('.menu-bar').css({
-          'background': `${$reverse}`,
-          'transition': 'background 1.5s',
-        });
         $('.watermark-text, .contact-item, .title-caption').css({
           'color': `${$reverse}`,
           'transition': 'color 1.5s'
@@ -127,7 +127,6 @@ navigationSlideMenu.init();
       } else {
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo');
-        $('.menu-bar').css('background', `${$salmon}`);
         $('.watermark-text, .contact-item, .title-caption').css('color', `${$salmon}`);
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
         $('.pulse-button').css('stroke', `${$salmon}`);
