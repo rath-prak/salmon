@@ -1,11 +1,13 @@
 // Set variables and reusable mixins
 @import "base/config";
 @import "base/mixins";
-@import "vendor/jquery.fullPage";
 
 // Import typical layout styles
 @import "base/flex";
 @import "base/type";
+
+// Import Fullpage
+@import "vendor/jquery.fullPage";
 
 // Import reusable modules
 @import "components/preloader";

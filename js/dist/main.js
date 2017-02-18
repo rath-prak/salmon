@@ -461,10 +461,10 @@ $(document).ready(function () {
     } else {
       $('.white-logo').removeClass('active-logo');
       $('.red-logo').addClass('active-logo');
-      $('.menu-bar').css('background', '#E94444');
-      $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
+      $('.menu-bar').css('background', '' + $salmon);
+      $('.watermark-text, .contact-item, .title-caption').css('color', '' + $salmon);
       $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
-      $('.pulse-button').css('stroke', "#E94444");
+      $('.pulse-button').css('stroke', '' + $salmon);
       $('#fp-nav').find('span').css({
         'background': '' + $salmon,
         'opacity': '0.6'
