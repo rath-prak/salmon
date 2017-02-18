@@ -199,10 +199,15 @@
 		color: $reverse;
 		margin-bottom: 15px;
 	}
-
+	.chatbot-container {
+		article {
+			width: 60%;
+			text-align: left;
+		}
+	}
 		.chatbot-mockup {
 			img {
-			width: 350px;
+			width: 300px;
 			display: none;
 			}
 		}
