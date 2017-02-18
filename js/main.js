@@ -80,10 +80,6 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
-        $('.social-main li:hover').css({
-          'border-color': `${$reverse}`,
-          'background': `${$reverse}`
-        })
       }
 
       if (index === 4) {
@@ -139,7 +135,7 @@ navigationSlideMenu.init();
           'border': `1px solid ${$salmon}`,
         });
         $('#fp-nav ul li .fp-tooltip').css({
-          'color' : `${$salmon}`
+          'color': `${$salmon}`,
         })
 
       }

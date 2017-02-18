@@ -731,6 +731,7 @@ html.fp-enabled,
 @media (min-width: 750px) {
   #fp-nav ul li a span,
   .fp-slidesNav ul li a span,
+  #fp-nav ul li:hover .fp-tooltip,
   #fp-nav.fp-show-active a.active + .fp-tooltip {
     display: inherit; } }
 

@@ -415,10 +415,6 @@ $(document).ready(function () {
 
     if (index === 3) {
       _typographyAnimation2.default.fadeInText($fadeTextPrototype);
-      $('.social-main li:hover').css({
-        'border-color': '' + $reverse,
-        'background': '' + $reverse
-      });
     }
 
     if (index === 4) {
