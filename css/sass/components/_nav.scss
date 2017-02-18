@@ -38,22 +38,19 @@
 		text-transform: uppercase;
 		padding: 3px 18px;
 		border: 1px solid $reverse;
+		font-family: $bold;
 	}
 }
 
 /**
  * SECONDARY NAVIGATION
  */
-
-
-
 .secondary-nav {
 	background: $aqua-blue;
 	width: 100%;
 	height: 100px;
 	position: fixed;
 }
-
 
 /**
  * FULL PAGE NAVIGATION
@@ -77,8 +74,6 @@
 	}
 }
 
-
-
 .nav-menu-content {
 	font-family: $black;
 	text-align: left;
@@ -96,6 +91,7 @@
 		padding-left: 0;
 	}
 	.social-main-nav {
+
 		a {
 			margin-left: 10px;
 			font-size: 0.7em;
@@ -129,7 +125,7 @@
 	cursor: pointer;
 	position: absolute;
 	top: 4%;
-	right: 4%;
+	right: 2%;
 	width: 30px;
 	height: 30px;
 	img {

@@ -308,7 +308,6 @@ var animatedText = {
 exports.default = animatedText;
 
 },{}],9:[function(require,module,exports){
-
 'use strict';
 
 var _animation = require('./lib/animation.js');
@@ -350,6 +349,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 $(document).ready(function () {
   var _this = this,
       _$$fullpage;
+
+  var $fadeTextPrototype = $('.fadetext-prototype');
+  var $fadeTextChatbot = $('.fadetext-chatbot');
+  var $fadeTextUi = $('.fadetext-ui');
+  var $fadeTextAbout = $('.fadetext-about');
+  var $fadeTextDesign = $('.fadetext-design');
+  var $menuItem = $('.menu-item');
+
+  var $salmon = '#E94444';
+  var $reverse = '#FEFEE6';
 
   // Chatbot slidedown menu
   (0, _chatbotSlideMenu2.default)();
@@ -401,14 +410,6 @@ $(document).ready(function () {
   }, _defineProperty(_$$fullpage, 'verticalCentered', false), _defineProperty(_$$fullpage, 'anchors', ['home', 'about-me', 'prototype', 'chatbot', 'user-interface', 'design']), _defineProperty(_$$fullpage, 'setResponsive', true), _defineProperty(_$$fullpage, 'afterLoad', function afterLoad(anchorLink, index) {
     var loadedSection = $(this);
 
-    if (index === 1 || index === 2) {
-      $fpSideNav.css({
-        'background': 'rgba(255, 255, 255, 0.25)'
-      });
-    } else {
-      $fpSideNav.css('background', 'rgba(255, 255, 255, 0.5)');
-    }
-
     if (index === 2) {
       _typographyAnimation2.default.fadeInText($fadeTextAbout);
     }
@@ -448,6 +449,16 @@ $(document).ready(function () {
         'stroke': "#FEFEE6",
         'transition': 'color 1.5s'
       });
+      $('#fp-nav').find('span').css({
+        'background': 'rgba(255, 255, 255, 0.6)'
+      });
+      $('.my-work').css({
+        'color': '' + $reverse,
+        'border': '1px solid ' + $reverse
+      });
+      $('#fp-nav ul li .fp-tooltip').css({
+        'color': '' + $reverse
+      });
     } else {
       $('.white-logo').removeClass('active-logo');
       $('.red-logo').addClass('active-logo');
@@ -455,6 +466,17 @@ $(document).ready(function () {
       $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
       $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
       $('.pulse-button').css('stroke', "#E94444");
+      $('#fp-nav').find('span').css({
+        'background': '' + $salmon,
+        'opacity': '0.6'
+      });
+      $('.my-work').css({
+        'color': '' + $salmon,
+        'border': '1px solid ' + $salmon
+      });
+      $('#fp-nav ul li .fp-tooltip').css({
+        'color': '' + $salmon
+      });
     }
   }), _defineProperty(_$$fullpage, 'onLeave', function onLeave(index, nextIndex, direction) {
     var leavingSection = $(_this);
@@ -480,13 +502,6 @@ $(document).ready(function () {
     }
   }), _$$fullpage)); //end of fullpage.js
 
-  var $fpSideNav = $('#fp-nav').find('span');
-  var $fadeTextPrototype = $('.fadetext-prototype');
-  var $fadeTextChatbot = $('.fadetext-chatbot');
-  var $fadeTextUi = $('.fadetext-ui');
-  var $fadeTextAbout = $('.fadetext-about');
-  var $fadeTextDesign = $('.fadetext-design');
-  var $menuItem = $('.menu-item');
 
   // set initial state of text
   var setState = function setState() {

@@ -1,4 +1,3 @@
-
 'use strict'
 
 import animation from './lib/animation.js';
@@ -12,6 +11,16 @@ import scrollToTop from './lib/scrollToTop.js';
 
 
 $(document).ready(function(){
+
+const $fadeTextPrototype = $('.fadetext-prototype');
+const $fadeTextChatbot = $('.fadetext-chatbot');
+const $fadeTextUi = $('.fadetext-ui');
+const $fadeTextAbout = $('.fadetext-about');
+const $fadeTextDesign = $('.fadetext-design')
+const $menuItem = $('.menu-item');
+
+const $salmon = '#E94444';
+const $reverse = '#FEFEE6';
 
 // Chatbot slidedown menu
   chatbotSlideMenu();
@@ -30,7 +39,6 @@ $(document).ready(function(){
 
 // NAVIGATION
 navigationSlideMenu.init();
-
 
 // FULL PAGE PLUGIN - initialize fullpage
 
@@ -66,14 +74,6 @@ navigationSlideMenu.init();
     setResponsive: true,
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
-
-      if (index === 1 || index === 2 ) {
-        $fpSideNav.css({
-          'background' :'rgba(255, 255, 255, 0.25)'
-        });
-      } else {
-        $fpSideNav.css('background', 'rgba(255, 255, 255, 0.5)');
-      }
 
       if (index === 2) {
         animatedText.fadeInText($fadeTextAbout);
@@ -114,6 +114,16 @@ navigationSlideMenu.init();
           'stroke': "#FEFEE6",
           'transition': 'color 1.5s',
         });
+        $('#fp-nav').find('span').css({
+          'background': 'rgba(255, 255, 255, 0.6)'
+        });
+        $('.my-work').css({
+          'color': `${$reverse}`,
+          'border': `1px solid ${$reverse}`,
+        });
+        $('#fp-nav ul li .fp-tooltip').css({
+          'color' : `${$reverse}`
+        })
 
       } else {
         $('.white-logo').removeClass('active-logo');
@@ -122,6 +132,17 @@ navigationSlideMenu.init();
         $('.watermark-text, .contact-item, .title-caption').css('color', '#E94444');
         $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
         $('.pulse-button').css('stroke', "#E94444");
+        $('#fp-nav').find('span').css({
+          'background' : `${$salmon}`,
+          'opacity': '0.6'
+        });
+        $('.my-work').css({
+          'color': `${$salmon}`,
+          'border': `1px solid ${$salmon}`,
+        });
+        $('#fp-nav ul li .fp-tooltip').css({
+          'color' : `${$salmon}`
+        })
 
       }
 
@@ -151,13 +172,7 @@ navigationSlideMenu.init();
     }
   }); //end of fullpage.js
 
-  const $fpSideNav = $('#fp-nav').find('span');
-  const $fadeTextPrototype = $('.fadetext-prototype');
-  const $fadeTextChatbot = $('.fadetext-chatbot');
-  const $fadeTextUi = $('.fadetext-ui');
-  const $fadeTextAbout = $('.fadetext-about');
-  const $fadeTextDesign = $('.fadetext-design')
-  const $menuItem = $('.menu-item');
+
 
   // set initial state of text
   const setState = () => {
