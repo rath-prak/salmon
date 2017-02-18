@@ -50,7 +50,7 @@ navigationSlideMenu.init();
     navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPING', 'CHATBOT', 'USER-INTERFACE', 'DESIGN'],
     showActiveTooltip: true,
     css3: true,
-    fadingEffect: true,
+    // fadingEffect: true,
     scrollingSpeed: 700,
     autoScrolling: true,
     fitToSection: true,
@@ -170,7 +170,6 @@ navigationSlideMenu.init();
       }
     }
   }); //end of fullpage.js
-
 
 
   // set initial state of text

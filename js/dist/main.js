@@ -388,7 +388,7 @@ $(document).ready(function () {
     navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPING', 'CHATBOT', 'USER-INTERFACE', 'DESIGN'],
     showActiveTooltip: true,
     css3: true,
-    fadingEffect: true,
+    // fadingEffect: true,
     scrollingSpeed: 700,
     autoScrolling: true,
     fitToSection: true,

@@ -34,6 +34,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "particles.js": "^2.0.0"
   }
 }
