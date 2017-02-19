@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 357.6" style="enable-background:new 0 0 612 357.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E6E7E8;}
+	.st1{fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_2_);fill:#EFEFEF;}
+	.st3{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st4{fill:#D4D6D7;}
+</style>
+<g>
+	<rect x="83.2" y="26.4" class="st0" width="445.7" height="59"/>
+	<rect x="83.2" y="83.3" class="st1" width="445.7" height="227.3"/>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="14.8" y="12.5" width="583.7" height="331.1"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st2" d="M525.3,307H86.7V30h438.6V307z M543,320.3v-296c0,0,0-11.8-11.8-11.8H82c0,0-11.8,0-11.8,11.8v296
+			c0,0,0,11.8,11.8,11.8h449.2C531.2,332.1,543,332.1,543,320.3"/>
+		<path class="st3" d="M19.5,318.8c0,0-4.7,0-4.7,4.7v15.3c0,0,0,4.7,4.7,4.7h574.2c0,0,4.7,0,4.7-4.7v-15.3c0,0,0-4.7-4.7-4.7H19.5
+			z"/>
+	</g>
+	<rect x="96.2" y="39.4" class="st1" width="107.3" height="33.3"/>
+	<rect x="367.3" y="50" class="st1" width="142.7" height="15.3"/>
+	<rect x="245.9" y="118.4" class="st4" width="113.2" height="15.3"/>
+	<rect x="231.7" y="150.9" class="st4" width="142.7" height="7.6"/>
+	<rect x="231.7" y="164.7" class="st4" width="142.7" height="7.6"/>
+	<rect x="231.7" y="178.5" class="st4" width="142.7" height="7.6"/>
+	<rect x="231.7" y="192.4" class="st4" width="142.7" height="7.6"/>
+	<rect x="273" y="206.2" class="st4" width="59" height="7.6"/>
+	<rect x="263.6" y="235.1" class="st0" width="79" height="22.4"/>
+</g>
+</svg>
