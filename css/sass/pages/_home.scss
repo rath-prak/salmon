@@ -44,6 +44,7 @@
 		left: 1%;
 		transform: translateY(-50%);
 		width: 10px;
+		opacity: 0.25;
 
 	}
 }
@@ -141,7 +142,8 @@
 .prototype-container {
 	background: $salmon;
 	h1 {
-		font-size: 2.4em
+		font-size: 2.4em;
+		text-transform: uppercase;
 	}
 	p {
 		color: $reverse;
