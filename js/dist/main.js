@@ -378,6 +378,9 @@ $(document).ready(function () {
   // NAVIGATION
   _navigation2.default.init();
 
+  // const vivusAnimatoin = new Vivus('prototype-anitamated-graphic', {duration: 80, file: '../img/prototype-wire-mockup.svg'});
+
+
   // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage((_$$fullpage = {
     //Navigation
@@ -388,7 +391,6 @@ $(document).ready(function () {
     navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPING', 'CHATBOT', 'USER-INTERFACE', 'DESIGN'],
     showActiveTooltip: true,
     css3: true,
-    // fadingEffect: true,
     scrollingSpeed: 700,
     autoScrolling: true,
     fitToSection: true,
@@ -416,7 +418,6 @@ $(document).ready(function () {
     if (index === 3) {
       _typographyAnimation2.default.fadeInText($fadeTextPrototype);
     }
-
     if (index === 4) {
       _typographyAnimation2.default.fadeInText($fadeTextChatbot);
     }

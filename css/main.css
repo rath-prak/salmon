@@ -1221,7 +1221,7 @@ html.fp-enabled,
     color: #FEFEE6;
     margin-bottom: 15px; }
   .prototype-container .prototype-mockup img {
-    width: 250px;
+    width: 400px;
     display: none; }
 
 /**
@@ -1233,7 +1233,7 @@ html.fp-enabled,
   .prototype-container h1 {
     font-size: 3em; }
   .prototype-container article {
-    width: 60%;
+    width: 50%;
     text-align: left; }
   .prototype-container .prototype-mockup img {
     display: inherit; } }

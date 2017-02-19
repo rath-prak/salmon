@@ -40,6 +40,9 @@ const $reverse = '#FEFEE6';
 // NAVIGATION
 navigationSlideMenu.init();
 
+// const vivusAnimatoin = new Vivus('prototype-anitamated-graphic', {duration: 80, file: '../img/prototype-wire-mockup.svg'});
+
+
 // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage({
   //Navigation
@@ -50,7 +53,6 @@ navigationSlideMenu.init();
     navigationTooltips: ['HOME', 'ABOUT', 'PROTOTYPING', 'CHATBOT', 'USER-INTERFACE', 'DESIGN'],
     showActiveTooltip: true,
     css3: true,
-    // fadingEffect: true,
     scrollingSpeed: 700,
     autoScrolling: true,
     fitToSection: true,
@@ -80,8 +82,8 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
-      }
 
+      }
       if (index === 4) {
           animatedText.fadeInText($fadeTextChatbot);
       }
@@ -177,6 +179,7 @@ navigationSlideMenu.init();
   setState();
 
 
+
   /**
   * PULSE ANIMATION
   */
@@ -186,6 +189,7 @@ navigationSlideMenu.init();
   * PIXI JS / FISH
   */
   pixiBackground();
+
 
 
 }); // end of document.ready()
