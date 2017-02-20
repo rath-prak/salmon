@@ -776,8 +776,8 @@ html.fp-enabled,
     text-decoration: none; }
 
 .chatbot-container .main-btn-reverse {
-  color: #3887BE;
-  border: 1px solid #3887BE; }
+  color: #749CD1;
+  border: 1px solid #749CD1; }
 
 .chatbot-container .main-btn-reverse:hover {
   color: #FEFEE6;
@@ -1241,7 +1241,7 @@ html.fp-enabled,
 /* USER INTERFACE / CHATBOT
    ========================================================================== */
 .chatbot {
-  background: #3887BE; }
+  background: #749CD1; }
   .chatbot h1 {
     font-size: 2.4em; }
   .chatbot p {
@@ -1249,7 +1249,8 @@ html.fp-enabled,
     margin-bottom: 15px; }
   .chatbot .chatbot-mockup img {
     width: 300px;
-    display: none; }
+    display: none;
+    margin-right: 50px; }
 
 @media screen and (min-width: 750px) {
   #chatbot-background-icon img {
@@ -1257,7 +1258,7 @@ html.fp-enabled,
   .chatbot-container h1 {
     font-size: 3em; }
   .chatbot-container article {
-    width: 60%;
+    width: 50%;
     text-align: left; }
   .chatbot-container .chatbot-mockup img {
     display: inherit; } }
@@ -1272,7 +1273,7 @@ html.fp-enabled,
     color: #FEFEE6;
     margin-bottom: 15px; }
   .ui .ui-container .ui-mockup img {
-    width: 400px;
+    width: 450px;
     display: none; }
 
 @media screen and (min-width: 750px) {
@@ -1280,6 +1281,9 @@ html.fp-enabled,
     width: 500px; }
   .ui-container h1 {
     font-size: 3em; }
+  .ui-container article {
+    width: 50%;
+    text-align: left; }
   .ui .ui-container .ui-mockup img {
     display: inherit; } }
 
@@ -1322,7 +1326,7 @@ html.fp-enabled,
  	 CHATBOT MAIN BACKGROUND COLOR
   	 ---------------------------------*/
 .chatbot-main-wrapper {
-  background: #3887BE; }
+  background: #749CD1; }
 
 /**
 

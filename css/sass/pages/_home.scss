@@ -205,6 +205,7 @@
 			img {
 			width: 300px;
 			display: none;
+			margin-right: 50px;
 			}
 		}
 
@@ -221,7 +222,7 @@
 		font-size: 3em;
 		}
 		article {
-			width: 60%;
+			width: 50%;
 			text-align: left;
 		}
 		.chatbot-mockup {
@@ -249,7 +250,7 @@
 	.ui-container {
 		.ui-mockup {
 			img {
-			width: 400px;
+			width: 450px;
 			display: none;
 			}
 		}
@@ -267,6 +268,10 @@
 	.ui-container {
 		h1 {
 		font-size: 3em;
+		}
+		article {
+			width: 50%;
+			text-align: left;
 		}
 	}
 	.ui {
