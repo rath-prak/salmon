@@ -2,6 +2,7 @@
 /* project colors - this project colors need assigned to these variables once you comfirm color scheme */
 /* project two colors */
 /* chatbot blue colors */
+394C88
 html {
   background: #072231; }
 
@@ -973,12 +974,6 @@ html.fp-enabled,
       line-height: 35px; }
   .social-main li:last-of-type {
     border-right: 1px solid rgba(233, 68, 68, 0.15); }
-  .social-main li:hover {
-    background: #E94444;
-    -webkit-transition: background 1.5s;
-    transition: background 1.5s; }
-    .social-main li:hover i {
-      color: #1e2832; }
   .social-main .social-title {
     border: none;
     margin-right: 14px;
@@ -1243,7 +1238,8 @@ html.fp-enabled,
 .chatbot {
   background: #749CD1; }
   .chatbot h1 {
-    font-size: 2.4em; }
+    font-size: 2.4em;
+    text-transform: uppercase; }
   .chatbot p {
     color: #FEFEE6;
     margin-bottom: 15px; }
@@ -1268,12 +1264,13 @@ html.fp-enabled,
 .ui {
   background: #f56d6f; }
   .ui h1 {
-    font-size: 2.4em; }
+    font-size: 2.4em;
+    text-transform: uppercase; }
   .ui p {
     color: #FEFEE6;
     margin-bottom: 15px; }
   .ui .ui-container .ui-mockup img {
-    width: 450px;
+    width: 425px;
     display: none; }
 
 @media screen and (min-width: 750px) {
@@ -1294,7 +1291,8 @@ html.fp-enabled,
   .graphic-design .design-container {
     background: #E94444; }
     .graphic-design .design-container h1 {
-      font-size: 2.4em; }
+      font-size: 2.4em;
+      text-transform: uppercase; }
     .graphic-design .design-container p {
       color: #FEFEE6;
       margin-bottom: 15px; }
@@ -1326,7 +1324,7 @@ html.fp-enabled,
  	 CHATBOT MAIN BACKGROUND COLOR
   	 ---------------------------------*/
 .chatbot-main-wrapper {
-  background: #749CD1; }
+  background: #394C88; }
 
 /**
 
@@ -1340,7 +1338,7 @@ html.fp-enabled,
   padding: 0; }
   .chatbot-header .chatbot-nav-container {
     margin-right: 0px;
-    background: #1477AF;
+    background: #749CD1;
     padding-bottom: 1px; }
   .chatbot-header .chatbot-logo {
     margin-top: 0px; }
@@ -1350,7 +1348,7 @@ html.fp-enabled,
   .chatbot-header .chatbot-list-items {
     display: none;
     list-style: none;
-    background: #1477AF; }
+    background: #749CD1; }
     .chatbot-header .chatbot-list-items li {
       margin-bottom: 10px; }
     .chatbot-header .chatbot-list-items li:nth-of-type(5) {
@@ -1361,7 +1359,7 @@ html.fp-enabled,
       font-size: 20px;
       font-family: proxima_bold, sans-serif; }
     .chatbot-header .chatbot-list-items li a:hover {
-      color: #1477AF; }
+      color: #749CD1; }
   .chatbot-header .chatbot-list-items.active {
     display: block; }
   .chatbot-header .toggle {
@@ -1397,7 +1395,7 @@ html.fp-enabled,
       font-family: proxima_medium, sans-serif; }
 
 .climate-change-intro, .final-chatbot {
-  background: #1477AF;
+  background: #394C88;
   text-align: center; }
   .climate-change-intro .intro-text h1, .final-chatbot .intro-text h1 {
     font-size: 1.8em; }
@@ -1413,7 +1411,7 @@ html.fp-enabled,
       margin-bottom: 40px; }
 
 .final-chatbot {
-  background: #1D364C; }
+  background: #749CD1; }
   .final-chatbot .intro-text p {
     margin-bottom: 20px; }
   .final-chatbot .intro-text .messenger-button {
@@ -1479,27 +1477,29 @@ html.fp-enabled,
       margin-top: 0px; }
       .chatbot-intro-wrapper .bluey-main-image img {
         width: 100%; }
-  .climate-change-intro .climate-change-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .climate-change-intro .intro-text {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-left: 50px; }
-    .climate-change-intro .intro-text h1 {
-      font-size: 2.5em; }
-    .climate-change-intro .intro-text p {
-      margin-bottom: 5px;
-      color: #FEFEE6; }
-  .climate-change-intro .side-graphic {
-    text-align: center;
-    width: 35%; }
-    .climate-change-intro .side-graphic img {
-      -webkit-transform: translateY(30px);
-              transform: translateY(30px);
-      width: 100%; }
+  .climate-change-intro {
+    background: #50659B; }
+    .climate-change-intro .climate-change-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .climate-change-intro .intro-text {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-left: 50px; }
+      .climate-change-intro .intro-text h1 {
+        font-size: 2.5em; }
+      .climate-change-intro .intro-text p {
+        margin-bottom: 5px;
+        color: #FEFEE6; }
+    .climate-change-intro .side-graphic {
+      text-align: center;
+      width: 35%; }
+      .climate-change-intro .side-graphic img {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+        width: 100%; }
   .final-chatbot .final-chatbot-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -1516,7 +1516,7 @@ html.fp-enabled,
       color: #FEFEE6; }
   .final-chatbot .side-graphic {
     text-align: center;
-    width: 45%; }
+    width: 65%; }
     .final-chatbot .side-graphic img {
       -webkit-transform: translateY(30px);
               transform: translateY(30px);

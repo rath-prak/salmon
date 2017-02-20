@@ -239,13 +239,13 @@
 	li:last-of-type {
 		border-right: 1px solid rgba(233,68, 68, 0.15);
 	}
-	li:hover {
-		background: $salmon;
-		i {
-			color: $dark-blue;
-		}
-		transition: background 1.5s;
-	}
+	// li:hover {
+	// 	background: $reverse;
+	// 	i {
+	// 		color: $dark-blue;
+	// 	}
+	// 	transition: background 1.5s;
+	// }
 	.social-title {
 		border: none;
 		margin-right: 14px;

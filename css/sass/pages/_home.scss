@@ -195,7 +195,8 @@
 .chatbot {
 	background: $chatbot-primary;
 	h1 {
-		font-size: 2.4em
+		font-size: 2.4em;
+		text-transform: uppercase;
 	}
 	p {
 		color: $reverse;
@@ -241,7 +242,8 @@
 .ui {
 	background: $light-salmon;
 	h1 {
-		font-size: 2.4em
+		font-size: 2.4em;
+		text-transform: uppercase;
 	}
 	p {
 		color: $reverse;
@@ -250,7 +252,7 @@
 	.ui-container {
 		.ui-mockup {
 			img {
-			width: 450px;
+			width: 425px;
 			display: none;
 			}
 		}
@@ -293,7 +295,8 @@
 	.design-container {
 		background: $salmon;
 		h1 {
-			font-size: 2.4em
+			font-size: 2.4em;
+			text-transform: uppercase;
 		}
 		p {
 			color: $reverse;

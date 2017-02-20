@@ -6,7 +6,7 @@
   	 ---------------------------------*/
 
  .chatbot-main-wrapper {
-   background: $chatbot-primary;
+   background: $chatbot-secondary;
  }
 
  /**
@@ -23,7 +23,7 @@
 
   .chatbot-nav-container {
     margin-right: 0px;
-    background: $chatbot-secondary;
+    background: $chatbot-primary;
     padding-bottom: 1px;
   }
 
@@ -38,7 +38,7 @@
   .chatbot-list-items {
     display: none;
     list-style: none;
-    background: $chatbot-secondary;
+    background: $chatbot-primary;
 
     li {
       margin-bottom: 10px;
@@ -54,7 +54,7 @@
       font-family: $bold;
     }
     li a:hover {
-      color: $chatbot-secondary;
+      color: $chatbot-primary;
     }
   }
   .chatbot-list-items.active {
@@ -133,7 +133,7 @@
 }
 
 .final-chatbot {
-  background: $chatbot-third;
+  background: $chatbot-primary;
   .intro-text {
     p {
       margin-bottom: 20px;
@@ -225,6 +225,7 @@
 	}
 
   .climate-change-intro {
+    background: $chatbot-third;
     .climate-change-container {
       flex-direction: row;
     }
@@ -267,7 +268,7 @@
    }
    .side-graphic {
      text-align: center;
-     width: 45%;
+     width: 65%;
      img {
        transform: translateY(30px);
        width: 100%;
