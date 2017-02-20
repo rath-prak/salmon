@@ -40,9 +40,6 @@ const $reverse = '#FEFEE6';
 // NAVIGATION
 navigationSlideMenu.init();
 
-// const vivusAnimatoin = new Vivus('prototype-anitamated-graphic', {duration: 80, file: '../img/prototype-wire-mockup.svg'});
-
-
 // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage({
   //Navigation
@@ -82,7 +79,6 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
-
       }
       if (index === 4) {
           animatedText.fadeInText($fadeTextChatbot);
@@ -126,7 +122,7 @@ navigationSlideMenu.init();
         $('.white-logo').removeClass('active-logo');
         $('.red-logo').addClass('active-logo');
         $('.watermark-text, .contact-item, .title-caption').css('color', `${$salmon}`);
-        $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
+        $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.25)');
         $('.pulse-button').css('stroke', `${$salmon}`);
         $('#fp-nav').find('span').css({
           'background' : `${$salmon}`,
@@ -146,7 +142,7 @@ navigationSlideMenu.init();
     onLeave: (index, nextIndex, direction) => {
       var leavingSection = $(this);
 
-      if(index === 2 && direction === 'up' || index === 3 && direction === 'down'){
+      if(index === 2 && direction === 'up' || index === 2 && direction === 'down'){
         animatedText.resetfadeText($fadeTextAbout, 0, 20, 1);
       }
 
@@ -177,7 +173,6 @@ navigationSlideMenu.init();
       });
     };
   setState();
-
 
 
   /**

@@ -378,9 +378,6 @@ $(document).ready(function () {
   // NAVIGATION
   _navigation2.default.init();
 
-  // const vivusAnimatoin = new Vivus('prototype-anitamated-graphic', {duration: 80, file: '../img/prototype-wire-mockup.svg'});
-
-
   // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage((_$$fullpage = {
     //Navigation
@@ -459,7 +456,7 @@ $(document).ready(function () {
       $('.white-logo').removeClass('active-logo');
       $('.red-logo').addClass('active-logo');
       $('.watermark-text, .contact-item, .title-caption').css('color', '' + $salmon);
-      $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.15)');
+      $('.social-main li').css('border-color', 'rgba(233,68, 68, 0.25)');
       $('.pulse-button').css('stroke', '' + $salmon);
       $('#fp-nav').find('span').css({
         'background': '' + $salmon,
@@ -476,7 +473,7 @@ $(document).ready(function () {
   }), _defineProperty(_$$fullpage, 'onLeave', function onLeave(index, nextIndex, direction) {
     var leavingSection = $(_this);
 
-    if (index === 2 && direction === 'up' || index === 3 && direction === 'down') {
+    if (index === 2 && direction === 'up' || index === 2 && direction === 'down') {
       _typographyAnimation2.default.resetfadeText($fadeTextAbout, 0, 20, 1);
     }
 
