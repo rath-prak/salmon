@@ -149,11 +149,16 @@
 		color: $reverse;
 		margin-bottom: 15px;
 	}
-	.prototype-mockup {
-		img {
-			width: 400px;
-			display: none;
-		}
+	// .prototype-mockup {
+	// 	img {
+	// 		width: 400px;
+	// 		display: none;
+	// 	}
+	// }
+	#bodymovin-prototype {
+		width: 1000px;
+		display: none;
+		background: green;
 	}
 }
 
@@ -179,9 +184,11 @@
 			text-align: left;
 		}
 		.prototype-mockup {
-			img {
+			// img {
+			// 	display: inherit;
+			// }
+			#bodymovin-prototype {
 				display: inherit;
-
 			}
 		}
 	}

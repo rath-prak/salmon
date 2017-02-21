@@ -1215,9 +1215,10 @@ html.fp-enabled,
   .prototype-container p {
     color: #FEFEE6;
     margin-bottom: 15px; }
-  .prototype-container .prototype-mockup img {
-    width: 400px;
-    display: none; }
+  .prototype-container #bodymovin-prototype {
+    width: 1000px;
+    display: none;
+    background: green; }
 
 /**
  * LARGER THAN TABLET
@@ -1230,7 +1231,7 @@ html.fp-enabled,
   .prototype-container article {
     width: 50%;
     text-align: left; }
-  .prototype-container .prototype-mockup img {
+  .prototype-container .prototype-mockup #bodymovin-prototype {
     display: inherit; } }
 
 /* USER INTERFACE / CHATBOT
