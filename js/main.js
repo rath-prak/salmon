@@ -46,7 +46,7 @@ var animData = {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'https://raw.githubusercontent.com/rath-prak/salmon/bodymovin/js/data/dataPrototype.json'
+      path: 'https://raw.githubusercontent.com/rath-prak/salmon/bodymovin/js/data/data.json'
       // path: '/data/dataPrototype.json'
   };
 var anim = bodymovin.loadAnimation(animData);
