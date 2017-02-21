@@ -1216,9 +1216,9 @@ html.fp-enabled,
     color: #FEFEE6;
     margin-bottom: 15px; }
   .prototype-container #bodymovin-prototype {
-    width: 1000px;
+    width: 400px;
     display: none;
-    background: green; }
+    margin-left: 20px; }
 
 /**
  * LARGER THAN TABLET

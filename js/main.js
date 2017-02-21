@@ -40,16 +40,14 @@ const $reverse = '#FEFEE6';
 // NAVIGATION
 navigationSlideMenu.init();
 
-//bodymovin
-var animData = {
-      container: document.getElementById('bodymovin-prototype'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'https://raw.githubusercontent.com/rath-prak/salmon/bodymovin/js/data/data.json'
-      // path: '/data/dataPrototype.json'
-  };
-var anim = bodymovin.loadAnimation(animData);
+  var animData = {
+        container: document.getElementById('bodymovin-prototype'),
+        renderer: 'svg',
+        loop: 3,
+        autoplay: true,
+        path: 'https://raw.githubusercontent.com/rath-prak/salmon/bodymovin/js/data/data.json'
+    };
+  var anim = bodymovin.loadAnimation(animData);
 
 // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage({

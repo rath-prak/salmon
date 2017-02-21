@@ -378,14 +378,12 @@ $(document).ready(function () {
   // NAVIGATION
   _navigation2.default.init();
 
-  //bodymovin
   var animData = {
     container: document.getElementById('bodymovin-prototype'),
     renderer: 'svg',
-    loop: true,
+    loop: 3,
     autoplay: true,
     path: 'https://raw.githubusercontent.com/rath-prak/salmon/bodymovin/js/data/data.json'
-    // path: '/data/dataPrototype.json'
   };
   var anim = bodymovin.loadAnimation(animData);
 
