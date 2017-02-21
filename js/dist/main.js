@@ -504,6 +504,9 @@ $(document).ready(function () {
 
     if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
       _typographyAnimation2.default.resetfadeText($fadeTextPrototype, 0, 20, 1);
+      setTimeout(function () {
+        anim.stop();
+      }, 500);
     }
 
     if (index === 4 && direction === 'up' || index === 4 && direction === 'down') {
