@@ -49,7 +49,7 @@ navigationSlideMenu.init();
         autoplay: false,
         animationData: prototypeData,
     };
-  var anim = bodymovin.loadAnimation(animData);
+  var animPrototype = bodymovin.loadAnimation(animData);
 
 // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage({
@@ -90,7 +90,7 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
-        anim.play()
+        animPrototype.play()
       }
       if (index === 4) {
           animatedText.fadeInText($fadeTextChatbot);
@@ -161,7 +161,7 @@ navigationSlideMenu.init();
       if(index === 3 && direction === 'up' || index === 3 && direction === 'down'){
         animatedText.resetfadeText($fadeTextPrototype, 0, 20, 1);
         setTimeout(() => {
-          anim.stop();
+          animPrototype.stop();
         }, 500);
       }
 

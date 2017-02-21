@@ -400,7 +400,7 @@ $(document).ready(function () {
     autoplay: false,
     animationData: _prototypeData2.default
   };
-  var anim = bodymovin.loadAnimation(animData);
+  var animPrototype = bodymovin.loadAnimation(animData);
 
   // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage((_$$fullpage = {
@@ -438,7 +438,7 @@ $(document).ready(function () {
 
     if (index === 3) {
       _typographyAnimation2.default.fadeInText($fadeTextPrototype);
-      anim.play();
+      animPrototype.play();
     }
     if (index === 4) {
       _typographyAnimation2.default.fadeInText($fadeTextChatbot);
@@ -505,7 +505,7 @@ $(document).ready(function () {
     if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
       _typographyAnimation2.default.resetfadeText($fadeTextPrototype, 0, 20, 1);
       setTimeout(function () {
-        anim.stop();
+        animPrototype.stop();
       }, 500);
     }
 
