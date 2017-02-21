@@ -45,8 +45,8 @@ navigationSlideMenu.init();
   var animData = {
         container: document.getElementById('bodymovin-prototype'),
         renderer: 'svg',
-        loop: 3,
-        autoplay: true,
+        loop: 1,
+        autoplay: false,
         animationData: prototypeData,
     };
   var anim = bodymovin.loadAnimation(animData);
@@ -90,6 +90,7 @@ navigationSlideMenu.init();
 
       if (index === 3) {
         animatedText.fadeInText($fadeTextPrototype);
+        anim.play()
       }
       if (index === 4) {
           animatedText.fadeInText($fadeTextChatbot);

@@ -396,8 +396,8 @@ $(document).ready(function () {
   var animData = {
     container: document.getElementById('bodymovin-prototype'),
     renderer: 'svg',
-    loop: 3,
-    autoplay: true,
+    loop: 1,
+    autoplay: false,
     animationData: _prototypeData2.default
   };
   var anim = bodymovin.loadAnimation(animData);
@@ -438,6 +438,7 @@ $(document).ready(function () {
 
     if (index === 3) {
       _typographyAnimation2.default.fadeInText($fadeTextPrototype);
+      anim.play();
     }
     if (index === 4) {
       _typographyAnimation2.default.fadeInText($fadeTextChatbot);
