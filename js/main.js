@@ -8,6 +8,7 @@ import navigationSlideMenu from './lib/navigation.js';
 import pagePreloader from './lib/preloader.js';
 import pixiBackground from './lib/pixiBackground.js';
 import scrollToTop from './lib/scrollToTop.js';
+import prototypeData from './data/prototypeData';
 
 
 $(document).ready(function(){
@@ -40,12 +41,13 @@ const $reverse = '#FEFEE6';
 // NAVIGATION
 navigationSlideMenu.init();
 
+// BODY MOVIN
   var animData = {
         container: document.getElementById('bodymovin-prototype'),
         renderer: 'svg',
         loop: 3,
         autoplay: true,
-        path: 'https://raw.githubusercontent.com/rath-prak/salmon/bodymovin/js/data/data.json'
+        animationData: prototypeData,
     };
   var anim = bodymovin.loadAnimation(animData);
 
