@@ -378,6 +378,16 @@ $(document).ready(function () {
   // NAVIGATION
   _navigation2.default.init();
 
+  //bodymovin
+  var animData = {
+    container: document.getElementById('bodymovin-prototype'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'dataPrototype.json'
+  };
+  var anim = bodymovin.loadAnimation(animData);
+
   // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage((_$$fullpage = {
     //Navigation
