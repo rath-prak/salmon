@@ -42,6 +42,7 @@ $(document).ready(function(){
 
 // BODY MOVIN
   const animPrototype = bodymovin.loadAnimation(bodymovinAnimation.animPrototypeData);
+  const animUi = bodymovin.loadAnimation(bodymovinAnimation.uiData);
 
 // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage({
@@ -90,6 +91,7 @@ $(document).ready(function(){
 
       if (index === 5) {
           animatedText.fadeInText($fadeTextUi);
+          animUi.play()
       }
 
       if (index === 6) {
@@ -163,6 +165,9 @@ $(document).ready(function(){
 
       if(index === 5 && direction === 'up' || index === 5 && direction === 'down'){
         animatedText.resetfadeText($fadeTextUi, 0, 20, 1);
+        setTimeout(() => {
+          animUi.stop();
+        }, 500);
       }
 
       if(index === 6 && direction === 'up'){
