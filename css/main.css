@@ -449,10 +449,6 @@ img {
   font-family: fat_frank;
   src: url(../fonts/FatFrank-Free.otf); }
 
-@font-face {
-  font-family: freight_light;
-  src: url(../fonts/FreightSanProLig.otf); }
-
 body,
 p {
   font-family: proxima_light, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

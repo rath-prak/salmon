@@ -34,7 +34,7 @@ gulp.task('es6', () => {
 			presets: ['es2015']
 		})
 		.bundle()
-		.pipe(source('main.js'))
+		.pipe(source('bundle.js'))
 		.pipe(buffer())
 		.pipe(gulp.dest('./js/dist/'));
 });

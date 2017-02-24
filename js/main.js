@@ -8,20 +8,19 @@ import navigationSlideMenu from './lib/navigation.js';
 import pagePreloader from './lib/preloader.js';
 import pixiBackground from './lib/pixiBackground.js';
 import scrollToTop from './lib/scrollToTop.js';
-import prototypeData from './data/prototypeData';
-
+import bodymovinAnimation from './lib/bodymovinAnimation/bodymovinAnimation.js'
 
 $(document).ready(function(){
 
-const $fadeTextPrototype = $('.fadetext-prototype');
-const $fadeTextChatbot = $('.fadetext-chatbot');
-const $fadeTextUi = $('.fadetext-ui');
-const $fadeTextAbout = $('.fadetext-about');
-const $fadeTextDesign = $('.fadetext-design')
-const $menuItem = $('.menu-item');
+  const $fadeTextPrototype = $('.fadetext-prototype');
+  const $fadeTextChatbot = $('.fadetext-chatbot');
+  const $fadeTextUi = $('.fadetext-ui');
+  const $fadeTextAbout = $('.fadetext-about');
+  const $fadeTextDesign = $('.fadetext-design')
+  const $menuItem = $('.menu-item');
 
-const $salmon = '#E94444';
-const $reverse = '#FEFEE6';
+  const $salmon = '#E94444';
+  const $reverse = '#FEFEE6';
 
 // Chatbot slidedown menu
   chatbotSlideMenu();
@@ -39,17 +38,10 @@ const $reverse = '#FEFEE6';
   navHide();
 
 // NAVIGATION
-navigationSlideMenu.init();
+  navigationSlideMenu.init();
 
 // BODY MOVIN
-  var animData = {
-        container: document.getElementById('bodymovin-prototype'),
-        renderer: 'svg',
-        loop: 1,
-        autoplay: false,
-        animationData: prototypeData,
-    };
-  var animPrototype = bodymovin.loadAnimation(animData);
+  const animPrototype = bodymovin.loadAnimation(bodymovinAnimation.animPrototypeData);
 
 // FULL PAGE PLUGIN - initialize fullpage
   $('#fullpage').fullpage({

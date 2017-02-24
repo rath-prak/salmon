@@ -1,3 +1,4 @@
+
 const pixiBackground = () => {
 
   const viewWidth = 630;
