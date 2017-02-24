@@ -1266,7 +1266,7 @@ html.fp-enabled,
   .ui p {
     color: #FEFEE6;
     margin-bottom: 15px; }
-  .ui .ui-container .ui-mockup img {
+  .ui .ui-container #bodymovin-ui {
     width: 425px;
     display: none; }
 
@@ -1278,7 +1278,7 @@ html.fp-enabled,
   .ui-container article {
     width: 50%;
     text-align: left; }
-  .ui .ui-container .ui-mockup img {
+  .ui .ui-container #bodymovin-ui {
     display: inherit; } }
 
 /* GRAPHIC SECTION

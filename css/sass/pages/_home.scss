@@ -178,9 +178,6 @@
 			text-align: left;
 		}
 		.prototype-mockup {
-			// img {
-			// 	display: inherit;
-			// }
 			#bodymovin-prototype {
 				display: inherit;
 			}
@@ -251,11 +248,9 @@
 		margin-bottom: 15px;
 	}
 	.ui-container {
-		.ui-mockup {
-			img {
+		#bodymovin-ui {
 			width: 425px;
 			display: none;
-			}
 		}
 	}
 
@@ -279,10 +274,8 @@
 	}
 	.ui {
 		.ui-container {
-			.ui-mockup {
-				img {
+			#bodymovin-ui {
 				display: inherit;
-				}
 			}
 		}
 	}
