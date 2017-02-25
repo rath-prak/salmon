@@ -1,6 +1,6 @@
 # Rayfinn Digital
 
-Personal portfolio
+Personal website and online portfolio with examples of my work.
 
 ## dev setup
 
