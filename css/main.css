@@ -1,8 +1,7 @@
 /* Consistent settings */
-/* project colors - this project colors need assigned to these variables once you comfirm color scheme */
+/* project colors -  */
 /* project two colors */
 /* chatbot blue colors */
-394C88
 html {
   background: #072231; }
 
@@ -822,6 +821,19 @@ html.fp-enabled,
     padding: 3px 18px;
     border: 1px solid #FEFEE6;
     font-family: proxima_bold, sans-serif; }
+  .navbar-toggle #menu {
+    width: 50px; }
+  .navbar-toggle .hamburger-container {
+    width: 40px;
+    height: 20px;
+    overflow: hidden; }
+    .navbar-toggle .hamburger-container .menu-bar {
+      background: #E94444;
+      width: 40px;
+      height: 2px;
+      margin-bottom: 6px;
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px); }
 
 /**
  * SECONDARY NAVIGATION

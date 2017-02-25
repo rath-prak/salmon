@@ -40,7 +40,25 @@
 		border: 1px solid $reverse;
 		font-family: $bold;
 	}
+	#menu {
+		width:50px;
+	}
+	.hamburger-container {
+		width: 40px;
+		height: 20px;
+		overflow: hidden;
+
+			.menu-bar {
+			  background: $salmon;
+			  width: 40px;
+			  height: 2px;
+		 	 	margin-bottom: 6px;
+		 	 	transform: translateX(10px)
+			}
+
+		}
 }
+
 
 /**
  * SECONDARY NAVIGATION

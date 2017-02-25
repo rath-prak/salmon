@@ -39,14 +39,14 @@ gulp.task('es6', () => {
 		.pipe(gulp.dest('./js/dist/'));
 });
 
-// gulp.task('cssmin', function () {
-//   gulp.src('./css/main.css')
-//       .pipe(cssmin())
-//       .pipe(rename({suffix: '.min'}))
-//       .pipe(gulp.dest('./css'));
-// });
+gulp.task('cssmin', function () {
+  gulp.src('./css/main.css')
+      .pipe(cssmin())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('./css'));
+});
 
-gulp.task('watch', ['es6', 'browserSync', 'sass'], function() {
+gulp.task('watch', ['es6', 'browserSync', 'sass', 'cssmin'], function() {
 	gulp.watch('./js/main.js',['es6']);
 	gulp.watch('./css/sass/**/*.scss', ['sass']);
 	gulp.watch('./*.html', browserSync.reload);
