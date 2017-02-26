@@ -27,3 +27,21 @@
 			z-index: -1
 
  }
+
+ .down-arrow-container {
+      position: absolute;
+      top: 50%;
+      left: 1%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 50px;
+      overflow: hidden;
+
+      .down-arrow {
+        width: 1px;
+        height: 40px;
+        background: $salmon;
+        opacity: 0.5;
+      }
+
+ }

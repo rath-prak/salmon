@@ -37,6 +37,16 @@ var animation = {
       yoyo: true,
       ease: Power2.easeOut
     });
+  },
+  downArrow: function downArrow() {
+    var $downArrow = $('.down-arrow');
+    TweenMax.set($downArrow, {
+      y: -50
+    });
+    TweenMax.to($downArrow, 3, {
+      y: 60,
+      repeat: -1
+    });
   }
 
 };
@@ -438,6 +448,15 @@ $(document).ready(function () {
   // NAVIGATION
   _navigation2.default.init();
 
+  // PULSE ANIMATION
+  _animation2.default.pulseButton();
+
+  // DOWN ARROW LINE
+  _animation2.default.downArrow();
+
+  // PIXI JS
+  (0, _pixiBackground2.default)();
+
   // BODY MOVIN
   var animPrototype = bodymovin.loadAnimation(_bodymovinAnimation2.default.animPrototypeData);
   var animUi = bodymovin.loadAnimation(_bodymovinAnimation2.default.uiData);
@@ -566,7 +585,6 @@ $(document).ready(function () {
     }
   }), _$$fullpage)); //end of fullpage.js
 
-
   // set initial state of text
   var setState = function setState() {
     TweenMax.set([$fadeTextPrototype, $fadeTextChatbot, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
@@ -575,16 +593,6 @@ $(document).ready(function () {
     });
   };
   setState();
-
-  /**
-  * PULSE ANIMATION
-  */
-  _animation2.default.pulseButton();
-
-  /**
-  * PIXI JS / FISH
-  */
-  (0, _pixiBackground2.default)();
 }); // end of document.ready()
 
 },{"./lib/animation.js":1,"./lib/bodymovinAnimation/bodymovinAnimation.js":2,"./lib/chatbotSlideMenu.js":5,"./lib/navHide.js":6,"./lib/navigation.js":7,"./lib/pixiBackground.js":8,"./lib/preloader.js":9,"./lib/scrollToTop.js":10,"./lib/typographyAnimation.js":11}]},{},[12]);

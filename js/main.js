@@ -40,6 +40,15 @@ $(document).ready(function(){
 // NAVIGATION
   navigationSlideMenu.init();
 
+// PULSE ANIMATION
+  animation.pulseButton();
+
+// DOWN ARROW LINE
+  animation.downArrow();
+
+// PIXI JS
+  pixiBackground();
+
 // BODY MOVIN
   const animPrototype = bodymovin.loadAnimation(bodymovinAnimation.animPrototypeData);
   const animUi = bodymovin.loadAnimation(bodymovinAnimation.uiData);
@@ -176,7 +185,6 @@ $(document).ready(function(){
     }
   }); //end of fullpage.js
 
-
   // set initial state of text
   const setState = () => {
       TweenMax.set([$fadeTextPrototype, $fadeTextChatbot, $fadeTextUi, $fadeTextAbout, $fadeTextDesign], {
@@ -185,18 +193,6 @@ $(document).ready(function(){
       });
     };
   setState();
-
-
-  /**
-  * PULSE ANIMATION
-  */
-  animation.pulseButton();
-
-  /**
-  * PIXI JS / FISH
-  */
-  pixiBackground();
-
 
 
 }); // end of document.ready()

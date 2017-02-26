@@ -32,6 +32,16 @@ const animation = {
       ease: Power2.easeOut,
     });
   },
+  downArrow: () => {
+    const $downArrow = $('.down-arrow');
+    TweenMax.set($downArrow, {
+      y: -50,
+    });
+    TweenMax.to($downArrow, 3, {
+      y: 60,
+      repeat: -1,
+    });
+  },
 
 }
 
