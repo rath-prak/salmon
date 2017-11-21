@@ -16,9 +16,20 @@
 		background: #fff;
 	}
 
+
 .tandem-intro,
 .tandem-final-design {
 		background: #e4ecf1;
+}
+
+.te-awe {
+	background: #fff;
+	a {
+		text-decoration: none;
+		font-family: $bold;
+		color: $salmon;
+	}
+	
 }
 
 .ui-intro-wrapper,
@@ -206,6 +217,8 @@
 		}
 	}
 }
+
+
 
 
 
